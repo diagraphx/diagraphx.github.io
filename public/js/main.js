@@ -1044,10 +1044,10 @@ function $ct_Lcom_diagraphx_web_components_ElementX__T__D__D__D__D__T__T__I__($t
         if ((!this$37.isEmpty__Z())) {
           var x0$1 = this$37.get__O();
           var hoverElement = $as_Lcom_diagraphx_web_components_Container(x0$1);
-          var \u03b41$ = $n(hoverElement).Lcom_diagraphx_web_components_ElementX__f_fo.style;
-          \u03b41$.setProperty("cursor", "grab");
-          var \u03b42$ = $n(hoverElement).Lcom_diagraphx_web_components_ElementX__f_fo.style;
-          \u03b42$.setProperty("pointer-events", "auto");
+          var \u03b43$ = $n(hoverElement).Lcom_diagraphx_web_components_ElementX__f_fo.style;
+          \u03b43$.setProperty("cursor", "grab");
+          var \u03b44$ = $n(hoverElement).Lcom_diagraphx_web_components_ElementX__f_fo.style;
+          \u03b44$.setProperty("pointer-events", "auto");
         }
         $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = $m_s_None$();
       }
@@ -1064,14 +1064,14 @@ function $ct_Lcom_diagraphx_web_components_ElementX__T__D__D__D__D__T__T__I__($t
     $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e.clientX);
     $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e.clientY);
     $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = new $c_s_Some($thiz);
-    var \u03b43$ = $thiz.Lcom_diagraphx_web_components_ElementX__f_fo.style;
-    \u03b43$.setProperty("cursor", "grabbing");
+    var \u03b41$ = $thiz.Lcom_diagraphx_web_components_ElementX__f_fo.style;
+    \u03b41$.setProperty("cursor", "grabbing");
     e.stopPropagation();
   }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
     $m_Lcom_diagraphx_web_objects_Cache$().clearClicked__V();
     $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement = new $c_s_Some($thiz);
-    var \u03b44$ = $thiz.resizeDiv__Lorg_scalajs_dom_HTMLElement().style;
-    \u03b44$.setProperty("resize", "both");
+    var \u03b42$ = $thiz.resizeDiv__Lorg_scalajs_dom_HTMLElement().style;
+    \u03b42$.setProperty("resize", "both");
     e$2.stopPropagation();
   })));
   return $thiz;
