@@ -938,6 +938,7 @@ function $h_Lcom_diagraphx_web_Main$() {
 $h_Lcom_diagraphx_web_Main$.prototype = $c_Lcom_diagraphx_web_Main$.prototype;
 $c_Lcom_diagraphx_web_Main$.prototype.main__AT__V = (function(args) {
   document.addEventListener("DOMContentLoaded", ((e) => {
+    $m_Lcom_diagraphx_web_extensions_package$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_components_Header$().Lcom_diagraphx_web_components_Header$__f_pageHeader])));
     $m_Lcom_diagraphx_web_extensions_package$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_components_SvgBody$().Lcom_diagraphx_web_components_SvgBody$__f_svgBody])));
     $m_Lcom_diagraphx_web_extensions_package$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_components_ToolBar$().Lcom_diagraphx_web_components_ToolBar$__f_toolBar])));
     return $m_Lcom_diagraphx_web_extensions_package$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_components_PageFooter$().Lcom_diagraphx_web_components_PageFooter$__f_pageFooter])));
@@ -1128,6 +1129,28 @@ function $isArrayOf_Lcom_diagraphx_web_components_ElementX(obj, depth) {
 }
 function $asArrayOf_Lcom_diagraphx_web_components_ElementX(obj, depth) {
   return (($isArrayOf_Lcom_diagraphx_web_components_ElementX(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.components.ElementX;", depth));
+}
+/** @constructor */
+function $c_Lcom_diagraphx_web_components_Header$() {
+  this.Lcom_diagraphx_web_components_Header$__f_pageHeader = null;
+  $n_Lcom_diagraphx_web_components_Header$ = this;
+  this.Lcom_diagraphx_web_components_Header$__f_pageHeader = $m_Lcom_diagraphx_web_extensions_package$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_package$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().header__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("height", "40px"), new $c_T2("left", "10px"), new $c_T2("top", "10px"), new $c_T2("border-radius", "8px"), new $c_T2("padding", "0 16px"), new $c_T2("background", "#008476"), new $c_T2("color", "#f1f1f1"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("font-size", "20px"), new $c_T2("font-weight", "bold"), new $c_T2("box-shadow", "0 2px 4px rgba(0,0,0,0.1)")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_package$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_package$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().img__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("src", "public/images/favicon.svg")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("height", "24px"), new $c_T2("margin-right", "8px")]))), $m_Lcom_diagraphx_web_extensions_package$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "Diagraphx")])));
+}
+$c_Lcom_diagraphx_web_components_Header$.prototype = new $h_O();
+$c_Lcom_diagraphx_web_components_Header$.prototype.constructor = $c_Lcom_diagraphx_web_components_Header$;
+/** @constructor */
+function $h_Lcom_diagraphx_web_components_Header$() {
+}
+$h_Lcom_diagraphx_web_components_Header$.prototype = $c_Lcom_diagraphx_web_components_Header$.prototype;
+var $d_Lcom_diagraphx_web_components_Header$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Header$, "com.diagraphx.web.components.Header$", ({
+  Lcom_diagraphx_web_components_Header$: 1
+}));
+var $n_Lcom_diagraphx_web_components_Header$;
+function $m_Lcom_diagraphx_web_components_Header$() {
+  if ((!$n_Lcom_diagraphx_web_components_Header$)) {
+    $n_Lcom_diagraphx_web_components_Header$ = new $c_Lcom_diagraphx_web_components_Header$();
+  }
+  return $n_Lcom_diagraphx_web_components_Header$;
 }
 /** @constructor */
 function $c_Lcom_diagraphx_web_components_PageFooter$() {
@@ -1413,11 +1436,17 @@ $c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.constructor = $c_Lcom_dia
 function $h_Lcom_diagraphx_web_objects_ElementHelper$() {
 }
 $h_Lcom_diagraphx_web_objects_ElementHelper$.prototype = $c_Lcom_diagraphx_web_objects_ElementHelper$.prototype;
+$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.header__Lorg_scalajs_dom_HTMLElement = (function() {
+  return document.createElement("header");
+});
 $c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.footer__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("footer");
 });
 $c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.div__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("div");
+});
+$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.img__Lorg_scalajs_dom_HTMLElement = (function() {
+  return document.createElement("img");
 });
 $c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.foreignObject__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
