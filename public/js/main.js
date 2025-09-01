@@ -1079,10 +1079,13 @@ $c_Lcom_diagraphx_web_Main$.prototype.main__AT__V = (function(args) {
     $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_ToolBar$().Lcom_diagraphx_web_pagecomponents_ToolBar$__f_toolBar])));
     return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_PageFooter$().Lcom_diagraphx_web_pagecomponents_PageFooter$__f_pageFooter])));
   }));
-  window.addEventListener("beforeunload", ((_$2) => (void 0)));
-  $m_Lcom_diagraphx_web_extensions_DocumentExtension$().kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mmove__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
+  window.addEventListener("beforeunload", ((e) => {
+    e.preventDefault();
+    e.returnValue = "";
+  }));
+  $m_Lcom_diagraphx_web_extensions_DocumentExtension$().mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mmove__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
     $m_Lcom_diagraphx_web_events_EventHelper$package$().clearClicked__V();
-  }))), $m_Lcom_diagraphx_web_events_DocumentMouseMove$package$().Lcom_diagraphx_web_events_DocumentMouseMove$package$__f_mouseMoveHandler), $m_Lcom_diagraphx_web_events_DocumentMouseUp$package$().Lcom_diagraphx_web_events_DocumentMouseUp$package$__f_mouseUpHandler), $m_Lcom_diagraphx_web_events_KeyboardDelete$package$().Lcom_diagraphx_web_events_KeyboardDelete$package$__f_deleteKeyHandler);
+  }))), $m_Lcom_diagraphx_web_events_DocumentMouseMove$package$().Lcom_diagraphx_web_events_DocumentMouseMove$package$__f_mouseMoveHandler), $m_Lcom_diagraphx_web_events_DocumentMouseUp$package$().Lcom_diagraphx_web_events_DocumentMouseUp$package$__f_mouseUpHandler);
 });
 var $d_Lcom_diagraphx_web_Main$ = new $TypeData().initClass($c_Lcom_diagraphx_web_Main$, "com.diagraphx.web.Main$", ({
   Lcom_diagraphx_web_Main$: 1
@@ -1469,15 +1472,11 @@ function $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
       if ((!this$3.isEmpty__Z())) {
         var x0$1 = this$3.get__O();
         var hoverElement = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
-        var x = $n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_format;
-        var this$5 = $m_s_Console$();
-        var this$6 = $n(this$5.out__Ljava_io_PrintStream());
-        this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
         if ((hoverElement === null)) {
           var $x_1 = (element === null);
         } else {
-          var this$7 = $n(hoverElement);
-          var $x_1 = (this$7 === element);
+          var this$4 = $n(hoverElement);
+          var $x_1 = (this$4 === element);
         }
         if (((!$x_1) && ($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_format === "Container"))) {
           var currentSvg = $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo.parentElement;
@@ -1486,32 +1485,32 @@ function $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
             currentSvg.removeChild($n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
             $n(element).setOrigin__D__D__V(50.0, 50.0);
             targetSvg.appendChild($n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-            var this$8 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
+            var this$5 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
             var elem = $n(element).element__Lcom_diagraphx_web_models_MElement();
-            this$8.subtractOne__O__scm_ListBuffer(elem);
-            var this$9 = $n($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
+            this$5.subtractOne__O__scm_ListBuffer(elem);
+            var this$6 = $n($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
             var elem$1 = $n(element).element__Lcom_diagraphx_web_models_MElement();
-            this$9.addOne__O__scm_ListBuffer(elem$1);
+            this$6.addOne__O__scm_ListBuffer(elem$1);
             $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_parent = new $c_s_Some(hoverElement);
           }
         }
       }
     }
-    var this$11 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath);
-    if ((!this$11.isEmpty__Z())) {
-      var x0$2 = this$11.get__O();
+    var this$8 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath);
+    if ((!this$8.isEmpty__Z())) {
+      var x0$2 = this$8.get__O();
       var path = $as_Lcom_diagraphx_web_components_VPath(x0$2);
       if ($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement).isEmpty__Z()) {
         $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(path).Lcom_diagraphx_web_components_VPath__f_ipath);
       } else {
-        var x$1 = $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement;
+        var x = $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement;
         var x$2 = $n(path).Lcom_diagraphx_web_components_VPath__f_parent;
-        if (((x$1 === null) ? (x$2 === null) : $n(x$1).equals__O__Z(x$2))) {
+        if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
           $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(path).Lcom_diagraphx_web_components_VPath__f_ipath);
         } else {
-          var this$12 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
-          if ((!this$12.isEmpty__Z())) {
-            var x0$3 = this$12.get__O();
+          var this$9 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
+          if ((!this$9.isEmpty__Z())) {
+            var x0$3 = this$9.get__O();
             var hoverElement$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$3);
             var point = $m_Lcom_diagraphx_web_abstracts_PathHelper$().pathEnd__Lcom_diagraphx_web_components_VPath__Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MPoint(path, hoverElement$1);
             $n($n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_x = $n(point).Lcom_diagraphx_web_models_MPoint__f_x;
@@ -1519,14 +1518,14 @@ function $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
             $n(path).update__V();
             $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_sElement = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id;
             $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_eElement = $n($n(hoverElement$1).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id;
-            var this$13 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-            this$13.addOne__O__scm_ListBuffer(path);
+            var this$10 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
+            this$10.addOne__O__scm_ListBuffer(path);
             $n(path).Lcom_diagraphx_web_components_VPath__f_endElement = new $c_s_Some(hoverElement$1);
-            var this$15 = $n($n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-            this$15.addOne__O__scm_ListBuffer(path);
-            var this$16 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_paths);
+            var this$12 = $n($n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
+            this$12.addOne__O__scm_ListBuffer(path);
+            var this$13 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_paths);
             var elem$2 = $n(path).Lcom_diagraphx_web_components_VPath__f_mpath;
-            this$16.addOne__O__scm_ListBuffer(elem$2);
+            this$13.addOne__O__scm_ListBuffer(elem$2);
           }
         }
       }
@@ -1654,6 +1653,79 @@ function $f_Lcom_diagraphx_web_events_ElementMouseDown__$init$__V($thiz) {
   }));
 }
 /** @constructor */
+function $c_Lcom_diagraphx_web_events_ElementRemove$package$() {
+  this.Lcom_diagraphx_web_events_ElementRemove$package$__f_removeElement = null;
+  $n_Lcom_diagraphx_web_events_ElementRemove$package$ = this;
+  this.Lcom_diagraphx_web_events_ElementRemove$package$__f_removeElement = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    var this$2 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement);
+    if ((!this$2.isEmpty__Z())) {
+      var x0 = this$2.get__O();
+      var elem = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
+      var oPathsToRemove = $n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths).toList__sci_List();
+      var this$3 = $n(oPathsToRemove);
+      var these = this$3;
+      while ((!$n(these).isEmpty__Z())) {
+        var x0$1 = $n(these).head__O();
+        var tpath = $as_Lcom_diagraphx_web_components_VPath(x0$1);
+        if ($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z()) {
+          $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(tpath).Lcom_diagraphx_web_components_VPath__f_ipath);
+        } else {
+          $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(tpath).Lcom_diagraphx_web_components_VPath__f_ipath);
+        }
+        var this$4 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
+        this$4.subtractOne__O__scm_ListBuffer(tpath);
+        var this$5 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_endElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
+        this$5.subtractOne__O__scm_ListBuffer(tpath);
+        these = $as_sci_List($n(these).tail__O());
+      }
+      var iPathsToRemove = $n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths).toList__sci_List();
+      var this$6 = $n(iPathsToRemove);
+      var these$1 = this$6;
+      while ((!$n(these$1).isEmpty__Z())) {
+        var x0$2 = $n(these$1).head__O();
+        var tpath$1 = $as_Lcom_diagraphx_web_components_VPath(x0$2);
+        if ($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z()) {
+          $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_ipath);
+        } else {
+          $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_ipath);
+        }
+        var this$7 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
+        this$7.subtractOne__O__scm_ListBuffer(tpath$1);
+        var this$8 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_endElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
+        this$8.subtractOne__O__scm_ListBuffer(tpath$1);
+        these$1 = $as_sci_List($n(these$1).tail__O());
+      }
+      if ($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z()) {
+        $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
+        var this$9 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
+        var elem$1 = $n(elem).element__Lcom_diagraphx_web_models_MElement();
+        this$9.subtractOne__O__scm_ListBuffer(elem$1);
+      } else {
+        $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
+        var this$10 = $n($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
+        var elem$2 = $n(elem).element__Lcom_diagraphx_web_models_MElement();
+        this$10.subtractOne__O__scm_ListBuffer(elem$2);
+      }
+    }
+  }));
+}
+$c_Lcom_diagraphx_web_events_ElementRemove$package$.prototype = new $h_O();
+$c_Lcom_diagraphx_web_events_ElementRemove$package$.prototype.constructor = $c_Lcom_diagraphx_web_events_ElementRemove$package$;
+/** @constructor */
+function $h_Lcom_diagraphx_web_events_ElementRemove$package$() {
+}
+$h_Lcom_diagraphx_web_events_ElementRemove$package$.prototype = $c_Lcom_diagraphx_web_events_ElementRemove$package$.prototype;
+var $d_Lcom_diagraphx_web_events_ElementRemove$package$ = new $TypeData().initClass($c_Lcom_diagraphx_web_events_ElementRemove$package$, "com.diagraphx.web.events.ElementRemove$package$", ({
+  Lcom_diagraphx_web_events_ElementRemove$package$: 1
+}));
+var $n_Lcom_diagraphx_web_events_ElementRemove$package$;
+function $m_Lcom_diagraphx_web_events_ElementRemove$package$() {
+  if ((!$n_Lcom_diagraphx_web_events_ElementRemove$package$)) {
+    $n_Lcom_diagraphx_web_events_ElementRemove$package$ = new $c_Lcom_diagraphx_web_events_ElementRemove$package$();
+  }
+  return $n_Lcom_diagraphx_web_events_ElementRemove$package$;
+}
+/** @constructor */
 function $c_Lcom_diagraphx_web_events_EventHelper$package$() {
 }
 $c_Lcom_diagraphx_web_events_EventHelper$package$.prototype = new $h_O();
@@ -1697,82 +1769,6 @@ function $m_Lcom_diagraphx_web_events_EventHelper$package$() {
   return $n_Lcom_diagraphx_web_events_EventHelper$package$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_events_KeyboardDelete$package$() {
-  this.Lcom_diagraphx_web_events_KeyboardDelete$package$__f_deleteKeyHandler = null;
-  $n_Lcom_diagraphx_web_events_KeyboardDelete$package$ = this;
-  this.Lcom_diagraphx_web_events_KeyboardDelete$package$__f_deleteKeyHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    if ((($as_T(e.key) === "Delete") || ($as_T(e.key) === "Backspace"))) {
-      var this$2 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement);
-      if ((!this$2.isEmpty__Z())) {
-        var x0 = this$2.get__O();
-        var elem = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
-        var oPathsToRemove = $n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths).toList__sci_List();
-        var this$3 = $n(oPathsToRemove);
-        var these = this$3;
-        while ((!$n(these).isEmpty__Z())) {
-          var x0$1 = $n(these).head__O();
-          var tpath = $as_Lcom_diagraphx_web_components_VPath(x0$1);
-          if ($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z()) {
-            $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(tpath).Lcom_diagraphx_web_components_VPath__f_ipath);
-          } else {
-            $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(tpath).Lcom_diagraphx_web_components_VPath__f_ipath);
-          }
-          var this$4 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-          this$4.subtractOne__O__scm_ListBuffer(tpath);
-          var this$5 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_endElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-          this$5.subtractOne__O__scm_ListBuffer(tpath);
-          these = $as_sci_List($n(these).tail__O());
-        }
-        var iPathsToRemove = $n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths).toList__sci_List();
-        var this$6 = $n(iPathsToRemove);
-        var these$1 = this$6;
-        while ((!$n(these$1).isEmpty__Z())) {
-          var x0$2 = $n(these$1).head__O();
-          var tpath$1 = $as_Lcom_diagraphx_web_components_VPath(x0$2);
-          if ($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z()) {
-            $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_ipath);
-          } else {
-            $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_ipath);
-          }
-          var this$7 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-          this$7.subtractOne__O__scm_ListBuffer(tpath$1);
-          var this$8 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_endElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-          this$8.subtractOne__O__scm_ListBuffer(tpath$1);
-          these$1 = $as_sci_List($n(these$1).tail__O());
-        }
-        if ($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z()) {
-          $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-          var this$9 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-          var elem$1 = $n(elem).element__Lcom_diagraphx_web_models_MElement();
-          this$9.subtractOne__O__scm_ListBuffer(elem$1);
-        } else {
-          $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-          var this$10 = $n($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
-          var elem$2 = $n(elem).element__Lcom_diagraphx_web_models_MElement();
-          this$10.subtractOne__O__scm_ListBuffer(elem$2);
-        }
-      }
-    }
-    e.stopPropagation();
-  }));
-}
-$c_Lcom_diagraphx_web_events_KeyboardDelete$package$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_events_KeyboardDelete$package$.prototype.constructor = $c_Lcom_diagraphx_web_events_KeyboardDelete$package$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_events_KeyboardDelete$package$() {
-}
-$h_Lcom_diagraphx_web_events_KeyboardDelete$package$.prototype = $c_Lcom_diagraphx_web_events_KeyboardDelete$package$.prototype;
-var $d_Lcom_diagraphx_web_events_KeyboardDelete$package$ = new $TypeData().initClass($c_Lcom_diagraphx_web_events_KeyboardDelete$package$, "com.diagraphx.web.events.KeyboardDelete$package$", ({
-  Lcom_diagraphx_web_events_KeyboardDelete$package$: 1
-}));
-var $n_Lcom_diagraphx_web_events_KeyboardDelete$package$;
-function $m_Lcom_diagraphx_web_events_KeyboardDelete$package$() {
-  if ((!$n_Lcom_diagraphx_web_events_KeyboardDelete$package$)) {
-    $n_Lcom_diagraphx_web_events_KeyboardDelete$package$ = new $c_Lcom_diagraphx_web_events_KeyboardDelete$package$();
-  }
-  return $n_Lcom_diagraphx_web_events_KeyboardDelete$package$;
-}
-/** @constructor */
 function $c_Lcom_diagraphx_web_extensions_DocumentExtension$() {
 }
 $c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype = new $h_O();
@@ -1791,10 +1787,6 @@ $c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.mmove__Lorg_scalaj
 });
 $c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
   e.addEventListener("mouseup", ((e$2) => $n(handler).apply__O__O(e$2)));
-  return e;
-});
-$c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
-  e.addEventListener("keydown", ((e$2) => $n(handler).apply__O__O(e$2)));
   return e;
 });
 var $d_Lcom_diagraphx_web_extensions_DocumentExtension$ = new $TypeData().initClass($c_Lcom_diagraphx_web_extensions_DocumentExtension$, "com.diagraphx.web.extensions.DocumentExtension$", ({
@@ -2255,6 +2247,7 @@ function $c_Lcom_diagraphx_web_pagecomponents_ToolBar$() {
   var container = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\u25a3"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "28px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Container")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
     $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_Container$().apply__Lcom_diagraphx_web_components_Container()).view__Lorg_scalajs_dom_HTMLElement()])));
   })));
+  var remove = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\uddd1\ufe0f"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Remove Selected Element")]))), $m_Lcom_diagraphx_web_events_ElementRemove$package$().Lcom_diagraphx_web_events_ElementRemove$package$__f_removeElement);
   this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_open = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Open Diagram")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
     var input = document.createElement("input");
     input.type = "file";
@@ -2280,6 +2273,7 @@ function $c_Lcom_diagraphx_web_pagecomponents_ToolBar$() {
   $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([image])));
   $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([startEnd])));
   $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([decision])));
+  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([remove])));
   $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_open])));
   $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_save])));
   this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_toolBar = holder;
