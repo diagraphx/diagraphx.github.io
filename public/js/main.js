@@ -1469,45 +1469,49 @@ function $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
       if ((!this$3.isEmpty__Z())) {
         var x0$1 = this$3.get__O();
         var hoverElement = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
+        var x = $n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_format;
+        var this$5 = $m_s_Console$();
+        var this$6 = $n(this$5.out__Ljava_io_PrintStream());
+        this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
         if ((hoverElement === null)) {
           var $x_1 = (element === null);
         } else {
-          var this$4 = $n(hoverElement);
-          var $x_1 = (this$4 === element);
+          var this$7 = $n(hoverElement);
+          var $x_1 = (this$7 === element);
         }
-        if ((!$x_1)) {
+        if (((!$x_1) && ($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_format === "Container"))) {
           var currentSvg = $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo.parentElement;
           var targetSvg = $n(hoverElement).contentDiv__Lorg_scalajs_dom_HTMLElement();
           if ((((currentSvg !== null) && (targetSvg !== null)) && (!$m_sr_BoxesRunTime$().equals__O__O__Z(currentSvg, targetSvg)))) {
             currentSvg.removeChild($n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
             $n(element).setOrigin__D__D__V(50.0, 50.0);
             targetSvg.appendChild($n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-            var this$5 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
+            var this$8 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
             var elem = $n(element).element__Lcom_diagraphx_web_models_MElement();
-            this$5.subtractOne__O__scm_ListBuffer(elem);
-            var this$6 = $n($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
+            this$8.subtractOne__O__scm_ListBuffer(elem);
+            var this$9 = $n($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
             var elem$1 = $n(element).element__Lcom_diagraphx_web_models_MElement();
-            this$6.addOne__O__scm_ListBuffer(elem$1);
+            this$9.addOne__O__scm_ListBuffer(elem$1);
             $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_parent = new $c_s_Some(hoverElement);
           }
         }
       }
     }
-    var this$8 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath);
-    if ((!this$8.isEmpty__Z())) {
-      var x0$2 = this$8.get__O();
+    var this$11 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath);
+    if ((!this$11.isEmpty__Z())) {
+      var x0$2 = this$11.get__O();
       var path = $as_Lcom_diagraphx_web_components_VPath(x0$2);
       if ($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement).isEmpty__Z()) {
         $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(path).Lcom_diagraphx_web_components_VPath__f_ipath);
       } else {
-        var x = $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement;
+        var x$1 = $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement;
         var x$2 = $n(path).Lcom_diagraphx_web_components_VPath__f_parent;
-        if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
+        if (((x$1 === null) ? (x$2 === null) : $n(x$1).equals__O__Z(x$2))) {
           $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(path).Lcom_diagraphx_web_components_VPath__f_ipath);
         } else {
-          var this$9 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
-          if ((!this$9.isEmpty__Z())) {
-            var x0$3 = this$9.get__O();
+          var this$12 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
+          if ((!this$12.isEmpty__Z())) {
+            var x0$3 = this$12.get__O();
             var hoverElement$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$3);
             var point = $m_Lcom_diagraphx_web_abstracts_PathHelper$().pathEnd__Lcom_diagraphx_web_components_VPath__Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MPoint(path, hoverElement$1);
             $n($n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_x = $n(point).Lcom_diagraphx_web_models_MPoint__f_x;
@@ -1515,14 +1519,14 @@ function $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
             $n(path).update__V();
             $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_sElement = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id;
             $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_eElement = $n($n(hoverElement$1).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id;
-            var this$10 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-            this$10.addOne__O__scm_ListBuffer(path);
+            var this$13 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
+            this$13.addOne__O__scm_ListBuffer(path);
             $n(path).Lcom_diagraphx_web_components_VPath__f_endElement = new $c_s_Some(hoverElement$1);
-            var this$12 = $n($n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-            this$12.addOne__O__scm_ListBuffer(path);
-            var this$13 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_paths);
+            var this$15 = $n($n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
+            this$15.addOne__O__scm_ListBuffer(path);
+            var this$16 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_paths);
             var elem$2 = $n(path).Lcom_diagraphx_web_components_VPath__f_mpath;
-            this$13.addOne__O__scm_ListBuffer(elem$2);
+            this$16.addOne__O__scm_ListBuffer(elem$2);
           }
         }
       }
@@ -14927,10 +14931,11 @@ $c_Lcom_diagraphx_web_abstracts_AVElement.prototype.contentDiv__Lorg_scalajs_dom
 });
 $c_Lcom_diagraphx_web_abstracts_AVElement.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
   this.Lcom_diagraphx_web_abstracts_AVElement__f_observer.observe(this.resizeDiv__Lorg_scalajs_dom_HTMLElement());
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement(this.contentDiv__Lorg_scalajs_dom_HTMLElement(), $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
+  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler);
+  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement(this.contentDiv__Lorg_scalajs_dom_HTMLElement(), $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
     var newText$1 = $as_T(newText);
     $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_text = newText$1;
-  }))), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
+  }))), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
     $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = new $c_s_Some(this);
   }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
     var this$4 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
