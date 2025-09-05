@@ -1060,755 +1060,1041 @@ var $d_I = new $TypeData().initPrim(0, "I", "int", $ac_I, Int32Array);
 var $d_J = new $TypeData().initPrim(null, "J", "long", $ac_J, (void 0));
 var $d_F = new $TypeData().initPrim(0.0, "F", "float", $ac_F, Float32Array);
 var $d_D = new $TypeData().initPrim(0.0, "D", "double", $ac_D, Float64Array);
-function $s_Lcom_diagraphx_web_Main__main__AT__V(args) {
-  $m_Lcom_diagraphx_web_Main$().main__AT__V(args);
+function $s_Lcom_diagraphy_web_Main__main__AT__V(args) {
+  $m_Lcom_diagraphy_web_Main$().main__AT__V(args);
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_Main$() {
+function $c_Lcom_diagraphy_web_Main$() {
 }
-$c_Lcom_diagraphx_web_Main$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_Main$.prototype.constructor = $c_Lcom_diagraphx_web_Main$;
+$c_Lcom_diagraphy_web_Main$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_Main$.prototype.constructor = $c_Lcom_diagraphy_web_Main$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_Main$() {
+function $h_Lcom_diagraphy_web_Main$() {
 }
-$h_Lcom_diagraphx_web_Main$.prototype = $c_Lcom_diagraphx_web_Main$.prototype;
-$c_Lcom_diagraphx_web_Main$.prototype.main__AT__V = (function(args) {
-  document.addEventListener("DOMContentLoaded", ((_$1) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_Header$().Lcom_diagraphx_web_pagecomponents_Header$__f_pageHeader])));
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody])));
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_ToolBar$().Lcom_diagraphx_web_pagecomponents_ToolBar$__f_toolBar])));
-    return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_PageFooter$().Lcom_diagraphx_web_pagecomponents_PageFooter$__f_pageFooter])));
-  }));
-  window.addEventListener("beforeunload", ((e) => {
-    e.preventDefault();
-    e.returnValue = "";
-  }));
-  $m_Lcom_diagraphx_web_extensions_DocumentExtension$().mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mmove__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document($m_Lcom_diagraphx_web_extensions_DocumentExtension$().mclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
-    $m_Lcom_diagraphx_web_events_EventHelper$package$().clearClicked__V();
-  }))), $m_Lcom_diagraphx_web_events_DocumentMouseMove$package$().Lcom_diagraphx_web_events_DocumentMouseMove$package$__f_mouseMoveHandler), $m_Lcom_diagraphx_web_events_DocumentMouseUp$package$().Lcom_diagraphx_web_events_DocumentMouseUp$package$__f_mouseUpHandler);
+$h_Lcom_diagraphy_web_Main$.prototype = $c_Lcom_diagraphy_web_Main$.prototype;
+$c_Lcom_diagraphy_web_Main$.prototype.main__AT__V = (function(args) {
+  $m_Lcom_diagraphy_web_extensions_DocumentExtension$().onContentLoad__Lorg_scalajs_dom_Document__F0__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_PageHeader$().Lcom_diagraphy_web_components_PageHeader$__f_pageHeader])));
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg])))])));
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_ToolBar$().Lcom_diagraphy_web_components_ToolBar$__f_toolBar])));
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(document.body, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_PageFooter$().Lcom_diagraphy_web_components_PageFooter$__f_pageFooter])));
+    $m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft = 1500.0;
+    $m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop = 1000.0;
+    $m_Lcom_diagraphy_web_extensions_DocumentExtension$().mmove__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, $m_Lcom_diagraphy_web_events_DocumentMouseMove$package$().Lcom_diagraphy_web_events_DocumentMouseMove$package$__f_mouseMoveHandler);
+    $m_Lcom_diagraphy_web_extensions_DocumentExtension$().mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, $m_Lcom_diagraphy_web_events_DocumentMouseUp$package$().Lcom_diagraphy_web_events_DocumentMouseUp$package$__f_mouseUpHandler);
+    $m_Lcom_diagraphy_web_extensions_DocumentExtension$().mdblclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
+      $m_Lcom_diagraphy_web_State$().clearClicked__V();
+    })));
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mzoom__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_Lcom_diagraphy_web_events_ElementZoom$package$().Lcom_diagraphy_web_events_ElementZoom$package$__f_zoomHandler);
+    $m_Lcom_diagraphy_web_extensions_DocumentExtension$().kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+      if ((($as_T(e.key) === "Delete") || ($as_T(e.key) === "Backspace"))) {
+        var this$1 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement);
+        if ((!this$1.isEmpty__Z())) {
+          var x0 = this$1.get__O();
+          var elem = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+          $n(elem).remove__V();
+        }
+      }
+    })));
+    window.addEventListener("beforeunload", ((e$2) => {
+      e$2.preventDefault();
+      e$2.returnValue = "";
+    }));
+  })));
 });
-var $d_Lcom_diagraphx_web_Main$ = new $TypeData().initClass($c_Lcom_diagraphx_web_Main$, "com.diagraphx.web.Main$", ({
-  Lcom_diagraphx_web_Main$: 1
+var $d_Lcom_diagraphy_web_Main$ = new $TypeData().initClass($c_Lcom_diagraphy_web_Main$, "com.diagraphy.web.Main$", ({
+  Lcom_diagraphy_web_Main$: 1
 }));
-var $n_Lcom_diagraphx_web_Main$;
-function $m_Lcom_diagraphx_web_Main$() {
-  if ((!$n_Lcom_diagraphx_web_Main$)) {
-    $n_Lcom_diagraphx_web_Main$ = new $c_Lcom_diagraphx_web_Main$();
+var $n_Lcom_diagraphy_web_Main$;
+function $m_Lcom_diagraphy_web_Main$() {
+  if ((!$n_Lcom_diagraphy_web_Main$)) {
+    $n_Lcom_diagraphy_web_Main$ = new $c_Lcom_diagraphy_web_Main$();
   }
-  return $n_Lcom_diagraphx_web_Main$;
+  return $n_Lcom_diagraphy_web_Main$;
 }
-/** @constructor */
-function $c_Lcom_diagraphx_web_abstracts_ElementHelper$() {
-}
-$c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype.constructor = $c_Lcom_diagraphx_web_abstracts_ElementHelper$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_abstracts_ElementHelper$() {
-}
-$h_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype = $c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype;
-$c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype.createNorth__Lorg_scalajs_dom_HTMLElement = (function() {
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "50%"), new $c_T2("top", "0%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
-});
-$c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype.createWest__Lorg_scalajs_dom_HTMLElement = (function() {
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "0%"), new $c_T2("top", "50%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
-});
-$c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype.createSouth__Lorg_scalajs_dom_HTMLElement = (function() {
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "50%"), new $c_T2("top", "100%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
-});
-$c_Lcom_diagraphx_web_abstracts_ElementHelper$.prototype.createEast__Lorg_scalajs_dom_HTMLElement = (function() {
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "100%"), new $c_T2("top", "50%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
-});
-var $d_Lcom_diagraphx_web_abstracts_ElementHelper$ = new $TypeData().initClass($c_Lcom_diagraphx_web_abstracts_ElementHelper$, "com.diagraphx.web.abstracts.ElementHelper$", ({
-  Lcom_diagraphx_web_abstracts_ElementHelper$: 1
-}));
-var $n_Lcom_diagraphx_web_abstracts_ElementHelper$;
-function $m_Lcom_diagraphx_web_abstracts_ElementHelper$() {
-  if ((!$n_Lcom_diagraphx_web_abstracts_ElementHelper$)) {
-    $n_Lcom_diagraphx_web_abstracts_ElementHelper$ = new $c_Lcom_diagraphx_web_abstracts_ElementHelper$();
-  }
-  return $n_Lcom_diagraphx_web_abstracts_ElementHelper$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_abstracts_PathHelper$() {
-  this.Lcom_diagraphx_web_abstracts_PathHelper$__f_pathD = null;
-  $n_Lcom_diagraphx_web_abstracts_PathHelper$ = this;
-  this.Lcom_diagraphx_web_abstracts_PathHelper$__f_pathD = new $c_sjsr_AnonFunction3_$$Lambda$0321b7865d991d5a3e10ec941cd6461a4b204491(((start, end, edge) => {
-    var start$1 = $as_Lcom_diagraphx_web_models_MPoint(start);
-    var end$1 = $as_Lcom_diagraphx_web_models_MPoint(end);
-    var edge$1 = $as_T(edge);
-    var this$2 = $n(edge$1);
-    if ((this$2 === "North")) {
-      var $x_1 = true;
-    } else {
-      var this$3 = $n(edge$1);
-      var $x_1 = (this$3 === "South");
+function $p_Lcom_diagraphy_web_State$__renderElements__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V($thiz, elements, svg, parent) {
+  var this$1 = $n(elements);
+  var it = this$1.iterator__sc_Iterator();
+  while ($n(it).hasNext__Z()) {
+    var x0 = $n(it).next__O();
+    var element = $as_Lcom_diagraphy_web_models_GraphElement(x0);
+    var $x_2 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+    var $x_1 = $m_sr_ScalaRunTime$();
+    matchResult1: {
+      var abstractElement;
+      var x1 = $n(element).Lcom_diagraphy_web_models_GraphElement__f_format;
+      if ((x1 === "Instruction")) {
+        var abstractElement = new $c_Lcom_diagraphy_web_components_Instruction(element);
+        break matchResult1;
+      }
+      if ((x1 === "Note")) {
+        var abstractElement = new $c_Lcom_diagraphy_web_components_Note(element);
+        break matchResult1;
+      }
+      if ((x1 === "StartEnd")) {
+        var abstractElement = new $c_Lcom_diagraphy_web_components_StartEnd(element);
+        break matchResult1;
+      }
+      if ((x1 === "path")) {
+        var abstractElement = new $c_Lcom_diagraphy_web_components_Path(element);
+        break matchResult1;
+      }
+      if ((x1 === "Decision")) {
+        var abstractElement = new $c_Lcom_diagraphy_web_components_Decision(element);
+        break matchResult1;
+      }
+      if ((x1 === "Image")) {
+        var abstractElement = new $c_Lcom_diagraphy_web_components_ImageX(element);
+        break matchResult1;
+      }
+      if ((x1 === "Container")) {
+        var container = new $c_Lcom_diagraphy_web_components_Container(element);
+        $p_Lcom_diagraphy_web_State$__renderElements__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V($m_Lcom_diagraphy_web_State$(), $n(element).Lcom_diagraphy_web_models_GraphElement__f_elements, container.Lcom_diagraphy_web_components_Container__f_contentDiv, new $c_s_Some(container));
+        var abstractElement = container;
+        break matchResult1;
+      }
+      var abstractElement = null;
     }
-    if ($x_1) {
-      var cx1 = $n(start$1).Lcom_diagraphx_web_models_MPoint__f_x;
-      var cy1 = ($n(start$1).Lcom_diagraphx_web_models_MPoint__f_y + (($n(end$1).Lcom_diagraphx_web_models_MPoint__f_y - $n(start$1).Lcom_diagraphx_web_models_MPoint__f_y) / 2.0));
-      var cx2 = $n(end$1).Lcom_diagraphx_web_models_MPoint__f_x;
-      var cy2 = ($n(start$1).Lcom_diagraphx_web_models_MPoint__f_y + (($n(end$1).Lcom_diagraphx_web_models_MPoint__f_y - $n(start$1).Lcom_diagraphx_web_models_MPoint__f_y) / 2.0));
-      return ((((((((((((((("M " + $n(start$1).Lcom_diagraphx_web_models_MPoint__f_x) + " ") + $n(start$1).Lcom_diagraphx_web_models_MPoint__f_y) + " C ") + cx1) + " ") + cy1) + " ") + cx2) + " ") + cy2) + " ") + $n(end$1).Lcom_diagraphx_web_models_MPoint__f_x) + " ") + $n(end$1).Lcom_diagraphx_web_models_MPoint__f_y);
-    } else {
-      var cx1$2 = ($n(start$1).Lcom_diagraphx_web_models_MPoint__f_x + (($n(end$1).Lcom_diagraphx_web_models_MPoint__f_x - $n(start$1).Lcom_diagraphx_web_models_MPoint__f_x) / 2.0));
-      var cy1$2 = $n(start$1).Lcom_diagraphx_web_models_MPoint__f_y;
-      var cx2$2 = ($n(start$1).Lcom_diagraphx_web_models_MPoint__f_x + (($n(end$1).Lcom_diagraphx_web_models_MPoint__f_x - $n(start$1).Lcom_diagraphx_web_models_MPoint__f_x) / 2.0));
-      var cy2$2 = $n(end$1).Lcom_diagraphx_web_models_MPoint__f_y;
-      return ((((((((((((((("M " + $n(start$1).Lcom_diagraphx_web_models_MPoint__f_x) + " ") + $n(start$1).Lcom_diagraphx_web_models_MPoint__f_y) + " C ") + cx1$2) + " ") + cy1$2) + " ") + cx2$2) + " ") + cy2$2) + " ") + $n(end$1).Lcom_diagraphx_web_models_MPoint__f_x) + " ") + $n(end$1).Lcom_diagraphx_web_models_MPoint__f_y);
+    var this$5 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap);
+    var self = $n(element).Lcom_diagraphy_web_models_GraphElement__f_id;
+    var elem = new $c_T2(self, abstractElement);
+    this$5.addOne__O__scm_Growable(elem);
+    $n(abstractElement).Lcom_diagraphy_web_components_AbstractElement__f_parent = parent;
+    $x_2.$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(svg, $x_1.wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n(abstractElement).view__Lorg_scalajs_dom_HTMLElement()])));
+  }
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_State$() {
+  this.Lcom_diagraphy_web_State$__f_state = null;
+  this.Lcom_diagraphy_web_State$__f_stateMap = null;
+  this.Lcom_diagraphy_web_State$__f_mouseDownConnectElement = null;
+  this.Lcom_diagraphy_web_State$__f_mouseClickElement = null;
+  this.Lcom_diagraphy_web_State$__f_mouseDownElement = null;
+  this.Lcom_diagraphy_web_State$__f_mouseHoverElement = null;
+  this.Lcom_diagraphy_web_State$__f_initialX = 0.0;
+  this.Lcom_diagraphy_web_State$__f_initialY = 0.0;
+  this.Lcom_diagraphy_web_State$__f_cPath = null;
+  this.Lcom_diagraphy_web_State$__f_removeElement = null;
+  $n_Lcom_diagraphy_web_State$ = this;
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphy_web_models_GraphElement.getArrayOf().constr)([]));
+  this.Lcom_diagraphy_web_State$__f_state = new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
+  this.Lcom_diagraphy_web_State$__f_stateMap = $as_scm_Map($m_scm_Map$().apply__sci_Seq__O($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([]))));
+  this.Lcom_diagraphy_web_State$__f_mouseDownConnectElement = $m_s_None$();
+  this.Lcom_diagraphy_web_State$__f_mouseClickElement = $m_s_None$();
+  this.Lcom_diagraphy_web_State$__f_mouseDownElement = $m_s_None$();
+  this.Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
+  this.Lcom_diagraphy_web_State$__f_initialX = 0.0;
+  this.Lcom_diagraphy_web_State$__f_initialY = 0.0;
+  this.Lcom_diagraphy_web_State$__f_cPath = $m_s_None$();
+  this.Lcom_diagraphy_web_State$__f_removeElement = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    var this$3 = $n(this.Lcom_diagraphy_web_State$__f_mouseClickElement);
+    if ((!this$3.isEmpty__Z())) {
+      var x0 = this$3.get__O();
+      var elem = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      $n(elem).remove__V();
     }
   }));
 }
-$c_Lcom_diagraphx_web_abstracts_PathHelper$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_abstracts_PathHelper$.prototype.constructor = $c_Lcom_diagraphx_web_abstracts_PathHelper$;
+$c_Lcom_diagraphy_web_State$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_State$.prototype.constructor = $c_Lcom_diagraphy_web_State$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_abstracts_PathHelper$() {
+function $h_Lcom_diagraphy_web_State$() {
 }
-$h_Lcom_diagraphx_web_abstracts_PathHelper$.prototype = $c_Lcom_diagraphx_web_abstracts_PathHelper$.prototype;
-$c_Lcom_diagraphx_web_abstracts_PathHelper$.prototype.pathEnd__Lcom_diagraphx_web_components_VPath__Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MPoint = (function(vPath, avElement) {
-  var x1 = $n($n(vPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_edge;
-  if ((x1 === "East")) {
-    return $n(avElement).west__Lcom_diagraphx_web_models_MPoint();
-  }
-  if ((x1 === "South")) {
-    return $n(avElement).north__Lcom_diagraphx_web_models_MPoint();
-  }
-  if ((x1 === "West")) {
-    return $n(avElement).east__Lcom_diagraphx_web_models_MPoint();
-  }
-  if ((x1 === "North")) {
-    return $n(avElement).south__Lcom_diagraphx_web_models_MPoint();
-  }
-  return $n(avElement).west__Lcom_diagraphx_web_models_MPoint();
+$h_Lcom_diagraphy_web_State$.prototype = $c_Lcom_diagraphy_web_State$.prototype;
+$c_Lcom_diagraphy_web_State$.prototype.addToState__Lcom_diagraphy_web_components_AbstractElement__V = (function(element) {
+  var this$1 = $n(this.Lcom_diagraphy_web_State$__f_state);
+  var elem = $n(element).model__Lcom_diagraphy_web_models_GraphElement();
+  this$1.addOne__O__scm_ListBuffer(elem);
+  var this$4 = $n(this.Lcom_diagraphy_web_State$__f_stateMap);
+  var self = $n($n(element).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
+  var elem$1 = new $c_T2(self, element);
+  this$4.addOne__O__scm_Growable(elem$1);
 });
-var $d_Lcom_diagraphx_web_abstracts_PathHelper$ = new $TypeData().initClass($c_Lcom_diagraphx_web_abstracts_PathHelper$, "com.diagraphx.web.abstracts.PathHelper$", ({
-  Lcom_diagraphx_web_abstracts_PathHelper$: 1
-}));
-var $n_Lcom_diagraphx_web_abstracts_PathHelper$;
-function $m_Lcom_diagraphx_web_abstracts_PathHelper$() {
-  if ((!$n_Lcom_diagraphx_web_abstracts_PathHelper$)) {
-    $n_Lcom_diagraphx_web_abstracts_PathHelper$ = new $c_Lcom_diagraphx_web_abstracts_PathHelper$();
+$c_Lcom_diagraphy_web_State$.prototype.clearClicked__V = (function() {
+  var this$1 = $n(this.Lcom_diagraphy_web_State$__f_mouseClickElement);
+  if ((!this$1.isEmpty__Z())) {
+    var x0 = this$1.get__O();
+    var _$2 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    $n(_$2).clearHighlight__V();
   }
-  return $n_Lcom_diagraphx_web_abstracts_PathHelper$;
+  var this$2 = $n(this.Lcom_diagraphy_web_State$__f_mouseClickElement);
+  if ((!this$2.isEmpty__Z())) {
+    var x0$1 = this$2.get__O();
+    var _$3 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+    $n(_$3).clearConnections__V();
+  }
+  this.Lcom_diagraphy_web_State$__f_mouseClickElement = $m_s_None$();
+});
+$c_Lcom_diagraphy_web_State$.prototype.loadState__T__V = (function(jsonStr) {
+  try {
+    var this$6 = $m_Lupickle_legacy$();
+    var s = new $c_Lujson_Readable$fromTransformer(jsonStr, $m_Lujson_StringParser$());
+    $m_Lupickle_legacy$();
+    var trace = false;
+    var this$5 = $m_Lupickle_legacy$();
+    var r = $m_Lcom_diagraphy_web_models_GraphElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+    var this$3 = $m_scm_ListBuffer$();
+    var factory = new $c_sc_IterableFactory$ToFactory(this$3);
+    var evidence$2 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$5, r, factory);
+    var elements = $as_scm_ListBuffer($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$6, s, trace, evidence$2));
+    $n(this.Lcom_diagraphy_web_State$__f_state).addAll__sc_IterableOnce__scm_ListBuffer(elements);
+    $p_Lcom_diagraphy_web_State$__renderElements__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V(this, elements, $m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_s_None$());
+  } catch (e) {
+    var e$2 = ((e instanceof $c_jl_Throwable) ? e : new $c_sjs_js_JavaScriptException(e));
+    if ((e$2 instanceof $c_jl_Exception)) {
+      var e$3 = $as_jl_Exception(e$2);
+      var x = ("Error loading state: " + $n(e$3).getMessage__T());
+      var this$8 = $m_s_Console$();
+      var this$9 = $n(this$8.out__Ljava_io_PrintStream());
+      this$9.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+    } else {
+      throw e;
+    }
+  }
+});
+$c_Lcom_diagraphy_web_State$.prototype.saveState__V = (function() {
+  var fileName = $as_T(window.prompt("Enter file name", "graph.json"));
+  if ((fileName !== null)) {
+    var this$3 = $n(fileName);
+    var $x_1 = (!(this$3 === ""));
+  } else {
+    var $x_1 = false;
+  }
+  if ($x_1) {
+    var $x_3 = Blob;
+    var this$7 = $m_Lupickle_legacy$();
+    var t = this.Lcom_diagraphy_web_State$__f_state;
+    $m_Lupickle_legacy$();
+    var indent = (-1);
+    $m_Lupickle_legacy$();
+    var escapeUnicode = false;
+    var this$6 = $m_Lupickle_legacy$();
+    var r = $m_Lcom_diagraphy_web_models_GraphElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+    var evidence$4 = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r, this$6);
+    var $x_2 = $f_Lupickle_Api__write__O__I__Z__Lupickle_core_Types$Writer__T(this$7, t, indent, escapeUnicode, evidence$4);
+    var fields = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([]));
+    var result = $m_sjs_js_special_package$().objectLiteral__sci_Seq__sjs_js_Object(fields);
+    result.type = "application/json";
+    var blob = new $x_3([$x_2], result);
+    var url = $as_T(URL.createObjectURL(blob));
+    var a = document.createElement("a");
+    a.setAttribute("href", url);
+    a.setAttribute("download", fileName);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+});
+var $d_Lcom_diagraphy_web_State$ = new $TypeData().initClass($c_Lcom_diagraphy_web_State$, "com.diagraphy.web.State$", ({
+  Lcom_diagraphy_web_State$: 1
+}));
+var $n_Lcom_diagraphy_web_State$;
+function $m_Lcom_diagraphy_web_State$() {
+  if ((!$n_Lcom_diagraphy_web_State$)) {
+    $n_Lcom_diagraphy_web_State$ = new $c_Lcom_diagraphy_web_State$();
+  }
+  return $n_Lcom_diagraphy_web_State$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_Container$() {
+function $c_Lcom_diagraphy_web_components_AbstractElement$() {
 }
-$c_Lcom_diagraphx_web_components_Container$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_Container$.prototype.constructor = $c_Lcom_diagraphx_web_components_Container$;
+$c_Lcom_diagraphy_web_components_AbstractElement$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_AbstractElement$.prototype.constructor = $c_Lcom_diagraphy_web_components_AbstractElement$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_Container$() {
+function $h_Lcom_diagraphy_web_components_AbstractElement$() {
 }
-$h_Lcom_diagraphx_web_components_Container$.prototype = $c_Lcom_diagraphx_web_components_Container$.prototype;
-$c_Lcom_diagraphx_web_components_Container$.prototype.apply__Lcom_diagraphx_web_components_Container = (function() {
+$h_Lcom_diagraphy_web_components_AbstractElement$.prototype = $c_Lcom_diagraphy_web_components_AbstractElement$.prototype;
+$c_Lcom_diagraphy_web_components_AbstractElement$.prototype.createNorth__Lorg_scalajs_dom_HTMLElement = (function() {
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "50%"), new $c_T2("top", "0%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
+});
+$c_Lcom_diagraphy_web_components_AbstractElement$.prototype.createWest__Lorg_scalajs_dom_HTMLElement = (function() {
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "0%"), new $c_T2("top", "50%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
+});
+$c_Lcom_diagraphy_web_components_AbstractElement$.prototype.createSouth__Lorg_scalajs_dom_HTMLElement = (function() {
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "50%"), new $c_T2("top", "100%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
+});
+$c_Lcom_diagraphy_web_components_AbstractElement$.prototype.createEast__Lorg_scalajs_dom_HTMLElement = (function() {
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("left", "100%"), new $c_T2("top", "50%"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("background", "#008476"), new $c_T2("border-radius", "50%"), new $c_T2("transform", "translate(-50%, -50%)"), new $c_T2("z-index", "10"), new $c_T2("cursor", "pointer")]))), "connection-point");
+});
+var $d_Lcom_diagraphy_web_components_AbstractElement$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_AbstractElement$, "com.diagraphy.web.components.AbstractElement$", ({
+  Lcom_diagraphy_web_components_AbstractElement$: 1
+}));
+var $n_Lcom_diagraphy_web_components_AbstractElement$;
+function $m_Lcom_diagraphy_web_components_AbstractElement$() {
+  if ((!$n_Lcom_diagraphy_web_components_AbstractElement$)) {
+    $n_Lcom_diagraphy_web_components_AbstractElement$ = new $c_Lcom_diagraphy_web_components_AbstractElement$();
+  }
+  return $n_Lcom_diagraphy_web_components_AbstractElement$;
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_Container$() {
+}
+$c_Lcom_diagraphy_web_components_Container$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_Container$.prototype.constructor = $c_Lcom_diagraphy_web_components_Container$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_Container$() {
+}
+$h_Lcom_diagraphy_web_components_Container$.prototype = $c_Lcom_diagraphy_web_components_Container$.prototype;
+$c_Lcom_diagraphy_web_components_Container$.prototype.apply__Lcom_diagraphy_web_components_Container = (function() {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var id = ("container-" + new $c_RTLong(lo, hi));
-  var elements = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-  var melement = new $c_Lcom_diagraphx_web_models_MElement(id, "Container", 200.0, 150.0, 450.0, 300.0, 495.00000000000006, 330.0, "Container", "#F0F0F0", "", elements);
-  var container = new $c_Lcom_diagraphx_web_components_Container(melement);
-  var this$4 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-  this$4.addOne__O__scm_ListBuffer(melement);
+  var id$1 = ("Container-" + new $c_RTLong(lo, hi));
+  var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
+  var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Container", "Container", elements$1, x$1, y$1, 450.0, 300.0, 495.00000000000006, 330.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var container = new $c_Lcom_diagraphy_web_components_Container(model);
+  $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(container);
   return container;
 });
-var $d_Lcom_diagraphx_web_components_Container$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Container$, "com.diagraphx.web.components.Container$", ({
-  Lcom_diagraphx_web_components_Container$: 1
+var $d_Lcom_diagraphy_web_components_Container$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Container$, "com.diagraphy.web.components.Container$", ({
+  Lcom_diagraphy_web_components_Container$: 1
 }));
-var $n_Lcom_diagraphx_web_components_Container$;
-function $m_Lcom_diagraphx_web_components_Container$() {
-  if ((!$n_Lcom_diagraphx_web_components_Container$)) {
-    $n_Lcom_diagraphx_web_components_Container$ = new $c_Lcom_diagraphx_web_components_Container$();
+var $n_Lcom_diagraphy_web_components_Container$;
+function $m_Lcom_diagraphy_web_components_Container$() {
+  if ((!$n_Lcom_diagraphy_web_components_Container$)) {
+    $n_Lcom_diagraphy_web_components_Container$ = new $c_Lcom_diagraphy_web_components_Container$();
   }
-  return $n_Lcom_diagraphx_web_components_Container$;
+  return $n_Lcom_diagraphy_web_components_Container$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_Decision$() {
+function $c_Lcom_diagraphy_web_components_Decision$() {
 }
-$c_Lcom_diagraphx_web_components_Decision$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_Decision$.prototype.constructor = $c_Lcom_diagraphx_web_components_Decision$;
+$c_Lcom_diagraphy_web_components_Decision$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_Decision$.prototype.constructor = $c_Lcom_diagraphy_web_components_Decision$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_Decision$() {
+function $h_Lcom_diagraphy_web_components_Decision$() {
 }
-$h_Lcom_diagraphx_web_components_Decision$.prototype = $c_Lcom_diagraphx_web_components_Decision$.prototype;
-$c_Lcom_diagraphx_web_components_Decision$.prototype.apply__Lcom_diagraphx_web_components_Decision = (function() {
+$h_Lcom_diagraphy_web_components_Decision$.prototype = $c_Lcom_diagraphy_web_components_Decision$.prototype;
+$c_Lcom_diagraphy_web_components_Decision$.prototype.apply__Lcom_diagraphy_web_components_Decision = (function() {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var id$1 = ("decision-" + new $c_RTLong(lo, hi));
-  var elements$1 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-  var melement = new $c_Lcom_diagraphx_web_models_MElement(id$1, "Decision", 200.0, 150.0, 125.0, 75.0, 0.0, 0.0, "Decision", "#F0F0F0", "", elements$1);
-  var decision = new $c_Lcom_diagraphx_web_components_Decision(melement);
-  var this$4 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-  this$4.addOne__O__scm_ListBuffer(melement);
+  var id$1 = ("Decision-" + new $c_RTLong(lo, hi));
+  var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
+  var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Decision", "Decision", elements$1, x$1, y$1, 125.0, 75.0, 0.0, 0.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var decision = new $c_Lcom_diagraphy_web_components_Decision(model);
+  $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(decision);
   return decision;
 });
-var $d_Lcom_diagraphx_web_components_Decision$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Decision$, "com.diagraphx.web.components.Decision$", ({
-  Lcom_diagraphx_web_components_Decision$: 1
+var $d_Lcom_diagraphy_web_components_Decision$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Decision$, "com.diagraphy.web.components.Decision$", ({
+  Lcom_diagraphy_web_components_Decision$: 1
 }));
-var $n_Lcom_diagraphx_web_components_Decision$;
-function $m_Lcom_diagraphx_web_components_Decision$() {
-  if ((!$n_Lcom_diagraphx_web_components_Decision$)) {
-    $n_Lcom_diagraphx_web_components_Decision$ = new $c_Lcom_diagraphx_web_components_Decision$();
+var $n_Lcom_diagraphy_web_components_Decision$;
+function $m_Lcom_diagraphy_web_components_Decision$() {
+  if ((!$n_Lcom_diagraphy_web_components_Decision$)) {
+    $n_Lcom_diagraphy_web_components_Decision$ = new $c_Lcom_diagraphy_web_components_Decision$();
   }
-  return $n_Lcom_diagraphx_web_components_Decision$;
+  return $n_Lcom_diagraphy_web_components_Decision$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_ImageX$() {
+function $c_Lcom_diagraphy_web_components_ImageX$() {
 }
-$c_Lcom_diagraphx_web_components_ImageX$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_ImageX$.prototype.constructor = $c_Lcom_diagraphx_web_components_ImageX$;
+$c_Lcom_diagraphy_web_components_ImageX$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_ImageX$.prototype.constructor = $c_Lcom_diagraphy_web_components_ImageX$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_ImageX$() {
+function $h_Lcom_diagraphy_web_components_ImageX$() {
 }
-$h_Lcom_diagraphx_web_components_ImageX$.prototype = $c_Lcom_diagraphx_web_components_ImageX$.prototype;
-$c_Lcom_diagraphx_web_components_ImageX$.prototype.apply__Lcom_diagraphx_web_components_ImageX = (function() {
+$h_Lcom_diagraphy_web_components_ImageX$.prototype = $c_Lcom_diagraphy_web_components_ImageX$.prototype;
+$c_Lcom_diagraphy_web_components_ImageX$.prototype.apply__Lcom_diagraphy_web_components_ImageX = (function() {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var id$1 = ("image-" + new $c_RTLong(lo, hi));
-  var elements$1 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-  var melement = new $c_Lcom_diagraphx_web_models_MElement(id$1, "Image", 200.0, 150.0, 125.0, 75.0, 0.0, 0.0, "", "#F0F0F0", "public/images/image-holder.svg", elements$1);
-  var image = new $c_Lcom_diagraphx_web_components_ImageX(melement);
-  var this$4 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-  this$4.addOne__O__scm_ListBuffer(melement);
+  var id$1 = ("Image-" + new $c_RTLong(lo, hi));
+  var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
+  var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Image", "", elements$1, x$1, y$1, 125.0, 75.0, 0.0, 0.0, "#F0F0F0", "public/images/image-holder.svg", start$1, end$1, "", "", "", "");
+  var image = new $c_Lcom_diagraphy_web_components_ImageX(model);
+  $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(image);
   return image;
 });
-var $d_Lcom_diagraphx_web_components_ImageX$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_ImageX$, "com.diagraphx.web.components.ImageX$", ({
-  Lcom_diagraphx_web_components_ImageX$: 1
+var $d_Lcom_diagraphy_web_components_ImageX$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_ImageX$, "com.diagraphy.web.components.ImageX$", ({
+  Lcom_diagraphy_web_components_ImageX$: 1
 }));
-var $n_Lcom_diagraphx_web_components_ImageX$;
-function $m_Lcom_diagraphx_web_components_ImageX$() {
-  if ((!$n_Lcom_diagraphx_web_components_ImageX$)) {
-    $n_Lcom_diagraphx_web_components_ImageX$ = new $c_Lcom_diagraphx_web_components_ImageX$();
+var $n_Lcom_diagraphy_web_components_ImageX$;
+function $m_Lcom_diagraphy_web_components_ImageX$() {
+  if ((!$n_Lcom_diagraphy_web_components_ImageX$)) {
+    $n_Lcom_diagraphy_web_components_ImageX$ = new $c_Lcom_diagraphy_web_components_ImageX$();
   }
-  return $n_Lcom_diagraphx_web_components_ImageX$;
+  return $n_Lcom_diagraphy_web_components_ImageX$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_Instruction$() {
+function $c_Lcom_diagraphy_web_components_Instruction$() {
 }
-$c_Lcom_diagraphx_web_components_Instruction$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_Instruction$.prototype.constructor = $c_Lcom_diagraphx_web_components_Instruction$;
+$c_Lcom_diagraphy_web_components_Instruction$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_Instruction$.prototype.constructor = $c_Lcom_diagraphy_web_components_Instruction$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_Instruction$() {
+function $h_Lcom_diagraphy_web_components_Instruction$() {
 }
-$h_Lcom_diagraphx_web_components_Instruction$.prototype = $c_Lcom_diagraphx_web_components_Instruction$.prototype;
-$c_Lcom_diagraphx_web_components_Instruction$.prototype.apply__Lcom_diagraphx_web_components_Instruction = (function() {
+$h_Lcom_diagraphy_web_components_Instruction$.prototype = $c_Lcom_diagraphy_web_components_Instruction$.prototype;
+$c_Lcom_diagraphy_web_components_Instruction$.prototype.apply__Lcom_diagraphy_web_components_Instruction = (function() {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var id$1 = ("instruction-" + new $c_RTLong(lo, hi));
-  var elements$1 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-  var melement = new $c_Lcom_diagraphx_web_models_MElement(id$1, "Instruction", 200.0, 150.0, 125.0, 50.0, 0.0, 0.0, "Instruction", "#F0F0F0", "", elements$1);
-  var instruction = new $c_Lcom_diagraphx_web_components_Instruction(melement);
-  var this$4 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-  this$4.addOne__O__scm_ListBuffer(melement);
+  var id$1 = ("Instruction-" + new $c_RTLong(lo, hi));
+  var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
+  var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Instruction", "Instruction", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var instruction = new $c_Lcom_diagraphy_web_components_Instruction(model);
+  $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(instruction);
   return instruction;
 });
-var $d_Lcom_diagraphx_web_components_Instruction$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Instruction$, "com.diagraphx.web.components.Instruction$", ({
-  Lcom_diagraphx_web_components_Instruction$: 1
+var $d_Lcom_diagraphy_web_components_Instruction$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Instruction$, "com.diagraphy.web.components.Instruction$", ({
+  Lcom_diagraphy_web_components_Instruction$: 1
 }));
-var $n_Lcom_diagraphx_web_components_Instruction$;
-function $m_Lcom_diagraphx_web_components_Instruction$() {
-  if ((!$n_Lcom_diagraphx_web_components_Instruction$)) {
-    $n_Lcom_diagraphx_web_components_Instruction$ = new $c_Lcom_diagraphx_web_components_Instruction$();
+var $n_Lcom_diagraphy_web_components_Instruction$;
+function $m_Lcom_diagraphy_web_components_Instruction$() {
+  if ((!$n_Lcom_diagraphy_web_components_Instruction$)) {
+    $n_Lcom_diagraphy_web_components_Instruction$ = new $c_Lcom_diagraphy_web_components_Instruction$();
   }
-  return $n_Lcom_diagraphx_web_components_Instruction$;
+  return $n_Lcom_diagraphy_web_components_Instruction$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_Note$() {
+function $c_Lcom_diagraphy_web_components_Note$() {
 }
-$c_Lcom_diagraphx_web_components_Note$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_Note$.prototype.constructor = $c_Lcom_diagraphx_web_components_Note$;
+$c_Lcom_diagraphy_web_components_Note$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_Note$.prototype.constructor = $c_Lcom_diagraphy_web_components_Note$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_Note$() {
+function $h_Lcom_diagraphy_web_components_Note$() {
 }
-$h_Lcom_diagraphx_web_components_Note$.prototype = $c_Lcom_diagraphx_web_components_Note$.prototype;
-$c_Lcom_diagraphx_web_components_Note$.prototype.apply__Lcom_diagraphx_web_components_Note = (function() {
+$h_Lcom_diagraphy_web_components_Note$.prototype = $c_Lcom_diagraphy_web_components_Note$.prototype;
+$c_Lcom_diagraphy_web_components_Note$.prototype.apply__Lcom_diagraphy_web_components_Note = (function() {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var id$1 = ("note-" + new $c_RTLong(lo, hi));
-  var elements$1 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-  var melement = new $c_Lcom_diagraphx_web_models_MElement(id$1, "Note", 200.0, 150.0, 125.0, 75.0, 0.0, 0.0, "Note", "wheat", "", elements$1);
-  var note = new $c_Lcom_diagraphx_web_components_Note(melement);
-  var this$4 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-  this$4.addOne__O__scm_ListBuffer(melement);
+  var id$1 = ("Note-" + new $c_RTLong(lo, hi));
+  var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
+  var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Note", "Note", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "wheat", "", start$1, end$1, "", "", "", "");
+  var note = new $c_Lcom_diagraphy_web_components_Note(model);
+  $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(note);
   return note;
 });
-var $d_Lcom_diagraphx_web_components_Note$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Note$, "com.diagraphx.web.components.Note$", ({
-  Lcom_diagraphx_web_components_Note$: 1
+var $d_Lcom_diagraphy_web_components_Note$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Note$, "com.diagraphy.web.components.Note$", ({
+  Lcom_diagraphy_web_components_Note$: 1
 }));
-var $n_Lcom_diagraphx_web_components_Note$;
-function $m_Lcom_diagraphx_web_components_Note$() {
-  if ((!$n_Lcom_diagraphx_web_components_Note$)) {
-    $n_Lcom_diagraphx_web_components_Note$ = new $c_Lcom_diagraphx_web_components_Note$();
+var $n_Lcom_diagraphy_web_components_Note$;
+function $m_Lcom_diagraphy_web_components_Note$() {
+  if ((!$n_Lcom_diagraphy_web_components_Note$)) {
+    $n_Lcom_diagraphy_web_components_Note$ = new $c_Lcom_diagraphy_web_components_Note$();
   }
-  return $n_Lcom_diagraphx_web_components_Note$;
+  return $n_Lcom_diagraphy_web_components_Note$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_StartEnd$() {
+function $c_Lcom_diagraphy_web_components_PageBody$() {
+  this.Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv = null;
+  this.Lcom_diagraphy_web_components_PageBody$__f_mainSvg = null;
+  $n_Lcom_diagraphy_web_components_PageBody$ = this;
+  var svgDefs = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().defs__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().marker__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "arrowhead"), new $c_T2("markerWidth", "5"), new $c_T2("markerHeight", "5"), new $c_T2("refX", "2.5"), new $c_T2("refY", "2.5"), new $c_T2("orient", "auto-start-reverse")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().path__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("d", "M 0 0 L 5 2.5 L 0 5 z")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("fill", "#008476")])))])))])));
+  this.Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100vw"), new $c_T2("height", "100vh"), new $c_T2("overflow", "scroll")])));
+  var viewBox = new $c_Lcom_diagraphy_web_models_ViewBox(0.0, 0.0, 6000.0, 4000.0);
+  var $x_8 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_7 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_6 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_5 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().svg__Lorg_scalajs_dom_HTMLElement();
+  var $x_4 = $m_sr_ScalaRunTime$();
+  var $x_3 = new $c_T2("id", "svgBody");
+  var y = (viewBox.Lcom_diagraphy_web_models_ViewBox__f_w + "px");
+  var $x_2 = new $c_T2("width", y);
+  var y$1 = (viewBox.Lcom_diagraphy_web_models_ViewBox__f_h + "px");
+  var $x_1 = new $c_T2("height", y$1);
+  var y$2 = ((("0 0 " + viewBox.Lcom_diagraphy_web_models_ViewBox__f_w) + " ") + viewBox.Lcom_diagraphy_web_models_ViewBox__f_h);
+  var element = $x_8.$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_7.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_6.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_5, $x_4.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_3, $x_2, $x_1, new $c_T2("viewBox", y$2)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("background-color", "#E0E0E0"), new $c_T2("user-select", "none"), new $c_T2("-webkit-user-select", "none"), new $c_T2("-ms-user-select", "none")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([svgDefs])));
+  window.addEventListener("resize", ((_$1) => {
+    var $x_10 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+    var $x_9 = $m_sr_ScalaRunTime$();
+    var y$3 = ((("0 0 " + viewBox.Lcom_diagraphy_web_models_ViewBox__f_w) + " ") + viewBox.Lcom_diagraphy_web_models_ViewBox__f_h);
+    return $x_10.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(element, $x_9.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("viewBox", y$3)])));
+  }));
+  this.Lcom_diagraphy_web_components_PageBody$__f_mainSvg = element;
 }
-$c_Lcom_diagraphx_web_components_StartEnd$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_StartEnd$.prototype.constructor = $c_Lcom_diagraphx_web_components_StartEnd$;
+$c_Lcom_diagraphy_web_components_PageBody$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_PageBody$.prototype.constructor = $c_Lcom_diagraphy_web_components_PageBody$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_StartEnd$() {
+function $h_Lcom_diagraphy_web_components_PageBody$() {
 }
-$h_Lcom_diagraphx_web_components_StartEnd$.prototype = $c_Lcom_diagraphx_web_components_StartEnd$.prototype;
-$c_Lcom_diagraphx_web_components_StartEnd$.prototype.apply__Lcom_diagraphx_web_components_StartEnd = (function() {
+$h_Lcom_diagraphy_web_components_PageBody$.prototype = $c_Lcom_diagraphy_web_components_PageBody$.prototype;
+var $d_Lcom_diagraphy_web_components_PageBody$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_PageBody$, "com.diagraphy.web.components.PageBody$", ({
+  Lcom_diagraphy_web_components_PageBody$: 1
+}));
+var $n_Lcom_diagraphy_web_components_PageBody$;
+function $m_Lcom_diagraphy_web_components_PageBody$() {
+  if ((!$n_Lcom_diagraphy_web_components_PageBody$)) {
+    $n_Lcom_diagraphy_web_components_PageBody$ = new $c_Lcom_diagraphy_web_components_PageBody$();
+  }
+  return $n_Lcom_diagraphy_web_components_PageBody$;
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_PageFooter$() {
+  this.Lcom_diagraphy_web_components_PageFooter$__f_pageFooter = null;
+  $n_Lcom_diagraphy_web_components_PageFooter$ = this;
+  this.Lcom_diagraphy_web_components_PageFooter$__f_pageFooter = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().footer__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("bottom", "0"), new $c_T2("left", "0"), new $c_T2("width", "100%"), new $c_T2("text-align", "left"), new $c_T2("padding", "10px"), new $c_T2("font-size", "14px")]))), "Diagraph \u00a9 2025");
+}
+$c_Lcom_diagraphy_web_components_PageFooter$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_PageFooter$.prototype.constructor = $c_Lcom_diagraphy_web_components_PageFooter$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_PageFooter$() {
+}
+$h_Lcom_diagraphy_web_components_PageFooter$.prototype = $c_Lcom_diagraphy_web_components_PageFooter$.prototype;
+var $d_Lcom_diagraphy_web_components_PageFooter$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_PageFooter$, "com.diagraphy.web.components.PageFooter$", ({
+  Lcom_diagraphy_web_components_PageFooter$: 1
+}));
+var $n_Lcom_diagraphy_web_components_PageFooter$;
+function $m_Lcom_diagraphy_web_components_PageFooter$() {
+  if ((!$n_Lcom_diagraphy_web_components_PageFooter$)) {
+    $n_Lcom_diagraphy_web_components_PageFooter$ = new $c_Lcom_diagraphy_web_components_PageFooter$();
+  }
+  return $n_Lcom_diagraphy_web_components_PageFooter$;
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_PageHeader$() {
+  this.Lcom_diagraphy_web_components_PageHeader$__f_pageHeader = null;
+  $n_Lcom_diagraphy_web_components_PageHeader$ = this;
+  this.Lcom_diagraphy_web_components_PageHeader$__f_pageHeader = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().header__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("height", "40px"), new $c_T2("left", "10px"), new $c_T2("top", "10px"), new $c_T2("border-radius", "8px"), new $c_T2("padding", "0 16px"), new $c_T2("background", "#008476"), new $c_T2("color", "#F0F0F0"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("font-size", "20px"), new $c_T2("font-weight", "bold"), new $c_T2("box-shadow", "0 2px 4px rgba(0,0,0,0.1)")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().img__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("src", "public/images/favicon.svg")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("height", "24px"), new $c_T2("margin-right", "8px")]))), $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "Diagraph")])));
+}
+$c_Lcom_diagraphy_web_components_PageHeader$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_PageHeader$.prototype.constructor = $c_Lcom_diagraphy_web_components_PageHeader$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_PageHeader$() {
+}
+$h_Lcom_diagraphy_web_components_PageHeader$.prototype = $c_Lcom_diagraphy_web_components_PageHeader$.prototype;
+var $d_Lcom_diagraphy_web_components_PageHeader$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_PageHeader$, "com.diagraphy.web.components.PageHeader$", ({
+  Lcom_diagraphy_web_components_PageHeader$: 1
+}));
+var $n_Lcom_diagraphy_web_components_PageHeader$;
+function $m_Lcom_diagraphy_web_components_PageHeader$() {
+  if ((!$n_Lcom_diagraphy_web_components_PageHeader$)) {
+    $n_Lcom_diagraphy_web_components_PageHeader$ = new $c_Lcom_diagraphy_web_components_PageHeader$();
+  }
+  return $n_Lcom_diagraphy_web_components_PageHeader$;
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_StartEnd$() {
+}
+$c_Lcom_diagraphy_web_components_StartEnd$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_StartEnd$.prototype.constructor = $c_Lcom_diagraphy_web_components_StartEnd$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_StartEnd$() {
+}
+$h_Lcom_diagraphy_web_components_StartEnd$.prototype = $c_Lcom_diagraphy_web_components_StartEnd$.prototype;
+$c_Lcom_diagraphy_web_components_StartEnd$.prototype.apply__Lcom_diagraphy_web_components_StartEnd = (function() {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var id$1 = ("startend " + new $c_RTLong(lo, hi));
-  var elements$1 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-  var melement = new $c_Lcom_diagraphx_web_models_MElement(id$1, "StartEnd", 200.0, 150.0, 75.0, 50.0, 0.0, 0.0, "StartEnd", "#F0F0F0", "", elements$1);
-  var startEnd = new $c_Lcom_diagraphx_web_components_StartEnd(melement);
-  var this$4 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-  this$4.addOne__O__scm_ListBuffer(melement);
+  var id$1 = ("StartEnd-" + new $c_RTLong(lo, hi));
+  var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
+  var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "StartEnd", "StartEnd", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var startEnd = new $c_Lcom_diagraphy_web_components_StartEnd(model);
+  $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(startEnd);
   return startEnd;
 });
-var $d_Lcom_diagraphx_web_components_StartEnd$ = new $TypeData().initClass($c_Lcom_diagraphx_web_components_StartEnd$, "com.diagraphx.web.components.StartEnd$", ({
-  Lcom_diagraphx_web_components_StartEnd$: 1
+var $d_Lcom_diagraphy_web_components_StartEnd$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_StartEnd$, "com.diagraphy.web.components.StartEnd$", ({
+  Lcom_diagraphy_web_components_StartEnd$: 1
 }));
-var $n_Lcom_diagraphx_web_components_StartEnd$;
-function $m_Lcom_diagraphx_web_components_StartEnd$() {
-  if ((!$n_Lcom_diagraphx_web_components_StartEnd$)) {
-    $n_Lcom_diagraphx_web_components_StartEnd$ = new $c_Lcom_diagraphx_web_components_StartEnd$();
+var $n_Lcom_diagraphy_web_components_StartEnd$;
+function $m_Lcom_diagraphy_web_components_StartEnd$() {
+  if ((!$n_Lcom_diagraphy_web_components_StartEnd$)) {
+    $n_Lcom_diagraphy_web_components_StartEnd$ = new $c_Lcom_diagraphy_web_components_StartEnd$();
   }
-  return $n_Lcom_diagraphx_web_components_StartEnd$;
+  return $n_Lcom_diagraphy_web_components_StartEnd$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_events_DocumentMouseMove$package$() {
-  this.Lcom_diagraphx_web_events_DocumentMouseMove$package$__f_mouseMoveHandler = null;
-  $n_Lcom_diagraphx_web_events_DocumentMouseMove$package$ = this;
-  this.Lcom_diagraphx_web_events_DocumentMouseMove$package$__f_mouseMoveHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    var this$2 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement);
+function $c_Lcom_diagraphy_web_components_ToolBar$() {
+  this.Lcom_diagraphy_web_components_ToolBar$__f_toolBar = null;
+  $n_Lcom_diagraphy_web_components_ToolBar$ = this;
+  var container = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25a3"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "28px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Container")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphy_web_components_Container$().apply__Lcom_diagraphy_web_components_Container()).view__Lorg_scalajs_dom_HTMLElement()])));
+  })));
+  var instruction = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25ad"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "25px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "25px"), new $c_T2("width", "25px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add an Instruction")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphy_web_components_Instruction$().apply__Lcom_diagraphy_web_components_Instruction()).view__Lorg_scalajs_dom_HTMLElement()])));
+  })));
+  var note = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc4"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Note")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphy_web_components_Note$().apply__Lcom_diagraphy_web_components_Note()).view__Lorg_scalajs_dom_HTMLElement()])));
+  })));
+  var image = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83c\udfde\ufe0f"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add an Image")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphy_web_components_ImageX$().apply__Lcom_diagraphy_web_components_ImageX()).view__Lorg_scalajs_dom_HTMLElement()])));
+  })));
+  var decision = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25c7"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "30px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Decision")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphy_web_components_Decision$().apply__Lcom_diagraphy_web_components_Decision()).view__Lorg_scalajs_dom_HTMLElement()])));
+  })));
+  var startEnd = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25cb"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "30px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Start/end")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphy_web_components_StartEnd$().apply__Lcom_diagraphy_web_components_StartEnd()).view__Lorg_scalajs_dom_HTMLElement()])));
+  })));
+  var remove = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\uddd1\ufe0f"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Remove Selected Element")]))), $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_removeElement);
+  var open = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Open Graph")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
+    var input = document.createElement("input");
+    input.type = "file";
+    input.accept = ".json";
+    input.onchange = ((_$1) => {
+      var file = input.files[0];
+      var reader = new FileReader();
+      reader.onload = ((e$1) => {
+        var content = $as_T(reader.result);
+        $m_Lcom_diagraphy_web_State$().loadState__T__V(content);
+      });
+      reader.readAsText(file);
+    });
+    input.click();
+  })));
+  var save = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Save Diagram")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$8) => {
+    $m_Lcom_diagraphy_web_State$().saveState__V();
+  })));
+  var holder = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("top", "100px"), new $c_T2("left", "10px"), new $c_T2("background-color", "#008476"), new $c_T2("color", "#F0F0F0"), new $c_T2("border-radius", "8px"), new $c_T2("padding", "5px"), new $c_T2("display", "flex"), new $c_T2("flex-direction", "column"), new $c_T2("align-items", "center"), new $c_T2("gap", "5px")])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([container])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([instruction])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([note])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([image])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([decision])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([startEnd])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([remove])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([open])));
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([save])));
+  this.Lcom_diagraphy_web_components_ToolBar$__f_toolBar = holder;
+}
+$c_Lcom_diagraphy_web_components_ToolBar$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_ToolBar$.prototype.constructor = $c_Lcom_diagraphy_web_components_ToolBar$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_ToolBar$() {
+}
+$h_Lcom_diagraphy_web_components_ToolBar$.prototype = $c_Lcom_diagraphy_web_components_ToolBar$.prototype;
+var $d_Lcom_diagraphy_web_components_ToolBar$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_ToolBar$, "com.diagraphy.web.components.ToolBar$", ({
+  Lcom_diagraphy_web_components_ToolBar$: 1
+}));
+var $n_Lcom_diagraphy_web_components_ToolBar$;
+function $m_Lcom_diagraphy_web_components_ToolBar$() {
+  if ((!$n_Lcom_diagraphy_web_components_ToolBar$)) {
+    $n_Lcom_diagraphy_web_components_ToolBar$ = new $c_Lcom_diagraphy_web_components_ToolBar$();
+  }
+  return $n_Lcom_diagraphy_web_components_ToolBar$;
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_events_DocumentMouseMove$package$() {
+  this.Lcom_diagraphy_web_events_DocumentMouseMove$package$__f_mouseMoveHandler = null;
+  $n_Lcom_diagraphy_web_events_DocumentMouseMove$package$ = this;
+  this.Lcom_diagraphy_web_events_DocumentMouseMove$package$__f_mouseMoveHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    var this$2 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
     if ((!this$2.isEmpty__Z())) {
       var x0 = this$2.get__O();
-      var element = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
-      var dx = ($uD(e.clientX) - $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX);
-      var dy = ($uD(e.clientY) - $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY);
+      var element = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      var dx = ($uD(e.clientX) - $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX);
+      var dy = ($uD(e.clientY) - $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY);
       $n(element).move__D__D__V(dx, dy);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e.clientX);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e.clientY);
-      var \u03b41$ = $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-      \u03b41$.setProperty("pointer-events", "none");
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e.clientX);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e.clientY);
+      $n(element).pauseMouseEvents__V();
     }
-    var this$3 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath);
+    var this$3 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
     if ((!this$3.isEmpty__Z())) {
       var x0$1 = this$3.get__O();
-      var path = $as_Lcom_diagraphx_web_components_VPath(x0$1);
-      var this$4 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
+      var path = $as_Lcom_diagraphy_web_components_Path(x0$1);
+      var this$4 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
       if ((!this$4.isEmpty__Z())) {
         var x0$2 = this$4.get__O();
-        var element$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$2);
+        var element$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$2);
         matchResult1: {
-          var x1 = $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_edge;
+          var x1 = $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge;
           if ((x1 === "East")) {
-            $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_abstracts_ElementHelper$().createWest__Lorg_scalajs_dom_HTMLElement()])));
+            $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_AbstractElement$().createWest__Lorg_scalajs_dom_HTMLElement()])));
             break matchResult1;
           }
           if ((x1 === "South")) {
-            $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_abstracts_ElementHelper$().createNorth__Lorg_scalajs_dom_HTMLElement()])));
+            $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_AbstractElement$().createNorth__Lorg_scalajs_dom_HTMLElement()])));
             break matchResult1;
           }
           if ((x1 === "North")) {
-            $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_abstracts_ElementHelper$().createSouth__Lorg_scalajs_dom_HTMLElement()])));
+            $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_AbstractElement$().createSouth__Lorg_scalajs_dom_HTMLElement()])));
             break matchResult1;
           }
           if ((x1 === "West")) {
-            $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_abstracts_ElementHelper$().createEast__Lorg_scalajs_dom_HTMLElement()])));
+            $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(element$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_components_AbstractElement$().createEast__Lorg_scalajs_dom_HTMLElement()])));
             break matchResult1;
           }
         }
       }
-      var dx$1 = ($uD(e.clientX) - $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX);
-      var dy$1 = ($uD(e.clientY) - $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY);
-      var \u03b42$ = $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end;
-      $n(\u03b42$).Lcom_diagraphx_web_models_MPoint__f_x = ($n(\u03b42$).Lcom_diagraphx_web_models_MPoint__f_x + dx$1);
-      var \u03b43$ = $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end;
-      $n(\u03b43$).Lcom_diagraphx_web_models_MPoint__f_y = ($n(\u03b43$).Lcom_diagraphx_web_models_MPoint__f_y + dy$1);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e.clientX);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e.clientY);
+      var dx$1 = ($uD(e.clientX) - $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX);
+      var dy$1 = ($uD(e.clientY) - $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY);
+      var \u03b41$ = $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end;
+      $n(\u03b41$).Lcom_diagraphy_web_models_GraphPoint__f_x = ($n(\u03b41$).Lcom_diagraphy_web_models_GraphPoint__f_x + dx$1);
+      var \u03b42$ = $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end;
+      $n(\u03b42$).Lcom_diagraphy_web_models_GraphPoint__f_y = ($n(\u03b42$).Lcom_diagraphy_web_models_GraphPoint__f_y + dy$1);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e.clientX);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e.clientY);
       $n(path).update__V();
     }
   }));
 }
-$c_Lcom_diagraphx_web_events_DocumentMouseMove$package$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_events_DocumentMouseMove$package$.prototype.constructor = $c_Lcom_diagraphx_web_events_DocumentMouseMove$package$;
+$c_Lcom_diagraphy_web_events_DocumentMouseMove$package$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_events_DocumentMouseMove$package$.prototype.constructor = $c_Lcom_diagraphy_web_events_DocumentMouseMove$package$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_events_DocumentMouseMove$package$() {
+function $h_Lcom_diagraphy_web_events_DocumentMouseMove$package$() {
 }
-$h_Lcom_diagraphx_web_events_DocumentMouseMove$package$.prototype = $c_Lcom_diagraphx_web_events_DocumentMouseMove$package$.prototype;
-var $d_Lcom_diagraphx_web_events_DocumentMouseMove$package$ = new $TypeData().initClass($c_Lcom_diagraphx_web_events_DocumentMouseMove$package$, "com.diagraphx.web.events.DocumentMouseMove$package$", ({
-  Lcom_diagraphx_web_events_DocumentMouseMove$package$: 1
+$h_Lcom_diagraphy_web_events_DocumentMouseMove$package$.prototype = $c_Lcom_diagraphy_web_events_DocumentMouseMove$package$.prototype;
+var $d_Lcom_diagraphy_web_events_DocumentMouseMove$package$ = new $TypeData().initClass($c_Lcom_diagraphy_web_events_DocumentMouseMove$package$, "com.diagraphy.web.events.DocumentMouseMove$package$", ({
+  Lcom_diagraphy_web_events_DocumentMouseMove$package$: 1
 }));
-var $n_Lcom_diagraphx_web_events_DocumentMouseMove$package$;
-function $m_Lcom_diagraphx_web_events_DocumentMouseMove$package$() {
-  if ((!$n_Lcom_diagraphx_web_events_DocumentMouseMove$package$)) {
-    $n_Lcom_diagraphx_web_events_DocumentMouseMove$package$ = new $c_Lcom_diagraphx_web_events_DocumentMouseMove$package$();
+var $n_Lcom_diagraphy_web_events_DocumentMouseMove$package$;
+function $m_Lcom_diagraphy_web_events_DocumentMouseMove$package$() {
+  if ((!$n_Lcom_diagraphy_web_events_DocumentMouseMove$package$)) {
+    $n_Lcom_diagraphy_web_events_DocumentMouseMove$package$ = new $c_Lcom_diagraphy_web_events_DocumentMouseMove$package$();
   }
-  return $n_Lcom_diagraphx_web_events_DocumentMouseMove$package$;
+  return $n_Lcom_diagraphy_web_events_DocumentMouseMove$package$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
-  this.Lcom_diagraphx_web_events_DocumentMouseUp$package$__f_mouseUpHandler = null;
-  $n_Lcom_diagraphx_web_events_DocumentMouseUp$package$ = this;
-  this.Lcom_diagraphx_web_events_DocumentMouseUp$package$__f_mouseUpHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    var this$2 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement);
+function $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$() {
+  this.Lcom_diagraphy_web_events_DocumentMouseUp$package$__f_mouseUpHandler = null;
+  $n_Lcom_diagraphy_web_events_DocumentMouseUp$package$ = this;
+  this.Lcom_diagraphy_web_events_DocumentMouseUp$package$__f_mouseUpHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    var this$2 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
     if ((!this$2.isEmpty__Z())) {
       var x0 = this$2.get__O();
-      var element = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
-      var \u03b41$ = $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-      \u03b41$.setProperty("cursor", "grab");
-      var \u03b42$ = $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-      \u03b42$.setProperty("pointer-events", "auto");
-      var this$3 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
+      var element = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      $n(element).startMouseEvents__V();
+      var this$3 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
       if ((!this$3.isEmpty__Z())) {
         var x0$1 = this$3.get__O();
-        var hoverElement = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
-        if ((hoverElement === null)) {
-          var $x_1 = (element === null);
-        } else {
-          var this$4 = $n(hoverElement);
-          var $x_1 = (this$4 === element);
-        }
-        if (((!$x_1) && ($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_format === "Container"))) {
-          var currentSvg = $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo.parentElement;
+        var hoverElement = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+        if (((!((hoverElement === null) ? (element === null) : $n(hoverElement).equals__O__Z(element))) && ($n($n(hoverElement).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_format === "Container"))) {
+          var currentSvg = $n(element).Lcom_diagraphy_web_components_AbstractElement__f_fo.parentElement;
           var targetSvg = $n(hoverElement).contentDiv__Lorg_scalajs_dom_HTMLElement();
           if ((((currentSvg !== null) && (targetSvg !== null)) && (!$m_sr_BoxesRunTime$().equals__O__O__Z(currentSvg, targetSvg)))) {
-            currentSvg.removeChild($n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
+            currentSvg.removeChild($n(element).Lcom_diagraphy_web_components_AbstractElement__f_fo);
             $n(element).setOrigin__D__D__V(50.0, 50.0);
-            targetSvg.appendChild($n(element).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-            var this$5 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-            var elem = $n(element).element__Lcom_diagraphx_web_models_MElement();
-            this$5.subtractOne__O__scm_ListBuffer(elem);
-            var this$6 = $n($n($n(hoverElement).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
-            var elem$1 = $n(element).element__Lcom_diagraphx_web_models_MElement();
-            this$6.addOne__O__scm_ListBuffer(elem$1);
-            $n(element).Lcom_diagraphx_web_abstracts_AVElement__f_parent = new $c_s_Some(hoverElement);
+            targetSvg.appendChild($n(element).Lcom_diagraphy_web_components_AbstractElement__f_fo);
+            var this$4 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
+            var elem = $n(element).model__Lcom_diagraphy_web_models_GraphElement();
+            this$4.subtractOne__O__scm_ListBuffer(elem);
+            var this$5 = $n($n($n(hoverElement).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+            var elem$1 = $n(element).model__Lcom_diagraphy_web_models_GraphElement();
+            this$5.addOne__O__scm_ListBuffer(elem$1);
+            $n(element).Lcom_diagraphy_web_components_AbstractElement__f_parent = new $c_s_Some(hoverElement);
           }
         }
       }
     }
-    var this$8 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath);
-    if ((!this$8.isEmpty__Z())) {
-      var x0$2 = this$8.get__O();
-      var path = $as_Lcom_diagraphx_web_components_VPath(x0$2);
-      if ($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement).isEmpty__Z()) {
-        $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(path).Lcom_diagraphx_web_components_VPath__f_ipath);
+    var this$7 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
+    if ((!this$7.isEmpty__Z())) {
+      var x0$2 = this$7.get__O();
+      var path = $as_Lcom_diagraphy_web_components_Path(x0$2);
+      if ($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement).isEmpty__Z()) {
+        $m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg.removeChild($n(path).Lcom_diagraphy_web_components_Path__f_ipath);
       } else {
-        var x = $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement;
-        var x$2 = $n(path).Lcom_diagraphx_web_components_VPath__f_parent;
+        var x = $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement;
+        var x$2 = $n(path).Lcom_diagraphy_web_components_AbstractElement__f_parent;
         if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
-          $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(path).Lcom_diagraphx_web_components_VPath__f_ipath);
+          $n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(path).Lcom_diagraphy_web_components_Path__f_ipath);
         } else {
-          var this$9 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
-          if ((!this$9.isEmpty__Z())) {
-            var x0$3 = this$9.get__O();
-            var hoverElement$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$3);
-            var point = $m_Lcom_diagraphx_web_abstracts_PathHelper$().pathEnd__Lcom_diagraphx_web_components_VPath__Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MPoint(path, hoverElement$1);
-            $n($n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_x = $n(point).Lcom_diagraphx_web_models_MPoint__f_x;
-            $n($n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_y = $n(point).Lcom_diagraphx_web_models_MPoint__f_y;
+          var this$8 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
+          if ((!this$8.isEmpty__Z())) {
+            var x0$3 = this$8.get__O();
+            var hoverElement$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
+            var point = $m_Lcom_diagraphy_web_components_Path$().pathEnd__Lcom_diagraphy_web_components_Path__Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphPoint(path, hoverElement$1);
+            $n($n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_x = $n(point).Lcom_diagraphy_web_models_GraphPoint__f_x;
+            $n($n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_y = $n(point).Lcom_diagraphy_web_models_GraphPoint__f_y;
             $n(path).update__V();
-            $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_sElement = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id;
-            $n($n(path).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_eElement = $n($n(hoverElement$1).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id;
-            var this$10 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(path).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-            this$10.addOne__O__scm_ListBuffer(path);
-            $n(path).Lcom_diagraphx_web_components_VPath__f_endElement = new $c_s_Some(hoverElement$1);
-            var this$12 = $n($n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-            this$12.addOne__O__scm_ListBuffer(path);
-            var this$13 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_paths);
-            var elem$2 = $n(path).Lcom_diagraphx_web_components_VPath__f_mpath;
-            this$13.addOne__O__scm_ListBuffer(elem$2);
+            $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_sElement = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
+            $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_eElement = $n($n(hoverElement$1).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
+            var this$9 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+            this$9.addOne__O__scm_ListBuffer(path);
+            $n(path).Lcom_diagraphy_web_components_AbstractElement__f_endElement = new $c_s_Some(hoverElement$1);
+            var this$11 = $n($n(hoverElement$1).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+            this$11.addOne__O__scm_ListBuffer(path);
+            matchResult1: {
+              var x1 = $n(path).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+              if ((x1 instanceof $c_s_Some)) {
+                var p = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x1)).s_Some__f_value);
+                var this$12 = $n($n($n(p).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+                var elem$2 = $n(path).Lcom_diagraphy_web_components_Path__f_model;
+                this$12.addOne__O__scm_ListBuffer(elem$2);
+                break matchResult1;
+              }
+              var x$1 = $m_s_None$();
+              if ((x$1 === x1)) {
+                var this$13 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
+                var elem$3 = $n(path).Lcom_diagraphy_web_components_Path__f_model;
+                this$13.addOne__O__scm_ListBuffer(elem$3);
+                break matchResult1;
+              }
+              throw new $c_s_MatchError(x1);
+            }
+            $n(hoverElement$1).clearConnections__V();
           }
         }
       }
     }
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = $m_s_None$();
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = $m_s_None$();
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath = $m_s_None$();
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement = $m_s_None$();
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath = $m_s_None$();
+    var this$14 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownConnectElement);
+    if ((!this$14.isEmpty__Z())) {
+      var x0$4 = this$14.get__O();
+      var element$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$4);
+      var \u03b41$ = $n(element$1).Lcom_diagraphy_web_components_AbstractElement__f_fo.style;
+      \u03b41$.setProperty("cursor", "grab");
+    }
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownConnectElement = $m_s_None$();
+    var \u03b42$ = $m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg.style;
+    \u03b42$.setProperty("cursor", "default");
   }));
 }
-$c_Lcom_diagraphx_web_events_DocumentMouseUp$package$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_events_DocumentMouseUp$package$.prototype.constructor = $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$;
+$c_Lcom_diagraphy_web_events_DocumentMouseUp$package$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_events_DocumentMouseUp$package$.prototype.constructor = $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
+function $h_Lcom_diagraphy_web_events_DocumentMouseUp$package$() {
 }
-$h_Lcom_diagraphx_web_events_DocumentMouseUp$package$.prototype = $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$.prototype;
-var $d_Lcom_diagraphx_web_events_DocumentMouseUp$package$ = new $TypeData().initClass($c_Lcom_diagraphx_web_events_DocumentMouseUp$package$, "com.diagraphx.web.events.DocumentMouseUp$package$", ({
-  Lcom_diagraphx_web_events_DocumentMouseUp$package$: 1
+$h_Lcom_diagraphy_web_events_DocumentMouseUp$package$.prototype = $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$.prototype;
+var $d_Lcom_diagraphy_web_events_DocumentMouseUp$package$ = new $TypeData().initClass($c_Lcom_diagraphy_web_events_DocumentMouseUp$package$, "com.diagraphy.web.events.DocumentMouseUp$package$", ({
+  Lcom_diagraphy_web_events_DocumentMouseUp$package$: 1
 }));
-var $n_Lcom_diagraphx_web_events_DocumentMouseUp$package$;
-function $m_Lcom_diagraphx_web_events_DocumentMouseUp$package$() {
-  if ((!$n_Lcom_diagraphx_web_events_DocumentMouseUp$package$)) {
-    $n_Lcom_diagraphx_web_events_DocumentMouseUp$package$ = new $c_Lcom_diagraphx_web_events_DocumentMouseUp$package$();
+var $n_Lcom_diagraphy_web_events_DocumentMouseUp$package$;
+function $m_Lcom_diagraphy_web_events_DocumentMouseUp$package$() {
+  if ((!$n_Lcom_diagraphy_web_events_DocumentMouseUp$package$)) {
+    $n_Lcom_diagraphy_web_events_DocumentMouseUp$package$ = new $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$();
   }
-  return $n_Lcom_diagraphx_web_events_DocumentMouseUp$package$;
+  return $n_Lcom_diagraphy_web_events_DocumentMouseUp$package$;
 }
-function $f_Lcom_diagraphx_web_events_ElementMouseClick__$init$__V($thiz) {
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    $m_Lcom_diagraphx_web_events_EventHelper$package$().clearClicked__V();
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement = new $c_s_Some($thiz);
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("resize", "both"), new $c_T2("border", "1px solid #008476")])));
-    var eastCP = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_abstracts_ElementHelper$().createEast__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
-      var x = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).east__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_x - 5.0);
-      var y = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).east__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_y;
-      var endPoint = new $c_Lcom_diagraphx_web_models_MPoint(x, y);
-      var $x_1 = $m_Lcom_diagraphx_web_objects_Cache$();
-      var this$9 = $m_RTLong$();
-      var value = $uD(new Date().getTime());
-      var lo = this$9.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
-      var hi = this$9.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-      var id$1 = ("path-" + new $c_RTLong(lo, hi));
-      var start$1 = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).east__Lcom_diagraphx_web_models_MPoint();
-      var mpath = new $c_Lcom_diagraphx_web_models_MPath(id$1, start$1, endPoint, "", "", "", "East", "", "");
-      var value$1 = new $c_Lcom_diagraphx_web_components_VPath(mpath);
-      $x_1.Lcom_diagraphx_web_objects_Cache$__f_cPath = new $c_s_Some(value$1);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_startElement = new $c_s_Some($thiz);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_parent = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent;
-      $n($n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_parent = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z() ? "" : $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e$2.clientX);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e$2.clientY);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).view__Lorg_scalajs_dom_HTMLElement();
+function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    $m_Lcom_diagraphy_web_State$().clearClicked__V();
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement = new $c_s_Some($thiz);
+    $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).highlight__V();
+    var eastCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createEast__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
+      var x = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x - 5.0);
+      var y = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
+      var endPoint = new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
+      var $x_2 = $m_Lcom_diagraphy_web_State$();
+      var $x_1 = $m_Lcom_diagraphy_web_components_Path$();
+      var start$1 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).east__Lcom_diagraphy_web_models_GraphPoint();
+      var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+      var value = $x_1.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$1, endPoint, "", "", "", "East"));
+      $x_2.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+      matchResult1: {
+        var x1 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+        if ((x1 instanceof $c_s_Some)) {
+          var p = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x1)).s_Some__f_value);
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult1;
+        }
+        var x$1 = $m_s_None$();
+        if ((x$1 === x1)) {
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult1;
+        }
+        throw new $c_s_MatchError(x1);
+      }
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e$2.clientX);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$2.clientY);
     })));
-    var southCP = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_abstracts_ElementHelper$().createSouth__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
-      var x$1 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).south__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_x;
-      var y$1 = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).south__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_y - 5.0);
-      var endPoint$1 = new $c_Lcom_diagraphx_web_models_MPoint(x$1, y$1);
-      var $x_2 = $m_Lcom_diagraphx_web_objects_Cache$();
-      var this$16 = $m_RTLong$();
-      var value$2 = $uD(new Date().getTime());
-      var lo$1 = this$16.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value$2);
-      var hi$1 = this$16.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-      var id$2 = ("path-" + new $c_RTLong(lo$1, hi$1));
-      var start$2 = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).south__Lcom_diagraphx_web_models_MPoint();
-      var mpath$1 = new $c_Lcom_diagraphx_web_models_MPath(id$2, start$2, endPoint$1, "", "", "", "South", "", "");
-      var value$3 = new $c_Lcom_diagraphx_web_components_VPath(mpath$1);
-      $x_2.Lcom_diagraphx_web_objects_Cache$__f_cPath = new $c_s_Some(value$3);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_startElement = new $c_s_Some($thiz);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_parent = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent;
-      $n($n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_parent = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z() ? "" : $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e$3.clientX);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e$3.clientY);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).view__Lorg_scalajs_dom_HTMLElement();
+    var southCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createSouth__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
+      var x$2 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
+      var y$1 = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y - 5.0);
+      var endPoint$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(x$2, y$1);
+      var $x_4 = $m_Lcom_diagraphy_web_State$();
+      var $x_3 = $m_Lcom_diagraphy_web_components_Path$();
+      var start$2 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).south__Lcom_diagraphy_web_models_GraphPoint();
+      var elements$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+      var value$1 = $x_3.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$2, endPoint$1, "", "", "", "South"));
+      $x_4.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$1);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+      matchResult2: {
+        var x4 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+        if ((x4 instanceof $c_s_Some)) {
+          var p$1 = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x4)).s_Some__f_value);
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p$1).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult2;
+        }
+        var x$3 = $m_s_None$();
+        if ((x$3 === x4)) {
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult2;
+        }
+        throw new $c_s_MatchError(x4);
+      }
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e$3.clientX);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$3.clientY);
     })));
-    var westCP = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_abstracts_ElementHelper$().createWest__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
-      var x$2 = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).west__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_x + 5.0);
-      var y$2 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).west__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_y;
-      var endPoint$2 = new $c_Lcom_diagraphx_web_models_MPoint(x$2, y$2);
-      var $x_3 = $m_Lcom_diagraphx_web_objects_Cache$();
-      var this$23 = $m_RTLong$();
-      var value$4 = $uD(new Date().getTime());
-      var lo$2 = this$23.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value$4);
-      var hi$2 = this$23.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-      var id$3 = ("path-" + new $c_RTLong(lo$2, hi$2));
-      var start$3 = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).west__Lcom_diagraphx_web_models_MPoint();
-      var mpath$2 = new $c_Lcom_diagraphx_web_models_MPath(id$3, start$3, endPoint$2, "", "", "", "West", "", "");
-      var value$5 = new $c_Lcom_diagraphx_web_components_VPath(mpath$2);
-      $x_3.Lcom_diagraphx_web_objects_Cache$__f_cPath = new $c_s_Some(value$5);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_startElement = new $c_s_Some($thiz);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_parent = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent;
-      $n($n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_parent = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z() ? "" : $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e$4.clientX);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e$4.clientY);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).view__Lorg_scalajs_dom_HTMLElement();
+    var westCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createWest__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
+      var x$4 = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x + 5.0);
+      var y$2 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
+      var endPoint$2 = new $c_Lcom_diagraphy_web_models_GraphPoint(x$4, y$2);
+      var $x_6 = $m_Lcom_diagraphy_web_State$();
+      var $x_5 = $m_Lcom_diagraphy_web_components_Path$();
+      var start$3 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).west__Lcom_diagraphy_web_models_GraphPoint();
+      var elements$3 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+      var value$2 = $x_5.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$3, endPoint$2, "", "", "", "West"));
+      $x_6.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$2);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+      matchResult3: {
+        var x7 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+        if ((x7 instanceof $c_s_Some)) {
+          var p$2 = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x7)).s_Some__f_value);
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p$2).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult3;
+        }
+        var x$5 = $m_s_None$();
+        if ((x$5 === x7)) {
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult3;
+        }
+        throw new $c_s_MatchError(x7);
+      }
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e$4.clientX);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$4.clientY);
     })));
-    var northCP = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_abstracts_ElementHelper$().createNorth__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
-      var x$3 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).north__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_x;
-      var y$3 = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).north__Lcom_diagraphx_web_models_MPoint()).Lcom_diagraphx_web_models_MPoint__f_y + 5.0);
-      var endPoint$3 = new $c_Lcom_diagraphx_web_models_MPoint(x$3, y$3);
-      var $x_4 = $m_Lcom_diagraphx_web_objects_Cache$();
-      var this$30 = $m_RTLong$();
-      var value$6 = $uD(new Date().getTime());
-      var lo$3 = this$30.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value$6);
-      var hi$3 = this$30.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-      var id$4 = ("path-" + new $c_RTLong(lo$3, hi$3));
-      var start$4 = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).north__Lcom_diagraphx_web_models_MPoint();
-      var mpath$3 = new $c_Lcom_diagraphx_web_models_MPath(id$4, start$4, endPoint$3, "", "", "", "North", "", "");
-      var value$7 = new $c_Lcom_diagraphx_web_components_VPath(mpath$3);
-      $x_4.Lcom_diagraphx_web_objects_Cache$__f_cPath = new $c_s_Some(value$7);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_startElement = new $c_s_Some($thiz);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_parent = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent;
-      $n($n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_parent = ($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z() ? "" : $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_id);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e$5.clientX);
-      $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e$5.clientY);
-      $n($as_Lcom_diagraphx_web_components_VPath($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_cPath).get__O())).view__Lorg_scalajs_dom_HTMLElement();
+    var northCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createNorth__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
+      var x$6 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
+      var y$3 = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y + 5.0);
+      var endPoint$3 = new $c_Lcom_diagraphy_web_models_GraphPoint(x$6, y$3);
+      var $x_8 = $m_Lcom_diagraphy_web_State$();
+      var $x_7 = $m_Lcom_diagraphy_web_components_Path$();
+      var start$4 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).north__Lcom_diagraphy_web_models_GraphPoint();
+      var elements$4 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+      var value$3 = $x_7.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$4, endPoint$3, "", "", "", "North"));
+      $x_8.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$3);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
+      $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+      matchResult4: {
+        var x10 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
+        if ((x10 instanceof $c_s_Some)) {
+          var p$3 = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x10)).s_Some__f_value);
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p$3).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult4;
+        }
+        var x$7 = $m_s_None$();
+        if ((x$7 === x10)) {
+          $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
+          break matchResult4;
+        }
+        throw new $c_s_MatchError(x10);
+      }
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e$5.clientX);
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$5.clientY);
     })));
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([eastCP, southCP, westCP, northCP])));
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([eastCP, southCP, westCP, northCP])));
   }));
 }
-function $f_Lcom_diagraphx_web_events_ElementMouseDown__$init$__V($thiz) {
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialX = $uD(e.clientX);
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_initialY = $uD(e.clientY);
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = new $c_s_Some($thiz);
-    var \u03b41$ = $n($as_Lcom_diagraphx_web_abstracts_AVElement($thiz)).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
+function $f_Lcom_diagraphy_web_events_ElementMouseDown__$init$__V($thiz) {
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e.clientX);
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e.clientY);
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement = new $c_s_Some($thiz);
+    var \u03b41$ = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_fo.style;
     \u03b41$.setProperty("cursor", "grabbing");
   }));
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_events_ElementRemove$package$() {
-  this.Lcom_diagraphx_web_events_ElementRemove$package$__f_removeElement = null;
-  $n_Lcom_diagraphx_web_events_ElementRemove$package$ = this;
-  this.Lcom_diagraphx_web_events_ElementRemove$package$__f_removeElement = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    var this$2 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement);
-    if ((!this$2.isEmpty__Z())) {
-      var x0 = this$2.get__O();
-      var elem = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
-      var oPathsToRemove = $n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths).toList__sci_List();
-      var this$3 = $n(oPathsToRemove);
-      var these = this$3;
-      while ((!$n(these).isEmpty__Z())) {
-        var x0$1 = $n(these).head__O();
-        var tpath = $as_Lcom_diagraphx_web_components_VPath(x0$1);
-        if ($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z()) {
-          $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(tpath).Lcom_diagraphx_web_components_VPath__f_ipath);
-        } else {
-          $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(tpath).Lcom_diagraphx_web_components_VPath__f_ipath);
-        }
-        var this$4 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-        this$4.subtractOne__O__scm_ListBuffer(tpath);
-        var this$5 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath).Lcom_diagraphx_web_components_VPath__f_endElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-        this$5.subtractOne__O__scm_ListBuffer(tpath);
-        these = $as_sci_List($n(these).tail__O());
-      }
-      var iPathsToRemove = $n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths).toList__sci_List();
-      var this$6 = $n(iPathsToRemove);
-      var these$1 = this$6;
-      while ((!$n(these$1).isEmpty__Z())) {
-        var x0$2 = $n(these$1).head__O();
-        var tpath$1 = $as_Lcom_diagraphx_web_components_VPath(x0$2);
-        if ($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z()) {
-          $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_ipath);
-        } else {
-          $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_ipath);
-        }
-        var this$7 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_startElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-        this$7.subtractOne__O__scm_ListBuffer(tpath$1);
-        var this$8 = $n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(tpath$1).Lcom_diagraphx_web_components_VPath__f_endElement).get__O())).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-        this$8.subtractOne__O__scm_ListBuffer(tpath$1);
-        these$1 = $as_sci_List($n(these$1).tail__O());
-      }
-      if ($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z()) {
-        $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.removeChild($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-        var this$9 = $n($n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements);
-        var elem$1 = $n(elem).element__Lcom_diagraphx_web_models_MElement();
-        this$9.subtractOne__O__scm_ListBuffer(elem$1);
-      } else {
-        $n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-        var this$10 = $n($n($n($as_Lcom_diagraphx_web_abstracts_AVElement($n($n(elem).Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_elements);
-        var elem$2 = $n(elem).element__Lcom_diagraphx_web_models_MElement();
-        this$10.subtractOne__O__scm_ListBuffer(elem$2);
+function $c_Lcom_diagraphy_web_events_ElementZoom$package$() {
+  this.Lcom_diagraphy_web_events_ElementZoom$package$__f_zoomHandler = null;
+  $n_Lcom_diagraphy_web_events_ElementZoom$package$ = this;
+  this.Lcom_diagraphy_web_events_ElementZoom$package$__f_zoomHandler = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    if (($uZ(e.ctrlKey) || $uZ(e.metaKey))) {
+      var this$2 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement);
+      if ((!this$2.isEmpty__Z())) {
+        e.preventDefault();
+        var zoomFactor = (($uD(e.deltaY) > 0.0) ? 0.99 : 1.01);
+        $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement).get__O())).resize__D__V(zoomFactor);
       }
     }
   }));
 }
-$c_Lcom_diagraphx_web_events_ElementRemove$package$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_events_ElementRemove$package$.prototype.constructor = $c_Lcom_diagraphx_web_events_ElementRemove$package$;
+$c_Lcom_diagraphy_web_events_ElementZoom$package$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_events_ElementZoom$package$.prototype.constructor = $c_Lcom_diagraphy_web_events_ElementZoom$package$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_events_ElementRemove$package$() {
+function $h_Lcom_diagraphy_web_events_ElementZoom$package$() {
 }
-$h_Lcom_diagraphx_web_events_ElementRemove$package$.prototype = $c_Lcom_diagraphx_web_events_ElementRemove$package$.prototype;
-var $d_Lcom_diagraphx_web_events_ElementRemove$package$ = new $TypeData().initClass($c_Lcom_diagraphx_web_events_ElementRemove$package$, "com.diagraphx.web.events.ElementRemove$package$", ({
-  Lcom_diagraphx_web_events_ElementRemove$package$: 1
+$h_Lcom_diagraphy_web_events_ElementZoom$package$.prototype = $c_Lcom_diagraphy_web_events_ElementZoom$package$.prototype;
+var $d_Lcom_diagraphy_web_events_ElementZoom$package$ = new $TypeData().initClass($c_Lcom_diagraphy_web_events_ElementZoom$package$, "com.diagraphy.web.events.ElementZoom$package$", ({
+  Lcom_diagraphy_web_events_ElementZoom$package$: 1
 }));
-var $n_Lcom_diagraphx_web_events_ElementRemove$package$;
-function $m_Lcom_diagraphx_web_events_ElementRemove$package$() {
-  if ((!$n_Lcom_diagraphx_web_events_ElementRemove$package$)) {
-    $n_Lcom_diagraphx_web_events_ElementRemove$package$ = new $c_Lcom_diagraphx_web_events_ElementRemove$package$();
+var $n_Lcom_diagraphy_web_events_ElementZoom$package$;
+function $m_Lcom_diagraphy_web_events_ElementZoom$package$() {
+  if ((!$n_Lcom_diagraphy_web_events_ElementZoom$package$)) {
+    $n_Lcom_diagraphy_web_events_ElementZoom$package$ = new $c_Lcom_diagraphy_web_events_ElementZoom$package$();
   }
-  return $n_Lcom_diagraphx_web_events_ElementRemove$package$;
+  return $n_Lcom_diagraphy_web_events_ElementZoom$package$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_events_EventHelper$package$() {
+function $c_Lcom_diagraphy_web_extensions_DocumentExtension$() {
 }
-$c_Lcom_diagraphx_web_events_EventHelper$package$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_events_EventHelper$package$.prototype.constructor = $c_Lcom_diagraphx_web_events_EventHelper$package$;
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.constructor = $c_Lcom_diagraphy_web_extensions_DocumentExtension$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_events_EventHelper$package$() {
+function $h_Lcom_diagraphy_web_extensions_DocumentExtension$() {
 }
-$h_Lcom_diagraphx_web_events_EventHelper$package$.prototype = $c_Lcom_diagraphx_web_events_EventHelper$package$.prototype;
-$c_Lcom_diagraphx_web_events_EventHelper$package$.prototype.clearClicked__V = (function() {
-  var this$1 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement);
-  if ((!this$1.isEmpty__Z())) {
-    var x0 = this$1.get__O();
-    var _$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(_$1).resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("resize", "none"), new $c_T2("border", "none")])));
-  }
-  var this$6 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement);
-  if ((!this$6.isEmpty__Z())) {
-    var x0$1 = this$6.get__O();
-    var element = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
-    var domList = $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
-    var this$8 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
-    var it = this$8.iterator__sc_Iterator();
-    while ($n(it).hasNext__Z()) {
-      var x0$2 = $n(it).next__O();
-      try {
-        $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().removeChild(x0$2);
-      } catch (e) {
-      }
-    }
-  }
-  $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_clickedElement = $m_s_None$();
-});
-var $d_Lcom_diagraphx_web_events_EventHelper$package$ = new $TypeData().initClass($c_Lcom_diagraphx_web_events_EventHelper$package$, "com.diagraphx.web.events.EventHelper$package$", ({
-  Lcom_diagraphx_web_events_EventHelper$package$: 1
-}));
-var $n_Lcom_diagraphx_web_events_EventHelper$package$;
-function $m_Lcom_diagraphx_web_events_EventHelper$package$() {
-  if ((!$n_Lcom_diagraphx_web_events_EventHelper$package$)) {
-    $n_Lcom_diagraphx_web_events_EventHelper$package$ = new $c_Lcom_diagraphx_web_events_EventHelper$package$();
-  }
-  return $n_Lcom_diagraphx_web_events_EventHelper$package$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_extensions_DocumentExtension$() {
-}
-$c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.constructor = $c_Lcom_diagraphx_web_extensions_DocumentExtension$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_extensions_DocumentExtension$() {
-}
-$h_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype = $c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype;
-$c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.mclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
-  e.addEventListener("click", ((e$2) => $n(handler).apply__O__O(e$2)));
+$h_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype = $c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype;
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.onContentLoad__Lorg_scalajs_dom_Document__F0__Lorg_scalajs_dom_Document = (function(e, handler) {
+  e.addEventListener("DOMContentLoaded", ((_$1) => $n(handler).apply__O()));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.mmove__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.mmove__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
   e.addEventListener("mousemove", ((e$2) => $n(handler).apply__O__O(e$2)));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_DocumentExtension$.prototype.mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
   e.addEventListener("mouseup", ((e$2) => $n(handler).apply__O__O(e$2)));
   return e;
 });
-var $d_Lcom_diagraphx_web_extensions_DocumentExtension$ = new $TypeData().initClass($c_Lcom_diagraphx_web_extensions_DocumentExtension$, "com.diagraphx.web.extensions.DocumentExtension$", ({
-  Lcom_diagraphx_web_extensions_DocumentExtension$: 1
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
+  e.addEventListener("keydown", ((e$2) => $n(handler).apply__O__O(e$2)));
+  return e;
+});
+$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.mdblclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
+  e.addEventListener("dblclick", ((e$2) => {
+    $n(handler).apply__O__O(e$2);
+    e$2.stopPropagation();
+  }));
+  return e;
+});
+var $d_Lcom_diagraphy_web_extensions_DocumentExtension$ = new $TypeData().initClass($c_Lcom_diagraphy_web_extensions_DocumentExtension$, "com.diagraphy.web.extensions.DocumentExtension$", ({
+  Lcom_diagraphy_web_extensions_DocumentExtension$: 1
 }));
-var $n_Lcom_diagraphx_web_extensions_DocumentExtension$;
-function $m_Lcom_diagraphx_web_extensions_DocumentExtension$() {
-  if ((!$n_Lcom_diagraphx_web_extensions_DocumentExtension$)) {
-    $n_Lcom_diagraphx_web_extensions_DocumentExtension$ = new $c_Lcom_diagraphx_web_extensions_DocumentExtension$();
+var $n_Lcom_diagraphy_web_extensions_DocumentExtension$;
+function $m_Lcom_diagraphy_web_extensions_DocumentExtension$() {
+  if ((!$n_Lcom_diagraphy_web_extensions_DocumentExtension$)) {
+    $n_Lcom_diagraphy_web_extensions_DocumentExtension$ = new $c_Lcom_diagraphy_web_extensions_DocumentExtension$();
   }
-  return $n_Lcom_diagraphx_web_extensions_DocumentExtension$;
+  return $n_Lcom_diagraphy_web_extensions_DocumentExtension$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$() {
+function $c_Lcom_diagraphy_web_extensions_HtmlElementExtension$() {
 }
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.constructor = $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$;
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.constructor = $c_Lcom_diagraphy_web_extensions_HtmlElementExtension$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_extensions_HTMLElementExtension$() {
+function $h_Lcom_diagraphy_web_extensions_HtmlElementExtension$() {
 }
-$h_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype = $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype;
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement = (function(e, o) {
+$h_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype = $c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype;
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement = (function(e, o) {
   $n(o).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((child) => {
     if ((child !== null)) {
       e.appendChild(child);
@@ -1816,7 +2102,7 @@ $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.$greater__Lorg_
   })));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement = (function(e, attrs) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement = (function(e, attrs) {
   $n(attrs).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((x$1) => {
     var x$1$1 = $as_T2(x$1);
     matchResult3: {
@@ -1831,7 +2117,7 @@ $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.attrs__Lorg_sca
   })));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement = (function(e, styles) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement = (function(e, styles) {
   $n(styles).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((x$1) => {
     var x$1$1 = $as_T2(x$1);
     matchResult4: {
@@ -1847,54 +2133,58 @@ $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.styles__Lorg_sc
   })));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement = (function(e, value) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement = (function(e, value) {
   e.classList.add(value);
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement = (function(e, content) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement = (function(e, content) {
   e.textContent = content;
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
   e.addEventListener("click", ((e$2) => {
     $n(handler).apply__O__O(e$2);
     e$2.stopPropagation();
   }));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
   e.addEventListener("mouseover", ((e$2) => {
     $n(handler).apply__O__O(e$2);
     e$2.stopPropagation();
   }));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
   e.addEventListener("mouseout", ((e$2) => {
     $n(handler).apply__O__O(e$2);
     e$2.stopPropagation();
   }));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
   e.addEventListener("mousedown", ((e$2) => {
     $n(handler).apply__O__O(e$2);
     e$2.stopPropagation();
   }));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.mdblclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.mdblclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
   e.addEventListener("dblclick", ((e$2) => {
     $n(handler).apply__O__O(e$2);
     e$2.stopPropagation();
   }));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.fblur__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.mzoom__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
+  e.addEventListener("wheel", ((e$2) => $n(handler).apply__O__O(e$2)));
+  return e;
+});
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.fblur__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, handler) {
   e.addEventListener("blur", ((e$2) => $n(handler).apply__O__O(e$2)));
   return e;
 });
-$c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, onUpdate) {
+$c_Lcom_diagraphy_web_extensions_HtmlElementExtension$.prototype.editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement = (function(e, onUpdate) {
   this.mdblclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(e, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
     e.setAttribute("contenteditable", "true");
     e.focus();
@@ -1905,394 +2195,61 @@ $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$.prototype.editableOnDblCl
   })));
   return e;
 });
-var $d_Lcom_diagraphx_web_extensions_HTMLElementExtension$ = new $TypeData().initClass($c_Lcom_diagraphx_web_extensions_HTMLElementExtension$, "com.diagraphx.web.extensions.HTMLElementExtension$", ({
-  Lcom_diagraphx_web_extensions_HTMLElementExtension$: 1
+var $d_Lcom_diagraphy_web_extensions_HtmlElementExtension$ = new $TypeData().initClass($c_Lcom_diagraphy_web_extensions_HtmlElementExtension$, "com.diagraphy.web.extensions.HtmlElementExtension$", ({
+  Lcom_diagraphy_web_extensions_HtmlElementExtension$: 1
 }));
-var $n_Lcom_diagraphx_web_extensions_HTMLElementExtension$;
-function $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$() {
-  if ((!$n_Lcom_diagraphx_web_extensions_HTMLElementExtension$)) {
-    $n_Lcom_diagraphx_web_extensions_HTMLElementExtension$ = new $c_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
+var $n_Lcom_diagraphy_web_extensions_HtmlElementExtension$;
+function $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$() {
+  if ((!$n_Lcom_diagraphy_web_extensions_HtmlElementExtension$)) {
+    $n_Lcom_diagraphy_web_extensions_HtmlElementExtension$ = new $c_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
   }
-  return $n_Lcom_diagraphx_web_extensions_HTMLElementExtension$;
-}
-function $p_Lcom_diagraphx_web_objects_Cache$__render__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V($thiz, elements, svg, parent) {
-  var this$1 = $n(elements);
-  var it = this$1.iterator__sc_Iterator();
-  while ($n(it).hasNext__Z()) {
-    var x0 = $n(it).next__O();
-    var element = $as_Lcom_diagraphx_web_models_MElement(x0);
-    matchResult1: {
-      var elementX;
-      var x1 = $n(element).Lcom_diagraphx_web_models_MElement__f_format;
-      if ((x1 === "Container")) {
-        var value = new $c_Lcom_diagraphx_web_components_Container(element);
-        var elementX = new $c_s_Some(value);
-        break matchResult1;
-      }
-      if ((x1 === "Instruction")) {
-        var value$1 = new $c_Lcom_diagraphx_web_components_Instruction(element);
-        var elementX = new $c_s_Some(value$1);
-        break matchResult1;
-      }
-      if ((x1 === "Note")) {
-        var value$2 = new $c_Lcom_diagraphx_web_components_Note(element);
-        var elementX = new $c_s_Some(value$2);
-        break matchResult1;
-      }
-      if ((x1 === "Decision")) {
-        var value$3 = new $c_Lcom_diagraphx_web_components_Decision(element);
-        var elementX = new $c_s_Some(value$3);
-        break matchResult1;
-      }
-      if ((x1 === "StartEnd")) {
-        var value$4 = new $c_Lcom_diagraphx_web_components_StartEnd(element);
-        var elementX = new $c_s_Some(value$4);
-        break matchResult1;
-      }
-      if ((x1 === "Image")) {
-        var value$5 = new $c_Lcom_diagraphx_web_components_ImageX(element);
-        var elementX = new $c_s_Some(value$5);
-        break matchResult1;
-      }
-      var elementX = $m_s_None$();
-    }
-    if ((!elementX.isEmpty__Z())) {
-      var x0$1 = elementX.get__O();
-      var ex = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
-      $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(svg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n(ex).view__Lorg_scalajs_dom_HTMLElement()])));
-      var this$10 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_elementMap);
-      var self = $n(element).Lcom_diagraphx_web_models_MElement__f_id;
-      var elem = new $c_T2(self, ex);
-      this$10.addOne__O__scm_Growable(elem);
-      $n(ex).Lcom_diagraphx_web_abstracts_AVElement__f_parent = parent;
-      if (($n(element).Lcom_diagraphx_web_models_MElement__f_format === "Container")) {
-        var container = $as_Lcom_diagraphx_web_components_Container(ex);
-        $p_Lcom_diagraphx_web_objects_Cache$__render__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V($m_Lcom_diagraphx_web_objects_Cache$(), $n(element).Lcom_diagraphx_web_models_MElement__f_elements, $n(container).Lcom_diagraphx_web_components_Container__f_contentDiv, new $c_s_Some(ex));
-      }
-    }
-  }
+  return $n_Lcom_diagraphy_web_extensions_HtmlElementExtension$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_objects_Cache$() {
-  this.Lcom_diagraphx_web_objects_Cache$__f_elementMap = null;
-  this.Lcom_diagraphx_web_objects_Cache$__f_clickedElement = null;
-  this.Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = null;
-  this.Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = null;
-  this.Lcom_diagraphx_web_objects_Cache$__f_initialX = 0.0;
-  this.Lcom_diagraphx_web_objects_Cache$__f_initialY = 0.0;
-  this.Lcom_diagraphx_web_objects_Cache$__f_cPath = null;
-  this.Lcom_diagraphx_web_objects_Cache$__f_state = null;
-  $n_Lcom_diagraphx_web_objects_Cache$ = this;
-  this.Lcom_diagraphx_web_objects_Cache$__f_elementMap = $as_scm_Map($m_scm_Map$().apply__sci_Seq__O($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([]))));
-  this.Lcom_diagraphx_web_objects_Cache$__f_clickedElement = $m_s_None$();
-  this.Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = $m_s_None$();
-  this.Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = $m_s_None$();
-  this.Lcom_diagraphx_web_objects_Cache$__f_initialX = 0.0;
-  this.Lcom_diagraphx_web_objects_Cache$__f_initialY = 0.0;
-  this.Lcom_diagraphx_web_objects_Cache$__f_cPath = $m_s_None$();
-  var elements = $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$1__scm_ListBuffer();
-  var paths = $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$2__scm_ListBuffer();
-  this.Lcom_diagraphx_web_objects_Cache$__f_state = new $c_Lcom_diagraphx_web_models_MGraph(elements, paths);
+function $c_Lcom_diagraphy_web_utils_HtmlElementUtil$() {
 }
-$c_Lcom_diagraphx_web_objects_Cache$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_objects_Cache$.prototype.constructor = $c_Lcom_diagraphx_web_objects_Cache$;
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.constructor = $c_Lcom_diagraphy_web_utils_HtmlElementUtil$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_objects_Cache$() {
+function $h_Lcom_diagraphy_web_utils_HtmlElementUtil$() {
 }
-$h_Lcom_diagraphx_web_objects_Cache$.prototype = $c_Lcom_diagraphx_web_objects_Cache$.prototype;
-$c_Lcom_diagraphx_web_objects_Cache$.prototype.loadState__T__V = (function(content) {
-  try {
-    var this$3 = $m_Lupickle_legacy$();
-    var s = new $c_Lujson_Readable$fromTransformer(content, $m_Lujson_StringParser$());
-    $m_Lupickle_legacy$();
-    var trace = false;
-    var evidence$2 = $m_Lcom_diagraphx_web_models_MGraph$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-    this.Lcom_diagraphx_web_objects_Cache$__f_state = $as_Lcom_diagraphx_web_models_MGraph($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$3, s, trace, evidence$2));
-    $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.innerHTML = "";
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgDefs])));
-    $p_Lcom_diagraphx_web_objects_Cache$__render__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V(this, $n(this.Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_elements, $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_s_None$());
-    this.renderPaths__scm_ListBuffer__V($n(this.Lcom_diagraphx_web_objects_Cache$__f_state).Lcom_diagraphx_web_models_MGraph__f_paths);
-  } catch (e) {
-    var e$2 = ((e instanceof $c_jl_Throwable) ? e : new $c_sjs_js_JavaScriptException(e));
-    if ((e$2 instanceof $c_jl_Exception)) {
-      var e$3 = $as_jl_Exception(e$2);
-      var x = ("Error loading state: " + $n(e$3).getMessage__T());
-      var this$5 = $m_s_Console$();
-      var this$6 = $n(this$5.out__Ljava_io_PrintStream());
-      this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-    } else {
-      throw e;
-    }
-  }
-});
-$c_Lcom_diagraphx_web_objects_Cache$.prototype.renderPaths__scm_ListBuffer__V = (function(paths) {
-  var this$1 = $n(paths);
-  var it = this$1.iterator__sc_Iterator();
-  while ($n(it).hasNext__Z()) {
-    var x0 = $n(it).next__O();
-    var path = $as_Lcom_diagraphx_web_models_MPath(x0);
-    var vpath = new $c_Lcom_diagraphx_web_components_VPath(path);
-    vpath.view__Lorg_scalajs_dom_HTMLElement();
-    vpath.Lcom_diagraphx_web_components_VPath__f_startElement = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_elementMap).get__O__s_Option($n(path).Lcom_diagraphx_web_models_MPath__f_sElement);
-    vpath.Lcom_diagraphx_web_components_VPath__f_endElement = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_elementMap).get__O__s_Option($n(path).Lcom_diagraphx_web_models_MPath__f_eElement);
-    var this$3 = $n(vpath.Lcom_diagraphx_web_components_VPath__f_startElement);
-    if ((!this$3.isEmpty__Z())) {
-      var x0$1 = this$3.get__O();
-      var _$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
-      var this$4 = $n($n(_$1).Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-      this$4.addOne__O__scm_ListBuffer(vpath);
-    }
-    var this$5 = $n(vpath.Lcom_diagraphx_web_components_VPath__f_endElement);
-    if ((!this$5.isEmpty__Z())) {
-      var x0$2 = this$5.get__O();
-      var _$2 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$2);
-      var this$6 = $n($n(_$2).Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-      this$6.addOne__O__scm_ListBuffer(vpath);
-    }
-  }
-});
-$c_Lcom_diagraphx_web_objects_Cache$.prototype.saveState__V = (function() {
-  var fileName = $as_T(window.prompt("Enter file name", "graph.json"));
-  if ((fileName !== null)) {
-    var this$3 = $n(fileName);
-    var $x_1 = (!(this$3 === ""));
-  } else {
-    var $x_1 = false;
-  }
-  if ($x_1) {
-    var $x_3 = Blob;
-    var this$6 = $m_Lupickle_legacy$();
-    var t = this.Lcom_diagraphx_web_objects_Cache$__f_state;
-    $m_Lupickle_legacy$();
-    var indent = (-1);
-    $m_Lupickle_legacy$();
-    var escapeUnicode = false;
-    var evidence$4 = $m_Lcom_diagraphx_web_models_MGraph$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-    var $x_2 = $f_Lupickle_Api__write__O__I__Z__Lupickle_core_Types$Writer__T(this$6, t, indent, escapeUnicode, evidence$4);
-    var fields = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([]));
-    var result = $m_sjs_js_special_package$().objectLiteral__sci_Seq__sjs_js_Object(fields);
-    result.type = "application/json";
-    var blob = new $x_3([$x_2], result);
-    var url = $as_T(URL.createObjectURL(blob));
-    var a = document.createElement("a");
-    a.setAttribute("href", url);
-    a.setAttribute("download", fileName);
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
-});
-var $d_Lcom_diagraphx_web_objects_Cache$ = new $TypeData().initClass($c_Lcom_diagraphx_web_objects_Cache$, "com.diagraphx.web.objects.Cache$", ({
-  Lcom_diagraphx_web_objects_Cache$: 1
-}));
-var $n_Lcom_diagraphx_web_objects_Cache$;
-function $m_Lcom_diagraphx_web_objects_Cache$() {
-  if ((!$n_Lcom_diagraphx_web_objects_Cache$)) {
-    $n_Lcom_diagraphx_web_objects_Cache$ = new $c_Lcom_diagraphx_web_objects_Cache$();
-  }
-  return $n_Lcom_diagraphx_web_objects_Cache$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_objects_ElementHelper$() {
-}
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.constructor = $c_Lcom_diagraphx_web_objects_ElementHelper$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_objects_ElementHelper$() {
-}
-$h_Lcom_diagraphx_web_objects_ElementHelper$.prototype = $c_Lcom_diagraphx_web_objects_ElementHelper$.prototype;
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.header__Lorg_scalajs_dom_HTMLElement = (function() {
+$h_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype = $c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype;
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.header__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("header");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.footer__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.footer__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("footer");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.div__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.div__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("div");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.img__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.img__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("img");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.foreignObject__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.foreignObject__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.svg__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.svg__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElementNS("http://www.w3.org/2000/svg", "svg");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.path__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.path__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElementNS("http://www.w3.org/2000/svg", "path");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.defs__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.defs__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElementNS("http://www.w3.org/2000/svg", "defs");
 });
-$c_Lcom_diagraphx_web_objects_ElementHelper$.prototype.marker__Lorg_scalajs_dom_HTMLElement = (function() {
+$c_Lcom_diagraphy_web_utils_HtmlElementUtil$.prototype.marker__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElementNS("http://www.w3.org/2000/svg", "marker");
 });
-var $d_Lcom_diagraphx_web_objects_ElementHelper$ = new $TypeData().initClass($c_Lcom_diagraphx_web_objects_ElementHelper$, "com.diagraphx.web.objects.ElementHelper$", ({
-  Lcom_diagraphx_web_objects_ElementHelper$: 1
+var $d_Lcom_diagraphy_web_utils_HtmlElementUtil$ = new $TypeData().initClass($c_Lcom_diagraphy_web_utils_HtmlElementUtil$, "com.diagraphy.web.utils.HtmlElementUtil$", ({
+  Lcom_diagraphy_web_utils_HtmlElementUtil$: 1
 }));
-var $n_Lcom_diagraphx_web_objects_ElementHelper$;
-function $m_Lcom_diagraphx_web_objects_ElementHelper$() {
-  if ((!$n_Lcom_diagraphx_web_objects_ElementHelper$)) {
-    $n_Lcom_diagraphx_web_objects_ElementHelper$ = new $c_Lcom_diagraphx_web_objects_ElementHelper$();
+var $n_Lcom_diagraphy_web_utils_HtmlElementUtil$;
+function $m_Lcom_diagraphy_web_utils_HtmlElementUtil$() {
+  if ((!$n_Lcom_diagraphy_web_utils_HtmlElementUtil$)) {
+    $n_Lcom_diagraphy_web_utils_HtmlElementUtil$ = new $c_Lcom_diagraphy_web_utils_HtmlElementUtil$();
   }
-  return $n_Lcom_diagraphx_web_objects_ElementHelper$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_pagecomponents_Header$() {
-  this.Lcom_diagraphx_web_pagecomponents_Header$__f_pageHeader = null;
-  $n_Lcom_diagraphx_web_pagecomponents_Header$ = this;
-  this.Lcom_diagraphx_web_pagecomponents_Header$__f_pageHeader = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().header__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("height", "40px"), new $c_T2("left", "10px"), new $c_T2("top", "10px"), new $c_T2("border-radius", "8px"), new $c_T2("padding", "0 16px"), new $c_T2("background", "#008476"), new $c_T2("color", "#F0F0F0"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("font-size", "20px"), new $c_T2("font-weight", "bold"), new $c_T2("box-shadow", "0 2px 4px rgba(0,0,0,0.1)")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().img__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("src", "public/images/favicon.svg")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("height", "24px"), new $c_T2("margin-right", "8px")]))), $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "Diagraphx")])));
-}
-$c_Lcom_diagraphx_web_pagecomponents_Header$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_pagecomponents_Header$.prototype.constructor = $c_Lcom_diagraphx_web_pagecomponents_Header$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_pagecomponents_Header$() {
-}
-$h_Lcom_diagraphx_web_pagecomponents_Header$.prototype = $c_Lcom_diagraphx_web_pagecomponents_Header$.prototype;
-var $d_Lcom_diagraphx_web_pagecomponents_Header$ = new $TypeData().initClass($c_Lcom_diagraphx_web_pagecomponents_Header$, "com.diagraphx.web.pagecomponents.Header$", ({
-  Lcom_diagraphx_web_pagecomponents_Header$: 1
-}));
-var $n_Lcom_diagraphx_web_pagecomponents_Header$;
-function $m_Lcom_diagraphx_web_pagecomponents_Header$() {
-  if ((!$n_Lcom_diagraphx_web_pagecomponents_Header$)) {
-    $n_Lcom_diagraphx_web_pagecomponents_Header$ = new $c_Lcom_diagraphx_web_pagecomponents_Header$();
-  }
-  return $n_Lcom_diagraphx_web_pagecomponents_Header$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_pagecomponents_PageFooter$() {
-  this.Lcom_diagraphx_web_pagecomponents_PageFooter$__f_pageFooter = null;
-  $n_Lcom_diagraphx_web_pagecomponents_PageFooter$ = this;
-  this.Lcom_diagraphx_web_pagecomponents_PageFooter$__f_pageFooter = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().footer__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("bottom", "0"), new $c_T2("left", "0"), new $c_T2("width", "100%"), new $c_T2("text-align", "left"), new $c_T2("padding", "10px"), new $c_T2("font-size", "14px")]))), "Diagraphx \u00a9 2025");
-}
-$c_Lcom_diagraphx_web_pagecomponents_PageFooter$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_pagecomponents_PageFooter$.prototype.constructor = $c_Lcom_diagraphx_web_pagecomponents_PageFooter$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_pagecomponents_PageFooter$() {
-}
-$h_Lcom_diagraphx_web_pagecomponents_PageFooter$.prototype = $c_Lcom_diagraphx_web_pagecomponents_PageFooter$.prototype;
-var $d_Lcom_diagraphx_web_pagecomponents_PageFooter$ = new $TypeData().initClass($c_Lcom_diagraphx_web_pagecomponents_PageFooter$, "com.diagraphx.web.pagecomponents.PageFooter$", ({
-  Lcom_diagraphx_web_pagecomponents_PageFooter$: 1
-}));
-var $n_Lcom_diagraphx_web_pagecomponents_PageFooter$;
-function $m_Lcom_diagraphx_web_pagecomponents_PageFooter$() {
-  if ((!$n_Lcom_diagraphx_web_pagecomponents_PageFooter$)) {
-    $n_Lcom_diagraphx_web_pagecomponents_PageFooter$ = new $c_Lcom_diagraphx_web_pagecomponents_PageFooter$();
-  }
-  return $n_Lcom_diagraphx_web_pagecomponents_PageFooter$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_pagecomponents_SvgBody$() {
-  this.Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgDefs = null;
-  this.Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody = null;
-  $n_Lcom_diagraphx_web_pagecomponents_SvgBody$ = this;
-  this.Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgDefs = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().defs__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().marker__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "arrowhead"), new $c_T2("markerWidth", "5"), new $c_T2("markerHeight", "5"), new $c_T2("refX", "2.5"), new $c_T2("refY", "2.5"), new $c_T2("orient", "auto-start-reverse")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().path__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("d", "M 0 0 L 5 2.5 L 0 5 z")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("fill", "#008476")])))])))])));
-  var $x_8 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_7 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_6 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_5 = $m_Lcom_diagraphx_web_objects_ElementHelper$().svg__Lorg_scalajs_dom_HTMLElement();
-  var $x_4 = $m_sr_ScalaRunTime$();
-  var $x_3 = new $c_T2("id", "svgBody");
-  var $x_2 = new $c_T2("width", "100vw");
-  var $x_1 = new $c_T2("height", "100vh");
-  var y = ((("0 0 " + $uD(window.innerWidth)) + " ") + $uD(window.innerHeight));
-  var element = $x_8.$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_7.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_6.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_5, $x_4.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_3, $x_2, $x_1, new $c_T2("viewBox", y)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("background-color", "#E0E0E0"), new $c_T2("user-select", "none"), new $c_T2("-webkit-user-select", "none"), new $c_T2("-ms-user-select", "none")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgDefs])));
-  window.addEventListener("resize", ((_$1) => {
-    var $x_10 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-    var $x_9 = $m_sr_ScalaRunTime$();
-    var y$1 = ((("0 0 " + $uD(window.innerWidth)) + " ") + $uD(window.innerHeight));
-    return $x_10.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(element, $x_9.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("viewBox", y$1)])));
-  }));
-  this.Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody = element;
-}
-$c_Lcom_diagraphx_web_pagecomponents_SvgBody$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_pagecomponents_SvgBody$.prototype.constructor = $c_Lcom_diagraphx_web_pagecomponents_SvgBody$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_pagecomponents_SvgBody$() {
-}
-$h_Lcom_diagraphx_web_pagecomponents_SvgBody$.prototype = $c_Lcom_diagraphx_web_pagecomponents_SvgBody$.prototype;
-var $d_Lcom_diagraphx_web_pagecomponents_SvgBody$ = new $TypeData().initClass($c_Lcom_diagraphx_web_pagecomponents_SvgBody$, "com.diagraphx.web.pagecomponents.SvgBody$", ({
-  Lcom_diagraphx_web_pagecomponents_SvgBody$: 1
-}));
-var $n_Lcom_diagraphx_web_pagecomponents_SvgBody$;
-function $m_Lcom_diagraphx_web_pagecomponents_SvgBody$() {
-  if ((!$n_Lcom_diagraphx_web_pagecomponents_SvgBody$)) {
-    $n_Lcom_diagraphx_web_pagecomponents_SvgBody$ = new $c_Lcom_diagraphx_web_pagecomponents_SvgBody$();
-  }
-  return $n_Lcom_diagraphx_web_pagecomponents_SvgBody$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_pagecomponents_ToolBar$() {
-  this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_open = null;
-  this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_save = null;
-  this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_toolBar = null;
-  $n_Lcom_diagraphx_web_pagecomponents_ToolBar$ = this;
-  var startEnd = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\u25cb"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "30px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Start/end")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_StartEnd$().apply__Lcom_diagraphx_web_components_StartEnd()).view__Lorg_scalajs_dom_HTMLElement()])));
-  })));
-  var note = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc4"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Note")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_Note$().apply__Lcom_diagraphx_web_components_Note()).view__Lorg_scalajs_dom_HTMLElement()])));
-  })));
-  var instruction = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\u25ad"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "25px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "25px"), new $c_T2("width", "25px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add an Instruction")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_Instruction$().apply__Lcom_diagraphx_web_components_Instruction()).view__Lorg_scalajs_dom_HTMLElement()])));
-  })));
-  var image = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83c\udfde\ufe0f"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add an Image")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_ImageX$().apply__Lcom_diagraphx_web_components_ImageX()).view__Lorg_scalajs_dom_HTMLElement()])));
-  })));
-  var decision = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\u25c7"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "30px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Decision")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_Decision$().apply__Lcom_diagraphx_web_components_Decision()).view__Lorg_scalajs_dom_HTMLElement()])));
-  })));
-  var container = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\u25a3"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "28px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Add a Container")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
-    $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($m_Lcom_diagraphx_web_components_Container$().apply__Lcom_diagraphx_web_components_Container()).view__Lorg_scalajs_dom_HTMLElement()])));
-  })));
-  var remove = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\uddd1\ufe0f"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Remove Selected Element")]))), $m_Lcom_diagraphx_web_events_ElementRemove$package$().Lcom_diagraphx_web_events_ElementRemove$package$__f_removeElement);
-  this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_open = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Open Diagram")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
-    var input = document.createElement("input");
-    input.type = "file";
-    input.accept = ".json";
-    input.onchange = ((_$1) => {
-      var file = input.files[0];
-      var reader = new FileReader();
-      reader.onload = ((e$1) => {
-        var content = $as_T(reader.result);
-        $m_Lcom_diagraphx_web_objects_Cache$().loadState__T__V(content);
-      });
-      reader.readAsText(file);
-    });
-    input.click();
-  })));
-  this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_save = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "20px"), new $c_T2("cursor", "pointer"), new $c_T2("height", "30px"), new $c_T2("width", "30px"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("data-tooltip", "Save Diagram")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$8) => {
-    $m_Lcom_diagraphx_web_objects_Cache$().saveState__V();
-  })));
-  var holder = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "fixed"), new $c_T2("top", "100px"), new $c_T2("left", "10px"), new $c_T2("background-color", "#008476"), new $c_T2("color", "#F0F0F0"), new $c_T2("border-radius", "8px"), new $c_T2("padding", "5px"), new $c_T2("display", "flex"), new $c_T2("flex-direction", "column"), new $c_T2("align-items", "center"), new $c_T2("gap", "5px")])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([container])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([instruction])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([note])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([image])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([startEnd])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([decision])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([remove])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_open])));
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(holder, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_save])));
-  this.Lcom_diagraphx_web_pagecomponents_ToolBar$__f_toolBar = holder;
-}
-$c_Lcom_diagraphx_web_pagecomponents_ToolBar$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_pagecomponents_ToolBar$.prototype.constructor = $c_Lcom_diagraphx_web_pagecomponents_ToolBar$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_pagecomponents_ToolBar$() {
-}
-$h_Lcom_diagraphx_web_pagecomponents_ToolBar$.prototype = $c_Lcom_diagraphx_web_pagecomponents_ToolBar$.prototype;
-var $d_Lcom_diagraphx_web_pagecomponents_ToolBar$ = new $TypeData().initClass($c_Lcom_diagraphx_web_pagecomponents_ToolBar$, "com.diagraphx.web.pagecomponents.ToolBar$", ({
-  Lcom_diagraphx_web_pagecomponents_ToolBar$: 1
-}));
-var $n_Lcom_diagraphx_web_pagecomponents_ToolBar$;
-function $m_Lcom_diagraphx_web_pagecomponents_ToolBar$() {
-  if ((!$n_Lcom_diagraphx_web_pagecomponents_ToolBar$)) {
-    $n_Lcom_diagraphx_web_pagecomponents_ToolBar$ = new $c_Lcom_diagraphx_web_pagecomponents_ToolBar$();
-  }
-  return $n_Lcom_diagraphx_web_pagecomponents_ToolBar$;
+  return $n_Lcom_diagraphy_web_utils_HtmlElementUtil$;
 }
 /** @constructor */
 function $c_jl_FloatingPointBits$() {
@@ -14783,35 +14740,38 @@ var $d_Lupickle_implicits_Writers$$anon$9 = new $TypeData().initClass($c_Lupickl
 function $f_Lupickle_implicits_Writers$SimpleMapKeyWriter__write0__Lupickle_core_Visitor__O__O($thiz, out, v) {
   return $n(out).visitString__jl_CharSequence__I__O($thiz.writeString__O__T(v), (-1));
 }
-function $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__($thiz, element) {
-  $f_Lcom_diagraphx_web_events_ElementMouseClick__$init$__V($thiz);
-  $f_Lcom_diagraphx_web_events_ElementMouseDown__$init$__V($thiz);
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphx_web_components_VPath.getArrayOf().constr)([]));
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
-  var elems$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphx_web_components_VPath.getArrayOf().constr)([]));
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems$1);
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_parent = $m_s_None$();
-  var $x_4 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_3 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().foreignObject__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "max-content"), new $c_T2("height", "max-content"), new $c_T2("overflow", "visible"), new $c_T2("cursor", "grab"), new $c_T2("animation", "animate-in 1s ease-out forwards")])));
+function $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__($thiz, model) {
+  $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz);
+  $f_Lcom_diagraphy_web_events_ElementMouseDown__$init$__V($thiz);
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_parent = $m_s_None$();
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphy_web_components_AbstractElement.getArrayOf().constr)([]));
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
+  var elems$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphy_web_components_AbstractElement.getArrayOf().constr)([]));
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems$1);
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_startElement = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap).get__O__s_Option($n(model).Lcom_diagraphy_web_models_GraphElement__f_sElement);
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_endElement = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap).get__O__s_Option($n(model).Lcom_diagraphy_web_models_GraphElement__f_eElement);
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  var $x_4 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_3 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().foreignObject__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "max-content"), new $c_T2("height", "max-content"), new $c_T2("overflow", "visible"), new $c_T2("cursor", "grab"), new $c_T2("animation", "animate-in 1s ease-out forwards")])));
   var $x_2 = $m_sr_ScalaRunTime$();
-  var y = ("" + $n(element).Lcom_diagraphx_web_models_MElement__f_x);
+  var y = ("" + $n(model).Lcom_diagraphy_web_models_GraphElement__f_x);
   var $x_1 = new $c_T2("x", y);
-  var y$1 = ("" + $n(element).Lcom_diagraphx_web_models_MElement__f_y);
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_fo = $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
-  var $x_13 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_12 = $m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement();
+  var y$1 = ("" + $n(model).Lcom_diagraphy_web_models_GraphElement__f_y);
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_fo = $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
+  var $x_13 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_12 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement();
   var $x_11 = $m_sr_ScalaRunTime$();
   var $x_10 = new $c_T2("resize", "none");
   var $x_9 = new $c_T2("overflow", "auto");
-  var y$2 = ($n(element).Lcom_diagraphx_web_models_MElement__f_width + "px");
+  var y$2 = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_width + "px");
   var $x_8 = new $c_T2("width", y$2);
-  var y$3 = ($n(element).Lcom_diagraphx_web_models_MElement__f_height + "px");
+  var y$3 = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_height + "px");
   var $x_7 = new $c_T2("height", y$3);
   var $x_6 = new $c_T2("position", "relative");
   var $x_5 = new $c_T2("box-shadow", "0 8px 16px 0 rgba(0,0,0,0.22), 0 8px 16px 0 rgba(255,255,255,0.10) inset");
-  var y$4 = ("" + $n(element).Lcom_diagraphx_web_models_MElement__f_bgColor);
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = $x_13.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_12, $x_11.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_10, $x_9, $x_8, $x_7, $x_6, $x_5, new $c_T2("background-color", y$4), new $c_T2("border-radius", "8px"), new $c_T2("padding", "10px")])));
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_observer = new ResizeObserver(((entries, _$1) => {
+  var y$4 = ("" + $n(model).Lcom_diagraphy_web_models_GraphElement__f_bgColor);
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = $x_13.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_12, $x_11.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_10, $x_9, $x_8, $x_7, $x_6, $x_5, new $c_T2("background-color", y$4), new $c_T2("border-radius", "8px"), new $c_T2("padding", "10px")])));
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_observer = new ResizeObserver(((entries, _$1) => {
     var len = $uI(entries.length);
     var i = 0;
     while ((i < len)) {
@@ -14819,406 +14779,905 @@ function $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_M
       var x = x0.target;
       var y$5 = $thiz.resizeDiv__Lorg_scalajs_dom_HTMLElement();
       if ($m_sr_BoxesRunTime$().equals__O__O__Z(x, y$5)) {
-        var this$38 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
+        var this$38 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
         if ((!this$38.isEmpty__Z())) {
           var x0$1 = this$38.get__O();
-          var hoverElement = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$1);
-          var \u03b41$ = $n(hoverElement).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-          \u03b41$.setProperty("cursor", "grab");
-          var \u03b42$ = $n(hoverElement).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-          \u03b42$.setProperty("pointer-events", "auto");
+          var _$2 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+          $n(_$2).startMouseEvents__V();
         }
-        var this$39 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement);
+        var this$39 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
         if ((!this$39.isEmpty__Z())) {
           var x0$2 = this$39.get__O();
-          var hoverElement$1 = $as_Lcom_diagraphx_web_abstracts_AVElement(x0$2);
-          var \u03b43$ = $n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-          \u03b43$.setProperty("cursor", "grab");
-          var \u03b44$ = $n(hoverElement$1).Lcom_diagraphx_web_abstracts_AVElement__f_fo.style;
-          \u03b44$.setProperty("pointer-events", "auto");
+          var _$3 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$2);
+          $n(_$3).startMouseEvents__V();
         }
-        $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseDownElement = $m_s_None$();
-        $n(element).Lcom_diagraphx_web_models_MElement__f_width = $uD(x0.contentRect.width);
-        $n(element).Lcom_diagraphx_web_models_MElement__f_height = $uD(x0.contentRect.height);
-        var this$40 = $n($thiz.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-        var it = this$40.iterator__sc_Iterator();
-        while ($n(it).hasNext__Z()) {
-          var x0$3 = $n(it).next__O();
-          var oPath = $as_Lcom_diagraphx_web_components_VPath(x0$3);
-          matchResult1: {
-            var x1 = $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_edge;
-            if ((x1 === "East")) {
-              $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start = $thiz.east__Lcom_diagraphx_web_models_MPoint();
-              break matchResult1;
-            }
-            if ((x1 === "South")) {
-              $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start = $thiz.south__Lcom_diagraphx_web_models_MPoint();
-              break matchResult1;
-            }
-            if ((x1 === "West")) {
-              $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start = $thiz.west__Lcom_diagraphx_web_models_MPoint();
-              break matchResult1;
-            }
-            if ((x1 === "North")) {
-              $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start = $thiz.north__Lcom_diagraphx_web_models_MPoint();
-              break matchResult1;
-            }
-          }
-          $n(oPath).update__V();
+        $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement = $m_s_None$();
+        var dx = ($uD(x0.contentRect.width) - $n(model).Lcom_diagraphy_web_models_GraphElement__f_width);
+        var dy = ($uD(x0.contentRect.height) - $n(model).Lcom_diagraphy_web_models_GraphElement__f_height);
+        $n(model).Lcom_diagraphy_web_models_GraphElement__f_width = $uD(x0.contentRect.width);
+        $n(model).Lcom_diagraphy_web_models_GraphElement__f_height = $uD(x0.contentRect.height);
+        $p_Lcom_diagraphy_web_components_AbstractElement__updatePaths__V($thiz);
+        var this$40 = $n($p_Lcom_diagraphy_web_components_AbstractElement__eastPeers__sci_List($thiz));
+        var these = this$40;
+        while ((!$n(these).isEmpty__Z())) {
+          var x0$3 = $n(these).head__O();
+          var _$4 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
+          $n(_$4).move__D__D__V(dx, 0.0);
+          these = $as_sci_List($n(these).tail__O());
         }
-        var this$41 = $n($thiz.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-        var it$1 = this$41.iterator__sc_Iterator();
-        while ($n(it$1).hasNext__Z()) {
-          var x0$4 = $n(it$1).next__O();
-          var iPath = $as_Lcom_diagraphx_web_components_VPath(x0$4);
-          matchResult2: {
-            var x2 = $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_edge;
-            if ((x2 === "East")) {
-              $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end = $thiz.west__Lcom_diagraphx_web_models_MPoint();
-              break matchResult2;
-            }
-            if ((x2 === "South")) {
-              $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end = $thiz.north__Lcom_diagraphx_web_models_MPoint();
-              break matchResult2;
-            }
-            if ((x2 === "West")) {
-              $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end = $thiz.east__Lcom_diagraphx_web_models_MPoint();
-              break matchResult2;
-            }
-            if ((x2 === "North")) {
-              $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end = $thiz.south__Lcom_diagraphx_web_models_MPoint();
-              break matchResult2;
-            }
-          }
-          $n(iPath).update__V();
+        var this$41 = $n($p_Lcom_diagraphy_web_components_AbstractElement__southPeers__sci_List($thiz));
+        var these$1 = this$41;
+        while ((!$n(these$1).isEmpty__Z())) {
+          var x0$4 = $n(these$1).head__O();
+          var _$5 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$4);
+          $n(_$5).move__D__D__V(0.0, dy);
+          these$1 = $as_sci_List($n(these$1).tail__O());
         }
       }
       i = ((1 + i) | 0);
     }
   }));
-  $thiz.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("text-align", "center"), new $c_T2("display", "grid"), new $c_T2("position", "relative")])));
+  $thiz.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("text-align", "center"), new $c_T2("display", "grid"), new $c_T2("position", "relative")])));
   return $thiz;
 }
-/** @constructor */
-function $c_Lcom_diagraphx_web_abstracts_AVElement() {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
+function $p_Lcom_diagraphy_web_components_AbstractElement__peers__sci_List($thiz) {
+  var this$1 = $n($thiz.Lcom_diagraphy_web_components_AbstractElement__f_parent);
+  if (this$1.isEmpty__Z()) {
+    var this$2 = $m_s_None$();
+  } else {
+    var x0 = this$1.get__O();
+    var _$8 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    var this$2 = new $c_s_Some($n($n(_$8).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+  }
+  return $n($as_scm_ListBuffer($n($as_sc_StrictOptimizedIterableOps($n($as_sc_StrictOptimizedIterableOps((this$2.isEmpty__Z() ? $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state : this$2.get__O()))).filter__F1__O(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$9) => {
+    var _$9$1 = $as_Lcom_diagraphy_web_models_GraphElement(_$9);
+    return ($n(_$9$1).Lcom_diagraphy_web_models_GraphElement__f_id !== $n($thiz.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id);
+  }))))).flatMap__F1__O(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    var e$1 = $as_Lcom_diagraphy_web_models_GraphElement(e);
+    return $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap).get__O__s_Option($n(e$1).Lcom_diagraphy_web_models_GraphElement__f_id);
+  }))))).toList__sci_List();
 }
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype = new $h_O();
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.constructor = $c_Lcom_diagraphx_web_abstracts_AVElement;
-/** @constructor */
-function $h_Lcom_diagraphx_web_abstracts_AVElement() {
-}
-$h_Lcom_diagraphx_web_abstracts_AVElement.prototype = $c_Lcom_diagraphx_web_abstracts_AVElement.prototype;
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv;
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv;
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer.observe(this.resizeDiv__Lorg_scalajs_dom_HTMLElement());
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler);
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement(this.contentDiv__Lorg_scalajs_dom_HTMLElement(), $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
-    var newText$1 = $as_T(newText);
-    $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_text = newText$1;
-  }))), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = new $c_s_Some(this);
-  }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
-    var this$4 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
-    if ((!this$4.isEmpty__Z())) {
-      var x0 = this$4.get__O();
-      var element = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
-      var domList = $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
-      var this$6 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
-      var it = this$6.iterator__sc_Iterator();
-      while ($n(it).hasNext__Z()) {
-        var x0$1 = $n(it).next__O();
-        $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().removeChild(x0$1);
+function $p_Lcom_diagraphy_web_components_AbstractElement__eastPeers__sci_List($thiz) {
+  var this$2 = $n($p_Lcom_diagraphy_web_components_AbstractElement__peers__sci_List($thiz));
+  var f = ((e) => {
+    var e$1 = $as_Lcom_diagraphy_web_components_AbstractElement(e);
+    return ((($n($n(e$1).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x > $n($thiz.east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x) && ($n($n(e$1).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y > $n($thiz.north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y)) && ($n($n(e$1).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y < $n($thiz.south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y));
+  });
+  var l = this$2;
+  block: {
+    var result;
+    while (true) {
+      if ($n(l).isEmpty__Z()) {
+        var result = $m_sci_Nil$();
+        break;
+      } else {
+        var h = $n(l).head__O();
+        var t = $as_sci_List($n(l).tail__O());
+        if (($uZ(f(h)) === false)) {
+          l = t;
+          continue;
+        }
+        var start = l;
+        var remaining = t;
+        while (true) {
+          if ($n(remaining).isEmpty__Z()) {
+            var result = start;
+            break block;
+          } else {
+            var x = $n(remaining).head__O();
+            if (($uZ(f(x)) !== false)) {
+              remaining = $as_sci_List($n(remaining).tail__O());
+              continue;
+            }
+            var firstMiss = remaining;
+            var newHead = new $c_sci_$colon$colon($n(start).head__O(), $m_sci_Nil$());
+            var toProcess = $as_sci_List($n(start).tail__O());
+            var currentLast = newHead;
+            while ((toProcess !== firstMiss)) {
+              var newElem = new $c_sci_$colon$colon($n(toProcess).head__O(), $m_sci_Nil$());
+              $n(currentLast).sci_$colon$colon__f_next = newElem;
+              currentLast = newElem;
+              toProcess = $as_sci_List($n(toProcess).tail__O());
+            }
+            var next = $as_sci_List($n(firstMiss).tail__O());
+            var nextToCopy = next;
+            while ((!$n(next).isEmpty__Z())) {
+              var head = $n(next).head__O();
+              if (($uZ(f(head)) !== false)) {
+                next = $as_sci_List($n(next).tail__O());
+              } else {
+                while ((nextToCopy !== next)) {
+                  var newElem$2 = new $c_sci_$colon$colon($n(nextToCopy).head__O(), $m_sci_Nil$());
+                  $n(currentLast).sci_$colon$colon__f_next = newElem$2;
+                  currentLast = newElem$2;
+                  nextToCopy = $as_sci_List($n(nextToCopy).tail__O());
+                }
+                nextToCopy = $as_sci_List($n(next).tail__O());
+                next = $as_sci_List($n(next).tail__O());
+              }
+            }
+            if ((!$n(nextToCopy).isEmpty__Z())) {
+              $n(currentLast).sci_$colon$colon__f_next = nextToCopy;
+            }
+            var result = newHead;
+            break block;
+          }
+        }
       }
     }
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = $m_s_None$();
-  })));
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_abstracts_AVElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.contentDiv__Lorg_scalajs_dom_HTMLElement()])))])));
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.padding__I = (function() {
-  return (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_format === "Decision") ? 0 : 20);
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.east__Lcom_diagraphx_web_models_MPoint = (function() {
-  var x = (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x + $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_width) + this.padding__I());
-  var y = ($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y + (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_height + this.padding__I()) / 2.0));
-  return new $c_Lcom_diagraphx_web_models_MPoint(x, y);
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.west__Lcom_diagraphx_web_models_MPoint = (function() {
-  var x = $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x;
-  var y = ($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y + (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_height + this.padding__I()) / 2.0));
-  return new $c_Lcom_diagraphx_web_models_MPoint(x, y);
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.north__Lcom_diagraphx_web_models_MPoint = (function() {
-  var x = ($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x + (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_width + this.padding__I()) / 2.0));
-  var y = $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y;
-  return new $c_Lcom_diagraphx_web_models_MPoint(x, y);
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.south__Lcom_diagraphx_web_models_MPoint = (function() {
-  var x = ($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x + (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_width + this.padding__I()) / 2.0));
-  var y = (($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y + $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_height) + this.padding__I());
-  return new $c_Lcom_diagraphx_web_models_MPoint(x, y);
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.setOrigin__D__D__V = (function(x1, y1) {
-  $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x = x1;
-  $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y = y1;
-  var $x_4 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_3 = this.Lcom_diagraphx_web_abstracts_AVElement__f_fo;
-  var $x_2 = $m_sr_ScalaRunTime$();
-  var y = ("" + $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x);
-  var $x_1 = new $c_T2("x", y);
-  var y$1 = ("" + $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y);
-  $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
-});
-$c_Lcom_diagraphx_web_abstracts_AVElement.prototype.move__D__D__V = (function(dx, dy) {
-  $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x = ($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x + dx);
-  $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y = ($n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y + dy);
-  var $x_4 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_3 = this.Lcom_diagraphx_web_abstracts_AVElement__f_fo;
-  var $x_2 = $m_sr_ScalaRunTime$();
-  var y = ("" + $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_x);
-  var $x_1 = new $c_T2("x", y);
-  var y$1 = ("" + $n(this.element__Lcom_diagraphx_web_models_MElement()).Lcom_diagraphx_web_models_MElement__f_y);
-  $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
-  var this$5 = $n(this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths);
-  var it = this$5.iterator__sc_Iterator();
+  }
+  return result;
+}
+function $p_Lcom_diagraphy_web_components_AbstractElement__southPeers__sci_List($thiz) {
+  var this$2 = $n($p_Lcom_diagraphy_web_components_AbstractElement__peers__sci_List($thiz));
+  var f = ((e) => {
+    var e$1 = $as_Lcom_diagraphy_web_components_AbstractElement(e);
+    return ((($n($n(e$1).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y > $n($thiz.south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y) && ($n($n(e$1).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x > $n($thiz.west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x)) && ($n($n(e$1).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x < $n($thiz.east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x));
+  });
+  var l = this$2;
+  block: {
+    var result;
+    while (true) {
+      if ($n(l).isEmpty__Z()) {
+        var result = $m_sci_Nil$();
+        break;
+      } else {
+        var h = $n(l).head__O();
+        var t = $as_sci_List($n(l).tail__O());
+        if (($uZ(f(h)) === false)) {
+          l = t;
+          continue;
+        }
+        var start = l;
+        var remaining = t;
+        while (true) {
+          if ($n(remaining).isEmpty__Z()) {
+            var result = start;
+            break block;
+          } else {
+            var x = $n(remaining).head__O();
+            if (($uZ(f(x)) !== false)) {
+              remaining = $as_sci_List($n(remaining).tail__O());
+              continue;
+            }
+            var firstMiss = remaining;
+            var newHead = new $c_sci_$colon$colon($n(start).head__O(), $m_sci_Nil$());
+            var toProcess = $as_sci_List($n(start).tail__O());
+            var currentLast = newHead;
+            while ((toProcess !== firstMiss)) {
+              var newElem = new $c_sci_$colon$colon($n(toProcess).head__O(), $m_sci_Nil$());
+              $n(currentLast).sci_$colon$colon__f_next = newElem;
+              currentLast = newElem;
+              toProcess = $as_sci_List($n(toProcess).tail__O());
+            }
+            var next = $as_sci_List($n(firstMiss).tail__O());
+            var nextToCopy = next;
+            while ((!$n(next).isEmpty__Z())) {
+              var head = $n(next).head__O();
+              if (($uZ(f(head)) !== false)) {
+                next = $as_sci_List($n(next).tail__O());
+              } else {
+                while ((nextToCopy !== next)) {
+                  var newElem$2 = new $c_sci_$colon$colon($n(nextToCopy).head__O(), $m_sci_Nil$());
+                  $n(currentLast).sci_$colon$colon__f_next = newElem$2;
+                  currentLast = newElem$2;
+                  nextToCopy = $as_sci_List($n(nextToCopy).tail__O());
+                }
+                nextToCopy = $as_sci_List($n(next).tail__O());
+                next = $as_sci_List($n(next).tail__O());
+              }
+            }
+            if ((!$n(nextToCopy).isEmpty__Z())) {
+              $n(currentLast).sci_$colon$colon__f_next = nextToCopy;
+            }
+            var result = newHead;
+            break block;
+          }
+        }
+      }
+    }
+  }
+  return result;
+}
+function $p_Lcom_diagraphy_web_components_AbstractElement__westPeers__sci_List($thiz) {
+  var this$2 = $n($p_Lcom_diagraphy_web_components_AbstractElement__peers__sci_List($thiz));
+  var f = ((e) => {
+    var e$1 = $as_Lcom_diagraphy_web_components_AbstractElement(e);
+    return ((($n($n(e$1).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x < $n($thiz.west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x) && ($n($n(e$1).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y > $n($thiz.north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y)) && ($n($n(e$1).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y < $n($thiz.south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y));
+  });
+  var l = this$2;
+  block: {
+    var result;
+    while (true) {
+      if ($n(l).isEmpty__Z()) {
+        var result = $m_sci_Nil$();
+        break;
+      } else {
+        var h = $n(l).head__O();
+        var t = $as_sci_List($n(l).tail__O());
+        if (($uZ(f(h)) === false)) {
+          l = t;
+          continue;
+        }
+        var start = l;
+        var remaining = t;
+        while (true) {
+          if ($n(remaining).isEmpty__Z()) {
+            var result = start;
+            break block;
+          } else {
+            var x = $n(remaining).head__O();
+            if (($uZ(f(x)) !== false)) {
+              remaining = $as_sci_List($n(remaining).tail__O());
+              continue;
+            }
+            var firstMiss = remaining;
+            var newHead = new $c_sci_$colon$colon($n(start).head__O(), $m_sci_Nil$());
+            var toProcess = $as_sci_List($n(start).tail__O());
+            var currentLast = newHead;
+            while ((toProcess !== firstMiss)) {
+              var newElem = new $c_sci_$colon$colon($n(toProcess).head__O(), $m_sci_Nil$());
+              $n(currentLast).sci_$colon$colon__f_next = newElem;
+              currentLast = newElem;
+              toProcess = $as_sci_List($n(toProcess).tail__O());
+            }
+            var next = $as_sci_List($n(firstMiss).tail__O());
+            var nextToCopy = next;
+            while ((!$n(next).isEmpty__Z())) {
+              var head = $n(next).head__O();
+              if (($uZ(f(head)) !== false)) {
+                next = $as_sci_List($n(next).tail__O());
+              } else {
+                while ((nextToCopy !== next)) {
+                  var newElem$2 = new $c_sci_$colon$colon($n(nextToCopy).head__O(), $m_sci_Nil$());
+                  $n(currentLast).sci_$colon$colon__f_next = newElem$2;
+                  currentLast = newElem$2;
+                  nextToCopy = $as_sci_List($n(nextToCopy).tail__O());
+                }
+                nextToCopy = $as_sci_List($n(next).tail__O());
+                next = $as_sci_List($n(next).tail__O());
+              }
+            }
+            if ((!$n(nextToCopy).isEmpty__Z())) {
+              $n(currentLast).sci_$colon$colon__f_next = nextToCopy;
+            }
+            var result = newHead;
+            break block;
+          }
+        }
+      }
+    }
+  }
+  return result;
+}
+function $p_Lcom_diagraphy_web_components_AbstractElement__northPeers__sci_List($thiz) {
+  var this$2 = $n($p_Lcom_diagraphy_web_components_AbstractElement__peers__sci_List($thiz));
+  var f = ((e) => {
+    var e$1 = $as_Lcom_diagraphy_web_components_AbstractElement(e);
+    return ((($n($n(e$1).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y < $n($thiz.north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y) && ($n($n(e$1).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x > $n($thiz.west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x)) && ($n($n(e$1).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x < $n($thiz.east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x));
+  });
+  var l = this$2;
+  block: {
+    var result;
+    while (true) {
+      if ($n(l).isEmpty__Z()) {
+        var result = $m_sci_Nil$();
+        break;
+      } else {
+        var h = $n(l).head__O();
+        var t = $as_sci_List($n(l).tail__O());
+        if (($uZ(f(h)) === false)) {
+          l = t;
+          continue;
+        }
+        var start = l;
+        var remaining = t;
+        while (true) {
+          if ($n(remaining).isEmpty__Z()) {
+            var result = start;
+            break block;
+          } else {
+            var x = $n(remaining).head__O();
+            if (($uZ(f(x)) !== false)) {
+              remaining = $as_sci_List($n(remaining).tail__O());
+              continue;
+            }
+            var firstMiss = remaining;
+            var newHead = new $c_sci_$colon$colon($n(start).head__O(), $m_sci_Nil$());
+            var toProcess = $as_sci_List($n(start).tail__O());
+            var currentLast = newHead;
+            while ((toProcess !== firstMiss)) {
+              var newElem = new $c_sci_$colon$colon($n(toProcess).head__O(), $m_sci_Nil$());
+              $n(currentLast).sci_$colon$colon__f_next = newElem;
+              currentLast = newElem;
+              toProcess = $as_sci_List($n(toProcess).tail__O());
+            }
+            var next = $as_sci_List($n(firstMiss).tail__O());
+            var nextToCopy = next;
+            while ((!$n(next).isEmpty__Z())) {
+              var head = $n(next).head__O();
+              if (($uZ(f(head)) !== false)) {
+                next = $as_sci_List($n(next).tail__O());
+              } else {
+                while ((nextToCopy !== next)) {
+                  var newElem$2 = new $c_sci_$colon$colon($n(nextToCopy).head__O(), $m_sci_Nil$());
+                  $n(currentLast).sci_$colon$colon__f_next = newElem$2;
+                  currentLast = newElem$2;
+                  nextToCopy = $as_sci_List($n(nextToCopy).tail__O());
+                }
+                nextToCopy = $as_sci_List($n(next).tail__O());
+                next = $as_sci_List($n(next).tail__O());
+              }
+            }
+            if ((!$n(nextToCopy).isEmpty__Z())) {
+              $n(currentLast).sci_$colon$colon__f_next = nextToCopy;
+            }
+            var result = newHead;
+            break block;
+          }
+        }
+      }
+    }
+  }
+  return result;
+}
+function $p_Lcom_diagraphy_web_components_AbstractElement__updatePaths__V($thiz) {
+  var this$1 = $n($thiz.Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+  var it = this$1.iterator__sc_Iterator();
   while ($n(it).hasNext__Z()) {
     var x0 = $n(it).next__O();
-    var oPath = $as_Lcom_diagraphx_web_components_VPath(x0);
-    var \u03b45$ = $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start;
-    $n(\u03b45$).Lcom_diagraphx_web_models_MPoint__f_x = ($n(\u03b45$).Lcom_diagraphx_web_models_MPoint__f_x + dx);
-    var \u03b46$ = $n($n(oPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start;
-    $n(\u03b46$).Lcom_diagraphx_web_models_MPoint__f_y = ($n(\u03b46$).Lcom_diagraphx_web_models_MPoint__f_y + dy);
+    var oPath = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    matchResult1: {
+      var x1 = $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_edge;
+      if ((x1 === "East")) {
+        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.east__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult1;
+      }
+      if ((x1 === "South")) {
+        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.south__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult1;
+      }
+      if ((x1 === "West")) {
+        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.west__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult1;
+      }
+      if ((x1 === "North")) {
+        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.north__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult1;
+      }
+    }
     $n(oPath).update__V();
   }
-  var this$6 = $n(this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths);
-  var it$1 = this$6.iterator__sc_Iterator();
+  var this$2 = $n($thiz.Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+  var it$1 = this$2.iterator__sc_Iterator();
   while ($n(it$1).hasNext__Z()) {
     var x0$1 = $n(it$1).next__O();
-    var iPath = $as_Lcom_diagraphx_web_components_VPath(x0$1);
-    var \u03b47$ = $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end;
-    $n(\u03b47$).Lcom_diagraphx_web_models_MPoint__f_x = ($n(\u03b47$).Lcom_diagraphx_web_models_MPoint__f_x + dx);
-    var \u03b48$ = $n($n(iPath).Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end;
-    $n(\u03b48$).Lcom_diagraphx_web_models_MPoint__f_y = ($n(\u03b48$).Lcom_diagraphx_web_models_MPoint__f_y + dy);
+    var iPath = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+    matchResult2: {
+      var x2 = $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_edge;
+      if ((x2 === "East")) {
+        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.west__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult2;
+      }
+      if ((x2 === "South")) {
+        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.north__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult2;
+      }
+      if ((x2 === "West")) {
+        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.east__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult2;
+      }
+      if ((x2 === "North")) {
+        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.south__Lcom_diagraphy_web_models_GraphPoint();
+        break matchResult2;
+      }
+    }
     $n(iPath).update__V();
   }
-});
-function $as_Lcom_diagraphx_web_abstracts_AVElement(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_abstracts_AVElement) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.abstracts.AVElement"));
-}
-function $isArrayOf_Lcom_diagraphx_web_abstracts_AVElement(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_abstracts_AVElement)));
-}
-function $asArrayOf_Lcom_diagraphx_web_abstracts_AVElement(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_abstracts_AVElement(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.abstracts.AVElement;", depth));
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MElement$() {
-  this.Lcom_diagraphx_web_models_MElement$__f_derived$ReadWriter$lzy1 = null;
-  this.Lcom_diagraphx_web_models_MElement$__f_derived$ReadWriterbitmap$1 = false;
+function $c_Lcom_diagraphy_web_components_AbstractElement() {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
 }
-$c_Lcom_diagraphx_web_models_MElement$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MElement$.prototype.constructor = $c_Lcom_diagraphx_web_models_MElement$;
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.constructor = $c_Lcom_diagraphy_web_components_AbstractElement;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MElement$() {
+function $h_Lcom_diagraphy_web_components_AbstractElement() {
 }
-$h_Lcom_diagraphx_web_models_MElement$.prototype = $c_Lcom_diagraphx_web_models_MElement$.prototype;
-$c_Lcom_diagraphx_web_models_MElement$.prototype.toString__T = (function() {
-  return "MElement";
+$h_Lcom_diagraphy_web_components_AbstractElement.prototype = $c_Lcom_diagraphy_web_components_AbstractElement.prototype;
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.ipath__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_AbstractElement__f_ipath;
 });
-$c_Lcom_diagraphx_web_models_MElement$.prototype.$lessinit$greater$default$12__scm_ListBuffer = (function() {
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphx_web_models_MElement.getArrayOf().constr)([]));
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv;
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv;
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer.observe(this.resizeDiv__Lorg_scalajs_dom_HTMLElement());
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler);
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement(this.contentDiv__Lorg_scalajs_dom_HTMLElement(), $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
+    var newText$1 = $as_T(newText);
+    $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_text = newText$1;
+  }))), this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$6) => {
+    var this$3 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
+    if ((!this$3.isEmpty__Z())) {
+      var $x_1 = true;
+    } else {
+      var this$4 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
+      var $x_1 = (!this$4.isEmpty__Z());
+    }
+    if ($x_1) {
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = new $c_s_Some(this);
+    }
+  }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$7) => {
+    var this$6 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
+    if ((!this$6.isEmpty__Z())) {
+      var x0 = this$6.get__O();
+      var model = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      var domList = $n(model).resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
+      var this$8 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
+      var it = this$8.iterator__sc_Iterator();
+      while ($n(it).hasNext__Z()) {
+        var x0$1 = $n(it).next__O();
+        $n(model).resizeDiv__Lorg_scalajs_dom_HTMLElement().removeChild(x0$1);
+      }
+    }
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
+  })));
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.contentDiv__Lorg_scalajs_dom_HTMLElement()])))])));
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.padding__I = (function() {
+  return (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_format === "Decision") ? 0 : 20);
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.east__Lcom_diagraphy_web_models_GraphPoint = (function() {
+  var x = (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width) + this.padding__I());
+  var y = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y + (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height + this.padding__I()) / 2.0));
+  return new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.west__Lcom_diagraphy_web_models_GraphPoint = (function() {
+  var x = $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x;
+  var y = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y + (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height + this.padding__I()) / 2.0));
+  return new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.north__Lcom_diagraphy_web_models_GraphPoint = (function() {
+  var x = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x + (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width + this.padding__I()) / 2.0));
+  var y = $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y;
+  return new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.south__Lcom_diagraphy_web_models_GraphPoint = (function() {
+  var x = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x + (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width + this.padding__I()) / 2.0));
+  var y = (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height) + this.padding__I());
+  return new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.move__D__D__V = (function(dx, dy) {
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x + dx);
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y + dy);
+  var $x_4 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_3 = this.Lcom_diagraphy_web_components_AbstractElement__f_fo;
+  var $x_2 = $m_sr_ScalaRunTime$();
+  var y = ("" + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x);
+  var $x_1 = new $c_T2("x", y);
+  var y$1 = ("" + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y);
+  $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
+  $p_Lcom_diagraphy_web_components_AbstractElement__updatePaths__V(this);
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.setOrigin__D__D__V = (function(x1, y1) {
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x = x1;
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y = y1;
+  var $x_4 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_3 = this.Lcom_diagraphy_web_components_AbstractElement__f_fo;
+  var $x_2 = $m_sr_ScalaRunTime$();
+  var y = ("" + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x);
+  var $x_1 = new $c_T2("x", y);
+  var y$1 = ("" + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y);
+  $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.update__V = (function() {
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.resize__D__V = (function(zoomFactor) {
+  var newW = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width * zoomFactor);
+  var newH = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height * zoomFactor);
+  var dx = ((newW - $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width) / 2.0);
+  var dy = ((newH - $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height) / 2.0);
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x - dx);
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y - dy);
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width = newW;
+  $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height = newH;
+  var $x_4 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_3 = this.Lcom_diagraphy_web_components_AbstractElement__f_fo;
+  var $x_2 = $m_sr_ScalaRunTime$();
+  var y = ("" + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x);
+  var $x_1 = new $c_T2("x", y);
+  var y$1 = ("" + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_y);
+  $x_4.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3, $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_1, new $c_T2("y", y$1)])));
+  var $x_8 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_7 = this.resizeDiv__Lorg_scalajs_dom_HTMLElement();
+  var $x_6 = $m_sr_ScalaRunTime$();
+  var y$2 = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width + "px");
+  var $x_5 = new $c_T2("width", y$2);
+  var y$3 = ($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_height + "px");
+  $x_8.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_7, $x_6.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_5, new $c_T2("height", y$3)])));
+  $p_Lcom_diagraphy_web_components_AbstractElement__updatePaths__V(this);
+  var this$9 = $n($p_Lcom_diagraphy_web_components_AbstractElement__eastPeers__sci_List(this));
+  var these = this$9;
+  while ((!$n(these).isEmpty__Z())) {
+    var x0 = $n(these).head__O();
+    var _$10 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    $n(_$10).move__D__D__V(dx, 0.0);
+    these = $as_sci_List($n(these).tail__O());
+  }
+  var this$10 = $n($p_Lcom_diagraphy_web_components_AbstractElement__southPeers__sci_List(this));
+  var these$1 = this$10;
+  while ((!$n(these$1).isEmpty__Z())) {
+    var x0$1 = $n(these$1).head__O();
+    var _$11 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+    $n(_$11).move__D__D__V(0.0, dy);
+    these$1 = $as_sci_List($n(these$1).tail__O());
+  }
+  var this$11 = $n($p_Lcom_diagraphy_web_components_AbstractElement__westPeers__sci_List(this));
+  var these$2 = this$11;
+  while ((!$n(these$2).isEmpty__Z())) {
+    var x0$2 = $n(these$2).head__O();
+    var _$12 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$2);
+    $n(_$12).move__D__D__V((-dx), 0.0);
+    these$2 = $as_sci_List($n(these$2).tail__O());
+  }
+  var this$12 = $n($p_Lcom_diagraphy_web_components_AbstractElement__northPeers__sci_List(this));
+  var these$3 = this$12;
+  while ((!$n(these$3).isEmpty__Z())) {
+    var x0$3 = $n(these$3).head__O();
+    var _$13 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
+    $n(_$13).move__D__D__V(0.0, (-dy));
+    these$3 = $as_sci_List($n(these$3).tail__O());
+  }
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.remove__V = (function() {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer.unobserve(this.resizeDiv__Lorg_scalajs_dom_HTMLElement());
+  this.resizeDiv__Lorg_scalajs_dom_HTMLElement().remove();
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo.remove();
+  var this$1 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+  var it = this$1.iterator__sc_Iterator();
+  while ($n(it).hasNext__Z()) {
+    var x0 = $n(it).next__O();
+    var path = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    $n(path).ipath__Lorg_scalajs_dom_HTMLElement().remove();
+    var this$2 = $n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+    if ((!this$2.isEmpty__Z())) {
+      var x0$1 = this$2.get__O();
+      var _$14 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+      var $x_1 = $n(_$14);
+      var this$3 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+      var b = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+      var it$1 = this$3.iterator__sc_Iterator();
+      while ($n(it$1).hasNext__Z()) {
+        var elem = $n(it$1).next__O();
+        var _$15 = $as_Lcom_diagraphy_web_components_AbstractElement(elem);
+        if ((($n($n(_$15).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id === $n($n(path).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+          b.addOne__O__scm_GrowableBuilder(elem);
+        }
+      }
+      $x_1.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = $as_scm_ListBuffer(b.scm_GrowableBuilder__f_elems);
+    }
+    var this$5 = $n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+    if ((!this$5.isEmpty__Z())) {
+      var x0$2 = this$5.get__O();
+      var _$16 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$2);
+      var $x_2 = $n(_$16);
+      var this$6 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_endElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+      var b$1 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+      var it$2 = this$6.iterator__sc_Iterator();
+      while ($n(it$2).hasNext__Z()) {
+        var elem$1 = $n(it$2).next__O();
+        var _$17 = $as_Lcom_diagraphy_web_components_AbstractElement(elem$1);
+        if ((($n($n(_$17).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id === $n($n(path).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+          b$1.addOne__O__scm_GrowableBuilder(elem$1);
+        }
+      }
+      $x_2.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = $as_scm_ListBuffer(b$1.scm_GrowableBuilder__f_elems);
+    }
+  }
+  var this$8 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+  var it$3 = this$8.iterator__sc_Iterator();
+  while ($n(it$3).hasNext__Z()) {
+    var x0$3 = $n(it$3).next__O();
+    var path$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
+    $n(path$1).ipath__Lorg_scalajs_dom_HTMLElement().remove();
+    var this$9 = $n($n(path$1).Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+    if ((!this$9.isEmpty__Z())) {
+      var x0$4 = this$9.get__O();
+      var _$18 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$4);
+      var $x_3 = $n(_$18);
+      var this$10 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path$1).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+      var b$2 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+      var it$4 = this$10.iterator__sc_Iterator();
+      while ($n(it$4).hasNext__Z()) {
+        var elem$2 = $n(it$4).next__O();
+        var _$19 = $as_Lcom_diagraphy_web_components_AbstractElement(elem$2);
+        if ((($n($n(_$19).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id === $n($n(path$1).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+          b$2.addOne__O__scm_GrowableBuilder(elem$2);
+        }
+      }
+      $x_3.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = $as_scm_ListBuffer(b$2.scm_GrowableBuilder__f_elems);
+    }
+    var this$12 = $n($n(path$1).Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+    if ((!this$12.isEmpty__Z())) {
+      var x0$5 = this$12.get__O();
+      var _$20 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$5);
+      var $x_4 = $n(_$20);
+      var this$13 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path$1).Lcom_diagraphy_web_components_AbstractElement__f_endElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+      var b$3 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+      var it$5 = this$13.iterator__sc_Iterator();
+      while ($n(it$5).hasNext__Z()) {
+        var elem$3 = $n(it$5).next__O();
+        var _$21 = $as_Lcom_diagraphy_web_components_AbstractElement(elem$3);
+        if ((($n($n(_$21).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id === $n($n(path$1).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+          b$3.addOne__O__scm_GrowableBuilder(elem$3);
+        }
+      }
+      $x_4.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = $as_scm_ListBuffer(b$3.scm_GrowableBuilder__f_elems);
+    }
+  }
+  $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap).remove__O__s_Option($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id);
+  var $x_5 = $m_Lcom_diagraphy_web_State$();
+  var this$15 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
+  var b$4 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+  var it$6 = this$15.iterator__sc_Iterator();
+  while ($n(it$6).hasNext__Z()) {
+    var elem$4 = $n(it$6).next__O();
+    var _$22 = $as_Lcom_diagraphy_web_models_GraphElement(elem$4);
+    if ((($n(_$22).Lcom_diagraphy_web_models_GraphElement__f_id === $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+      b$4.addOne__O__scm_GrowableBuilder(elem$4);
+    }
+  }
+  $x_5.Lcom_diagraphy_web_State$__f_state = $as_scm_ListBuffer(b$4.scm_GrowableBuilder__f_elems);
+  var this$17 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_parent);
+  if ((!this$17.isEmpty__Z())) {
+    var x0$6 = this$17.get__O();
+    var p = $as_Lcom_diagraphy_web_components_AbstractElement(x0$6);
+    var $x_6 = $n($n(p).model__Lcom_diagraphy_web_models_GraphElement());
+    var this$18 = $n($n($n(p).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+    var b$5 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+    var it$7 = this$18.iterator__sc_Iterator();
+    while ($n(it$7).hasNext__Z()) {
+      var elem$5 = $n(it$7).next__O();
+      var _$23 = $as_Lcom_diagraphy_web_models_GraphElement(elem$5);
+      if ((($n(_$23).Lcom_diagraphy_web_models_GraphElement__f_id === $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+        b$5.addOne__O__scm_GrowableBuilder(elem$5);
+      }
+    }
+    $x_6.Lcom_diagraphy_web_models_GraphElement__f_elements = $as_scm_ListBuffer(b$5.scm_GrowableBuilder__f_elems);
+  }
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.highlight__V = (function() {
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("resize", "both"), new $c_T2("border", "1px solid #008476")])));
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.clearHighlight__V = (function() {
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("resize", "none"), new $c_T2("border", "none")])));
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.clearConnections__V = (function() {
+  var domList = this.resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
+  var this$2 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
+  var it = this$2.iterator__sc_Iterator();
+  while ($n(it).hasNext__Z()) {
+    var x0 = $n(it).next__O();
+    try {
+      this.resizeDiv__Lorg_scalajs_dom_HTMLElement().removeChild(x0);
+    } catch (e) {
+    }
+  }
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.pauseMouseEvents__V = (function() {
+  var \u03b41$ = this.Lcom_diagraphy_web_components_AbstractElement__f_fo.style;
+  \u03b41$.setProperty("pointer-events", "none");
+});
+$c_Lcom_diagraphy_web_components_AbstractElement.prototype.startMouseEvents__V = (function() {
+  var \u03b42$ = this.Lcom_diagraphy_web_components_AbstractElement__f_fo.style;
+  \u03b42$.setProperty("cursor", "grab");
+  var \u03b43$ = this.Lcom_diagraphy_web_components_AbstractElement__f_fo.style;
+  \u03b43$.setProperty("pointer-events", "auto");
+});
+function $as_Lcom_diagraphy_web_components_AbstractElement(obj) {
+  return (((obj instanceof $c_Lcom_diagraphy_web_components_AbstractElement) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphy.web.components.AbstractElement"));
+}
+function $isArrayOf_Lcom_diagraphy_web_components_AbstractElement(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphy_web_components_AbstractElement)));
+}
+function $asArrayOf_Lcom_diagraphy_web_components_AbstractElement(obj, depth) {
+  return (($isArrayOf_Lcom_diagraphy_web_components_AbstractElement(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphy.web.components.AbstractElement;", depth));
+}
+var $d_Lcom_diagraphy_web_components_AbstractElement = new $TypeData().initClass(0, "com.diagraphy.web.components.AbstractElement", ({
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
+}));
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_Path$() {
+  this.Lcom_diagraphy_web_components_Path$__f_pathD = null;
+  $n_Lcom_diagraphy_web_components_Path$ = this;
+  this.Lcom_diagraphy_web_components_Path$__f_pathD = new $c_sjsr_AnonFunction3_$$Lambda$0321b7865d991d5a3e10ec941cd6461a4b204491(((start, end, edge) => {
+    var start$1 = $as_Lcom_diagraphy_web_models_GraphPoint(start);
+    var end$1 = $as_Lcom_diagraphy_web_models_GraphPoint(end);
+    var edge$1 = $as_T(edge);
+    var this$2 = $n(edge$1);
+    if ((this$2 === "North")) {
+      var $x_1 = true;
+    } else {
+      var this$3 = $n(edge$1);
+      var $x_1 = (this$3 === "South");
+    }
+    if ($x_1) {
+      var cx1 = $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x;
+      var cy1 = ($n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y + (($n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_y - $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y) / 2.0));
+      var cx2 = $n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_x;
+      var cy2 = ($n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y + (($n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_y - $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y) / 2.0));
+      return ((((((((((((((("M " + $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x) + " ") + $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y) + " C ") + cx1) + " ") + cy1) + " ") + cx2) + " ") + cy2) + " ") + $n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_x) + " ") + $n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_y);
+    } else {
+      var cx1$2 = ($n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x + (($n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_x - $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x) / 2.0));
+      var cy1$2 = $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y;
+      var cx2$2 = ($n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x + (($n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_x - $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x) / 2.0));
+      var cy2$2 = $n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_y;
+      return ((((((((((((((("M " + $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_x) + " ") + $n(start$1).Lcom_diagraphy_web_models_GraphPoint__f_y) + " C ") + cx1$2) + " ") + cy1$2) + " ") + cx2$2) + " ") + cy2$2) + " ") + $n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_x) + " ") + $n(end$1).Lcom_diagraphy_web_models_GraphPoint__f_y);
+    }
+  }));
+}
+$c_Lcom_diagraphy_web_components_Path$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_components_Path$.prototype.constructor = $c_Lcom_diagraphy_web_components_Path$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_Path$() {
+}
+$h_Lcom_diagraphy_web_components_Path$.prototype = $c_Lcom_diagraphy_web_components_Path$.prototype;
+$c_Lcom_diagraphy_web_components_Path$.prototype.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path = (function(model) {
+  var $x_1 = $n(model);
+  var this$2 = $m_RTLong$();
+  var value = $uD(new Date().getTime());
+  var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
+  var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
+  $x_1.Lcom_diagraphy_web_models_GraphElement__f_id = ("path-" + new $c_RTLong(lo, hi));
+  $n(model).Lcom_diagraphy_web_models_GraphElement__f_format = "path";
+  return new $c_Lcom_diagraphy_web_components_Path(model);
+});
+$c_Lcom_diagraphy_web_components_Path$.prototype.pathEnd__Lcom_diagraphy_web_components_Path__Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphPoint = (function(vPath, avElement) {
+  var x5 = $n($n(vPath).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge;
+  if ((x5 === "East")) {
+    return $n(avElement).west__Lcom_diagraphy_web_models_GraphPoint();
+  }
+  if ((x5 === "South")) {
+    return $n(avElement).north__Lcom_diagraphy_web_models_GraphPoint();
+  }
+  if ((x5 === "West")) {
+    return $n(avElement).east__Lcom_diagraphy_web_models_GraphPoint();
+  }
+  if ((x5 === "North")) {
+    return $n(avElement).south__Lcom_diagraphy_web_models_GraphPoint();
+  }
+  return $n(avElement).west__Lcom_diagraphy_web_models_GraphPoint();
+});
+$c_Lcom_diagraphy_web_components_Path$.prototype.fromProduct__s_Product__Lcom_diagraphy_web_components_Path = (function(x$0) {
+  return new $c_Lcom_diagraphy_web_components_Path($as_Lcom_diagraphy_web_models_GraphElement($n(x$0).productElement__I__O(0)));
+});
+$c_Lcom_diagraphy_web_components_Path$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_diagraphy_web_components_Path(p);
+});
+var $d_Lcom_diagraphy_web_components_Path$ = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Path$, "com.diagraphy.web.components.Path$", ({
+  Lcom_diagraphy_web_components_Path$: 1,
+  s_deriving_Mirror: 1,
+  s_deriving_Mirror$Product: 1
+}));
+var $n_Lcom_diagraphy_web_components_Path$;
+function $m_Lcom_diagraphy_web_components_Path$() {
+  if ((!$n_Lcom_diagraphy_web_components_Path$)) {
+    $n_Lcom_diagraphy_web_components_Path$ = new $c_Lcom_diagraphy_web_components_Path$();
+  }
+  return $n_Lcom_diagraphy_web_components_Path$;
+}
+/** @constructor */
+function $c_Lcom_diagraphy_web_models_GraphElement$() {
+  this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriter$lzy1 = null;
+  this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriterbitmap$1 = false;
+}
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphElement$;
+/** @constructor */
+function $h_Lcom_diagraphy_web_models_GraphElement$() {
+}
+$h_Lcom_diagraphy_web_models_GraphElement$.prototype = $c_Lcom_diagraphy_web_models_GraphElement$.prototype;
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.toString__T = (function() {
+  return "GraphElement";
+});
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.$lessinit$greater$default$4__scm_ListBuffer = (function() {
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphy_web_models_GraphElement.getArrayOf().constr)([]));
   return new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
 });
-$c_Lcom_diagraphx_web_models_MElement$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
-  if ((!this.Lcom_diagraphx_web_models_MElement$__f_derived$ReadWriterbitmap$1)) {
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
+  if ((!this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriterbitmap$1)) {
     var this$1 = $m_Lupickle_legacy$();
     var r = $m_Lupickle_legacy$().ReadWriter__Lupickle_core_Types$ReadWriter$();
     new $c_Lupickle_implicits_MacroImplicits$ReadWriterExtension(this$1, r);
     var MacroImplicits_this = $m_Lupickle_legacy$();
-    var x$1$proxy1 = $m_Lcom_diagraphx_web_models_MElement$();
+    var x$1$proxy1 = $m_Lcom_diagraphy_web_models_GraphElement$();
     var $x_1 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
-    var reader = new $c_Lcom_diagraphx_web_models_MElement$$anon$1(MacroImplicits_this, x$1$proxy1, this);
-    this.Lcom_diagraphx_web_models_MElement$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphx_web_models_MElement$$anon$2(MacroImplicits_this, this));
-    this.Lcom_diagraphx_web_models_MElement$__f_derived$ReadWriterbitmap$1 = true;
+    var reader = new $c_Lcom_diagraphy_web_models_GraphElement$$anon$1(MacroImplicits_this, x$1$proxy1, this);
+    this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphy_web_models_GraphElement$$anon$2(MacroImplicits_this, this));
+    this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriterbitmap$1 = true;
   }
-  return this.Lcom_diagraphx_web_models_MElement$__f_derived$ReadWriter$lzy1;
+  return this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriter$lzy1;
 });
-$c_Lcom_diagraphx_web_models_MElement$.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MElement = (function(x$0) {
-  return new $c_Lcom_diagraphx_web_models_MElement($as_T($n(x$0).productElement__I__O(0)), $as_T($n(x$0).productElement__I__O(1)), $uD($n(x$0).productElement__I__O(2)), $uD($n(x$0).productElement__I__O(3)), $uD($n(x$0).productElement__I__O(4)), $uD($n(x$0).productElement__I__O(5)), $uD($n(x$0).productElement__I__O(6)), $uD($n(x$0).productElement__I__O(7)), $as_T($n(x$0).productElement__I__O(8)), $as_T($n(x$0).productElement__I__O(9)), $as_T($n(x$0).productElement__I__O(10)), $as_scm_ListBuffer($n(x$0).productElement__I__O(11)));
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement = (function(x$0) {
+  return new $c_Lcom_diagraphy_web_models_GraphElement($as_T($n(x$0).productElement__I__O(0)), $as_T($n(x$0).productElement__I__O(1)), $as_T($n(x$0).productElement__I__O(2)), $as_scm_ListBuffer($n(x$0).productElement__I__O(3)), $uD($n(x$0).productElement__I__O(4)), $uD($n(x$0).productElement__I__O(5)), $uD($n(x$0).productElement__I__O(6)), $uD($n(x$0).productElement__I__O(7)), $uD($n(x$0).productElement__I__O(8)), $uD($n(x$0).productElement__I__O(9)), $as_T($n(x$0).productElement__I__O(10)), $as_T($n(x$0).productElement__I__O(11)), $as_Lcom_diagraphy_web_models_GraphPoint($n(x$0).productElement__I__O(12)), $as_Lcom_diagraphy_web_models_GraphPoint($n(x$0).productElement__I__O(13)), $as_T($n(x$0).productElement__I__O(14)), $as_T($n(x$0).productElement__I__O(15)), $as_T($n(x$0).productElement__I__O(16)), $as_T($n(x$0).productElement__I__O(17)));
 });
-$c_Lcom_diagraphx_web_models_MElement$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MElement(p);
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement(p);
 });
-var $d_Lcom_diagraphx_web_models_MElement$ = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MElement$, "com.diagraphx.web.models.MElement$", ({
-  Lcom_diagraphx_web_models_MElement$: 1,
+var $d_Lcom_diagraphy_web_models_GraphElement$ = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphElement$, "com.diagraphy.web.models.GraphElement$", ({
+  Lcom_diagraphy_web_models_GraphElement$: 1,
   s_deriving_Mirror: 1,
   s_deriving_Mirror$Product: 1
 }));
-var $n_Lcom_diagraphx_web_models_MElement$;
-function $m_Lcom_diagraphx_web_models_MElement$() {
-  if ((!$n_Lcom_diagraphx_web_models_MElement$)) {
-    $n_Lcom_diagraphx_web_models_MElement$ = new $c_Lcom_diagraphx_web_models_MElement$();
+var $n_Lcom_diagraphy_web_models_GraphElement$;
+function $m_Lcom_diagraphy_web_models_GraphElement$() {
+  if ((!$n_Lcom_diagraphy_web_models_GraphElement$)) {
+    $n_Lcom_diagraphy_web_models_GraphElement$ = new $c_Lcom_diagraphy_web_models_GraphElement$();
   }
-  return $n_Lcom_diagraphx_web_models_MElement$;
+  return $n_Lcom_diagraphy_web_models_GraphElement$;
 }
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MGraph$() {
-  this.Lcom_diagraphx_web_models_MGraph$__f_derived$ReadWriter$lzy1 = null;
-  this.Lcom_diagraphx_web_models_MGraph$__f_derived$ReadWriterbitmap$1 = false;
+function $c_Lcom_diagraphy_web_models_GraphPoint$() {
+  this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriter$lzy1 = null;
+  this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriterbitmap$1 = false;
 }
-$c_Lcom_diagraphx_web_models_MGraph$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.constructor = $c_Lcom_diagraphx_web_models_MGraph$;
+$c_Lcom_diagraphy_web_models_GraphPoint$.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint$;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MGraph$() {
+function $h_Lcom_diagraphy_web_models_GraphPoint$() {
 }
-$h_Lcom_diagraphx_web_models_MGraph$.prototype = $c_Lcom_diagraphx_web_models_MGraph$.prototype;
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.toString__T = (function() {
-  return "MGraph";
+$h_Lcom_diagraphy_web_models_GraphPoint$.prototype = $c_Lcom_diagraphy_web_models_GraphPoint$.prototype;
+$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.toString__T = (function() {
+  return "GraphPoint";
 });
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.$lessinit$greater$default$1__scm_ListBuffer = (function() {
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphx_web_models_MElement.getArrayOf().constr)([]));
-  return new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
-});
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.$lessinit$greater$default$2__scm_ListBuffer = (function() {
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphx_web_models_MPath.getArrayOf().constr)([]));
-  return new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
-});
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
-  if ((!this.Lcom_diagraphx_web_models_MGraph$__f_derived$ReadWriterbitmap$1)) {
+$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
+  if ((!this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriterbitmap$1)) {
     var this$1 = $m_Lupickle_legacy$();
     var r = $m_Lupickle_legacy$().ReadWriter__Lupickle_core_Types$ReadWriter$();
     new $c_Lupickle_implicits_MacroImplicits$ReadWriterExtension(this$1, r);
     var MacroImplicits_this = $m_Lupickle_legacy$();
-    var x$1$proxy1 = $m_Lcom_diagraphx_web_models_MGraph$();
+    var x$1$proxy1 = $m_Lcom_diagraphy_web_models_GraphPoint$();
     var $x_1 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
-    var reader = new $c_Lcom_diagraphx_web_models_MGraph$$anon$1(MacroImplicits_this, x$1$proxy1, this);
-    this.Lcom_diagraphx_web_models_MGraph$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphx_web_models_MGraph$$anon$2(MacroImplicits_this, this));
-    this.Lcom_diagraphx_web_models_MGraph$__f_derived$ReadWriterbitmap$1 = true;
+    var reader = new $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1(MacroImplicits_this, x$1$proxy1, this);
+    this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2(MacroImplicits_this, this));
+    this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriterbitmap$1 = true;
   }
-  return this.Lcom_diagraphx_web_models_MGraph$__f_derived$ReadWriter$lzy1;
+  return this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriter$lzy1;
 });
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MGraph = (function(x$0) {
-  return new $c_Lcom_diagraphx_web_models_MGraph($as_scm_ListBuffer($n(x$0).productElement__I__O(0)), $as_scm_ListBuffer($n(x$0).productElement__I__O(1)));
+$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint = (function(x$0) {
+  return new $c_Lcom_diagraphy_web_models_GraphPoint($uD($n(x$0).productElement__I__O(0)), $uD($n(x$0).productElement__I__O(1)));
 });
-$c_Lcom_diagraphx_web_models_MGraph$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MGraph(p);
+$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint(p);
 });
-var $d_Lcom_diagraphx_web_models_MGraph$ = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MGraph$, "com.diagraphx.web.models.MGraph$", ({
-  Lcom_diagraphx_web_models_MGraph$: 1,
+var $d_Lcom_diagraphy_web_models_GraphPoint$ = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint$, "com.diagraphy.web.models.GraphPoint$", ({
+  Lcom_diagraphy_web_models_GraphPoint$: 1,
   s_deriving_Mirror: 1,
   s_deriving_Mirror$Product: 1
 }));
-var $n_Lcom_diagraphx_web_models_MGraph$;
-function $m_Lcom_diagraphx_web_models_MGraph$() {
-  if ((!$n_Lcom_diagraphx_web_models_MGraph$)) {
-    $n_Lcom_diagraphx_web_models_MGraph$ = new $c_Lcom_diagraphx_web_models_MGraph$();
+var $n_Lcom_diagraphy_web_models_GraphPoint$;
+function $m_Lcom_diagraphy_web_models_GraphPoint$() {
+  if ((!$n_Lcom_diagraphy_web_models_GraphPoint$)) {
+    $n_Lcom_diagraphy_web_models_GraphPoint$ = new $c_Lcom_diagraphy_web_models_GraphPoint$();
   }
-  return $n_Lcom_diagraphx_web_models_MGraph$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPath$() {
-  this.Lcom_diagraphx_web_models_MPath$__f_derived$ReadWriter$lzy1 = null;
-  this.Lcom_diagraphx_web_models_MPath$__f_derived$ReadWriterbitmap$1 = false;
-}
-$c_Lcom_diagraphx_web_models_MPath$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MPath$.prototype.constructor = $c_Lcom_diagraphx_web_models_MPath$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPath$() {
-}
-$h_Lcom_diagraphx_web_models_MPath$.prototype = $c_Lcom_diagraphx_web_models_MPath$.prototype;
-$c_Lcom_diagraphx_web_models_MPath$.prototype.toString__T = (function() {
-  return "MPath";
-});
-$c_Lcom_diagraphx_web_models_MPath$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
-  if ((!this.Lcom_diagraphx_web_models_MPath$__f_derived$ReadWriterbitmap$1)) {
-    var this$1 = $m_Lupickle_legacy$();
-    var r = $m_Lupickle_legacy$().ReadWriter__Lupickle_core_Types$ReadWriter$();
-    new $c_Lupickle_implicits_MacroImplicits$ReadWriterExtension(this$1, r);
-    var MacroImplicits_this = $m_Lupickle_legacy$();
-    var x$1$proxy1 = $m_Lcom_diagraphx_web_models_MPath$();
-    var $x_1 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
-    var reader = new $c_Lcom_diagraphx_web_models_MPath$$anon$1(MacroImplicits_this, x$1$proxy1, this);
-    this.Lcom_diagraphx_web_models_MPath$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphx_web_models_MPath$$anon$2(MacroImplicits_this, this));
-    this.Lcom_diagraphx_web_models_MPath$__f_derived$ReadWriterbitmap$1 = true;
-  }
-  return this.Lcom_diagraphx_web_models_MPath$__f_derived$ReadWriter$lzy1;
-});
-$c_Lcom_diagraphx_web_models_MPath$.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MPath = (function(x$0) {
-  return new $c_Lcom_diagraphx_web_models_MPath($as_T($n(x$0).productElement__I__O(0)), $as_Lcom_diagraphx_web_models_MPoint($n(x$0).productElement__I__O(1)), $as_Lcom_diagraphx_web_models_MPoint($n(x$0).productElement__I__O(2)), $as_T($n(x$0).productElement__I__O(3)), $as_T($n(x$0).productElement__I__O(4)), $as_T($n(x$0).productElement__I__O(5)), $as_T($n(x$0).productElement__I__O(6)), $as_T($n(x$0).productElement__I__O(7)), $as_T($n(x$0).productElement__I__O(8)));
-});
-$c_Lcom_diagraphx_web_models_MPath$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MPath(p);
-});
-var $d_Lcom_diagraphx_web_models_MPath$ = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPath$, "com.diagraphx.web.models.MPath$", ({
-  Lcom_diagraphx_web_models_MPath$: 1,
-  s_deriving_Mirror: 1,
-  s_deriving_Mirror$Product: 1
-}));
-var $n_Lcom_diagraphx_web_models_MPath$;
-function $m_Lcom_diagraphx_web_models_MPath$() {
-  if ((!$n_Lcom_diagraphx_web_models_MPath$)) {
-    $n_Lcom_diagraphx_web_models_MPath$ = new $c_Lcom_diagraphx_web_models_MPath$();
-  }
-  return $n_Lcom_diagraphx_web_models_MPath$;
-}
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPoint$() {
-  this.Lcom_diagraphx_web_models_MPoint$__f_derived$ReadWriter$lzy1 = null;
-  this.Lcom_diagraphx_web_models_MPoint$__f_derived$ReadWriterbitmap$1 = false;
-}
-$c_Lcom_diagraphx_web_models_MPoint$.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MPoint$.prototype.constructor = $c_Lcom_diagraphx_web_models_MPoint$;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPoint$() {
-}
-$h_Lcom_diagraphx_web_models_MPoint$.prototype = $c_Lcom_diagraphx_web_models_MPoint$.prototype;
-$c_Lcom_diagraphx_web_models_MPoint$.prototype.toString__T = (function() {
-  return "MPoint";
-});
-$c_Lcom_diagraphx_web_models_MPoint$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
-  if ((!this.Lcom_diagraphx_web_models_MPoint$__f_derived$ReadWriterbitmap$1)) {
-    var this$1 = $m_Lupickle_legacy$();
-    var r = $m_Lupickle_legacy$().ReadWriter__Lupickle_core_Types$ReadWriter$();
-    new $c_Lupickle_implicits_MacroImplicits$ReadWriterExtension(this$1, r);
-    var MacroImplicits_this = $m_Lupickle_legacy$();
-    var x$1$proxy1 = $m_Lcom_diagraphx_web_models_MPoint$();
-    var $x_1 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
-    var reader = new $c_Lcom_diagraphx_web_models_MPoint$$anon$1(MacroImplicits_this, x$1$proxy1, this);
-    this.Lcom_diagraphx_web_models_MPoint$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphx_web_models_MPoint$$anon$2(MacroImplicits_this, this));
-    this.Lcom_diagraphx_web_models_MPoint$__f_derived$ReadWriterbitmap$1 = true;
-  }
-  return this.Lcom_diagraphx_web_models_MPoint$__f_derived$ReadWriter$lzy1;
-});
-$c_Lcom_diagraphx_web_models_MPoint$.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MPoint = (function(x$0) {
-  return new $c_Lcom_diagraphx_web_models_MPoint($uD($n(x$0).productElement__I__O(0)), $uD($n(x$0).productElement__I__O(1)));
-});
-$c_Lcom_diagraphx_web_models_MPoint$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MPoint(p);
-});
-var $d_Lcom_diagraphx_web_models_MPoint$ = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPoint$, "com.diagraphx.web.models.MPoint$", ({
-  Lcom_diagraphx_web_models_MPoint$: 1,
-  s_deriving_Mirror: 1,
-  s_deriving_Mirror$Product: 1
-}));
-var $n_Lcom_diagraphx_web_models_MPoint$;
-function $m_Lcom_diagraphx_web_models_MPoint$() {
-  if ((!$n_Lcom_diagraphx_web_models_MPoint$)) {
-    $n_Lcom_diagraphx_web_models_MPoint$ = new $c_Lcom_diagraphx_web_models_MPoint$();
-  }
-  return $n_Lcom_diagraphx_web_models_MPoint$;
+  return $n_Lcom_diagraphy_web_models_GraphPoint$;
 }
 /** @constructor */
 function $c_jl_Class($data) {
@@ -15502,58 +15961,82 @@ function $m_s_Predef$() {
   }
   return $n_s_Predef$;
 }
-function $f_s_Product12__productElement__I__O($thiz, n) {
+function $f_s_Product18__productElement__I__O($thiz, n) {
   switch (n) {
     case 0: {
-      return $thiz.T12__f__1;
+      return $thiz.T18__f__1;
       break;
     }
     case 1: {
-      return $thiz.T12__f__2;
+      return $thiz.T18__f__2;
       break;
     }
     case 2: {
-      return $thiz.T12__f__3;
+      return $thiz.T18__f__3;
       break;
     }
     case 3: {
-      return $thiz.T12__f__4;
+      return $thiz.T18__f__4;
       break;
     }
     case 4: {
-      return $thiz.T12__f__5;
+      return $thiz.T18__f__5;
       break;
     }
     case 5: {
-      return $thiz.T12__f__6;
+      return $thiz.T18__f__6;
       break;
     }
     case 6: {
-      return $thiz.T12__f__7;
+      return $thiz.T18__f__7;
       break;
     }
     case 7: {
-      return $thiz.T12__f__8;
+      return $thiz.T18__f__8;
       break;
     }
     case 8: {
-      return $thiz.T12__f__9;
+      return $thiz.T18__f__9;
       break;
     }
     case 9: {
-      return $thiz.T12__f__10;
+      return $thiz.T18__f__10;
       break;
     }
     case 10: {
-      return $thiz.T12__f__11;
+      return $thiz.T18__f__11;
       break;
     }
     case 11: {
-      return $thiz.T12__f__12;
+      return $thiz.T18__f__12;
+      break;
+    }
+    case 12: {
+      return $thiz.T18__f__13;
+      break;
+    }
+    case 13: {
+      return $thiz.T18__f__14;
+      break;
+    }
+    case 14: {
+      return $thiz.T18__f__15;
+      break;
+    }
+    case 15: {
+      return $thiz.T18__f__16;
+      break;
+    }
+    case 16: {
+      return $thiz.T18__f__17;
+      break;
+    }
+    case 17: {
+      return $thiz.T18__f__18;
       break;
     }
     default: {
-      throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), (n + " is out of bounds (min 0, max 11)"));
+      throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), (n + " is out of bounds (min 0, max 17)"));
     }
   }
 }
@@ -15588,49 +16071,6 @@ function $f_s_Product3__productElement__I__O($thiz, n) {
     }
     default: {
       throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), (n + " is out of bounds (min 0, max 2)"));
-    }
-  }
-}
-function $f_s_Product9__productElement__I__O($thiz, n) {
-  switch (n) {
-    case 0: {
-      return $thiz.T9__f__1;
-      break;
-    }
-    case 1: {
-      return $thiz.T9__f__2;
-      break;
-    }
-    case 2: {
-      return $thiz.T9__f__3;
-      break;
-    }
-    case 3: {
-      return $thiz.T9__f__4;
-      break;
-    }
-    case 4: {
-      return $thiz.T9__f__5;
-      break;
-    }
-    case 5: {
-      return $thiz.T9__f__6;
-      break;
-    }
-    case 6: {
-      return $thiz.T9__f__7;
-      break;
-    }
-    case 7: {
-      return $thiz.T9__f__8;
-      break;
-    }
-    case 8: {
-      return $thiz.T9__f__9;
-      break;
-    }
-    default: {
-      throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), (n + " is out of bounds (min 0, max 8)"));
     }
   }
 }
@@ -15862,6 +16302,9 @@ $c_sc_MapFactory$Delegate.prototype.apply__sci_Seq__O = (function(elems) {
 });
 $c_sc_MapFactory$Delegate.prototype.from__sc_IterableOnce__O = (function(it) {
   return $n(this.sc_MapFactory$Delegate__f_delegate).from__sc_IterableOnce__O(it);
+});
+$c_sc_MapFactory$Delegate.prototype.newBuilder__scm_Builder = (function() {
+  return $n(this.sc_MapFactory$Delegate__f_delegate).newBuilder__scm_Builder();
 });
 /** @constructor */
 function $c_sc_View$() {
@@ -16307,6 +16750,201 @@ $c_sci_BitmapIndexedMapNode.prototype.copy__sci_BitmapIndexedMapNode = (function
   var this$2 = $n(this.sci_BitmapIndexedMapNode__f_originalHashes);
   return new $c_sci_BitmapIndexedMapNode($x_2, $x_1, contentClone, this$2.clone__O(), this.sci_BitmapIndexedMapNode__f_size, this.sci_BitmapIndexedMapNode__f_cachedJavaKeySetHashCode);
 });
+$c_sci_BitmapIndexedMapNode.prototype.filterImpl__F1__Z__sci_BitmapIndexedMapNode = (function(pred, flipped) {
+  if ((this.sci_BitmapIndexedMapNode__f_size === 0)) {
+    return this;
+  } else if ((this.sci_BitmapIndexedMapNode__f_size === 1)) {
+    if (($uZ($n(pred).apply__O__O(this.getPayload__I__T2(0))) !== flipped)) {
+      return this;
+    } else {
+      var this$1 = $m_sci_MapNode$();
+      return this$1.sci_MapNode$__f_EmptyMapNode;
+    }
+  } else if ((this.sci_BitmapIndexedMapNode__f_nodeMap === 0)) {
+    var i = this.sci_BitmapIndexedMapNode__f_dataMap;
+    if ((i === 0)) {
+      var minimumIndex = 32;
+    } else {
+      var i$1 = (i & ((-i) | 0));
+      var minimumIndex = ((31 - $uI(Math.clz32(i$1))) | 0);
+    }
+    var i$2 = this.sci_BitmapIndexedMapNode__f_dataMap;
+    var maximumIndex = ((32 - $uI(Math.clz32(i$2))) | 0);
+    var newDataMap = 0;
+    var newCachedHashCode = 0;
+    var dataIndex = 0;
+    var i$3 = minimumIndex;
+    while ((i$3 < maximumIndex)) {
+      var bitpos = $m_sci_Node$().bitposFrom__I__I(i$3);
+      if (((bitpos & this.sci_BitmapIndexedMapNode__f_dataMap) !== 0)) {
+        var payload = this.getPayload__I__T2(dataIndex);
+        var passed = ($uZ($n(pred).apply__O__O(payload)) !== flipped);
+        if (passed) {
+          newDataMap = (newDataMap | bitpos);
+          newCachedHashCode = ((newCachedHashCode + $m_sc_Hashing$().improve__I__I(this.getHash__I__I(dataIndex))) | 0);
+        }
+        dataIndex = ((1 + dataIndex) | 0);
+      }
+      i$3 = ((1 + i$3) | 0);
+    }
+    if ((newDataMap === 0)) {
+      var this$4 = $m_sci_MapNode$();
+      return this$4.sci_MapNode$__f_EmptyMapNode;
+    } else if ((newDataMap === this.sci_BitmapIndexedMapNode__f_dataMap)) {
+      return this;
+    } else {
+      var i$4 = newDataMap;
+      var newSize = $m_jl_Integer$().bitCount__I__I(i$4);
+      var newContent = new $ac_O((newSize << 1));
+      var newOriginalHashCodes = new $ac_I(newSize);
+      var i$5 = newDataMap;
+      var newMaximumIndex = ((32 - $uI(Math.clz32(i$5))) | 0);
+      var i$6 = newDataMap;
+      if ((i$6 === 0)) {
+        var j = 32;
+      } else {
+        var i$7 = (i$6 & ((-i$6) | 0));
+        var j = ((31 - $uI(Math.clz32(i$7))) | 0);
+      }
+      var newDataIndex = 0;
+      while ((j < newMaximumIndex)) {
+        var bitpos$2 = $m_sci_Node$().bitposFrom__I__I(j);
+        if (((bitpos$2 & newDataMap) !== 0)) {
+          var oldIndex = $m_sci_Node$().indexFrom__I__I__I(this.sci_BitmapIndexedMapNode__f_dataMap, bitpos$2);
+          newContent.set((newDataIndex << 1), $n(this.sci_BitmapIndexedMapNode__f_content).get((oldIndex << 1)));
+          newContent.set(((1 + (newDataIndex << 1)) | 0), $n(this.sci_BitmapIndexedMapNode__f_content).get(((1 + (oldIndex << 1)) | 0)));
+          newOriginalHashCodes.set(newDataIndex, $n(this.sci_BitmapIndexedMapNode__f_originalHashes).get(oldIndex));
+          newDataIndex = ((1 + newDataIndex) | 0);
+        }
+        j = ((1 + j) | 0);
+      }
+      return new $c_sci_BitmapIndexedMapNode(newDataMap, 0, newContent, newOriginalHashCodes, newSize, newCachedHashCode);
+    }
+  } else {
+    var allMap = (this.sci_BitmapIndexedMapNode__f_dataMap | this.sci_BitmapIndexedMapNode__f_nodeMap);
+    if ((allMap === 0)) {
+      var minimumIndex$2 = 32;
+    } else {
+      var i$8 = (allMap & ((-allMap) | 0));
+      var minimumIndex$2 = ((31 - $uI(Math.clz32(i$8))) | 0);
+    }
+    var maximumIndex$2 = ((32 - $uI(Math.clz32(allMap))) | 0);
+    var oldDataPassThrough = 0;
+    var nodeMigrateToDataTargetMap = 0;
+    var nodesToMigrateToData = null;
+    var nodesToPassThroughMap = 0;
+    var mapOfNewNodes = 0;
+    var newNodes = null;
+    var newDataMap$2 = 0;
+    var newNodeMap = 0;
+    var newSize$2 = 0;
+    var newCachedHashCode$2 = 0;
+    var dataIndex$2 = 0;
+    var nodeIndex = 0;
+    var i$2$1 = minimumIndex$2;
+    while ((i$2$1 < maximumIndex$2)) {
+      var bitpos$3 = $m_sci_Node$().bitposFrom__I__I(i$2$1);
+      if (((bitpos$3 & this.sci_BitmapIndexedMapNode__f_dataMap) !== 0)) {
+        var payload$2 = this.getPayload__I__T2(dataIndex$2);
+        var passed$2 = ($uZ($n(pred).apply__O__O(payload$2)) !== flipped);
+        if (passed$2) {
+          newDataMap$2 = (newDataMap$2 | bitpos$3);
+          oldDataPassThrough = (oldDataPassThrough | bitpos$3);
+          newSize$2 = ((1 + newSize$2) | 0);
+          newCachedHashCode$2 = ((newCachedHashCode$2 + $m_sc_Hashing$().improve__I__I(this.getHash__I__I(dataIndex$2))) | 0);
+        }
+        dataIndex$2 = ((1 + dataIndex$2) | 0);
+      } else if (((bitpos$3 & this.sci_BitmapIndexedMapNode__f_nodeMap) !== 0)) {
+        var oldSubNode = this.getNode__I__sci_MapNode(nodeIndex);
+        var newSubNode = $n(oldSubNode).filterImpl__F1__Z__sci_MapNode(pred, flipped);
+        newSize$2 = ((newSize$2 + $n(newSubNode).size__I()) | 0);
+        newCachedHashCode$2 = ((newCachedHashCode$2 + $n(newSubNode).cachedJavaKeySetHashCode__I()) | 0);
+        if (($n(newSubNode).size__I() > 1)) {
+          newNodeMap = (newNodeMap | bitpos$3);
+          if ((oldSubNode === newSubNode)) {
+            nodesToPassThroughMap = (nodesToPassThroughMap | bitpos$3);
+          } else {
+            mapOfNewNodes = (mapOfNewNodes | bitpos$3);
+            if ((newNodes === null)) {
+              newNodes = new $c_scm_Queue(16);
+            }
+            var this$10 = $n(newNodes);
+            this$10.addOne__O__scm_ArrayDeque(newSubNode);
+          }
+        } else if (($n(newSubNode).size__I() === 1)) {
+          newDataMap$2 = (newDataMap$2 | bitpos$3);
+          nodeMigrateToDataTargetMap = (nodeMigrateToDataTargetMap | bitpos$3);
+          if ((nodesToMigrateToData === null)) {
+            var elems = $m_sci_Nil$();
+            var this$12 = new $c_scm_Queue(16);
+            nodesToMigrateToData = $as_scm_Queue(this$12.addAll__sc_IterableOnce__scm_ArrayDeque(elems));
+          }
+          var this$13 = $n(nodesToMigrateToData);
+          this$13.addOne__O__scm_ArrayDeque(newSubNode);
+        }
+        nodeIndex = ((1 + nodeIndex) | 0);
+      }
+      i$2$1 = ((1 + i$2$1) | 0);
+    }
+    if ((newSize$2 === 0)) {
+      var this$14 = $m_sci_MapNode$();
+      return this$14.sci_MapNode$__f_EmptyMapNode;
+    } else if ((newSize$2 === this.sci_BitmapIndexedMapNode__f_size)) {
+      return this;
+    } else {
+      var i$9 = newDataMap$2;
+      var newDataSize = $m_jl_Integer$().bitCount__I__I(i$9);
+      var i$10 = newNodeMap;
+      var newContentSize = (((newDataSize << 1) + $m_jl_Integer$().bitCount__I__I(i$10)) | 0);
+      var newContent$2 = new $ac_O(newContentSize);
+      var newOriginalHashes = new $ac_I(newDataSize);
+      var newAllMap = (newDataMap$2 | newNodeMap);
+      var maxIndex = ((32 - $uI(Math.clz32(newAllMap))) | 0);
+      var i$3$1 = minimumIndex$2;
+      var oldDataIndex = 0;
+      var oldNodeIndex = 0;
+      var newDataIndex$2 = 0;
+      var newNodeIndex = 0;
+      while ((i$3$1 < maxIndex)) {
+        var bitpos$4 = $m_sci_Node$().bitposFrom__I__I(i$3$1);
+        if (((bitpos$4 & oldDataPassThrough) !== 0)) {
+          newContent$2.set((newDataIndex$2 << 1), this.getKey__I__O(oldDataIndex));
+          newContent$2.set(((1 + (newDataIndex$2 << 1)) | 0), this.getValue__I__O(oldDataIndex));
+          newOriginalHashes.set(newDataIndex$2, this.getHash__I__I(oldDataIndex));
+          newDataIndex$2 = ((1 + newDataIndex$2) | 0);
+          oldDataIndex = ((1 + oldDataIndex) | 0);
+        } else if (((bitpos$4 & nodesToPassThroughMap) !== 0)) {
+          newContent$2.set((((-1) + ((newContentSize - newNodeIndex) | 0)) | 0), this.getNode__I__sci_MapNode(oldNodeIndex));
+          newNodeIndex = ((1 + newNodeIndex) | 0);
+          oldNodeIndex = ((1 + oldNodeIndex) | 0);
+        } else if (((bitpos$4 & nodeMigrateToDataTargetMap) !== 0)) {
+          var this$16 = $n(nodesToMigrateToData);
+          var node = $as_sci_MapNode(this$16.removeHead__Z__O(false));
+          newContent$2.set((newDataIndex$2 << 1), $n(node).getKey__I__O(0));
+          newContent$2.set(((1 + (newDataIndex$2 << 1)) | 0), $n(node).getValue__I__O(0));
+          newOriginalHashes.set(newDataIndex$2, $n(node).getHash__I__I(0));
+          newDataIndex$2 = ((1 + newDataIndex$2) | 0);
+          oldNodeIndex = ((1 + oldNodeIndex) | 0);
+        } else if (((bitpos$4 & mapOfNewNodes) !== 0)) {
+          var $x_1 = newNodeIndex;
+          var this$17 = $n(newNodes);
+          newContent$2.set((((-1) + ((newContentSize - $x_1) | 0)) | 0), this$17.removeHead__Z__O(false));
+          newNodeIndex = ((1 + newNodeIndex) | 0);
+          oldNodeIndex = ((1 + oldNodeIndex) | 0);
+        } else if (((bitpos$4 & this.sci_BitmapIndexedMapNode__f_dataMap) !== 0)) {
+          oldDataIndex = ((1 + oldDataIndex) | 0);
+        } else if (((bitpos$4 & this.sci_BitmapIndexedMapNode__f_nodeMap) !== 0)) {
+          oldNodeIndex = ((1 + oldNodeIndex) | 0);
+        }
+        i$3$1 = ((1 + i$3$1) | 0);
+      }
+      return new $c_sci_BitmapIndexedMapNode(newDataMap$2, newNodeMap, newContent$2, newOriginalHashes, newSize$2, newCachedHashCode$2);
+    }
+  }
+});
+$c_sci_BitmapIndexedMapNode.prototype.filterImpl__F1__Z__sci_MapNode = (function(pred, isFlipped) {
+  return this.filterImpl__F1__Z__sci_BitmapIndexedMapNode(pred, isFlipped);
+});
 $c_sci_BitmapIndexedMapNode.prototype.copy__sci_MapNode = (function() {
   return this.copy__sci_BitmapIndexedMapNode();
 });
@@ -16493,6 +17131,24 @@ $c_sci_HashCollisionMapNode.prototype.equals__O__Z = (function(that) {
     return false;
   }
 });
+$c_sci_HashCollisionMapNode.prototype.filterImpl__F1__Z__sci_MapNode = (function(pred, flipped) {
+  var newContent = $n(this.sci_HashCollisionMapNode__f_content).filterImpl__F1__Z__sci_Vector(pred, flipped);
+  var newContentLength = $n(newContent).length__I();
+  if ((newContentLength === 0)) {
+    var this$1 = $m_sci_MapNode$();
+    return this$1.sci_MapNode$__f_EmptyMapNode;
+  } else if ((newContentLength === 1)) {
+    var x1 = $as_T2($n(newContent).head__O());
+    if ((x1 === null)) {
+      throw new $c_s_MatchError(x1);
+    }
+    var k = $n(x1).T2__f__1;
+    var v = $n(x1).T2__f__2;
+    return new $c_sci_BitmapIndexedMapNode($m_sci_Node$().bitposFrom__I__I($m_sci_Node$().maskFrom__I__I__I(this.sci_HashCollisionMapNode__f_hash, 0)), 0, new $ac_O([k, v]), new $ac_I(new Int32Array([this.sci_HashCollisionMapNode__f_originalHash])), 1, this.sci_HashCollisionMapNode__f_hash);
+  } else {
+    return ((newContentLength === $n(this.sci_HashCollisionMapNode__f_content).length__I()) ? this : new $c_sci_HashCollisionMapNode(this.sci_HashCollisionMapNode__f_originalHash, this.sci_HashCollisionMapNode__f_hash, newContent));
+  }
+});
 $c_sci_HashCollisionMapNode.prototype.hashCode__I = (function() {
   throw $ct_jl_UnsupportedOperationException__T__(new $c_jl_UnsupportedOperationException(), "Trie nodes do not support hashing.");
 });
@@ -16544,6 +17200,9 @@ $c_sci_HashMap$.prototype.from__sc_IterableOnce__sci_HashMap = (function(source)
     var this$2 = $n(this$1.addAll__sc_IterableOnce__sci_HashMapBuilder(source));
     return this$2.result__sci_HashMap();
   }
+});
+$c_sci_HashMap$.prototype.newBuilder__scm_Builder = (function() {
+  return new $c_sci_HashMapBuilder();
 });
 $c_sci_HashMap$.prototype.from__sc_IterableOnce__O = (function(it) {
   return this.from__sc_IterableOnce__sci_HashMap(it);
@@ -16685,6 +17344,9 @@ $c_sci_Map$.prototype.from__sc_IterableOnce__sci_Map = (function(it) {
   var this$2 = $n(this$1.addAll__sc_IterableOnce__sci_MapBuilderImpl(it));
   return this$2.result__sci_Map();
 });
+$c_sci_Map$.prototype.newBuilder__scm_Builder = (function() {
+  return new $c_sci_MapBuilderImpl();
+});
 $c_sci_Map$.prototype.from__sc_IterableOnce__O = (function(it) {
   return this.from__sc_IterableOnce__sci_Map(it);
 });
@@ -16735,6 +17397,9 @@ $c_scm_HashMap$.prototype.from__sc_IterableOnce__scm_HashMap = (function(it) {
   var k = $n(it).knownSize__I();
   var cap = ((k > 0) ? $doubleToInt((((1 + k) | 0) / 0.75)) : 16);
   return new $c_scm_HashMap(cap, 0.75).addAll__sc_IterableOnce__scm_HashMap(it);
+});
+$c_scm_HashMap$.prototype.newBuilder__scm_Builder = (function() {
+  return new $c_scm_HashMap$$anon$6(16, 0.75);
 });
 $c_scm_HashMap$.prototype.from__sc_IterableOnce__O = (function(it) {
   return this.from__sc_IterableOnce__scm_HashMap(it);
@@ -16866,6 +17531,15 @@ var $d_sr_Nothing$ = new $TypeData().initClass(0, "scala.runtime.Nothing$", ({
   jl_Throwable: 1,
   Ljava_io_Serializable: 1
 }));
+/** @constructor */
+function $c_sjsr_AnonFunction0() {
+}
+$c_sjsr_AnonFunction0.prototype = new $h_sr_AbstractFunction0();
+$c_sjsr_AnonFunction0.prototype.constructor = $c_sjsr_AnonFunction0;
+/** @constructor */
+function $h_sjsr_AnonFunction0() {
+}
+$h_sjsr_AnonFunction0.prototype = $c_sjsr_AnonFunction0.prototype;
 /** @constructor */
 function $c_sjsr_AnonFunction1() {
 }
@@ -18079,90 +18753,102 @@ var $d_Lupickle_implicits_Writers$$anon$15 = new $TypeData().initClass($c_Lupick
   Lupickle_implicits_Writers$SimpleMapKeyWriter: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_Container(element) {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_Container__f_element = null;
-  this.Lcom_diagraphx_web_components_Container__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_components_Container__f_headerDiv = null;
-  this.Lcom_diagraphx_web_components_Container__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_Container__f_element = element;
-  $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__(this, element);
-  var $x_10 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_9 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_8 = $m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement();
+function $c_Lcom_diagraphy_web_components_Container(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Container__f_model = null;
+  this.Lcom_diagraphy_web_components_Container__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_Container__f_headerDiv = null;
+  this.Lcom_diagraphy_web_components_Container__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Container__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+  var $x_10 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_9 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_8 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement();
   var $x_7 = $m_sr_ScalaRunTime$();
   var $x_6 = new $c_T2("resize", "none");
   var $x_5 = new $c_T2("overflow", "auto");
-  var y = ($n(element).Lcom_diagraphx_web_models_MElement__f_width + "px");
+  var y = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_width + "px");
   var $x_4 = new $c_T2("width", y);
-  var y$1 = ($n(element).Lcom_diagraphx_web_models_MElement__f_height + "px");
+  var y$1 = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_height + "px");
   var $x_3 = new $c_T2("height", y$1);
   var $x_2 = new $c_T2("position", "relative");
   var $x_1 = new $c_T2("box-shadow", "0 8px 16px 0 rgba(0,0,0,0.22), 0 8px 16px 0 rgba(255,255,255,0.10) inset");
-  var y$2 = $n(element).Lcom_diagraphx_web_models_MElement__f_bgColor;
-  this.Lcom_diagraphx_web_components_Container__f_resizeDiv = $x_10.addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($x_9.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_8, $x_7.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y$2), new $c_T2("border-radius", "8px"), new $c_T2("padding", "10px"), new $c_T2("display", "flex"), new $c_T2("flex-direction", "column")]))), "resizable-div");
-  var titleDiv = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("outline", "none")]))), $n(element).Lcom_diagraphx_web_models_MElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
+  var y$2 = $n(model).Lcom_diagraphy_web_models_GraphElement__f_bgColor;
+  this.Lcom_diagraphy_web_components_Container__f_resizeDiv = $x_10.addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($x_9.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_8, $x_7.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y$2), new $c_T2("border-radius", "8px"), new $c_T2("padding", "10px"), new $c_T2("display", "flex"), new $c_T2("flex-direction", "column")]))), "resizable-div");
+  var titleDiv = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("outline", "none")]))), $n(model).Lcom_diagraphy_web_models_GraphElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
     var newText$1 = $as_T(newText);
-    $n(element).Lcom_diagraphx_web_models_MElement__f_text = newText$1;
+    $n(model).Lcom_diagraphy_web_models_GraphElement__f_text = newText$1;
   })));
-  var zoomDiv = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("gap", "5px"), new $c_T2("margin-right", "10px")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "-"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "12px"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("cursor", "pointer"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("border-radius", "50%"), new $c_T2("border", "1px solid #333")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
-    var $x_12 = this.Lcom_diagraphx_web_components_Container__f_contentDiv;
-    $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth = (1.1 * $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth);
-    var $x_11 = $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth;
-    $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight = (1.1 * $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight);
-    $x_12.setAttribute("viewBox", (((("0 0 " + $x_11) + " ") + "") + $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight));
-  }))), $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), "+"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "12px"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("cursor", "pointer"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("border-radius", "50%"), new $c_T2("border", "1px solid #333")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
-    var $x_14 = this.Lcom_diagraphx_web_components_Container__f_contentDiv;
-    $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth = ($n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth / 1.1);
-    var $x_13 = $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth;
-    $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight = ($n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight / 1.1);
-    $x_14.setAttribute("viewBox", (((("0 0 " + $x_13) + " ") + "") + $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight));
+  var zoomDiv = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("gap", "5px"), new $c_T2("margin-right", "10px")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "-"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "12px"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("cursor", "pointer"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("border-radius", "50%"), new $c_T2("border", "1px solid #333")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
+    var $x_12 = this.Lcom_diagraphy_web_components_Container__f_contentDiv;
+    $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth = (1.1 * $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth);
+    var $x_11 = $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+    $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight = (1.1 * $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight);
+    $x_12.setAttribute("viewBox", (((("0 0 " + $x_11) + " ") + "") + $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight));
+  }))), $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "+"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("font-size", "12px"), new $c_T2("width", "12px"), new $c_T2("height", "12px"), new $c_T2("cursor", "pointer"), new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("border-radius", "50%"), new $c_T2("border", "1px solid #333")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
+    var $x_14 = this.Lcom_diagraphy_web_components_Container__f_contentDiv;
+    $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth / 1.1);
+    var $x_13 = $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+    $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight / 1.1);
+    $x_14.setAttribute("viewBox", (((("0 0 " + $x_13) + " ") + "") + $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight));
   })))])));
-  this.Lcom_diagraphx_web_components_Container__f_headerDiv = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "space-between"), new $c_T2("top", "10px"), new $c_T2("left", "10px"), new $c_T2("width", "100%"), new $c_T2("height", "max-content"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("background-color", "#F0F0F0"), new $c_T2("padding-bottom", "5px")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([titleDiv, zoomDiv]))), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler);
-  $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth = (1.1 * $n(element).Lcom_diagraphx_web_models_MElement__f_width);
-  $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight = (1.1 * $n(element).Lcom_diagraphx_web_models_MElement__f_height);
-  var $x_18 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_17 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_16 = $m_Lcom_diagraphx_web_objects_ElementHelper$().svg__Lorg_scalajs_dom_HTMLElement();
+  this.Lcom_diagraphy_web_components_Container__f_headerDiv = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("display", "flex"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "space-between"), new $c_T2("top", "10px"), new $c_T2("left", "10px"), new $c_T2("width", "100%"), new $c_T2("height", "max-content"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("background-color", "#F0F0F0"), new $c_T2("padding-bottom", "5px")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([titleDiv, zoomDiv]))), this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler), this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler);
+  $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth = (($n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth === 0.0) ? (1.1 * $n(model).Lcom_diagraphy_web_models_GraphElement__f_width) : $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth);
+  $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight = (($n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight === 0.0) ? (1.1 * $n(model).Lcom_diagraphy_web_models_GraphElement__f_height) : $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight);
+  var $x_18 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_17 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_16 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().svg__Lorg_scalajs_dom_HTMLElement();
   var $x_15 = $m_sr_ScalaRunTime$();
-  var y$3 = ((("0 0 " + $n(element).Lcom_diagraphx_web_models_MElement__f_vbWidth) + " ") + $n(element).Lcom_diagraphx_web_models_MElement__f_vbHeight);
-  this.Lcom_diagraphx_web_components_Container__f_contentDiv = $x_18.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_17.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_16, $x_15.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("viewBox", y$3)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("display", "grid"), new $c_T2("background-color", "#E0E0E0")])));
+  var y$3 = ((("0 0 " + $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbWidth) + " ") + $n(model).Lcom_diagraphy_web_models_GraphElement__f_vbHeight);
+  this.Lcom_diagraphy_web_components_Container__f_contentDiv = $x_18.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_17.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_16, $x_15.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("viewBox", y$3)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("display", "grid"), new $c_T2("background-color", "#E0E0E0")])));
 }
-$c_Lcom_diagraphx_web_components_Container.prototype = new $h_Lcom_diagraphx_web_abstracts_AVElement();
-$c_Lcom_diagraphx_web_components_Container.prototype.constructor = $c_Lcom_diagraphx_web_components_Container;
+$c_Lcom_diagraphy_web_components_Container.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_Container.prototype.constructor = $c_Lcom_diagraphy_web_components_Container;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_Container() {
+function $h_Lcom_diagraphy_web_components_Container() {
 }
-$h_Lcom_diagraphx_web_components_Container.prototype = $c_Lcom_diagraphx_web_components_Container.prototype;
-$c_Lcom_diagraphx_web_components_Container.prototype.element__Lcom_diagraphx_web_models_MElement = (function() {
-  return this.Lcom_diagraphx_web_components_Container__f_element;
+$h_Lcom_diagraphy_web_components_Container.prototype = $c_Lcom_diagraphy_web_components_Container.prototype;
+$c_Lcom_diagraphy_web_components_Container.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_Container__f_model;
 });
-$c_Lcom_diagraphx_web_components_Container.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_components_Container__f_resizeDiv;
+$c_Lcom_diagraphy_web_components_Container.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_Container__f_resizeDiv;
 });
-$c_Lcom_diagraphx_web_components_Container.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_components_Container__f_contentDiv;
+$c_Lcom_diagraphy_web_components_Container.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_Container__f_contentDiv;
 });
-$c_Lcom_diagraphx_web_components_Container.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer.observe(this.Lcom_diagraphx_web_components_Container__f_resizeDiv);
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdblclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_components_Container__f_contentDiv, this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = new $c_s_Some(this);
+$c_Lcom_diagraphy_web_components_Container.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer.observe(this.Lcom_diagraphy_web_components_Container__f_resizeDiv);
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Container__f_contentDiv, this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler), this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
+    var this$2 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
+    if ((!this$2.isEmpty__Z())) {
+      var $x_1 = true;
+    } else {
+      var this$3 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
+      var $x_1 = (!this$3.isEmpty__Z());
+    }
+    if ($x_1) {
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = new $c_s_Some(this);
+    }
   }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$4) => {
-    var this$3 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
-    if ((!this$3.isEmpty__Z())) {
-      var x0 = this$3.get__O();
-      var element = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
+    var this$5 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
+    if ((!this$5.isEmpty__Z())) {
+      var x0 = this$5.get__O();
+      var element = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
       var domList = $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
-      var this$5 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
-      var it = this$5.iterator__sc_Iterator();
+      var this$7 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
+      var it = this$7.iterator__sc_Iterator();
       while ($n(it).hasNext__Z()) {
         var x0$1 = $n(it).next__O();
         try {
@@ -18171,506 +18857,475 @@ $c_Lcom_diagraphx_web_components_Container.prototype.view__Lorg_scalajs_dom_HTML
         }
       }
     }
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = $m_s_None$();
-  }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$5) => {
-    if ($n(this.Lcom_diagraphx_web_abstracts_AVElement__f_parent).isEmpty__Z()) {
-      $m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody.appendChild(this.Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-    } else {
-      $n($as_Lcom_diagraphx_web_abstracts_AVElement($n(this.Lcom_diagraphx_web_abstracts_AVElement__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().appendChild(this.Lcom_diagraphx_web_abstracts_AVElement__f_fo);
-    }
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
   })));
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_abstracts_AVElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_components_Container__f_resizeDiv, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_components_Container__f_headerDiv, this.Lcom_diagraphx_web_components_Container__f_contentDiv])))])));
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Container__f_resizeDiv, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphy_web_components_Container__f_headerDiv, this.Lcom_diagraphy_web_components_Container__f_contentDiv])))])));
 });
-function $as_Lcom_diagraphx_web_components_Container(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_components_Container) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.components.Container"));
-}
-function $isArrayOf_Lcom_diagraphx_web_components_Container(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_components_Container)));
-}
-function $asArrayOf_Lcom_diagraphx_web_components_Container(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_components_Container(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.components.Container;", depth));
-}
-var $d_Lcom_diagraphx_web_components_Container = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Container, "com.diagraphx.web.components.Container", ({
-  Lcom_diagraphx_web_components_Container: 1,
-  Lcom_diagraphx_web_abstracts_AVElement: 1,
-  Lcom_diagraphx_web_events_ElementMouseClick: 1,
-  Lcom_diagraphx_web_events_ElementMouseDown: 1
+var $d_Lcom_diagraphy_web_components_Container = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Container, "com.diagraphy.web.components.Container", ({
+  Lcom_diagraphy_web_components_Container: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_Decision(element) {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_Decision__f_element = null;
-  this.Lcom_diagraphx_web_components_Decision__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_components_Decision__f_element = element;
-  $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__(this, element);
-  $n(element).Lcom_diagraphx_web_models_MElement__f_width = ($n(element).Lcom_diagraphx_web_models_MElement__f_width + 20.0);
-  $n(element).Lcom_diagraphx_web_models_MElement__f_height = ($n(element).Lcom_diagraphx_web_models_MElement__f_height + 20.0);
-  var $x_5 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_4 = $m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement();
+function $c_Lcom_diagraphy_web_components_Decision(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Decision__f_model = null;
+  this.Lcom_diagraphy_web_components_Decision__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_Decision__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+  $n(model).Lcom_diagraphy_web_models_GraphElement__f_width = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_width + 20.0);
+  $n(model).Lcom_diagraphy_web_models_GraphElement__f_height = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_height + 20.0);
+  var $x_5 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_4 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement();
   var $x_3 = $m_sr_ScalaRunTime$();
   var $x_2 = new $c_T2("position", "relative");
-  var y = ($n(element).Lcom_diagraphx_web_models_MElement__f_width + "px");
+  var y = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_width + "px");
   var $x_1 = new $c_T2("width", y);
-  var y$1 = ($n(element).Lcom_diagraphx_web_models_MElement__f_height + "px");
-  this.Lcom_diagraphx_web_components_Decision__f_resizeDiv = $x_5.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_4, $x_3.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_2, $x_1, new $c_T2("height", y$1), new $c_T2("resize", "none"), new $c_T2("overflow", "hidden")])));
+  var y$1 = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_height + "px");
+  this.Lcom_diagraphy_web_components_Decision__f_resizeDiv = $x_5.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_4, $x_3.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_2, $x_1, new $c_T2("height", y$1), new $c_T2("resize", "none"), new $c_T2("overflow", "hidden")])));
 }
-$c_Lcom_diagraphx_web_components_Decision.prototype = new $h_Lcom_diagraphx_web_abstracts_AVElement();
-$c_Lcom_diagraphx_web_components_Decision.prototype.constructor = $c_Lcom_diagraphx_web_components_Decision;
+$c_Lcom_diagraphy_web_components_Decision.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_Decision.prototype.constructor = $c_Lcom_diagraphy_web_components_Decision;
 /** @constructor */
-function $h_Lcom_diagraphx_web_components_Decision() {
+function $h_Lcom_diagraphy_web_components_Decision() {
 }
-$h_Lcom_diagraphx_web_components_Decision.prototype = $c_Lcom_diagraphx_web_components_Decision.prototype;
-$c_Lcom_diagraphx_web_components_Decision.prototype.element__Lcom_diagraphx_web_models_MElement = (function() {
-  return this.Lcom_diagraphx_web_components_Decision__f_element;
+$h_Lcom_diagraphy_web_components_Decision.prototype = $c_Lcom_diagraphy_web_components_Decision.prototype;
+$c_Lcom_diagraphy_web_components_Decision.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_Decision__f_model;
 });
-$c_Lcom_diagraphx_web_components_Decision.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_components_Decision__f_resizeDiv;
+$c_Lcom_diagraphy_web_components_Decision.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_Decision__f_resizeDiv;
 });
-$c_Lcom_diagraphx_web_components_Decision.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
-  var outerBorder = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("background-color", "#777"), new $c_T2("clip-path", "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)")])));
-  var $x_8 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_7 = $m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement();
+$c_Lcom_diagraphy_web_components_Decision.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
+  var outerBorder = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("background-color", "#777"), new $c_T2("clip-path", "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)")])));
+  var $x_8 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_7 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement();
   var $x_6 = $m_sr_ScalaRunTime$();
   var $x_5 = new $c_T2("position", "absolute");
   var $x_4 = new $c_T2("width", "calc(100% - 4px)");
   var $x_3 = new $c_T2("height", "calc(100% - 4px)");
   var $x_2 = new $c_T2("top", "2px");
   var $x_1 = new $c_T2("left", "2px");
-  var y = $n(this.Lcom_diagraphx_web_components_Decision__f_element).Lcom_diagraphx_web_models_MElement__f_bgColor;
+  var y = $n(this.Lcom_diagraphy_web_components_Decision__f_model).Lcom_diagraphy_web_models_GraphElement__f_bgColor;
   var innerBorder = $x_8.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_7, $x_6.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y), new $c_T2("clip-path", "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)")])));
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer.observe(this.Lcom_diagraphx_web_components_Decision__f_resizeDiv);
-  $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv, $n(this.Lcom_diagraphx_web_components_Decision__f_element).Lcom_diagraphx_web_models_MElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer.observe(this.Lcom_diagraphy_web_components_Decision__f_resizeDiv);
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Decision__f_resizeDiv, this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler);
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().editableOnDblClick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv, $n(this.Lcom_diagraphy_web_components_Decision__f_model).Lcom_diagraphy_web_models_GraphElement__f_text), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((newText) => {
     var newText$1 = $as_T(newText);
-    $n(this.Lcom_diagraphx_web_components_Decision__f_element).Lcom_diagraphx_web_models_MElement__f_text = newText$1;
-  }))), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler), this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = new $c_s_Some(this);
+    $n(this.Lcom_diagraphy_web_components_Decision__f_model).Lcom_diagraphy_web_models_GraphElement__f_text = newText$1;
+  }))), this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
+    var this$26 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
+    if ((!this$26.isEmpty__Z())) {
+      var $x_9 = true;
+    } else {
+      var this$27 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
+      var $x_9 = (!this$27.isEmpty__Z());
+    }
+    if ($x_9) {
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = new $c_s_Some(this);
+    }
   }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
-    var this$27 = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement);
-    if ((!this$27.isEmpty__Z())) {
-      var x0 = this$27.get__O();
-      var element = $as_Lcom_diagraphx_web_abstracts_AVElement(x0);
+    var this$29 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
+    if ((!this$29.isEmpty__Z())) {
+      var x0 = this$29.get__O();
+      var element = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
       var domList = $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
-      var this$29 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
-      var it = this$29.iterator__sc_Iterator();
+      var this$31 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
+      var it = this$31.iterator__sc_Iterator();
       while ($n(it).hasNext__Z()) {
         var x0$1 = $n(it).next__O();
         $n(element).resizeDiv__Lorg_scalajs_dom_HTMLElement().removeChild(x0$1);
       }
     }
-    $m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_mouseHoverElement = $m_s_None$();
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
   })));
-  return $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_abstracts_AVElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphx_web_components_Decision__f_resizeDiv, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([outerBorder, innerBorder, this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv])))])));
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Decision__f_resizeDiv, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([outerBorder, innerBorder, this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv])))])));
 });
-var $d_Lcom_diagraphx_web_components_Decision = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Decision, "com.diagraphx.web.components.Decision", ({
-  Lcom_diagraphx_web_components_Decision: 1,
-  Lcom_diagraphx_web_abstracts_AVElement: 1,
-  Lcom_diagraphx_web_events_ElementMouseClick: 1,
-  Lcom_diagraphx_web_events_ElementMouseDown: 1
+var $d_Lcom_diagraphy_web_components_Decision = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Decision, "com.diagraphy.web.components.Decision", ({
+  Lcom_diagraphy_web_components_Decision: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_components_ImageX(element) {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_ImageX__f_element = null;
-  this.Lcom_diagraphx_web_components_ImageX__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_ImageX__f_element = element;
-  $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__(this, element);
-  var $x_4 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_3 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_2 = $m_Lcom_diagraphx_web_objects_ElementHelper$().img__Lorg_scalajs_dom_HTMLElement();
+function $c_Lcom_diagraphy_web_components_ImageX(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_ImageX__f_model = null;
+  this.Lcom_diagraphy_web_components_ImageX__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_ImageX__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+  var $x_3 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_2 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().img__Lorg_scalajs_dom_HTMLElement();
   var $x_1 = $m_sr_ScalaRunTime$();
-  var y = $n(element).Lcom_diagraphx_web_models_MElement__f_imagePath;
-  this.Lcom_diagraphx_web_components_ImageX__f_contentDiv = $x_4.mdblclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($x_3.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_2, $x_1.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("src", y), new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("position", "relative")]))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-    var newPath = $as_T(window.prompt("Enter image URL", $n(element).Lcom_diagraphx_web_models_MElement__f_imagePath));
+  var y = $n(model).Lcom_diagraphy_web_models_GraphElement__f_imagePath;
+  this.Lcom_diagraphy_web_components_ImageX__f_contentDiv = $x_3.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_2, $x_1.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("src", y), new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("position", "relative"), new $c_T2("draggable", "false")])));
+}
+$c_Lcom_diagraphy_web_components_ImageX.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_ImageX.prototype.constructor = $c_Lcom_diagraphy_web_components_ImageX;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_ImageX() {
+}
+$h_Lcom_diagraphy_web_components_ImageX.prototype = $c_Lcom_diagraphy_web_components_ImageX.prototype;
+$c_Lcom_diagraphy_web_components_ImageX.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_ImageX__f_model;
+});
+$c_Lcom_diagraphy_web_components_ImageX.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_ImageX__f_contentDiv;
+});
+$c_Lcom_diagraphy_web_components_ImageX.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer.observe(this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv);
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv, this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler);
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mout__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdblclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_ImageX__f_contentDiv, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+    var newPath = $as_T(window.prompt("Enter image URL", $n(this.Lcom_diagraphy_web_components_ImageX__f_model).Lcom_diagraphy_web_models_GraphElement__f_imagePath));
     if ((newPath !== null)) {
-      var this$12 = $n(newPath);
-      var $x_5 = (!(this$12 === ""));
-    } else {
-      var $x_5 = false;
-    }
-    if ($x_5) {
-      $n(element).Lcom_diagraphx_web_models_MElement__f_imagePath = newPath;
-      this.Lcom_diagraphx_web_components_ImageX__f_contentDiv.src = $n(element).Lcom_diagraphx_web_models_MElement__f_imagePath;
-    }
-    e.stopPropagation();
-  })));
-}
-$c_Lcom_diagraphx_web_components_ImageX.prototype = new $h_Lcom_diagraphx_web_abstracts_AVElement();
-$c_Lcom_diagraphx_web_components_ImageX.prototype.constructor = $c_Lcom_diagraphx_web_components_ImageX;
-/** @constructor */
-function $h_Lcom_diagraphx_web_components_ImageX() {
-}
-$h_Lcom_diagraphx_web_components_ImageX.prototype = $c_Lcom_diagraphx_web_components_ImageX.prototype;
-$c_Lcom_diagraphx_web_components_ImageX.prototype.element__Lcom_diagraphx_web_models_MElement = (function() {
-  return this.Lcom_diagraphx_web_components_ImageX__f_element;
-});
-$c_Lcom_diagraphx_web_components_ImageX.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_components_ImageX__f_contentDiv;
-});
-var $d_Lcom_diagraphx_web_components_ImageX = new $TypeData().initClass($c_Lcom_diagraphx_web_components_ImageX, "com.diagraphx.web.components.ImageX", ({
-  Lcom_diagraphx_web_components_ImageX: 1,
-  Lcom_diagraphx_web_abstracts_AVElement: 1,
-  Lcom_diagraphx_web_events_ElementMouseClick: 1,
-  Lcom_diagraphx_web_events_ElementMouseDown: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_components_Instruction(element) {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_Instruction__f_element = null;
-  this.Lcom_diagraphx_web_components_Instruction__f_element = element;
-  $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__(this, element);
-}
-$c_Lcom_diagraphx_web_components_Instruction.prototype = new $h_Lcom_diagraphx_web_abstracts_AVElement();
-$c_Lcom_diagraphx_web_components_Instruction.prototype.constructor = $c_Lcom_diagraphx_web_components_Instruction;
-/** @constructor */
-function $h_Lcom_diagraphx_web_components_Instruction() {
-}
-$h_Lcom_diagraphx_web_components_Instruction.prototype = $c_Lcom_diagraphx_web_components_Instruction.prototype;
-$c_Lcom_diagraphx_web_components_Instruction.prototype.element__Lcom_diagraphx_web_models_MElement = (function() {
-  return this.Lcom_diagraphx_web_components_Instruction__f_element;
-});
-var $d_Lcom_diagraphx_web_components_Instruction = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Instruction, "com.diagraphx.web.components.Instruction", ({
-  Lcom_diagraphx_web_components_Instruction: 1,
-  Lcom_diagraphx_web_abstracts_AVElement: 1,
-  Lcom_diagraphx_web_events_ElementMouseClick: 1,
-  Lcom_diagraphx_web_events_ElementMouseDown: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_components_Note(element) {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_Note__f_element = null;
-  this.Lcom_diagraphx_web_components_Note__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_Note__f_element = element;
-  $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__(this, element);
-  this.Lcom_diagraphx_web_components_Note__f_contentDiv = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "left"), new $c_T2("justify-content", "left"), new $c_T2("text-align", "left"), new $c_T2("position", "relative")])));
-}
-$c_Lcom_diagraphx_web_components_Note.prototype = new $h_Lcom_diagraphx_web_abstracts_AVElement();
-$c_Lcom_diagraphx_web_components_Note.prototype.constructor = $c_Lcom_diagraphx_web_components_Note;
-/** @constructor */
-function $h_Lcom_diagraphx_web_components_Note() {
-}
-$h_Lcom_diagraphx_web_components_Note.prototype = $c_Lcom_diagraphx_web_components_Note.prototype;
-$c_Lcom_diagraphx_web_components_Note.prototype.element__Lcom_diagraphx_web_models_MElement = (function() {
-  return this.Lcom_diagraphx_web_components_Note__f_element;
-});
-$c_Lcom_diagraphx_web_components_Note.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_components_Note__f_contentDiv;
-});
-var $d_Lcom_diagraphx_web_components_Note = new $TypeData().initClass($c_Lcom_diagraphx_web_components_Note, "com.diagraphx.web.components.Note", ({
-  Lcom_diagraphx_web_components_Note: 1,
-  Lcom_diagraphx_web_abstracts_AVElement: 1,
-  Lcom_diagraphx_web_events_ElementMouseClick: 1,
-  Lcom_diagraphx_web_events_ElementMouseDown: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_components_StartEnd(element) {
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementClickHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_elementMouseDownHandler = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_oPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_iPaths = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_parent = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_fo = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_observer = null;
-  this.Lcom_diagraphx_web_abstracts_AVElement__f_contentDiv = null;
-  this.Lcom_diagraphx_web_components_StartEnd__f_element = null;
-  this.Lcom_diagraphx_web_components_StartEnd__f_resizeDiv = null;
-  this.Lcom_diagraphx_web_components_StartEnd__f_element = element;
-  $ct_Lcom_diagraphx_web_abstracts_AVElement__Lcom_diagraphx_web_models_MElement__(this, element);
-  var $x_9 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_8 = $m_Lcom_diagraphx_web_objects_ElementHelper$().div__Lorg_scalajs_dom_HTMLElement();
-  var $x_7 = $m_sr_ScalaRunTime$();
-  var $x_6 = new $c_T2("resize", "none");
-  var $x_5 = new $c_T2("overflow", "auto");
-  var y = ($n(element).Lcom_diagraphx_web_models_MElement__f_width + "px");
-  var $x_4 = new $c_T2("width", y);
-  var y$1 = ($n(element).Lcom_diagraphx_web_models_MElement__f_height + "px");
-  var $x_3 = new $c_T2("height", y$1);
-  var $x_2 = new $c_T2("position", "relative");
-  var $x_1 = new $c_T2("box-shadow", "0 8px 16px 0 rgba(0,0,0,0.22), 0 8px 16px 0 rgba(255,255,255,0.10) inset");
-  var y$2 = ("" + $n(element).Lcom_diagraphx_web_models_MElement__f_bgColor);
-  this.Lcom_diagraphx_web_components_StartEnd__f_resizeDiv = $x_9.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_8, $x_7.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y$2), new $c_T2("border-radius", "8px"), new $c_T2("padding", "10px"), new $c_T2("border-radius", "50%")])));
-}
-$c_Lcom_diagraphx_web_components_StartEnd.prototype = new $h_Lcom_diagraphx_web_abstracts_AVElement();
-$c_Lcom_diagraphx_web_components_StartEnd.prototype.constructor = $c_Lcom_diagraphx_web_components_StartEnd;
-/** @constructor */
-function $h_Lcom_diagraphx_web_components_StartEnd() {
-}
-$h_Lcom_diagraphx_web_components_StartEnd.prototype = $c_Lcom_diagraphx_web_components_StartEnd.prototype;
-$c_Lcom_diagraphx_web_components_StartEnd.prototype.element__Lcom_diagraphx_web_models_MElement = (function() {
-  return this.Lcom_diagraphx_web_components_StartEnd__f_element;
-});
-$c_Lcom_diagraphx_web_components_StartEnd.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
-  return this.Lcom_diagraphx_web_components_StartEnd__f_resizeDiv;
-});
-var $d_Lcom_diagraphx_web_components_StartEnd = new $TypeData().initClass($c_Lcom_diagraphx_web_components_StartEnd, "com.diagraphx.web.components.StartEnd", ({
-  Lcom_diagraphx_web_components_StartEnd: 1,
-  Lcom_diagraphx_web_abstracts_AVElement: 1,
-  Lcom_diagraphx_web_events_ElementMouseClick: 1,
-  Lcom_diagraphx_web_events_ElementMouseDown: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_components_VPath(mpath) {
-  this.Lcom_diagraphx_web_components_VPath__f_mpath = null;
-  this.Lcom_diagraphx_web_components_VPath__f_startElement = null;
-  this.Lcom_diagraphx_web_components_VPath__f_endElement = null;
-  this.Lcom_diagraphx_web_components_VPath__f_parent = null;
-  this.Lcom_diagraphx_web_components_VPath__f_ipath = null;
-  this.Lcom_diagraphx_web_components_VPath__f_mpath = mpath;
-  this.Lcom_diagraphx_web_components_VPath__f_startElement = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_elementMap).get__O__s_Option($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_sElement);
-  this.Lcom_diagraphx_web_components_VPath__f_endElement = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_elementMap).get__O__s_Option($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_eElement);
-  this.Lcom_diagraphx_web_components_VPath__f_parent = $n($m_Lcom_diagraphx_web_objects_Cache$().Lcom_diagraphx_web_objects_Cache$__f_elementMap).get__O__s_Option($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_parent);
-  var $x_12 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_11 = $m_Lcom_diagraphx_web_objects_ElementHelper$().path__Lorg_scalajs_dom_HTMLElement();
-  var $x_10 = $m_sr_ScalaRunTime$();
-  var this$3 = $m_RTLong$();
-  var value = $uD(new Date().getTime());
-  var lo = this$3.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
-  var hi = this$3.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var y = ("path-" + new $c_RTLong(lo, hi));
-  var $x_9 = new $c_T2("id", y);
-  var $x_8 = new $c_T2("stroke", "#008476");
-  var $x_7 = new $c_T2("stroke-width", "2");
-  var $x_6 = new $c_T2("fill", "none");
-  var $x_5 = new $c_T2("marker-end", "url(#arrowhead)");
-  var this$14 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start).Lcom_diagraphx_web_models_MPoint__f_x;
-  var y$1 = ("" + this$14);
-  var $x_4 = new $c_T2("x1", y$1);
-  var this$18 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start).Lcom_diagraphx_web_models_MPoint__f_y;
-  var y$2 = ("" + this$18);
-  var $x_3 = new $c_T2("y1", y$2);
-  var this$22 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_x;
-  var y$3 = ("" + this$22);
-  var $x_2 = new $c_T2("x2", y$3);
-  var this$26 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_y;
-  var y$4 = ("" + this$26);
-  var $x_1 = new $c_T2("y2", y$4);
-  var y$5 = $n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_d;
-  this.Lcom_diagraphx_web_components_VPath__f_ipath = $x_12.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_11, $x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_9, $x_8, $x_7, $x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$5)])));
-}
-$c_Lcom_diagraphx_web_components_VPath.prototype = new $h_O();
-$c_Lcom_diagraphx_web_components_VPath.prototype.constructor = $c_Lcom_diagraphx_web_components_VPath;
-/** @constructor */
-function $h_Lcom_diagraphx_web_components_VPath() {
-}
-$h_Lcom_diagraphx_web_components_VPath.prototype = $c_Lcom_diagraphx_web_components_VPath.prototype;
-$c_Lcom_diagraphx_web_components_VPath.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_s_Product$$anon$1(this);
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.equals__O__Z = (function(x$0) {
-  if ((this === x$0)) {
-    return true;
-  } else if ((x$0 instanceof $c_Lcom_diagraphx_web_components_VPath)) {
-    var x$0$2 = $as_Lcom_diagraphx_web_components_VPath(x$0);
-    var x = this.Lcom_diagraphx_web_components_VPath__f_mpath;
-    var x$2 = $n(x$0$2).Lcom_diagraphx_web_components_VPath__f_mpath;
-    if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
-      $n(x$0$2);
-      return true;
-    } else {
-      return false;
-    }
-  } else {
-    return false;
-  }
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.productArity__I = (function() {
-  return 1;
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.productPrefix__T = (function() {
-  return "VPath";
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.productElement__I__O = (function(n) {
-  if ((n === 0)) {
-    return this.Lcom_diagraphx_web_components_VPath__f_mpath;
-  }
-  throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n));
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
-  return ($n(this.Lcom_diagraphx_web_components_VPath__f_parent).isEmpty__Z() ? $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphx_web_pagecomponents_SvgBody$().Lcom_diagraphx_web_pagecomponents_SvgBody$__f_svgBody, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_components_VPath__f_ipath]))) : $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n($as_Lcom_diagraphx_web_abstracts_AVElement($n(this.Lcom_diagraphx_web_components_VPath__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphx_web_components_VPath__f_ipath]))));
-});
-$c_Lcom_diagraphx_web_components_VPath.prototype.update__V = (function() {
-  var $x_7 = $m_Lcom_diagraphx_web_extensions_HTMLElementExtension$();
-  var $x_6 = this.Lcom_diagraphx_web_components_VPath__f_ipath;
-  var $x_5 = $m_sr_ScalaRunTime$();
-  var this$2 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start).Lcom_diagraphx_web_models_MPoint__f_x;
-  var y = ("" + this$2);
-  var $x_4 = new $c_T2("x1", y);
-  var this$6 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start).Lcom_diagraphx_web_models_MPoint__f_y;
-  var y$1 = ("" + this$6);
-  var $x_3 = new $c_T2("y1", y$1);
-  var this$10 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_x;
-  var y$2 = ("" + this$10);
-  var $x_2 = new $c_T2("x2", y$2);
-  var this$14 = $n($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end).Lcom_diagraphx_web_models_MPoint__f_y;
-  var y$3 = ("" + this$14);
-  var $x_1 = new $c_T2("y2", y$3);
-  var y$4 = $n($m_Lcom_diagraphx_web_abstracts_PathHelper$().Lcom_diagraphx_web_abstracts_PathHelper$__f_pathD).apply__O__O__O__O($n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_start, $n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_end, $n(this.Lcom_diagraphx_web_components_VPath__f_mpath).Lcom_diagraphx_web_models_MPath__f_edge);
-  $x_7.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_6, $x_5.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$4)])));
-});
-function $as_Lcom_diagraphx_web_components_VPath(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_components_VPath) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.components.VPath"));
-}
-function $isArrayOf_Lcom_diagraphx_web_components_VPath(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_components_VPath)));
-}
-function $asArrayOf_Lcom_diagraphx_web_components_VPath(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_components_VPath(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.components.VPath;", depth));
-}
-var $d_Lcom_diagraphx_web_components_VPath = new $TypeData().initClass($c_Lcom_diagraphx_web_components_VPath, "com.diagraphx.web.components.VPath", ({
-  Lcom_diagraphx_web_components_VPath: 1,
-  s_Equals: 1,
-  s_Product: 1,
-  Ljava_io_Serializable: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MElement(id, format, x, y, width, height, vbWidth, vbHeight, text, bgColor, imagePath, elements) {
-  this.Lcom_diagraphx_web_models_MElement__f_id = null;
-  this.Lcom_diagraphx_web_models_MElement__f_format = null;
-  this.Lcom_diagraphx_web_models_MElement__f_x = 0.0;
-  this.Lcom_diagraphx_web_models_MElement__f_y = 0.0;
-  this.Lcom_diagraphx_web_models_MElement__f_width = 0.0;
-  this.Lcom_diagraphx_web_models_MElement__f_height = 0.0;
-  this.Lcom_diagraphx_web_models_MElement__f_vbWidth = 0.0;
-  this.Lcom_diagraphx_web_models_MElement__f_vbHeight = 0.0;
-  this.Lcom_diagraphx_web_models_MElement__f_text = null;
-  this.Lcom_diagraphx_web_models_MElement__f_bgColor = null;
-  this.Lcom_diagraphx_web_models_MElement__f_imagePath = null;
-  this.Lcom_diagraphx_web_models_MElement__f_elements = null;
-  this.Lcom_diagraphx_web_models_MElement__f_id = id;
-  this.Lcom_diagraphx_web_models_MElement__f_format = format;
-  this.Lcom_diagraphx_web_models_MElement__f_x = x;
-  this.Lcom_diagraphx_web_models_MElement__f_y = y;
-  this.Lcom_diagraphx_web_models_MElement__f_width = width;
-  this.Lcom_diagraphx_web_models_MElement__f_height = height;
-  this.Lcom_diagraphx_web_models_MElement__f_vbWidth = vbWidth;
-  this.Lcom_diagraphx_web_models_MElement__f_vbHeight = vbHeight;
-  this.Lcom_diagraphx_web_models_MElement__f_text = text;
-  this.Lcom_diagraphx_web_models_MElement__f_bgColor = bgColor;
-  this.Lcom_diagraphx_web_models_MElement__f_imagePath = imagePath;
-  this.Lcom_diagraphx_web_models_MElement__f_elements = elements;
-}
-$c_Lcom_diagraphx_web_models_MElement.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MElement.prototype.constructor = $c_Lcom_diagraphx_web_models_MElement;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MElement() {
-}
-$h_Lcom_diagraphx_web_models_MElement.prototype = $c_Lcom_diagraphx_web_models_MElement.prototype;
-$c_Lcom_diagraphx_web_models_MElement.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_s_Product$$anon$1(this);
-});
-$c_Lcom_diagraphx_web_models_MElement.prototype.hashCode__I = (function() {
-  var acc = (-889275714);
-  var hash = acc;
-  var data = $f_T__hashCode__I("MElement");
-  acc = $m_sr_Statics$().mix__I__I__I(hash, data);
-  var hash$1 = acc;
-  var x = this.Lcom_diagraphx_web_models_MElement__f_id;
-  var data$1 = $m_sr_Statics$().anyHash__O__I(x);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
-  var hash$2 = acc;
-  var x$1 = this.Lcom_diagraphx_web_models_MElement__f_format;
-  var data$2 = $m_sr_Statics$().anyHash__O__I(x$1);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
-  var hash$3 = acc;
-  var dv = this.Lcom_diagraphx_web_models_MElement__f_x;
-  var data$3 = $m_sr_Statics$().doubleHash__D__I(dv);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
-  var hash$4 = acc;
-  var dv$1 = this.Lcom_diagraphx_web_models_MElement__f_y;
-  var data$4 = $m_sr_Statics$().doubleHash__D__I(dv$1);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$4, data$4);
-  var hash$5 = acc;
-  var dv$2 = this.Lcom_diagraphx_web_models_MElement__f_width;
-  var data$5 = $m_sr_Statics$().doubleHash__D__I(dv$2);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$5, data$5);
-  var hash$6 = acc;
-  var dv$3 = this.Lcom_diagraphx_web_models_MElement__f_height;
-  var data$6 = $m_sr_Statics$().doubleHash__D__I(dv$3);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$6, data$6);
-  var hash$7 = acc;
-  var dv$4 = this.Lcom_diagraphx_web_models_MElement__f_vbWidth;
-  var data$7 = $m_sr_Statics$().doubleHash__D__I(dv$4);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$7, data$7);
-  var hash$8 = acc;
-  var dv$5 = this.Lcom_diagraphx_web_models_MElement__f_vbHeight;
-  var data$8 = $m_sr_Statics$().doubleHash__D__I(dv$5);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$8, data$8);
-  var hash$9 = acc;
-  var x$2 = this.Lcom_diagraphx_web_models_MElement__f_text;
-  var data$9 = $m_sr_Statics$().anyHash__O__I(x$2);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$9, data$9);
-  var hash$10 = acc;
-  var x$3 = this.Lcom_diagraphx_web_models_MElement__f_bgColor;
-  var data$10 = $m_sr_Statics$().anyHash__O__I(x$3);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$10, data$10);
-  var hash$11 = acc;
-  var x$4 = this.Lcom_diagraphx_web_models_MElement__f_imagePath;
-  var data$11 = $m_sr_Statics$().anyHash__O__I(x$4);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$11, data$11);
-  var hash$12 = acc;
-  var x$5 = this.Lcom_diagraphx_web_models_MElement__f_elements;
-  var data$12 = $m_sr_Statics$().anyHash__O__I(x$5);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$12, data$12);
-  var hash$13 = acc;
-  return $m_sr_Statics$().finalizeHash__I__I__I(hash$13, 12);
-});
-$c_Lcom_diagraphx_web_models_MElement.prototype.equals__O__Z = (function(x$0) {
-  if ((this === x$0)) {
-    return true;
-  } else if ((x$0 instanceof $c_Lcom_diagraphx_web_models_MElement)) {
-    var x$0$2 = $as_Lcom_diagraphx_web_models_MElement(x$0);
-    if ((((((((((((this.Lcom_diagraphx_web_models_MElement__f_x === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_x) && (this.Lcom_diagraphx_web_models_MElement__f_y === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_y)) && (this.Lcom_diagraphx_web_models_MElement__f_width === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_width)) && (this.Lcom_diagraphx_web_models_MElement__f_height === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_height)) && (this.Lcom_diagraphx_web_models_MElement__f_vbWidth === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_vbWidth)) && (this.Lcom_diagraphx_web_models_MElement__f_vbHeight === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_vbHeight)) && (this.Lcom_diagraphx_web_models_MElement__f_id === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_id)) && (this.Lcom_diagraphx_web_models_MElement__f_format === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_format)) && (this.Lcom_diagraphx_web_models_MElement__f_text === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_text)) && (this.Lcom_diagraphx_web_models_MElement__f_bgColor === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_bgColor)) && (this.Lcom_diagraphx_web_models_MElement__f_imagePath === $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_imagePath))) {
-      var x = this.Lcom_diagraphx_web_models_MElement__f_elements;
-      var x$2 = $n(x$0$2).Lcom_diagraphx_web_models_MElement__f_elements;
-      if ((x === null)) {
-        var $x_1 = (x$2 === null);
-      } else {
-        var this$1 = $n(x);
-        var $x_1 = $f_sc_Seq__equals__O__Z(this$1, x$2);
-      }
+      var this$4 = $n(newPath);
+      var $x_1 = (!(this$4 === ""));
     } else {
       var $x_1 = false;
     }
     if ($x_1) {
+      $n(this.Lcom_diagraphy_web_components_ImageX__f_model).Lcom_diagraphy_web_models_GraphElement__f_imagePath = newPath;
+      this.Lcom_diagraphy_web_components_ImageX__f_contentDiv.src = $n(this.Lcom_diagraphy_web_components_ImageX__f_model).Lcom_diagraphy_web_models_GraphElement__f_imagePath;
+    }
+    e.stopPropagation();
+  }))), this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
+    var this$5 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
+    if ((!this$5.isEmpty__Z())) {
+      var $x_2 = true;
+    } else {
+      var this$6 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement);
+      var $x_2 = (!this$6.isEmpty__Z());
+    }
+    if ($x_2) {
+      $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = new $c_s_Some(this);
+    }
+  }))), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
+    var this$8 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
+    if ((!this$8.isEmpty__Z())) {
+      var x0 = this$8.get__O();
+      var model = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      var domList = $n(model).resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
+      var this$10 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
+      var it = this$10.iterator__sc_Iterator();
+      while ($n(it).hasNext__Z()) {
+        var x0$1 = $n(it).next__O();
+        $n(model).resizeDiv__Lorg_scalajs_dom_HTMLElement().removeChild(x0$1);
+      }
+    }
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
+  })));
+  return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.Lcom_diagraphy_web_components_ImageX__f_contentDiv])))])));
+});
+var $d_Lcom_diagraphy_web_components_ImageX = new $TypeData().initClass($c_Lcom_diagraphy_web_components_ImageX, "com.diagraphy.web.components.ImageX", ({
+  Lcom_diagraphy_web_components_ImageX: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
+}));
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_Instruction(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Instruction__f_model = null;
+  this.Lcom_diagraphy_web_components_Instruction__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+}
+$c_Lcom_diagraphy_web_components_Instruction.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_Instruction.prototype.constructor = $c_Lcom_diagraphy_web_components_Instruction;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_Instruction() {
+}
+$h_Lcom_diagraphy_web_components_Instruction.prototype = $c_Lcom_diagraphy_web_components_Instruction.prototype;
+$c_Lcom_diagraphy_web_components_Instruction.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_Instruction__f_model;
+});
+var $d_Lcom_diagraphy_web_components_Instruction = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Instruction, "com.diagraphy.web.components.Instruction", ({
+  Lcom_diagraphy_web_components_Instruction: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
+}));
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_Note(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Note__f_model = null;
+  this.Lcom_diagraphy_web_components_Note__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Note__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+  this.Lcom_diagraphy_web_components_Note__f_contentDiv = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "left"), new $c_T2("justify-content", "left"), new $c_T2("text-align", "left"), new $c_T2("position", "relative")])));
+}
+$c_Lcom_diagraphy_web_components_Note.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_Note.prototype.constructor = $c_Lcom_diagraphy_web_components_Note;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_Note() {
+}
+$h_Lcom_diagraphy_web_components_Note.prototype = $c_Lcom_diagraphy_web_components_Note.prototype;
+$c_Lcom_diagraphy_web_components_Note.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_Note__f_model;
+});
+$c_Lcom_diagraphy_web_components_Note.prototype.contentDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_Note__f_contentDiv;
+});
+var $d_Lcom_diagraphy_web_components_Note = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Note, "com.diagraphy.web.components.Note", ({
+  Lcom_diagraphy_web_components_Note: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
+}));
+/** @constructor */
+function $c_Lcom_diagraphy_web_components_StartEnd(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_StartEnd__f_model = null;
+  this.Lcom_diagraphy_web_components_StartEnd__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_StartEnd__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+  var $x_9 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_8 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement();
+  var $x_7 = $m_sr_ScalaRunTime$();
+  var $x_6 = new $c_T2("resize", "none");
+  var $x_5 = new $c_T2("overflow", "auto");
+  var y = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_width + "px");
+  var $x_4 = new $c_T2("width", y);
+  var y$1 = ($n(model).Lcom_diagraphy_web_models_GraphElement__f_height + "px");
+  var $x_3 = new $c_T2("height", y$1);
+  var $x_2 = new $c_T2("position", "relative");
+  var $x_1 = new $c_T2("box-shadow", "0 8px 16px 0 rgba(0,0,0,0.22), 0 8px 16px 0 rgba(255,255,255,0.10) inset");
+  var y$2 = ("" + $n(model).Lcom_diagraphy_web_models_GraphElement__f_bgColor);
+  this.Lcom_diagraphy_web_components_StartEnd__f_resizeDiv = $x_9.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_8, $x_7.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y$2), new $c_T2("border-radius", "8px"), new $c_T2("padding", "10px"), new $c_T2("border-radius", "50%")])));
+}
+$c_Lcom_diagraphy_web_components_StartEnd.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_StartEnd.prototype.constructor = $c_Lcom_diagraphy_web_components_StartEnd;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_StartEnd() {
+}
+$h_Lcom_diagraphy_web_components_StartEnd.prototype = $c_Lcom_diagraphy_web_components_StartEnd.prototype;
+$c_Lcom_diagraphy_web_components_StartEnd.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_StartEnd__f_model;
+});
+$c_Lcom_diagraphy_web_components_StartEnd.prototype.resizeDiv__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_StartEnd__f_resizeDiv;
+});
+var $d_Lcom_diagraphy_web_components_StartEnd = new $TypeData().initClass($c_Lcom_diagraphy_web_components_StartEnd, "com.diagraphy.web.components.StartEnd", ({
+  Lcom_diagraphy_web_components_StartEnd: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1
+}));
+/** @constructor */
+function $c_Lcom_diagraphy_web_models_GraphElement(id, format, text, elements, x, y, width, height, vbWidth, vbHeight, bgColor, imagePath, start, end, sElement, eElement, d, edge) {
+  this.Lcom_diagraphy_web_models_GraphElement__f_id = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_format = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_text = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_elements = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_x = 0.0;
+  this.Lcom_diagraphy_web_models_GraphElement__f_y = 0.0;
+  this.Lcom_diagraphy_web_models_GraphElement__f_width = 0.0;
+  this.Lcom_diagraphy_web_models_GraphElement__f_height = 0.0;
+  this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth = 0.0;
+  this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight = 0.0;
+  this.Lcom_diagraphy_web_models_GraphElement__f_bgColor = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_imagePath = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_start = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_end = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_sElement = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_eElement = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_d = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_edge = null;
+  this.Lcom_diagraphy_web_models_GraphElement__f_id = id;
+  this.Lcom_diagraphy_web_models_GraphElement__f_format = format;
+  this.Lcom_diagraphy_web_models_GraphElement__f_text = text;
+  this.Lcom_diagraphy_web_models_GraphElement__f_elements = elements;
+  this.Lcom_diagraphy_web_models_GraphElement__f_x = x;
+  this.Lcom_diagraphy_web_models_GraphElement__f_y = y;
+  this.Lcom_diagraphy_web_models_GraphElement__f_width = width;
+  this.Lcom_diagraphy_web_models_GraphElement__f_height = height;
+  this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth = vbWidth;
+  this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight = vbHeight;
+  this.Lcom_diagraphy_web_models_GraphElement__f_bgColor = bgColor;
+  this.Lcom_diagraphy_web_models_GraphElement__f_imagePath = imagePath;
+  this.Lcom_diagraphy_web_models_GraphElement__f_start = start;
+  this.Lcom_diagraphy_web_models_GraphElement__f_end = end;
+  this.Lcom_diagraphy_web_models_GraphElement__f_sElement = sElement;
+  this.Lcom_diagraphy_web_models_GraphElement__f_eElement = eElement;
+  this.Lcom_diagraphy_web_models_GraphElement__f_d = d;
+  this.Lcom_diagraphy_web_models_GraphElement__f_edge = edge;
+}
+$c_Lcom_diagraphy_web_models_GraphElement.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphElement;
+/** @constructor */
+function $h_Lcom_diagraphy_web_models_GraphElement() {
+}
+$h_Lcom_diagraphy_web_models_GraphElement.prototype = $c_Lcom_diagraphy_web_models_GraphElement.prototype;
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_s_Product$$anon$1(this);
+});
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  var hash = acc;
+  var data = $f_T__hashCode__I("GraphElement");
+  acc = $m_sr_Statics$().mix__I__I__I(hash, data);
+  var hash$1 = acc;
+  var x = this.Lcom_diagraphy_web_models_GraphElement__f_id;
+  var data$1 = $m_sr_Statics$().anyHash__O__I(x);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
+  var hash$2 = acc;
+  var x$1 = this.Lcom_diagraphy_web_models_GraphElement__f_format;
+  var data$2 = $m_sr_Statics$().anyHash__O__I(x$1);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
+  var hash$3 = acc;
+  var x$2 = this.Lcom_diagraphy_web_models_GraphElement__f_text;
+  var data$3 = $m_sr_Statics$().anyHash__O__I(x$2);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
+  var hash$4 = acc;
+  var x$3 = this.Lcom_diagraphy_web_models_GraphElement__f_elements;
+  var data$4 = $m_sr_Statics$().anyHash__O__I(x$3);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$4, data$4);
+  var hash$5 = acc;
+  var dv = this.Lcom_diagraphy_web_models_GraphElement__f_x;
+  var data$5 = $m_sr_Statics$().doubleHash__D__I(dv);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$5, data$5);
+  var hash$6 = acc;
+  var dv$1 = this.Lcom_diagraphy_web_models_GraphElement__f_y;
+  var data$6 = $m_sr_Statics$().doubleHash__D__I(dv$1);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$6, data$6);
+  var hash$7 = acc;
+  var dv$2 = this.Lcom_diagraphy_web_models_GraphElement__f_width;
+  var data$7 = $m_sr_Statics$().doubleHash__D__I(dv$2);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$7, data$7);
+  var hash$8 = acc;
+  var dv$3 = this.Lcom_diagraphy_web_models_GraphElement__f_height;
+  var data$8 = $m_sr_Statics$().doubleHash__D__I(dv$3);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$8, data$8);
+  var hash$9 = acc;
+  var dv$4 = this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+  var data$9 = $m_sr_Statics$().doubleHash__D__I(dv$4);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$9, data$9);
+  var hash$10 = acc;
+  var dv$5 = this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
+  var data$10 = $m_sr_Statics$().doubleHash__D__I(dv$5);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$10, data$10);
+  var hash$11 = acc;
+  var x$4 = this.Lcom_diagraphy_web_models_GraphElement__f_bgColor;
+  var data$11 = $m_sr_Statics$().anyHash__O__I(x$4);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$11, data$11);
+  var hash$12 = acc;
+  var x$5 = this.Lcom_diagraphy_web_models_GraphElement__f_imagePath;
+  var data$12 = $m_sr_Statics$().anyHash__O__I(x$5);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$12, data$12);
+  var hash$13 = acc;
+  var x$6 = this.Lcom_diagraphy_web_models_GraphElement__f_start;
+  var data$13 = $m_sr_Statics$().anyHash__O__I(x$6);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$13, data$13);
+  var hash$14 = acc;
+  var x$7 = this.Lcom_diagraphy_web_models_GraphElement__f_end;
+  var data$14 = $m_sr_Statics$().anyHash__O__I(x$7);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$14, data$14);
+  var hash$15 = acc;
+  var x$8 = this.Lcom_diagraphy_web_models_GraphElement__f_sElement;
+  var data$15 = $m_sr_Statics$().anyHash__O__I(x$8);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$15, data$15);
+  var hash$16 = acc;
+  var x$9 = this.Lcom_diagraphy_web_models_GraphElement__f_eElement;
+  var data$16 = $m_sr_Statics$().anyHash__O__I(x$9);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$16, data$16);
+  var hash$17 = acc;
+  var x$10 = this.Lcom_diagraphy_web_models_GraphElement__f_d;
+  var data$17 = $m_sr_Statics$().anyHash__O__I(x$10);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$17, data$17);
+  var hash$18 = acc;
+  var x$11 = this.Lcom_diagraphy_web_models_GraphElement__f_edge;
+  var data$18 = $m_sr_Statics$().anyHash__O__I(x$11);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$18, data$18);
+  var hash$19 = acc;
+  return $m_sr_Statics$().finalizeHash__I__I__I(hash$19, 18);
+});
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.equals__O__Z = (function(x$0) {
+  if ((this === x$0)) {
+    return true;
+  } else if ((x$0 instanceof $c_Lcom_diagraphy_web_models_GraphElement)) {
+    var x$0$2 = $as_Lcom_diagraphy_web_models_GraphElement(x$0);
+    if ((((((((((this.Lcom_diagraphy_web_models_GraphElement__f_x === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_x) && (this.Lcom_diagraphy_web_models_GraphElement__f_y === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_y)) && (this.Lcom_diagraphy_web_models_GraphElement__f_width === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_width)) && (this.Lcom_diagraphy_web_models_GraphElement__f_height === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_height)) && (this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_vbWidth)) && (this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_vbHeight)) && (this.Lcom_diagraphy_web_models_GraphElement__f_id === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_id)) && (this.Lcom_diagraphy_web_models_GraphElement__f_format === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_format)) && (this.Lcom_diagraphy_web_models_GraphElement__f_text === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_text))) {
+      var x = this.Lcom_diagraphy_web_models_GraphElement__f_elements;
+      var x$2 = $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_elements;
+      if ((x === null)) {
+        var $x_3 = (x$2 === null);
+      } else {
+        var this$1 = $n(x);
+        var $x_3 = $f_sc_Seq__equals__O__Z(this$1, x$2);
+      }
+    } else {
+      var $x_3 = false;
+    }
+    if ((($x_3 && (this.Lcom_diagraphy_web_models_GraphElement__f_bgColor === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_bgColor)) && (this.Lcom_diagraphy_web_models_GraphElement__f_imagePath === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_imagePath))) {
+      var x$3 = this.Lcom_diagraphy_web_models_GraphElement__f_start;
+      var x$4 = $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_start;
+      var $x_2 = ((x$3 === null) ? (x$4 === null) : $n(x$3).equals__O__Z(x$4));
+    } else {
+      var $x_2 = false;
+    }
+    if ($x_2) {
+      var x$5 = this.Lcom_diagraphy_web_models_GraphElement__f_end;
+      var x$6 = $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_end;
+      var $x_1 = ((x$5 === null) ? (x$6 === null) : $n(x$5).equals__O__Z(x$6));
+    } else {
+      var $x_1 = false;
+    }
+    if ((((($x_1 && (this.Lcom_diagraphy_web_models_GraphElement__f_sElement === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_sElement)) && (this.Lcom_diagraphy_web_models_GraphElement__f_eElement === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_eElement)) && (this.Lcom_diagraphy_web_models_GraphElement__f_d === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_d)) && (this.Lcom_diagraphy_web_models_GraphElement__f_edge === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_edge))) {
       $n(x$0$2);
       return true;
     } else {
@@ -18680,63 +19335,87 @@ $c_Lcom_diagraphx_web_models_MElement.prototype.equals__O__Z = (function(x$0) {
     return false;
   }
 });
-$c_Lcom_diagraphx_web_models_MElement.prototype.toString__T = (function() {
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
 });
-$c_Lcom_diagraphx_web_models_MElement.prototype.productArity__I = (function() {
-  return 12;
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.productArity__I = (function() {
+  return 18;
 });
-$c_Lcom_diagraphx_web_models_MElement.prototype.productPrefix__T = (function() {
-  return "MElement";
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.productPrefix__T = (function() {
+  return "GraphElement";
 });
-$c_Lcom_diagraphx_web_models_MElement.prototype.productElement__I__O = (function(n) {
+$c_Lcom_diagraphy_web_models_GraphElement.prototype.productElement__I__O = (function(n) {
   switch (n) {
     case 0: {
-      return this.Lcom_diagraphx_web_models_MElement__f_id;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_id;
       break;
     }
     case 1: {
-      return this.Lcom_diagraphx_web_models_MElement__f_format;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_format;
       break;
     }
     case 2: {
-      return this.Lcom_diagraphx_web_models_MElement__f_x;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_text;
       break;
     }
     case 3: {
-      return this.Lcom_diagraphx_web_models_MElement__f_y;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_elements;
       break;
     }
     case 4: {
-      return this.Lcom_diagraphx_web_models_MElement__f_width;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_x;
       break;
     }
     case 5: {
-      return this.Lcom_diagraphx_web_models_MElement__f_height;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_y;
       break;
     }
     case 6: {
-      return this.Lcom_diagraphx_web_models_MElement__f_vbWidth;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_width;
       break;
     }
     case 7: {
-      return this.Lcom_diagraphx_web_models_MElement__f_vbHeight;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_height;
       break;
     }
     case 8: {
-      return this.Lcom_diagraphx_web_models_MElement__f_text;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
       break;
     }
     case 9: {
-      return this.Lcom_diagraphx_web_models_MElement__f_bgColor;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
       break;
     }
     case 10: {
-      return this.Lcom_diagraphx_web_models_MElement__f_imagePath;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_bgColor;
       break;
     }
     case 11: {
-      return this.Lcom_diagraphx_web_models_MElement__f_elements;
+      return this.Lcom_diagraphy_web_models_GraphElement__f_imagePath;
+      break;
+    }
+    case 12: {
+      return this.Lcom_diagraphy_web_models_GraphElement__f_start;
+      break;
+    }
+    case 13: {
+      return this.Lcom_diagraphy_web_models_GraphElement__f_end;
+      break;
+    }
+    case 14: {
+      return this.Lcom_diagraphy_web_models_GraphElement__f_sElement;
+      break;
+    }
+    case 15: {
+      return this.Lcom_diagraphy_web_models_GraphElement__f_eElement;
+      break;
+    }
+    case 16: {
+      return this.Lcom_diagraphy_web_models_GraphElement__f_d;
+      break;
+    }
+    case 17: {
+      return this.Lcom_diagraphy_web_models_GraphElement__f_edge;
       break;
     }
     default: {
@@ -18744,45 +19423,64 @@ $c_Lcom_diagraphx_web_models_MElement.prototype.productElement__I__O = (function
     }
   }
 });
-function $as_Lcom_diagraphx_web_models_MElement(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_models_MElement) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.models.MElement"));
+function $as_Lcom_diagraphy_web_models_GraphElement(obj) {
+  return (((obj instanceof $c_Lcom_diagraphy_web_models_GraphElement) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphy.web.models.GraphElement"));
 }
-function $isArrayOf_Lcom_diagraphx_web_models_MElement(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_models_MElement)));
+function $isArrayOf_Lcom_diagraphy_web_models_GraphElement(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphy_web_models_GraphElement)));
 }
-function $asArrayOf_Lcom_diagraphx_web_models_MElement(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_models_MElement(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.models.MElement;", depth));
+function $asArrayOf_Lcom_diagraphy_web_models_GraphElement(obj, depth) {
+  return (($isArrayOf_Lcom_diagraphy_web_models_GraphElement(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphy.web.models.GraphElement;", depth));
 }
-var $d_Lcom_diagraphx_web_models_MElement = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MElement, "com.diagraphx.web.models.MElement", ({
-  Lcom_diagraphx_web_models_MElement: 1,
+var $d_Lcom_diagraphy_web_models_GraphElement = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphElement, "com.diagraphy.web.models.GraphElement", ({
+  Lcom_diagraphy_web_models_GraphElement: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MElement$$anon$2(WritersVersionSpecific_this$3, outer) {
-  this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2 = null;
-  this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
+function $c_Lcom_diagraphy_web_models_GraphElement$$anon$2(WritersVersionSpecific_this$3, outer) {
+  this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2 = null;
+  this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
   }
 }
-$c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.constructor = $c_Lcom_diagraphx_web_models_MElement$$anon$2;
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphElement$$anon$2;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MElement$$anon$2() {
+function $h_Lcom_diagraphy_web_models_GraphElement$$anon$2() {
 }
-$h_Lcom_diagraphx_web_models_MElement$$anon$2.prototype = $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype;
-$c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
+$h_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype = $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype;
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
   return this;
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_web_models_MElement__I = (function(v) {
-  var $x_19 = ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_id !== "")) ? 1 : 0);
-  var $x_18 = ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_format !== "")) ? 1 : 0);
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.length__Lcom_diagraphy_web_models_GraphElement__I = (function(v) {
+  var $x_23 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_id !== "")) ? 1 : 0);
+  var $x_22 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_format !== "")) ? 1 : 0);
+  var $x_21 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_text !== "")) ? 1 : 0);
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    var $x_19 = true;
+  } else {
+    var x = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
+    var x$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+    if ((x === null)) {
+      var $x_20 = (x$2 === null);
+    } else {
+      var this$5 = $n(x);
+      var $x_20 = $f_sc_Seq__equals__O__Z(this$5, x$2);
+    }
+    var $x_19 = (!$x_20);
+  }
+  if ($x_19) {
+    var $x_18 = 1;
+  } else {
+    var $x_18 = 0;
+  }
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_17 = true;
   } else {
-    var xn = $n(v).Lcom_diagraphx_web_models_MElement__f_x;
+    var xn = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
     var $x_17 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn, 0.0));
   }
   if ($x_17) {
@@ -18790,10 +19488,10 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_w
   } else {
     var $x_16 = 0;
   }
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_15 = true;
   } else {
-    var xn$1 = $n(v).Lcom_diagraphx_web_models_MElement__f_y;
+    var xn$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
     var $x_15 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$1, 0.0));
   }
   if ($x_15) {
@@ -18801,10 +19499,10 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_w
   } else {
     var $x_14 = 0;
   }
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_13 = true;
   } else {
-    var xn$2 = $n(v).Lcom_diagraphx_web_models_MElement__f_width;
+    var xn$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
     var $x_13 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$2, 0.0));
   }
   if ($x_13) {
@@ -18812,10 +19510,10 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_w
   } else {
     var $x_12 = 0;
   }
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_11 = true;
   } else {
-    var xn$3 = $n(v).Lcom_diagraphx_web_models_MElement__f_height;
+    var xn$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
     var $x_11 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$3, 0.0));
   }
   if ($x_11) {
@@ -18823,10 +19521,10 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_w
   } else {
     var $x_10 = 0;
   }
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_9 = true;
   } else {
-    var xn$4 = $n(v).Lcom_diagraphx_web_models_MElement__f_vbWidth;
+    var xn$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
     var $x_9 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$4, 0.0));
   }
   if ($x_9) {
@@ -18834,10 +19532,10 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_w
   } else {
     var $x_8 = 0;
   }
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_7 = true;
   } else {
-    var xn$5 = $n(v).Lcom_diagraphx_web_models_MElement__f_vbHeight;
+    var xn$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
     var $x_7 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$5, 0.0));
   }
   if ($x_7) {
@@ -18845,484 +19543,435 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.length__Lcom_diagraphx_w
   } else {
     var $x_6 = 0;
   }
-  var $x_5 = ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_text !== "")) ? 1 : 0);
-  var $x_4 = ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_bgColor !== "")) ? 1 : 0);
-  var $x_3 = ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_imagePath !== "")) ? 1 : 0);
-  if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+  var $x_5 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor !== "")) ? 1 : 0);
+  var $x_4 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath !== "")) ? 1 : 0);
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    var $x_3 = true;
+  } else {
+    var x$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_start;
+    var x$4 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+    var $x_3 = (!((x$3 !== null) && $n(x$3).equals__O__Z(x$4)));
+  }
+  if ($x_3) {
+    var $x_2 = 1;
+  } else {
+    var $x_2 = 0;
+  }
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_1 = true;
   } else {
-    var x = $n(v).Lcom_diagraphx_web_models_MElement__f_elements;
-    var x$2 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-    if ((x === null)) {
-      var $x_2 = (x$2 === null);
-    } else {
-      var this$13 = $n(x);
-      var $x_2 = $f_sc_Seq__equals__O__Z(this$13, x$2);
-    }
-    var $x_1 = (!$x_2);
+    var x$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_end;
+    var x$6 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+    var $x_1 = (!((x$5 !== null) && $n(x$5).equals__O__Z(x$6)));
   }
-  return (((((((((((((((((((((($x_19 + $x_18) | 0) + $x_16) | 0) + $x_14) | 0) + $x_12) | 0) + $x_10) | 0) + $x_8) | 0) + $x_6) | 0) + $x_5) | 0) + $x_4) | 0) + $x_3) | 0) + ($x_1 ? 1 : 0)) | 0);
+  return (((((((((((((((((((((((((((((((((($x_23 + $x_22) | 0) + $x_21) | 0) + $x_18) | 0) + $x_16) | 0) + $x_14) | 0) + $x_12) | 0) + $x_10) | 0) + $x_8) | 0) + $x_6) | 0) + $x_5) | 0) + $x_4) | 0) + $x_2) | 0) + ($x_1 ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_d !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_edge !== "")) ? 1 : 0)) | 0);
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MElement__O = (function(out, v) {
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphElement__O = (function(out, v) {
   if ((v === null)) {
     return $n(out).visitNull__I__O((-1));
   } else {
-    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(this.length__Lcom_diagraphx_web_models_MElement__I(v), true, (-1));
-    if ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_id !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(this.length__Lcom_diagraphy_web_models_GraphElement__I(v), true, (-1));
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_id !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
       var mappedArgsI = "id";
       var w = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value = $n(v).Lcom_diagraphx_web_models_MElement__f_id;
+      var value = $n(v).Lcom_diagraphy_web_models_GraphElement__f_id;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
     }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_format !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_format !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
       var mappedArgsI$1 = "format";
       var w$1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$1 = $n(v).Lcom_diagraphx_web_models_MElement__f_format;
+      var value$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_format;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
     }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_1 = true;
-    } else {
-      var xn = $n(v).Lcom_diagraphx_web_models_MElement__f_x;
-      var $x_1 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn, 0.0));
-    }
-    if ($x_1) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$2 = "x";
-      var w$2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$2 = $n(v).Lcom_diagraphx_web_models_MElement__f_x;
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_text !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$2 = "text";
+      var w$2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_text;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$2, w$2, value$2);
     }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_2 = true;
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+      var $x_1 = true;
     } else {
-      var xn$1 = $n(v).Lcom_diagraphx_web_models_MElement__f_y;
-      var $x_2 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$1, 0.0));
+      var x = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
+      var x$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+      if ((x === null)) {
+        var $x_2 = (x$2 === null);
+      } else {
+        var this$8 = $n(x);
+        var $x_2 = $f_sc_Seq__equals__O__Z(this$8, x$2);
+      }
+      var $x_1 = (!$x_2);
     }
-    if ($x_2) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$3 = "y";
-      var w$3 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$3 = $n(v).Lcom_diagraphx_web_models_MElement__f_y;
+    if ($x_1) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$3 = "elements";
+      var this$10 = $m_Lupickle_legacy$();
+      var r = $m_Lcom_diagraphy_web_models_GraphElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+      var w$3 = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r, this$10);
+      var value$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$3, w$3, value$3);
     }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_3 = true;
     } else {
-      var xn$2 = $n(v).Lcom_diagraphx_web_models_MElement__f_width;
-      var $x_3 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$2, 0.0));
+      var xn = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
+      var $x_3 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn, 0.0));
     }
     if ($x_3) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$4 = "width";
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$4 = "x";
       var w$4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$4 = $n(v).Lcom_diagraphx_web_models_MElement__f_width;
+      var value$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$4, w$4, value$4);
     }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_4 = true;
     } else {
-      var xn$3 = $n(v).Lcom_diagraphx_web_models_MElement__f_height;
-      var $x_4 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$3, 0.0));
+      var xn$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
+      var $x_4 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$1, 0.0));
     }
     if ($x_4) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$5 = "height";
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$5 = "y";
       var w$5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$5 = $n(v).Lcom_diagraphx_web_models_MElement__f_height;
+      var value$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$5, w$5, value$5);
     }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_5 = true;
     } else {
-      var xn$4 = $n(v).Lcom_diagraphx_web_models_MElement__f_vbWidth;
-      var $x_5 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$4, 0.0));
+      var xn$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
+      var $x_5 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$2, 0.0));
     }
     if ($x_5) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$6 = "vbWidth";
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$6 = "width";
       var w$6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$6 = $n(v).Lcom_diagraphx_web_models_MElement__f_vbWidth;
+      var value$6 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$6, w$6, value$6);
     }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_6 = true;
     } else {
-      var xn$5 = $n(v).Lcom_diagraphx_web_models_MElement__f_vbHeight;
-      var $x_6 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$5, 0.0));
+      var xn$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
+      var $x_6 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$3, 0.0));
     }
     if ($x_6) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$7 = "vbHeight";
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$7 = "height";
       var w$7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$7 = $n(v).Lcom_diagraphx_web_models_MElement__f_vbHeight;
+      var value$7 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$7, w$7, value$7);
     }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_text !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$8 = "text";
-      var w$8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$8 = $n(v).Lcom_diagraphx_web_models_MElement__f_text;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$8, w$8, value$8);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_bgColor !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$9 = "bgColor";
-      var w$9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$9 = $n(v).Lcom_diagraphx_web_models_MElement__f_bgColor;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$9, w$9, value$9);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MElement__f_imagePath !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$10 = "imagePath";
-      var w$10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$10 = $n(v).Lcom_diagraphx_web_models_MElement__f_imagePath;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$10, w$10, value$10);
-    }
-    if (($n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_7 = true;
     } else {
-      var x = $n(v).Lcom_diagraphx_web_models_MElement__f_elements;
-      var x$2 = $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer();
-      if ((x === null)) {
-        var $x_8 = (x$2 === null);
-      } else {
-        var this$24 = $n(x);
-        var $x_8 = $f_sc_Seq__equals__O__Z(this$24, x$2);
-      }
-      var $x_7 = (!$x_8);
+      var xn$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+      var $x_7 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$4, 0.0));
     }
     if ($x_7) {
-      $n($n(this.Lcom_diagraphx_web_models_MElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$11 = "elements";
-      var this$26 = $m_Lupickle_legacy$();
-      var r = $m_Lcom_diagraphx_web_models_MElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var w$11 = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r, this$26);
-      var value$11 = $n(v).Lcom_diagraphx_web_models_MElement__f_elements;
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$8 = "vbWidth";
+      var w$8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$8 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$8, w$8, value$8);
+    }
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+      var $x_8 = true;
+    } else {
+      var xn$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
+      var $x_8 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$5, 0.0));
+    }
+    if ($x_8) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$9 = "vbHeight";
+      var w$9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$9 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$9, w$9, value$9);
+    }
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$10 = "bgColor";
+      var w$10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$10 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$10, w$10, value$10);
+    }
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$11 = "imagePath";
+      var w$11 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$11 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$11, w$11, value$11);
+    }
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+      var $x_9 = true;
+    } else {
+      var x$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_start;
+      var x$4 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+      var $x_9 = (!((x$3 !== null) && $n(x$3).equals__O__Z(x$4)));
+    }
+    if ($x_9) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$12 = "start";
+      var w$12 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+      var value$12 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_start;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$12, w$12, value$12);
+    }
+    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+      var $x_10 = true;
+    } else {
+      var x$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_end;
+      var x$6 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
+      var $x_10 = (!((x$5 !== null) && $n(x$5).equals__O__Z(x$6)));
+    }
+    if ($x_10) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$13 = "end";
+      var w$13 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+      var value$13 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_end;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$13, w$13, value$13);
+    }
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$14 = "sElement";
+      var w$14 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$14 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$14, w$14, value$14);
+    }
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$15 = "eElement";
+      var w$15 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$15 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$15, w$15, value$15);
+    }
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_d !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$16 = "d";
+      var w$16 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$16 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_d;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$16, w$16, value$16);
+    }
+    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_edge !== ""))) {
+      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+      var mappedArgsI$17 = "edge";
+      var w$17 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$17 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_edge;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$17, w$17, value$17);
     }
     return $n(ctx).visitEnd__I__O((-1));
   }
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
-  return this.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MElement__O(out, $as_Lcom_diagraphx_web_models_MElement(v));
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
+  return this.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphElement__O(out, $as_Lcom_diagraphy_web_models_GraphElement(v));
 });
-var $d_Lcom_diagraphx_web_models_MElement$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MElement$$anon$2, "com.diagraphx.web.models.MElement$$anon$2", ({
-  Lcom_diagraphx_web_models_MElement$$anon$2: 1,
+var $d_Lcom_diagraphy_web_models_GraphElement$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphElement$$anon$2, "com.diagraphy.web.models.GraphElement$$anon$2", ({
+  Lcom_diagraphy_web_models_GraphElement$$anon$2: 1,
   Lupickle_core_Types$Writer: 1,
   Lupickle_core_Types$ObjectWriter: 1,
   Lupickle_implicits_CaseClassReadWriters$CaseClassWriter: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MGraph(elements, paths) {
-  this.Lcom_diagraphx_web_models_MGraph__f_elements = null;
-  this.Lcom_diagraphx_web_models_MGraph__f_paths = null;
-  this.Lcom_diagraphx_web_models_MGraph__f_elements = elements;
-  this.Lcom_diagraphx_web_models_MGraph__f_paths = paths;
+function $c_Lcom_diagraphy_web_models_GraphPoint(x, y) {
+  this.Lcom_diagraphy_web_models_GraphPoint__f_x = 0.0;
+  this.Lcom_diagraphy_web_models_GraphPoint__f_y = 0.0;
+  this.Lcom_diagraphy_web_models_GraphPoint__f_x = x;
+  this.Lcom_diagraphy_web_models_GraphPoint__f_y = y;
 }
-$c_Lcom_diagraphx_web_models_MGraph.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MGraph.prototype.constructor = $c_Lcom_diagraphx_web_models_MGraph;
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MGraph() {
+function $h_Lcom_diagraphy_web_models_GraphPoint() {
 }
-$h_Lcom_diagraphx_web_models_MGraph.prototype = $c_Lcom_diagraphx_web_models_MGraph.prototype;
-$c_Lcom_diagraphx_web_models_MGraph.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_diagraphy_web_models_GraphPoint.prototype = $c_Lcom_diagraphy_web_models_GraphPoint.prototype;
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this);
 });
-$c_Lcom_diagraphx_web_models_MGraph.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  var hash = acc;
+  var data = $f_T__hashCode__I("GraphPoint");
+  acc = $m_sr_Statics$().mix__I__I__I(hash, data);
+  var hash$1 = acc;
+  var dv = this.Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var data$1 = $m_sr_Statics$().doubleHash__D__I(dv);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
+  var hash$2 = acc;
+  var dv$1 = this.Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var data$2 = $m_sr_Statics$().doubleHash__D__I(dv$1);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
+  var hash$3 = acc;
+  return $m_sr_Statics$().finalizeHash__I__I__I(hash$3, 2);
 });
-$c_Lcom_diagraphx_web_models_MGraph.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true;
-  } else if ((x$0 instanceof $c_Lcom_diagraphx_web_models_MGraph)) {
-    var x$0$2 = $as_Lcom_diagraphx_web_models_MGraph(x$0);
-    var x = this.Lcom_diagraphx_web_models_MGraph__f_elements;
-    var x$2 = $n(x$0$2).Lcom_diagraphx_web_models_MGraph__f_elements;
-    if ((x === null)) {
-      var $x_2 = (x$2 === null);
-    } else {
-      var this$1 = $n(x);
-      var $x_2 = $f_sc_Seq__equals__O__Z(this$1, x$2);
-    }
-    if ($x_2) {
-      var x$3 = this.Lcom_diagraphx_web_models_MGraph__f_paths;
-      var x$4 = $n(x$0$2).Lcom_diagraphx_web_models_MGraph__f_paths;
-      if ((x$3 === null)) {
-        var $x_1 = (x$4 === null);
-      } else {
-        var this$2 = $n(x$3);
-        var $x_1 = $f_sc_Seq__equals__O__Z(this$2, x$4);
-      }
-    } else {
-      var $x_1 = false;
-    }
-    if ($x_1) {
-      $n(x$0$2);
-      return true;
-    } else {
-      return false;
-    }
+  } else if ((x$0 instanceof $c_Lcom_diagraphy_web_models_GraphPoint)) {
+    var x$0$2 = $as_Lcom_diagraphy_web_models_GraphPoint(x$0);
+    return (((this.Lcom_diagraphy_web_models_GraphPoint__f_x === $n(x$0$2).Lcom_diagraphy_web_models_GraphPoint__f_x) && (this.Lcom_diagraphy_web_models_GraphPoint__f_y === $n(x$0$2).Lcom_diagraphy_web_models_GraphPoint__f_y)) && ($n(x$0$2), true));
   } else {
     return false;
   }
 });
-$c_Lcom_diagraphx_web_models_MGraph.prototype.toString__T = (function() {
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
 });
-$c_Lcom_diagraphx_web_models_MGraph.prototype.productArity__I = (function() {
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.productArity__I = (function() {
   return 2;
 });
-$c_Lcom_diagraphx_web_models_MGraph.prototype.productPrefix__T = (function() {
-  return "MGraph";
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.productPrefix__T = (function() {
+  return "GraphPoint";
 });
-$c_Lcom_diagraphx_web_models_MGraph.prototype.productElement__I__O = (function(n) {
+$c_Lcom_diagraphy_web_models_GraphPoint.prototype.productElement__I__O = (function(n) {
   if ((n === 0)) {
-    return this.Lcom_diagraphx_web_models_MGraph__f_elements;
+    return this.Lcom_diagraphy_web_models_GraphPoint__f_x;
   }
   if ((n === 1)) {
-    return this.Lcom_diagraphx_web_models_MGraph__f_paths;
+    return this.Lcom_diagraphy_web_models_GraphPoint__f_y;
   }
   throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-function $as_Lcom_diagraphx_web_models_MGraph(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_models_MGraph) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.models.MGraph"));
+function $as_Lcom_diagraphy_web_models_GraphPoint(obj) {
+  return (((obj instanceof $c_Lcom_diagraphy_web_models_GraphPoint) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphy.web.models.GraphPoint"));
 }
-function $isArrayOf_Lcom_diagraphx_web_models_MGraph(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_models_MGraph)));
+function $isArrayOf_Lcom_diagraphy_web_models_GraphPoint(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphy_web_models_GraphPoint)));
 }
-function $asArrayOf_Lcom_diagraphx_web_models_MGraph(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_models_MGraph(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.models.MGraph;", depth));
+function $asArrayOf_Lcom_diagraphy_web_models_GraphPoint(obj, depth) {
+  return (($isArrayOf_Lcom_diagraphy_web_models_GraphPoint(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphy.web.models.GraphPoint;", depth));
 }
-var $d_Lcom_diagraphx_web_models_MGraph = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MGraph, "com.diagraphx.web.models.MGraph", ({
-  Lcom_diagraphx_web_models_MGraph: 1,
+var $d_Lcom_diagraphy_web_models_GraphPoint = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint, "com.diagraphy.web.models.GraphPoint", ({
+  Lcom_diagraphy_web_models_GraphPoint: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MGraph$$anon$2(WritersVersionSpecific_this$3, outer) {
-  this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2 = null;
-  this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
+function $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2(WritersVersionSpecific_this$3, outer) {
+  this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2 = null;
+  this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
   }
 }
-$c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype.constructor = $c_Lcom_diagraphx_web_models_MGraph$$anon$2;
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MGraph$$anon$2() {
+function $h_Lcom_diagraphy_web_models_GraphPoint$$anon$2() {
 }
-$h_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype = $c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype;
-$c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
+$h_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype;
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
   return this;
 });
-$c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype.length__Lcom_diagraphx_web_models_MGraph__I = (function(v) {
-  if (($n($n(this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_4 = true;
-  } else {
-    var x = $n(v).Lcom_diagraphx_web_models_MGraph__f_elements;
-    var x$2 = $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$1__scm_ListBuffer();
-    if ((x === null)) {
-      var $x_5 = (x$2 === null);
-    } else {
-      var this$2 = $n(x);
-      var $x_5 = $f_sc_Seq__equals__O__Z(this$2, x$2);
-    }
-    var $x_4 = (!$x_5);
-  }
-  if ($x_4) {
-    var $x_3 = 1;
-  } else {
-    var $x_3 = 0;
-  }
-  if (($n($n(this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_1 = true;
-  } else {
-    var x$3 = $n(v).Lcom_diagraphx_web_models_MGraph__f_paths;
-    var x$4 = $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$2__scm_ListBuffer();
-    if ((x$3 === null)) {
-      var $x_2 = (x$4 === null);
-    } else {
-      var this$4 = $n(x$3);
-      var $x_2 = $f_sc_Seq__equals__O__Z(this$4, x$4);
-    }
-    var $x_1 = (!$x_2);
-  }
-  return (($x_3 + ($x_1 ? 1 : 0)) | 0);
-});
-$c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MGraph__O = (function(out, v) {
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphPoint__O = (function(out, v) {
   if ((v === null)) {
     return $n(out).visitNull__I__O((-1));
   } else {
-    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(this.length__Lcom_diagraphx_web_models_MGraph__I(v), true, (-1));
-    if (($n($n(this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_1 = true;
-    } else {
-      var x = $n(v).Lcom_diagraphx_web_models_MGraph__f_elements;
-      var x$2 = $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$1__scm_ListBuffer();
-      if ((x === null)) {
-        var $x_2 = (x$2 === null);
-      } else {
-        var this$2 = $n(x);
-        var $x_2 = $f_sc_Seq__equals__O__Z(this$2, x$2);
-      }
-      var $x_1 = (!$x_2);
-    }
-    if ($x_1) {
-      $n($n(this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI = "elements";
-      var this$4 = $m_Lupickle_legacy$();
-      var r = $m_Lcom_diagraphx_web_models_MElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var w = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r, this$4);
-      var value = $n(v).Lcom_diagraphx_web_models_MGraph__f_elements;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
-    }
-    if (($n($n(this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_3 = true;
-    } else {
-      var x$3 = $n(v).Lcom_diagraphx_web_models_MGraph__f_paths;
-      var x$4 = $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$2__scm_ListBuffer();
-      if ((x$3 === null)) {
-        var $x_4 = (x$4 === null);
-      } else {
-        var this$6 = $n(x$3);
-        var $x_4 = $f_sc_Seq__equals__O__Z(this$6, x$4);
-      }
-      var $x_3 = (!$x_4);
-    }
-    if ($x_3) {
-      $n($n(this.Lcom_diagraphx_web_models_MGraph$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$1 = "paths";
-      var this$8 = $m_Lupickle_legacy$();
-      var r$1 = $m_Lcom_diagraphx_web_models_MPath$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var w$1 = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r$1, this$8);
-      var value$1 = $n(v).Lcom_diagraphx_web_models_MGraph__f_paths;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
-    }
+    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(2, true, (-1));
+    $n($n(this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+    var mappedArgsI = "x";
+    var w = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+    var value = $n(v).Lcom_diagraphy_web_models_GraphPoint__f_x;
+    $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
+    $n($n(this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
+    var mappedArgsI$1 = "y";
+    var w$1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+    var value$1 = $n(v).Lcom_diagraphy_web_models_GraphPoint__f_y;
+    $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
     return $n(ctx).visitEnd__I__O((-1));
   }
 });
-$c_Lcom_diagraphx_web_models_MGraph$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
-  return this.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MGraph__O(out, $as_Lcom_diagraphx_web_models_MGraph(v));
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
+  return this.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphPoint__O(out, $as_Lcom_diagraphy_web_models_GraphPoint(v));
 });
-var $d_Lcom_diagraphx_web_models_MGraph$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MGraph$$anon$2, "com.diagraphx.web.models.MGraph$$anon$2", ({
-  Lcom_diagraphx_web_models_MGraph$$anon$2: 1,
+var $d_Lcom_diagraphy_web_models_GraphPoint$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint$$anon$2, "com.diagraphy.web.models.GraphPoint$$anon$2", ({
+  Lcom_diagraphy_web_models_GraphPoint$$anon$2: 1,
   Lupickle_core_Types$Writer: 1,
   Lupickle_core_Types$ObjectWriter: 1,
   Lupickle_implicits_CaseClassReadWriters$CaseClassWriter: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MPath(id, start, end, sElement, eElement, d, edge, text, parent) {
-  this.Lcom_diagraphx_web_models_MPath__f_id = null;
-  this.Lcom_diagraphx_web_models_MPath__f_start = null;
-  this.Lcom_diagraphx_web_models_MPath__f_end = null;
-  this.Lcom_diagraphx_web_models_MPath__f_sElement = null;
-  this.Lcom_diagraphx_web_models_MPath__f_eElement = null;
-  this.Lcom_diagraphx_web_models_MPath__f_d = null;
-  this.Lcom_diagraphx_web_models_MPath__f_edge = null;
-  this.Lcom_diagraphx_web_models_MPath__f_text = null;
-  this.Lcom_diagraphx_web_models_MPath__f_parent = null;
-  this.Lcom_diagraphx_web_models_MPath__f_id = id;
-  this.Lcom_diagraphx_web_models_MPath__f_start = start;
-  this.Lcom_diagraphx_web_models_MPath__f_end = end;
-  this.Lcom_diagraphx_web_models_MPath__f_sElement = sElement;
-  this.Lcom_diagraphx_web_models_MPath__f_eElement = eElement;
-  this.Lcom_diagraphx_web_models_MPath__f_d = d;
-  this.Lcom_diagraphx_web_models_MPath__f_edge = edge;
-  this.Lcom_diagraphx_web_models_MPath__f_text = text;
-  this.Lcom_diagraphx_web_models_MPath__f_parent = parent;
+function $c_Lcom_diagraphy_web_models_ViewBox(x, y, w, h) {
+  this.Lcom_diagraphy_web_models_ViewBox__f_x = 0.0;
+  this.Lcom_diagraphy_web_models_ViewBox__f_y = 0.0;
+  this.Lcom_diagraphy_web_models_ViewBox__f_w = 0.0;
+  this.Lcom_diagraphy_web_models_ViewBox__f_h = 0.0;
+  this.Lcom_diagraphy_web_models_ViewBox__f_x = x;
+  this.Lcom_diagraphy_web_models_ViewBox__f_y = y;
+  this.Lcom_diagraphy_web_models_ViewBox__f_w = w;
+  this.Lcom_diagraphy_web_models_ViewBox__f_h = h;
 }
-$c_Lcom_diagraphx_web_models_MPath.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MPath.prototype.constructor = $c_Lcom_diagraphx_web_models_MPath;
+$c_Lcom_diagraphy_web_models_ViewBox.prototype = new $h_O();
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.constructor = $c_Lcom_diagraphy_web_models_ViewBox;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MPath() {
+function $h_Lcom_diagraphy_web_models_ViewBox() {
 }
-$h_Lcom_diagraphx_web_models_MPath.prototype = $c_Lcom_diagraphx_web_models_MPath.prototype;
-$c_Lcom_diagraphx_web_models_MPath.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_diagraphy_web_models_ViewBox.prototype = $c_Lcom_diagraphy_web_models_ViewBox.prototype;
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this);
 });
-$c_Lcom_diagraphx_web_models_MPath.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  var hash = acc;
+  var data = $f_T__hashCode__I("ViewBox");
+  acc = $m_sr_Statics$().mix__I__I__I(hash, data);
+  var hash$1 = acc;
+  var dv = this.Lcom_diagraphy_web_models_ViewBox__f_x;
+  var data$1 = $m_sr_Statics$().doubleHash__D__I(dv);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
+  var hash$2 = acc;
+  var dv$1 = this.Lcom_diagraphy_web_models_ViewBox__f_y;
+  var data$2 = $m_sr_Statics$().doubleHash__D__I(dv$1);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
+  var hash$3 = acc;
+  var dv$2 = this.Lcom_diagraphy_web_models_ViewBox__f_w;
+  var data$3 = $m_sr_Statics$().doubleHash__D__I(dv$2);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
+  var hash$4 = acc;
+  var dv$3 = this.Lcom_diagraphy_web_models_ViewBox__f_h;
+  var data$4 = $m_sr_Statics$().doubleHash__D__I(dv$3);
+  acc = $m_sr_Statics$().mix__I__I__I(hash$4, data$4);
+  var hash$5 = acc;
+  return $m_sr_Statics$().finalizeHash__I__I__I(hash$5, 4);
 });
-$c_Lcom_diagraphx_web_models_MPath.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true;
-  } else if ((x$0 instanceof $c_Lcom_diagraphx_web_models_MPath)) {
-    var x$0$2 = $as_Lcom_diagraphx_web_models_MPath(x$0);
-    if ((this.Lcom_diagraphx_web_models_MPath__f_id === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_id)) {
-      var x = this.Lcom_diagraphx_web_models_MPath__f_start;
-      var x$2 = $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_start;
-      var $x_2 = ((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2));
-    } else {
-      var $x_2 = false;
-    }
-    if ($x_2) {
-      var x$3 = this.Lcom_diagraphx_web_models_MPath__f_end;
-      var x$4 = $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_end;
-      var $x_1 = ((x$3 === null) ? (x$4 === null) : $n(x$3).equals__O__Z(x$4));
-    } else {
-      var $x_1 = false;
-    }
-    if ((((((($x_1 && (this.Lcom_diagraphx_web_models_MPath__f_sElement === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_sElement)) && (this.Lcom_diagraphx_web_models_MPath__f_eElement === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_eElement)) && (this.Lcom_diagraphx_web_models_MPath__f_d === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_d)) && (this.Lcom_diagraphx_web_models_MPath__f_edge === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_edge)) && (this.Lcom_diagraphx_web_models_MPath__f_text === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_text)) && (this.Lcom_diagraphx_web_models_MPath__f_parent === $n(x$0$2).Lcom_diagraphx_web_models_MPath__f_parent))) {
-      $n(x$0$2);
-      return true;
-    } else {
-      return false;
-    }
+  } else if ((x$0 instanceof $c_Lcom_diagraphy_web_models_ViewBox)) {
+    var x$0$2 = $as_Lcom_diagraphy_web_models_ViewBox(x$0);
+    return (((((this.Lcom_diagraphy_web_models_ViewBox__f_x === $n(x$0$2).Lcom_diagraphy_web_models_ViewBox__f_x) && (this.Lcom_diagraphy_web_models_ViewBox__f_y === $n(x$0$2).Lcom_diagraphy_web_models_ViewBox__f_y)) && (this.Lcom_diagraphy_web_models_ViewBox__f_w === $n(x$0$2).Lcom_diagraphy_web_models_ViewBox__f_w)) && (this.Lcom_diagraphy_web_models_ViewBox__f_h === $n(x$0$2).Lcom_diagraphy_web_models_ViewBox__f_h)) && ($n(x$0$2), true));
   } else {
     return false;
   }
 });
-$c_Lcom_diagraphx_web_models_MPath.prototype.toString__T = (function() {
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
 });
-$c_Lcom_diagraphx_web_models_MPath.prototype.productArity__I = (function() {
-  return 9;
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.productArity__I = (function() {
+  return 4;
 });
-$c_Lcom_diagraphx_web_models_MPath.prototype.productPrefix__T = (function() {
-  return "MPath";
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.productPrefix__T = (function() {
+  return "ViewBox";
 });
-$c_Lcom_diagraphx_web_models_MPath.prototype.productElement__I__O = (function(n) {
+$c_Lcom_diagraphy_web_models_ViewBox.prototype.productElement__I__O = (function(n) {
   switch (n) {
     case 0: {
-      return this.Lcom_diagraphx_web_models_MPath__f_id;
+      return this.Lcom_diagraphy_web_models_ViewBox__f_x;
       break;
     }
     case 1: {
-      return this.Lcom_diagraphx_web_models_MPath__f_start;
+      return this.Lcom_diagraphy_web_models_ViewBox__f_y;
       break;
     }
     case 2: {
-      return this.Lcom_diagraphx_web_models_MPath__f_end;
+      return this.Lcom_diagraphy_web_models_ViewBox__f_w;
       break;
     }
     case 3: {
-      return this.Lcom_diagraphx_web_models_MPath__f_sElement;
-      break;
-    }
-    case 4: {
-      return this.Lcom_diagraphx_web_models_MPath__f_eElement;
-      break;
-    }
-    case 5: {
-      return this.Lcom_diagraphx_web_models_MPath__f_d;
-      break;
-    }
-    case 6: {
-      return this.Lcom_diagraphx_web_models_MPath__f_edge;
-      break;
-    }
-    case 7: {
-      return this.Lcom_diagraphx_web_models_MPath__f_text;
-      break;
-    }
-    case 8: {
-      return this.Lcom_diagraphx_web_models_MPath__f_parent;
+      return this.Lcom_diagraphy_web_models_ViewBox__f_h;
       break;
     }
     default: {
@@ -19330,273 +19979,20 @@ $c_Lcom_diagraphx_web_models_MPath.prototype.productElement__I__O = (function(n)
     }
   }
 });
-function $as_Lcom_diagraphx_web_models_MPath(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_models_MPath) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.models.MPath"));
+function $as_Lcom_diagraphy_web_models_ViewBox(obj) {
+  return (((obj instanceof $c_Lcom_diagraphy_web_models_ViewBox) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphy.web.models.ViewBox"));
 }
-function $isArrayOf_Lcom_diagraphx_web_models_MPath(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_models_MPath)));
+function $isArrayOf_Lcom_diagraphy_web_models_ViewBox(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphy_web_models_ViewBox)));
 }
-function $asArrayOf_Lcom_diagraphx_web_models_MPath(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_models_MPath(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.models.MPath;", depth));
+function $asArrayOf_Lcom_diagraphy_web_models_ViewBox(obj, depth) {
+  return (($isArrayOf_Lcom_diagraphy_web_models_ViewBox(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphy.web.models.ViewBox;", depth));
 }
-var $d_Lcom_diagraphx_web_models_MPath = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPath, "com.diagraphx.web.models.MPath", ({
-  Lcom_diagraphx_web_models_MPath: 1,
+var $d_Lcom_diagraphy_web_models_ViewBox = new $TypeData().initClass($c_Lcom_diagraphy_web_models_ViewBox, "com.diagraphy.web.models.ViewBox", ({
+  Lcom_diagraphy_web_models_ViewBox: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPath$$anon$2(WritersVersionSpecific_this$3, outer) {
-  this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2 = null;
-  this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
-  if ((outer === null)) {
-    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
-  }
-}
-$c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype.constructor = $c_Lcom_diagraphx_web_models_MPath$$anon$2;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPath$$anon$2() {
-}
-$h_Lcom_diagraphx_web_models_MPath$$anon$2.prototype = $c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype;
-$c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
-  return this;
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype.length__Lcom_diagraphx_web_models_MPath__I = (function(v) {
-  var $x_4 = ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_id !== "")) ? 1 : 0);
-  if (($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_3 = true;
-  } else {
-    var x = $n(v).Lcom_diagraphx_web_models_MPath__f_start;
-    var x$2 = new $c_Lcom_diagraphx_web_models_MPoint(0.0, 0.0);
-    var $x_3 = (!((x !== null) && $n(x).equals__O__Z(x$2)));
-  }
-  if ($x_3) {
-    var $x_2 = 1;
-  } else {
-    var $x_2 = 0;
-  }
-  if (($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_1 = true;
-  } else {
-    var x$3 = $n(v).Lcom_diagraphx_web_models_MPath__f_end;
-    var x$4 = new $c_Lcom_diagraphx_web_models_MPoint(0.0, 0.0);
-    var $x_1 = (!((x$3 !== null) && $n(x$3).equals__O__Z(x$4)));
-  }
-  return (((((((((((((((($x_4 + $x_2) | 0) + ($x_1 ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_sElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_eElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_d !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_edge !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_text !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_parent !== "")) ? 1 : 0)) | 0);
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MPath__O = (function(out, v) {
-  if ((v === null)) {
-    return $n(out).visitNull__I__O((-1));
-  } else {
-    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(this.length__Lcom_diagraphx_web_models_MPath__I(v), true, (-1));
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_id !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI = "id";
-      var w = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value = $n(v).Lcom_diagraphx_web_models_MPath__f_id;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
-    }
-    if (($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_1 = true;
-    } else {
-      var x = $n(v).Lcom_diagraphx_web_models_MPath__f_start;
-      var x$2 = new $c_Lcom_diagraphx_web_models_MPoint(0.0, 0.0);
-      var $x_1 = (!((x !== null) && $n(x).equals__O__Z(x$2)));
-    }
-    if ($x_1) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$1 = "start";
-      var w$1 = $m_Lcom_diagraphx_web_models_MPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var value$1 = $n(v).Lcom_diagraphx_web_models_MPath__f_start;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
-    }
-    if (($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_2 = true;
-    } else {
-      var x$3 = $n(v).Lcom_diagraphx_web_models_MPath__f_end;
-      var x$4 = new $c_Lcom_diagraphx_web_models_MPoint(0.0, 0.0);
-      var $x_2 = (!((x$3 !== null) && $n(x$3).equals__O__Z(x$4)));
-    }
-    if ($x_2) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$2 = "end";
-      var w$2 = $m_Lcom_diagraphx_web_models_MPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var value$2 = $n(v).Lcom_diagraphx_web_models_MPath__f_end;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$2, w$2, value$2);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_sElement !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$3 = "sElement";
-      var w$3 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$3 = $n(v).Lcom_diagraphx_web_models_MPath__f_sElement;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$3, w$3, value$3);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_eElement !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$4 = "eElement";
-      var w$4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$4 = $n(v).Lcom_diagraphx_web_models_MPath__f_eElement;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$4, w$4, value$4);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_d !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$5 = "d";
-      var w$5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$5 = $n(v).Lcom_diagraphx_web_models_MPath__f_d;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$5, w$5, value$5);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_edge !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$6 = "edge";
-      var w$6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$6 = $n(v).Lcom_diagraphx_web_models_MPath__f_edge;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$6, w$6, value$6);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_text !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$7 = "text";
-      var w$7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$7 = $n(v).Lcom_diagraphx_web_models_MPath__f_text;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$7, w$7, value$7);
-    }
-    if ((($n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphx_web_models_MPath__f_parent !== ""))) {
-      $n($n(this.Lcom_diagraphx_web_models_MPath$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$8 = "parent";
-      var w$8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$8 = $n(v).Lcom_diagraphx_web_models_MPath__f_parent;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$8, w$8, value$8);
-    }
-    return $n(ctx).visitEnd__I__O((-1));
-  }
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
-  return this.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MPath__O(out, $as_Lcom_diagraphx_web_models_MPath(v));
-});
-var $d_Lcom_diagraphx_web_models_MPath$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPath$$anon$2, "com.diagraphx.web.models.MPath$$anon$2", ({
-  Lcom_diagraphx_web_models_MPath$$anon$2: 1,
-  Lupickle_core_Types$Writer: 1,
-  Lupickle_core_Types$ObjectWriter: 1,
-  Lupickle_implicits_CaseClassReadWriters$CaseClassWriter: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPoint(x, y) {
-  this.Lcom_diagraphx_web_models_MPoint__f_x = 0.0;
-  this.Lcom_diagraphx_web_models_MPoint__f_y = 0.0;
-  this.Lcom_diagraphx_web_models_MPoint__f_x = x;
-  this.Lcom_diagraphx_web_models_MPoint__f_y = y;
-}
-$c_Lcom_diagraphx_web_models_MPoint.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MPoint.prototype.constructor = $c_Lcom_diagraphx_web_models_MPoint;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPoint() {
-}
-$h_Lcom_diagraphx_web_models_MPoint.prototype = $c_Lcom_diagraphx_web_models_MPoint.prototype;
-$c_Lcom_diagraphx_web_models_MPoint.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_s_Product$$anon$1(this);
-});
-$c_Lcom_diagraphx_web_models_MPoint.prototype.hashCode__I = (function() {
-  var acc = (-889275714);
-  var hash = acc;
-  var data = $f_T__hashCode__I("MPoint");
-  acc = $m_sr_Statics$().mix__I__I__I(hash, data);
-  var hash$1 = acc;
-  var dv = this.Lcom_diagraphx_web_models_MPoint__f_x;
-  var data$1 = $m_sr_Statics$().doubleHash__D__I(dv);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
-  var hash$2 = acc;
-  var dv$1 = this.Lcom_diagraphx_web_models_MPoint__f_y;
-  var data$2 = $m_sr_Statics$().doubleHash__D__I(dv$1);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
-  var hash$3 = acc;
-  return $m_sr_Statics$().finalizeHash__I__I__I(hash$3, 2);
-});
-$c_Lcom_diagraphx_web_models_MPoint.prototype.equals__O__Z = (function(x$0) {
-  if ((this === x$0)) {
-    return true;
-  } else if ((x$0 instanceof $c_Lcom_diagraphx_web_models_MPoint)) {
-    var x$0$2 = $as_Lcom_diagraphx_web_models_MPoint(x$0);
-    return (((this.Lcom_diagraphx_web_models_MPoint__f_x === $n(x$0$2).Lcom_diagraphx_web_models_MPoint__f_x) && (this.Lcom_diagraphx_web_models_MPoint__f_y === $n(x$0$2).Lcom_diagraphx_web_models_MPoint__f_y)) && ($n(x$0$2), true));
-  } else {
-    return false;
-  }
-});
-$c_Lcom_diagraphx_web_models_MPoint.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
-});
-$c_Lcom_diagraphx_web_models_MPoint.prototype.productArity__I = (function() {
-  return 2;
-});
-$c_Lcom_diagraphx_web_models_MPoint.prototype.productPrefix__T = (function() {
-  return "MPoint";
-});
-$c_Lcom_diagraphx_web_models_MPoint.prototype.productElement__I__O = (function(n) {
-  if ((n === 0)) {
-    return this.Lcom_diagraphx_web_models_MPoint__f_x;
-  }
-  if ((n === 1)) {
-    return this.Lcom_diagraphx_web_models_MPoint__f_y;
-  }
-  throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n));
-});
-function $as_Lcom_diagraphx_web_models_MPoint(obj) {
-  return (((obj instanceof $c_Lcom_diagraphx_web_models_MPoint) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphx.web.models.MPoint"));
-}
-function $isArrayOf_Lcom_diagraphx_web_models_MPoint(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphx_web_models_MPoint)));
-}
-function $asArrayOf_Lcom_diagraphx_web_models_MPoint(obj, depth) {
-  return (($isArrayOf_Lcom_diagraphx_web_models_MPoint(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphx.web.models.MPoint;", depth));
-}
-var $d_Lcom_diagraphx_web_models_MPoint = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPoint, "com.diagraphx.web.models.MPoint", ({
-  Lcom_diagraphx_web_models_MPoint: 1,
-  s_Equals: 1,
-  s_Product: 1,
-  Ljava_io_Serializable: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPoint$$anon$2(WritersVersionSpecific_this$3, outer) {
-  this.Lcom_diagraphx_web_models_MPoint$$anon$2__f_WritersVersionSpecific_this$2 = null;
-  this.Lcom_diagraphx_web_models_MPoint$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
-  if ((outer === null)) {
-    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
-  }
-}
-$c_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype = new $h_O();
-$c_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype.constructor = $c_Lcom_diagraphx_web_models_MPoint$$anon$2;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPoint$$anon$2() {
-}
-$h_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype = $c_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype;
-$c_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
-  return this;
-});
-$c_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MPoint__O = (function(out, v) {
-  if ((v === null)) {
-    return $n(out).visitNull__I__O((-1));
-  } else {
-    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(2, true, (-1));
-    $n($n(this.Lcom_diagraphx_web_models_MPoint$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-    var mappedArgsI = "x";
-    var w = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-    var value = $n(v).Lcom_diagraphx_web_models_MPoint__f_x;
-    $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
-    $n($n(this.Lcom_diagraphx_web_models_MPoint$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-    var mappedArgsI$1 = "y";
-    var w$1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-    var value$1 = $n(v).Lcom_diagraphx_web_models_MPoint__f_y;
-    $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
-    return $n(ctx).visitEnd__I__O((-1));
-  }
-});
-$c_Lcom_diagraphx_web_models_MPoint$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
-  return this.write0__Lupickle_core_Visitor__Lcom_diagraphx_web_models_MPoint__O(out, $as_Lcom_diagraphx_web_models_MPoint(v));
-});
-var $d_Lcom_diagraphx_web_models_MPoint$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPoint$$anon$2, "com.diagraphx.web.models.MPoint$$anon$2", ({
-  Lcom_diagraphx_web_models_MPoint$$anon$2: 1,
-  Lupickle_core_Types$Writer: 1,
-  Lupickle_core_Types$ObjectWriter: 1,
-  Lupickle_implicits_CaseClassReadWriters$CaseClassWriter: 1
 }));
 function $as_Ljava_io_IOException(obj) {
   return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.IOException"));
@@ -22163,6 +22559,40 @@ function $f_sc_StrictOptimizedIterableOps__map__F1__O($thiz, f) {
   }
   return $n(b).result__O();
 }
+function $f_sc_StrictOptimizedIterableOps__flatMap__F1__O($thiz, f) {
+  var b = $n($thiz.iterableFactory__sc_IterableFactory()).newBuilder__scm_Builder();
+  var it = $thiz.iterator__sc_Iterator();
+  while ($n(it).hasNext__Z()) {
+    var this$1 = $n(b);
+    var elems = $as_sc_IterableOnce($n(f).apply__O__O($n(it).next__O()));
+    this$1.addAll__sc_IterableOnce__scm_Growable(elems);
+  }
+  return $n(b).result__O();
+}
+function $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O($thiz, pred, isFlipped) {
+  var b = $thiz.newSpecificBuilder__scm_Builder();
+  var it = $thiz.iterator__sc_Iterator();
+  while ($n(it).hasNext__Z()) {
+    var elem = $n(it).next__O();
+    if (($uZ($n(pred).apply__O__O(elem)) !== isFlipped)) {
+      var this$1 = $n(b);
+      this$1.addOne__O__scm_Growable(elem);
+    }
+  }
+  return $n(b).result__O();
+}
+function $is_sc_StrictOptimizedIterableOps(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.sc_StrictOptimizedIterableOps)));
+}
+function $as_sc_StrictOptimizedIterableOps(obj) {
+  return (($is_sc_StrictOptimizedIterableOps(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.StrictOptimizedIterableOps"));
+}
+function $isArrayOf_sc_StrictOptimizedIterableOps(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.sc_StrictOptimizedIterableOps)));
+}
+function $asArrayOf_sc_StrictOptimizedIterableOps(obj, depth) {
+  return (($isArrayOf_sc_StrictOptimizedIterableOps(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.StrictOptimizedIterableOps;", depth));
+}
 /** @constructor */
 function $c_sci_Iterable$() {
   this.sc_IterableFactory$Delegate__f_delegate = null;
@@ -22426,6 +22856,26 @@ function $isArrayOf_s_concurrent_duration_Duration(obj, depth) {
 function $asArrayOf_s_concurrent_duration_Duration(obj, depth) {
   return (($isArrayOf_s_concurrent_duration_Duration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.concurrent.duration.Duration;", depth));
 }
+/** @constructor */
+function $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1(f) {
+  this.sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1__f_f = null;
+  this.sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1__f_f = f;
+}
+$c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1.prototype = new $h_sjsr_AnonFunction0();
+$c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1.prototype.constructor = $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1;
+/** @constructor */
+function $h_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1() {
+}
+$h_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1.prototype = $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1.prototype;
+$c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1.prototype.apply__O = (function() {
+  return $n(this.sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1__f_f)();
+});
+var $d_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1 = new $TypeData().initClass($c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1, "scala.scalajs.runtime.AnonFunction0.$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1", ({
+  sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1: 1,
+  sjsr_AnonFunction0: 1,
+  sr_AbstractFunction0: 1,
+  F0: 1
+}));
 /** @constructor */
 function $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(f) {
   this.sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab__f_f = null;
@@ -23571,6 +24021,10 @@ $c_ju_HashMap.prototype.containsKey__O__Z = (function(key) {
   }
   return (this.java$util$HashMap$$findNode0__O__I__I__ju_HashMap$Node(key, hash, (hash & (((-1) + $n(this.ju_HashMap__f_java$util$HashMap$$table).u.length) | 0))) !== null);
 });
+$c_ju_HashMap.prototype.remove__O__O = (function(key) {
+  var node = this.java$util$HashMap$$remove0__O__ju_HashMap$Node(key);
+  return ((node === null) ? null : $n(node).ju_HashMap$Node__f_value);
+});
 $c_ju_HashMap.prototype.java$util$HashMap$$findNode0__O__I__I__ju_HashMap$Node = (function(key, hash, idx) {
   var node = $n(this.ju_HashMap__f_java$util$HashMap$$table).get(idx);
   while (true) {
@@ -23641,6 +24095,34 @@ $c_ju_HashMap.prototype.java$util$HashMap$$put0__O__O__I__Z__O = (function(key, 
   this.ju_HashMap__f_contentSize = newContentSize;
   this.nodeWasAdded__ju_HashMap$Node__V(newNode$3);
   return null;
+});
+$c_ju_HashMap.prototype.java$util$HashMap$$remove0__O__ju_HashMap$Node = (function(key) {
+  if ((key === null)) {
+    var hash = 0;
+  } else {
+    var originalHash = $dp_hashCode__I($n(key));
+    var hash = (originalHash ^ ((originalHash >>> 16) | 0));
+  }
+  var idx = (hash & (((-1) + $n(this.ju_HashMap__f_java$util$HashMap$$table).u.length) | 0));
+  var node = this.java$util$HashMap$$findNode0__O__I__I__ju_HashMap$Node(key, hash, idx);
+  if ((node !== null)) {
+    this.java$util$HashMap$$remove0__ju_HashMap$Node__I__V(node, idx);
+  }
+  return node;
+});
+$c_ju_HashMap.prototype.java$util$HashMap$$remove0__ju_HashMap$Node__I__V = (function(node, idx) {
+  var previous = $n(node).ju_HashMap$Node__f_previous;
+  var next = $n(node).ju_HashMap$Node__f_next;
+  if ((previous === null)) {
+    $n(this.ju_HashMap__f_java$util$HashMap$$table).set(idx, next);
+  } else {
+    $n(previous).ju_HashMap$Node__f_next = next;
+  }
+  if ((next !== null)) {
+    $n(next).ju_HashMap$Node__f_previous = previous;
+  }
+  this.ju_HashMap__f_contentSize = (((-1) + this.ju_HashMap__f_contentSize) | 0);
+  this.nodeWasRemoved__ju_HashMap$Node__V(node);
 });
 class $c_ju_NoSuchElementException extends $c_jl_RuntimeException {
   constructor(s) {
@@ -24129,79 +24611,91 @@ var $d_s_Product$$anon$1 = new $TypeData().initClass($c_s_Product$$anon$1, "scal
   sc_IterableOnceOps: 1
 }));
 /** @constructor */
-function $c_T12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) {
-  this.T12__f__1 = null;
-  this.T12__f__2 = null;
-  this.T12__f__3 = null;
-  this.T12__f__4 = null;
-  this.T12__f__5 = null;
-  this.T12__f__6 = null;
-  this.T12__f__7 = null;
-  this.T12__f__8 = null;
-  this.T12__f__9 = null;
-  this.T12__f__10 = null;
-  this.T12__f__11 = null;
-  this.T12__f__12 = null;
-  this.T12__f__1 = _1;
-  this.T12__f__2 = _2;
-  this.T12__f__3 = _3;
-  this.T12__f__4 = _4;
-  this.T12__f__5 = _5;
-  this.T12__f__6 = _6;
-  this.T12__f__7 = _7;
-  this.T12__f__8 = _8;
-  this.T12__f__9 = _9;
-  this.T12__f__10 = _10;
-  this.T12__f__11 = _11;
-  this.T12__f__12 = _12;
+function $c_T18(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18) {
+  this.T18__f__1 = null;
+  this.T18__f__2 = null;
+  this.T18__f__3 = null;
+  this.T18__f__4 = null;
+  this.T18__f__5 = null;
+  this.T18__f__6 = null;
+  this.T18__f__7 = null;
+  this.T18__f__8 = null;
+  this.T18__f__9 = null;
+  this.T18__f__10 = null;
+  this.T18__f__11 = null;
+  this.T18__f__12 = null;
+  this.T18__f__13 = null;
+  this.T18__f__14 = null;
+  this.T18__f__15 = null;
+  this.T18__f__16 = null;
+  this.T18__f__17 = null;
+  this.T18__f__18 = null;
+  this.T18__f__1 = _1;
+  this.T18__f__2 = _2;
+  this.T18__f__3 = _3;
+  this.T18__f__4 = _4;
+  this.T18__f__5 = _5;
+  this.T18__f__6 = _6;
+  this.T18__f__7 = _7;
+  this.T18__f__8 = _8;
+  this.T18__f__9 = _9;
+  this.T18__f__10 = _10;
+  this.T18__f__11 = _11;
+  this.T18__f__12 = _12;
+  this.T18__f__13 = _13;
+  this.T18__f__14 = _14;
+  this.T18__f__15 = _15;
+  this.T18__f__16 = _16;
+  this.T18__f__17 = _17;
+  this.T18__f__18 = _18;
 }
-$c_T12.prototype = new $h_O();
-$c_T12.prototype.constructor = $c_T12;
+$c_T18.prototype = new $h_O();
+$c_T18.prototype.constructor = $c_T18;
 /** @constructor */
-function $h_T12() {
+function $h_T18() {
 }
-$h_T12.prototype = $c_T12.prototype;
-$c_T12.prototype.productArity__I = (function() {
-  return 12;
+$h_T18.prototype = $c_T18.prototype;
+$c_T18.prototype.productArity__I = (function() {
+  return 18;
 });
-$c_T12.prototype.productElement__I__O = (function(n) {
-  return $f_s_Product12__productElement__I__O(this, n);
+$c_T18.prototype.productElement__I__O = (function(n) {
+  return $f_s_Product18__productElement__I__O(this, n);
 });
-$c_T12.prototype.toString__T = (function() {
-  return (((((((((((((((((((((((("(" + this.T12__f__1) + ",") + this.T12__f__2) + ",") + this.T12__f__3) + ",") + this.T12__f__4) + ",") + this.T12__f__5) + ",") + this.T12__f__6) + ",") + this.T12__f__7) + ",") + this.T12__f__8) + ",") + this.T12__f__9) + ",") + this.T12__f__10) + ",") + this.T12__f__11) + ",") + this.T12__f__12) + ")");
+$c_T18.prototype.toString__T = (function() {
+  return (((((((((((((((((((((((((((((((((((("(" + this.T18__f__1) + ",") + this.T18__f__2) + ",") + this.T18__f__3) + ",") + this.T18__f__4) + ",") + this.T18__f__5) + ",") + this.T18__f__6) + ",") + this.T18__f__7) + ",") + this.T18__f__8) + ",") + this.T18__f__9) + ",") + this.T18__f__10) + ",") + this.T18__f__11) + ",") + this.T18__f__12) + ",") + this.T18__f__13) + ",") + this.T18__f__14) + ",") + this.T18__f__15) + ",") + this.T18__f__16) + ",") + this.T18__f__17) + ",") + this.T18__f__18) + ")");
 });
-$c_T12.prototype.productPrefix__T = (function() {
-  return "Tuple12";
+$c_T18.prototype.productPrefix__T = (function() {
+  return "Tuple18";
 });
-$c_T12.prototype.productIterator__sc_Iterator = (function() {
+$c_T18.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1(this);
 });
-$c_T12.prototype.hashCode__I = (function() {
+$c_T18.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
 });
-$c_T12.prototype.equals__O__Z = (function(x$1) {
+$c_T18.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true;
-  } else if ((x$1 instanceof $c_T12)) {
-    var Tuple12$1 = $as_T12(x$1);
-    return ((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__1, $n(Tuple12$1).T12__f__1) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__2, $n(Tuple12$1).T12__f__2) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__3, $n(Tuple12$1).T12__f__3))) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__4, $n(Tuple12$1).T12__f__4) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__5, $n(Tuple12$1).T12__f__5) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__6, $n(Tuple12$1).T12__f__6)))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__7, $n(Tuple12$1).T12__f__7) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__8, $n(Tuple12$1).T12__f__8) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__9, $n(Tuple12$1).T12__f__9))) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__10, $n(Tuple12$1).T12__f__10) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__11, $n(Tuple12$1).T12__f__11) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T12__f__12, $n(Tuple12$1).T12__f__12)))));
+  } else if ((x$1 instanceof $c_T18)) {
+    var Tuple18$1 = $as_T18(x$1);
+    return (((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__1, $n(Tuple18$1).T18__f__1) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__2, $n(Tuple18$1).T18__f__2)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__3, $n(Tuple18$1).T18__f__3) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__4, $n(Tuple18$1).T18__f__4))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__5, $n(Tuple18$1).T18__f__5) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__6, $n(Tuple18$1).T18__f__6)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__7, $n(Tuple18$1).T18__f__7) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__8, $n(Tuple18$1).T18__f__8) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__9, $n(Tuple18$1).T18__f__9))))) && ((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__10, $n(Tuple18$1).T18__f__10) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__11, $n(Tuple18$1).T18__f__11)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__12, $n(Tuple18$1).T18__f__12) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__13, $n(Tuple18$1).T18__f__13))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__14, $n(Tuple18$1).T18__f__14) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__15, $n(Tuple18$1).T18__f__15)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__16, $n(Tuple18$1).T18__f__16) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__17, $n(Tuple18$1).T18__f__17) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__18, $n(Tuple18$1).T18__f__18))))));
   } else {
     return false;
   }
 });
-function $as_T12(obj) {
-  return (((obj instanceof $c_T12) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple12"));
+function $as_T18(obj) {
+  return (((obj instanceof $c_T18) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple18"));
 }
-function $isArrayOf_T12(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T12)));
+function $isArrayOf_T18(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T18)));
 }
-function $asArrayOf_T12(obj, depth) {
-  return (($isArrayOf_T12(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple12;", depth));
+function $asArrayOf_T18(obj, depth) {
+  return (($isArrayOf_T18(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple18;", depth));
 }
-var $d_T12 = new $TypeData().initClass($c_T12, "scala.Tuple12", ({
-  T12: 1,
-  s_Product12: 1,
+var $d_T18 = new $TypeData().initClass($c_T18, "scala.Tuple18", ({
+  T18: 1,
+  s_Product18: 1,
   s_Product: 1,
   s_Equals: 1,
   Ljava_io_Serializable: 1
@@ -24320,78 +24814,6 @@ function $asArrayOf_T3(obj, depth) {
 var $d_T3 = new $TypeData().initClass($c_T3, "scala.Tuple3", ({
   T3: 1,
   s_Product3: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1
-}));
-/** @constructor */
-function $c_T9(_1, _2, _3, _4, _5, _6, _7, _8, _9) {
-  this.T9__f__1 = null;
-  this.T9__f__2 = null;
-  this.T9__f__3 = null;
-  this.T9__f__4 = null;
-  this.T9__f__5 = null;
-  this.T9__f__6 = null;
-  this.T9__f__7 = null;
-  this.T9__f__8 = null;
-  this.T9__f__9 = null;
-  this.T9__f__1 = _1;
-  this.T9__f__2 = _2;
-  this.T9__f__3 = _3;
-  this.T9__f__4 = _4;
-  this.T9__f__5 = _5;
-  this.T9__f__6 = _6;
-  this.T9__f__7 = _7;
-  this.T9__f__8 = _8;
-  this.T9__f__9 = _9;
-}
-$c_T9.prototype = new $h_O();
-$c_T9.prototype.constructor = $c_T9;
-/** @constructor */
-function $h_T9() {
-}
-$h_T9.prototype = $c_T9.prototype;
-$c_T9.prototype.productArity__I = (function() {
-  return 9;
-});
-$c_T9.prototype.productElement__I__O = (function(n) {
-  return $f_s_Product9__productElement__I__O(this, n);
-});
-$c_T9.prototype.toString__T = (function() {
-  return (((((((((((((((((("(" + this.T9__f__1) + ",") + this.T9__f__2) + ",") + this.T9__f__3) + ",") + this.T9__f__4) + ",") + this.T9__f__5) + ",") + this.T9__f__6) + ",") + this.T9__f__7) + ",") + this.T9__f__8) + ",") + this.T9__f__9) + ")");
-});
-$c_T9.prototype.productPrefix__T = (function() {
-  return "Tuple9";
-});
-$c_T9.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1(this);
-});
-$c_T9.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
-});
-$c_T9.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true;
-  } else if ((x$1 instanceof $c_T9)) {
-    var Tuple9$1 = $as_T9(x$1);
-    return ((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__1, $n(Tuple9$1).T9__f__1) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__2, $n(Tuple9$1).T9__f__2)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__3, $n(Tuple9$1).T9__f__3) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__4, $n(Tuple9$1).T9__f__4))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__5, $n(Tuple9$1).T9__f__5) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__6, $n(Tuple9$1).T9__f__6)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__7, $n(Tuple9$1).T9__f__7) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__8, $n(Tuple9$1).T9__f__8) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T9__f__9, $n(Tuple9$1).T9__f__9)))));
-  } else {
-    return false;
-  }
-});
-function $as_T9(obj) {
-  return (((obj instanceof $c_T9) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple9"));
-}
-function $isArrayOf_T9(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T9)));
-}
-function $asArrayOf_T9(obj, depth) {
-  return (($isArrayOf_T9(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple9;", depth));
-}
-var $d_T9 = new $TypeData().initClass($c_T9, "scala.Tuple9", ({
-  T9: 1,
-  s_Product9: 1,
   s_Product: 1,
   s_Equals: 1,
   Ljava_io_Serializable: 1
@@ -26940,6 +27362,91 @@ var $d_scm_ArrayBuffer$$anon$1 = new $TypeData().initClass($c_scm_ArrayBuffer$$a
   scm_Clearable: 1
 }));
 /** @constructor */
+function $c_scm_ArrayDeque$() {
+}
+$c_scm_ArrayDeque$.prototype = new $h_O();
+$c_scm_ArrayDeque$.prototype.constructor = $c_scm_ArrayDeque$;
+/** @constructor */
+function $h_scm_ArrayDeque$() {
+}
+$h_scm_ArrayDeque$.prototype = $c_scm_ArrayDeque$.prototype;
+$c_scm_ArrayDeque$.prototype.from__sc_IterableOnce__scm_ArrayDeque = (function(coll) {
+  var s = $n(coll).knownSize__I();
+  if ((s >= 0)) {
+    var array = this.alloc__I__AO(s);
+    if ($is_sc_Iterable(coll)) {
+      var x2 = $as_sc_Iterable(coll);
+      var actual = $n(x2).copyToArray__O__I__I__I(array, 0, 2147483647);
+    } else {
+      var actual = $n($n(coll).iterator__sc_Iterator()).copyToArray__O__I__I__I(array, 0, 2147483647);
+    }
+    if ((actual !== s)) {
+      throw $ct_jl_IllegalStateException__T__(new $c_jl_IllegalStateException(), ((("Copied " + actual) + " of ") + s));
+    }
+    return $ct_scm_ArrayDeque__AO__I__I__(new $c_scm_ArrayDeque(), array, 0, s);
+  } else {
+    var this$2 = $ct_scm_ArrayDeque__I__(new $c_scm_ArrayDeque(), 16);
+    return this$2.addAll__sc_IterableOnce__scm_ArrayDeque(coll);
+  }
+});
+$c_scm_ArrayDeque$.prototype.newBuilder__scm_Builder = (function() {
+  return new $c_scm_ArrayDeque$$anon$1();
+});
+$c_scm_ArrayDeque$.prototype.alloc__I__AO = (function(len) {
+  var requirement = (len >= 0);
+  if ((!requirement)) {
+    throw $ct_jl_IllegalArgumentException__T__(new $c_jl_IllegalArgumentException(), "requirement failed: Non-negative array size required");
+  }
+  var size = ((((-2147483648) >>> $uI(Math.clz32(len))) | 0) << 1);
+  var requirement$1 = (size >= 0);
+  if ((!requirement$1)) {
+    throw $ct_jl_IllegalArgumentException__T__(new $c_jl_IllegalArgumentException(), (("requirement failed: " + "ArrayDeque too big - cannot allocate ArrayDeque of length ") + len));
+  }
+  return new $ac_O(((size > 16) ? size : 16));
+});
+$c_scm_ArrayDeque$.prototype.from__sc_IterableOnce__O = (function(source) {
+  return this.from__sc_IterableOnce__scm_ArrayDeque(source);
+});
+var $d_scm_ArrayDeque$ = new $TypeData().initClass($c_scm_ArrayDeque$, "scala.collection.mutable.ArrayDeque$", ({
+  scm_ArrayDeque$: 1,
+  sc_StrictOptimizedSeqFactory: 1,
+  sc_SeqFactory: 1,
+  sc_IterableFactory: 1,
+  Ljava_io_Serializable: 1
+}));
+var $n_scm_ArrayDeque$;
+function $m_scm_ArrayDeque$() {
+  if ((!$n_scm_ArrayDeque$)) {
+    $n_scm_ArrayDeque$ = new $c_scm_ArrayDeque$();
+  }
+  return $n_scm_ArrayDeque$;
+}
+/** @constructor */
+function $c_scm_ArrayDeque$$anon$1() {
+  this.scm_GrowableBuilder__f_elems = null;
+  $ct_scm_GrowableBuilder__scm_Growable__(this, $ct_scm_ArrayDeque__I__(new $c_scm_ArrayDeque(), 16));
+}
+$c_scm_ArrayDeque$$anon$1.prototype = new $h_scm_GrowableBuilder();
+$c_scm_ArrayDeque$$anon$1.prototype.constructor = $c_scm_ArrayDeque$$anon$1;
+/** @constructor */
+function $h_scm_ArrayDeque$$anon$1() {
+}
+$h_scm_ArrayDeque$$anon$1.prototype = $c_scm_ArrayDeque$$anon$1.prototype;
+$c_scm_ArrayDeque$$anon$1.prototype.sizeHint__I__V = (function(size) {
+  var this$1 = $n($as_scm_ArrayDeque(this.scm_GrowableBuilder__f_elems));
+  var idx = this$1.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  if (((size > (((this$1.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this$1.scm_ArrayDeque__f_array).u.length) | 0))) && (size >= $n(this$1.scm_ArrayDeque__f_array).u.length))) {
+    this$1.scala$collection$mutable$ArrayDeque$$resize__I__V(size);
+  }
+});
+var $d_scm_ArrayDeque$$anon$1 = new $TypeData().initClass($c_scm_ArrayDeque$$anon$1, "scala.collection.mutable.ArrayDeque$$anon$1", ({
+  scm_ArrayDeque$$anon$1: 1,
+  scm_GrowableBuilder: 1,
+  scm_Builder: 1,
+  scm_Growable: 1,
+  scm_Clearable: 1
+}));
+/** @constructor */
 function $c_scm_Buffer$() {
   this.sc_SeqFactory$Delegate__f_delegate = null;
   $ct_sc_SeqFactory$Delegate__sc_SeqFactory__(this, $m_sjs_js_WrappedArray$());
@@ -26964,6 +27471,27 @@ function $m_scm_Buffer$() {
   }
   return $n_scm_Buffer$;
 }
+/** @constructor */
+function $c_scm_HashMap$$anon$6(initialCapacity$1, loadFactor$1) {
+  this.scm_GrowableBuilder__f_elems = null;
+  $ct_scm_GrowableBuilder__scm_Growable__(this, new $c_scm_HashMap(initialCapacity$1, loadFactor$1));
+}
+$c_scm_HashMap$$anon$6.prototype = new $h_scm_GrowableBuilder();
+$c_scm_HashMap$$anon$6.prototype.constructor = $c_scm_HashMap$$anon$6;
+/** @constructor */
+function $h_scm_HashMap$$anon$6() {
+}
+$h_scm_HashMap$$anon$6.prototype = $c_scm_HashMap$$anon$6.prototype;
+$c_scm_HashMap$$anon$6.prototype.sizeHint__I__V = (function(size) {
+  $n($as_scm_HashMap(this.scm_GrowableBuilder__f_elems)).sizeHint__I__V(size);
+});
+var $d_scm_HashMap$$anon$6 = new $TypeData().initClass($c_scm_HashMap$$anon$6, "scala.collection.mutable.HashMap$$anon$6", ({
+  scm_HashMap$$anon$6: 1,
+  scm_GrowableBuilder: 1,
+  scm_Builder: 1,
+  scm_Growable: 1,
+  scm_Clearable: 1
+}));
 function $ct_scm_HashMap$HashMapIterator__scm_HashMap__($thiz, outer) {
   $n(outer);
   $thiz.scm_HashMap$HashMapIterator__f_$outer = outer;
@@ -27119,6 +27647,36 @@ var $d_scm_MutationTracker$CheckedIterator = new $TypeData().initClass($c_scm_Mu
   sc_IterableOnce: 1,
   sc_IterableOnceOps: 1
 }));
+/** @constructor */
+function $c_scm_Queue$() {
+}
+$c_scm_Queue$.prototype = new $h_O();
+$c_scm_Queue$.prototype.constructor = $c_scm_Queue$;
+/** @constructor */
+function $h_scm_Queue$() {
+}
+$h_scm_Queue$.prototype = $c_scm_Queue$.prototype;
+$c_scm_Queue$.prototype.newBuilder__scm_Builder = (function() {
+  return $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_Queue(16));
+});
+$c_scm_Queue$.prototype.from__sc_IterableOnce__O = (function(source) {
+  var this$1 = new $c_scm_Queue(16);
+  return $as_scm_Queue(this$1.addAll__sc_IterableOnce__scm_ArrayDeque(source));
+});
+var $d_scm_Queue$ = new $TypeData().initClass($c_scm_Queue$, "scala.collection.mutable.Queue$", ({
+  scm_Queue$: 1,
+  sc_StrictOptimizedSeqFactory: 1,
+  sc_SeqFactory: 1,
+  sc_IterableFactory: 1,
+  Ljava_io_Serializable: 1
+}));
+var $n_scm_Queue$;
+function $m_scm_Queue$() {
+  if ((!$n_scm_Queue$)) {
+    $n_scm_Queue$ = new $c_scm_Queue$();
+  }
+  return $n_scm_Queue$;
+}
 function $p_s_concurrent_duration_Duration$Infinite__fail__T__E($thiz, what) {
   throw $ct_jl_IllegalArgumentException__T__(new $c_jl_IllegalArgumentException(), (what + " not allowed on infinite Durations"));
 }
@@ -29088,6 +29646,9 @@ $c_sc_AbstractIterable.prototype.className__T = (function() {
 });
 $c_sc_AbstractIterable.prototype.fromSpecific__sc_IterableOnce__sc_IterableOps = (function(coll) {
   return $as_sc_IterableOps($n(this.iterableFactory__sc_IterableFactory()).from__sc_IterableOnce__O(coll));
+});
+$c_sc_AbstractIterable.prototype.newSpecificBuilder__scm_Builder = (function() {
+  return $n(this.iterableFactory__sc_IterableFactory()).newBuilder__scm_Builder();
 });
 $c_sc_AbstractIterable.prototype.head__O = (function() {
   return $n(this.iterator__sc_Iterator()).next__O();
@@ -31582,48 +32143,207 @@ $c_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader.prototype.visi
   return $as_Lupickle_core_ObjVisitor(((this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount <= 64) ? new $c_Lupickle_implicits_ReadersVersionSpecific$$anon$2(this) : new $c_Lupickle_implicits_ReadersVersionSpecific$$anon$3(this)));
 });
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MElement$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
+function $c_Lcom_diagraphy_web_components_Path(model) {
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementClickHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_elementMouseDownHandler = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_parent = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_startElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_endElement = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_ipath = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_fo = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_resizeDiv = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
+  this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
+  this.Lcom_diagraphy_web_components_Path__f_model = null;
+  this.Lcom_diagraphy_web_components_Path__f_ipath = null;
+  this.Lcom_diagraphy_web_components_Path__f_model = model;
+  $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
+  var this$1 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+  if ((!this$1.isEmpty__Z())) {
+    var x0 = this$1.get__O();
+    var _$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    var this$2 = $n($n(_$1).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+    this$2.addOne__O__scm_ListBuffer(this);
+  }
+  var this$3 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+  if ((!this$3.isEmpty__Z())) {
+    var x0$1 = this$3.get__O();
+    var _$2 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+    var this$4 = $n($n(_$2).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+    this$4.addOne__O__scm_ListBuffer(this);
+  }
+  var $x_13 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_12 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_11 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().path__Lorg_scalajs_dom_HTMLElement();
+  var $x_10 = $m_sr_ScalaRunTime$();
+  var y = $n(model).Lcom_diagraphy_web_models_GraphElement__f_id;
+  var $x_9 = new $c_T2("id", y);
+  var $x_8 = new $c_T2("stroke", "#008476");
+  var $x_7 = new $c_T2("stroke-width", "1");
+  var $x_6 = new $c_T2("fill", "none");
+  var $x_5 = new $c_T2("marker-end", "url(#arrowhead)");
+  var this$16 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y$1 = ("" + this$16);
+  var $x_4 = new $c_T2("x1", y$1);
+  var this$20 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$2 = ("" + this$20);
+  var $x_3 = new $c_T2("y1", y$2);
+  var this$24 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y$3 = ("" + this$24);
+  var $x_2 = new $c_T2("x2", y$3);
+  var this$28 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$4 = ("" + this$28);
+  var $x_1 = new $c_T2("y2", y$4);
+  var y$5 = $n(model).Lcom_diagraphy_web_models_GraphElement__f_d;
+  this.Lcom_diagraphy_web_components_Path__f_ipath = $x_13.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_12.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_11, $x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_9, $x_8, $x_7, $x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$5)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("cursor", "pointer"), new $c_T2("animation", "animate-in 1s ease-out forwards"), new $c_T2("pointer-events", "auto")])));
+}
+$c_Lcom_diagraphy_web_components_Path.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
+$c_Lcom_diagraphy_web_components_Path.prototype.constructor = $c_Lcom_diagraphy_web_components_Path;
+/** @constructor */
+function $h_Lcom_diagraphy_web_components_Path() {
+}
+$h_Lcom_diagraphy_web_components_Path.prototype = $c_Lcom_diagraphy_web_components_Path.prototype;
+$c_Lcom_diagraphy_web_components_Path.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_s_Product$$anon$1(this);
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.equals__O__Z = (function(x$0) {
+  if ((this === x$0)) {
+    return true;
+  } else if ((x$0 instanceof $c_Lcom_diagraphy_web_components_Path)) {
+    var x$0$2 = $as_Lcom_diagraphy_web_components_Path(x$0);
+    var x = this.Lcom_diagraphy_web_components_Path__f_model;
+    var x$2 = $n(x$0$2).Lcom_diagraphy_web_components_Path__f_model;
+    if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
+      $n(x$0$2);
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.productArity__I = (function() {
+  return 1;
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.productPrefix__T = (function() {
+  return "Path";
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.productElement__I__O = (function(n) {
+  if ((n === 0)) {
+    return this.Lcom_diagraphy_web_components_Path__f_model;
+  }
+  throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n));
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
+  return this.Lcom_diagraphy_web_components_Path__f_model;
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.ipath__Lorg_scalajs_dom_HTMLElement = (function() {
+  return this.Lcom_diagraphy_web_components_Path__f_ipath;
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Path__f_ipath, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
+    $m_Lcom_diagraphy_web_State$().clearClicked__V();
+    $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement = new $c_s_Some(this);
+  })));
+  return this.Lcom_diagraphy_web_components_Path__f_ipath;
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.update__V = (function() {
+  $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_d = $as_T($n($m_Lcom_diagraphy_web_components_Path$().Lcom_diagraphy_web_components_Path$__f_pathD).apply__O__O__O__O($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_start, $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end, $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge));
+  var $x_7 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_6 = this.Lcom_diagraphy_web_components_Path__f_ipath;
+  var $x_5 = $m_sr_ScalaRunTime$();
+  var this$2 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y = ("" + this$2);
+  var $x_4 = new $c_T2("x1", y);
+  var this$6 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$1 = ("" + this$6);
+  var $x_3 = new $c_T2("y1", y$1);
+  var this$10 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y$2 = ("" + this$10);
+  var $x_2 = new $c_T2("x2", y$2);
+  var this$14 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$3 = ("" + this$14);
+  var $x_1 = new $c_T2("y2", y$3);
+  var y$4 = $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_d;
+  $x_7.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_6, $x_5.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$4)])));
+});
+function $as_Lcom_diagraphy_web_components_Path(obj) {
+  return (((obj instanceof $c_Lcom_diagraphy_web_components_Path) || (obj === null)) ? obj : $throwClassCastException(obj, "com.diagraphy.web.components.Path"));
+}
+function $isArrayOf_Lcom_diagraphy_web_components_Path(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_diagraphy_web_components_Path)));
+}
+function $asArrayOf_Lcom_diagraphy_web_components_Path(obj, depth) {
+  return (($isArrayOf_Lcom_diagraphy_web_components_Path(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.diagraphy.web.components.Path;", depth));
+}
+var $d_Lcom_diagraphy_web_components_Path = new $TypeData().initClass($c_Lcom_diagraphy_web_components_Path, "com.diagraphy.web.components.Path", ({
+  Lcom_diagraphy_web_components_Path: 1,
+  Lcom_diagraphy_web_components_AbstractElement: 1,
+  Lcom_diagraphy_web_events_ElementMouseClick: 1,
+  Lcom_diagraphy_web_events_ElementMouseDown: 1,
+  s_Equals: 1,
+  s_Product: 1,
+  Ljava_io_Serializable: 1
+}));
+/** @constructor */
+function $c_Lcom_diagraphy_web_models_GraphElement$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount = 0;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$missingKeyCount = $L0;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitors$lzy1 = null;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitorsbitmap$1 = false;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_$outer = null;
-  this.Lcom_diagraphx_web_models_MElement$$anon$1__f_m$2 = null;
-  this.Lcom_diagraphx_web_models_MElement$$anon$1__f_m$2 = m$1;
+  this.Lcom_diagraphy_web_models_GraphElement$$anon$1__f_m$2 = null;
+  this.Lcom_diagraphy_web_models_GraphElement$$anon$1__f_m$2 = m$1;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
   }
-  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 12, new $c_RTLong(4095, 0));
+  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 18, new $c_RTLong(262143, 0));
 }
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.constructor = $c_Lcom_diagraphx_web_models_MElement$$anon$1;
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphElement$$anon$1;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MElement$$anon$1() {
+function $h_Lcom_diagraphy_web_models_GraphElement$$anon$1() {
 }
-$h_Lcom_diagraphx_web_models_MElement$$anon$1.prototype = $c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype;
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.visitors0__s_Product = (function() {
+$h_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype = $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype;
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.visitors0__s_Product = (function() {
   var _1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
   var _2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _3 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
-  var _4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
+  var _3 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var this$3 = $m_Lupickle_legacy$();
+  var r = $m_Lcom_diagraphy_web_models_GraphElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+  var this$1 = $m_scm_ListBuffer$();
+  var factory = new $c_sc_IterableFactory$ToFactory(this$1);
+  var _4 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$3, r, factory);
   var _5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
-  var _9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var _9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
+  var _10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _11 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var this$3 = $m_Lupickle_legacy$();
-  var r = $m_Lcom_diagraphx_web_models_MElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-  var this$1 = $m_scm_ListBuffer$();
-  var factory = new $c_sc_IterableFactory$ToFactory(this$1);
-  var _12 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$3, r, factory);
-  return new $c_T12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12);
+  var _12 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var _13 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+  var _14 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+  var _15 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var _16 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var _17 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var _18 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  return new $c_T18(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18);
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MElement = (function(p) {
-  return $as_Lcom_diagraphx_web_models_MElement($n(this.Lcom_diagraphx_web_models_MElement$$anon$1__f_m$2).fromProduct__s_Product__O(p));
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement = (function(p) {
+  return $as_Lcom_diagraphy_web_models_GraphElement($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$1__f_m$2).fromProduct__s_Product__O(p));
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.keyToIndex__T__I = (function(x) {
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.keyToIndex__T__I = (function(x) {
   switch (x) {
     case "id": {
       return 0;
@@ -31633,44 +32353,68 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.keyToIndex__T__I = (func
       return 1;
       break;
     }
-    case "x": {
+    case "text": {
       return 2;
       break;
     }
-    case "y": {
+    case "elements": {
       return 3;
       break;
     }
-    case "width": {
+    case "x": {
       return 4;
       break;
     }
-    case "height": {
+    case "y": {
       return 5;
       break;
     }
-    case "vbWidth": {
+    case "width": {
       return 6;
       break;
     }
-    case "vbHeight": {
+    case "height": {
       return 7;
       break;
     }
-    case "text": {
+    case "vbWidth": {
       return 8;
       break;
     }
-    case "bgColor": {
+    case "vbHeight": {
       return 9;
       break;
     }
-    case "imagePath": {
+    case "bgColor": {
       return 10;
       break;
     }
-    case "elements": {
+    case "imagePath": {
       return 11;
+      break;
+    }
+    case "start": {
+      return 12;
+      break;
+    }
+    case "end": {
+      return 13;
+      break;
+    }
+    case "sElement": {
+      return 14;
+      break;
+    }
+    case "eElement": {
+      return 15;
+      break;
+    }
+    case "d": {
+      return 16;
+      break;
+    }
+    case "edge": {
+      return 17;
       break;
     }
     default: {
@@ -31678,20 +32422,20 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.keyToIndex__T__I = (func
     }
   }
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.allKeysArray__AT = (function() {
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "id"), new $c_T2("format", "format"), new $c_T2("x", "x"), new $c_T2("y", "y"), new $c_T2("width", "width"), new $c_T2("height", "height"), new $c_T2("vbWidth", "vbWidth"), new $c_T2("vbHeight", "vbHeight"), new $c_T2("text", "text"), new $c_T2("bgColor", "bgColor"), new $c_T2("imagePath", "imagePath"), new $c_T2("elements", "elements")]));
-  var this$14 = $n($m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems));
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.allKeysArray__AT = (function() {
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "id"), new $c_T2("format", "format"), new $c_T2("text", "text"), new $c_T2("elements", "elements"), new $c_T2("x", "x"), new $c_T2("y", "y"), new $c_T2("width", "width"), new $c_T2("height", "height"), new $c_T2("vbWidth", "vbWidth"), new $c_T2("vbHeight", "vbHeight"), new $c_T2("bgColor", "bgColor"), new $c_T2("imagePath", "imagePath"), new $c_T2("start", "start"), new $c_T2("end", "end"), new $c_T2("sElement", "sElement"), new $c_T2("eElement", "eElement"), new $c_T2("d", "d"), new $c_T2("edge", "edge")]));
+  var this$20 = $n($m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems));
   var f = ((_$1) => {
     var _$1$1 = $as_T2(_$1);
     return $as_T($n(_$1$1).T2__f__2);
   });
-  if ((this$14 === $m_sci_Nil$())) {
-    var this$16 = $m_sci_Nil$();
+  if ((this$20 === $m_sci_Nil$())) {
+    var this$22 = $m_sci_Nil$();
   } else {
-    var x0 = this$14.head__O();
+    var x0 = this$20.head__O();
     var h = new $c_sci_$colon$colon(f(x0), $m_sci_Nil$());
     var t = h;
-    var rest = $as_sci_List(this$14.tail__O());
+    var rest = $as_sci_List(this$20.tail__O());
     while ((rest !== $m_sci_Nil$())) {
       var x0$1 = $n(rest).head__O();
       var nx = new $c_sci_$colon$colon(f(x0$1), $m_sci_Nil$());
@@ -31699,12 +32443,12 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.allKeysArray__AT = (func
       t = nx;
       rest = $as_sci_List($n(rest).tail__O());
     }
-    var this$16 = h;
+    var this$22 = h;
   }
-  if ((this$16.knownSize__I() >= 0)) {
-    var len = this$16.knownSize__I();
+  if ((this$22.knownSize__I() >= 0)) {
+    var len = this$22.knownSize__I();
     var destination = new ($d_T.getArrayOf().constr)(len);
-    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$16, destination, 0, 2147483647);
+    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$22, destination, 0, 2147483647);
     return destination;
   } else {
     var capacity = 0;
@@ -31713,7 +32457,7 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.allKeysArray__AT = (func
     capacity = 0;
     size = 0;
     jsElems = [];
-    var it = this$16.iterator__sc_Iterator();
+    var it = this$22.iterator__sc_Iterator();
     while ($n(it).hasNext__Z()) {
       var elem = $n(it).next__O();
       var unboxedElem = ((elem === null) ? null : elem);
@@ -31722,25 +32466,31 @@ $c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.allKeysArray__AT = (func
     return new ($d_T.getArrayOf().constr)(jsElems);
   }
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
   $n(x).storeValueIfNotFound__I__O__V(0, "");
   $n(x).storeValueIfNotFound__I__O__V(1, "");
-  $n(x).storeValueIfNotFound__I__O__V(2, 0.0);
-  $n(x).storeValueIfNotFound__I__O__V(3, 0.0);
+  $n(x).storeValueIfNotFound__I__O__V(2, "");
+  $n(x).storeValueIfNotFound__I__O__V(3, $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer());
   $n(x).storeValueIfNotFound__I__O__V(4, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(5, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(6, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(7, 0.0);
-  $n(x).storeValueIfNotFound__I__O__V(8, "");
-  $n(x).storeValueIfNotFound__I__O__V(9, "");
+  $n(x).storeValueIfNotFound__I__O__V(8, 0.0);
+  $n(x).storeValueIfNotFound__I__O__V(9, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(10, "");
-  $n(x).storeValueIfNotFound__I__O__V(11, $m_Lcom_diagraphx_web_models_MElement$().$lessinit$greater$default$12__scm_ListBuffer());
+  $n(x).storeValueIfNotFound__I__O__V(11, "");
+  $n(x).storeValueIfNotFound__I__O__V(12, new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0));
+  $n(x).storeValueIfNotFound__I__O__V(13, new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0));
+  $n(x).storeValueIfNotFound__I__O__V(14, "");
+  $n(x).storeValueIfNotFound__I__O__V(15, "");
+  $n(x).storeValueIfNotFound__I__O__V(16, "");
+  $n(x).storeValueIfNotFound__I__O__V(17, "");
 });
-$c_Lcom_diagraphx_web_models_MElement$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MElement(p);
+$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement(p);
 });
-var $d_Lcom_diagraphx_web_models_MElement$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MElement$$anon$1, "com.diagraphx.web.models.MElement$$anon$1", ({
-  Lcom_diagraphx_web_models_MElement$$anon$1: 1,
+var $d_Lcom_diagraphy_web_models_GraphElement$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphElement$$anon$1, "com.diagraphy.web.models.GraphElement$$anon$1", ({
+  Lcom_diagraphy_web_models_GraphElement$$anon$1: 1,
   Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader: 1,
   Lupickle_implicits_CaseClassReadWriters$CaseClassReader: 1,
   Lupickle_core_Visitor: 1,
@@ -31749,280 +32499,37 @@ var $d_Lcom_diagraphx_web_models_MElement$$anon$1 = new $TypeData().initClass($c
   Lupickle_core_Types$SimpleReader: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphx_web_models_MGraph$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
+function $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount = 0;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$missingKeyCount = $L0;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitors$lzy1 = null;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitorsbitmap$1 = false;
   this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_$outer = null;
-  this.Lcom_diagraphx_web_models_MGraph$$anon$1__f_m$2 = null;
-  this.Lcom_diagraphx_web_models_MGraph$$anon$1__f_m$2 = m$1;
+  this.Lcom_diagraphy_web_models_GraphPoint$$anon$1__f_m$2 = null;
+  this.Lcom_diagraphy_web_models_GraphPoint$$anon$1__f_m$2 = m$1;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
   }
   $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 2, new $c_RTLong(3, 0));
 }
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.constructor = $c_Lcom_diagraphx_web_models_MGraph$$anon$1;
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1;
 /** @constructor */
-function $h_Lcom_diagraphx_web_models_MGraph$$anon$1() {
+function $h_Lcom_diagraphy_web_models_GraphPoint$$anon$1() {
 }
-$h_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype = $c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype;
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.visitors0__s_Product = (function() {
-  var this$3 = $m_Lupickle_legacy$();
-  var r = $m_Lcom_diagraphx_web_models_MElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-  var this$1 = $m_scm_ListBuffer$();
-  var factory = new $c_sc_IterableFactory$ToFactory(this$1);
-  var _1 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$3, r, factory);
-  var this$6 = $m_Lupickle_legacy$();
-  var r$1 = $m_Lcom_diagraphx_web_models_MPath$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-  var this$4 = $m_scm_ListBuffer$();
-  var factory$1 = new $c_sc_IterableFactory$ToFactory(this$4);
-  var _2 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$6, r$1, factory$1);
-  return new $c_T2(_1, _2);
-});
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MGraph = (function(p) {
-  return $as_Lcom_diagraphx_web_models_MGraph($n(this.Lcom_diagraphx_web_models_MGraph$$anon$1__f_m$2).fromProduct__s_Product__O(p));
-});
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.keyToIndex__T__I = (function(x) {
-  return ((x === "elements") ? 0 : ((x === "paths") ? 1 : (-1)));
-});
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.allKeysArray__AT = (function() {
-  var this$3 = new $c_sci_$colon$colon(new $c_T2("elements", "elements"), new $c_sci_$colon$colon(new $c_T2("paths", "paths"), $m_sci_Nil$()));
-  var f = ((_$1) => {
-    var _$1$1 = $as_T2(_$1);
-    return $as_T($n(_$1$1).T2__f__2);
-  });
-  if ((this$3 === $m_sci_Nil$())) {
-    var this$5 = $m_sci_Nil$();
-  } else {
-    var x0 = this$3.sci_$colon$colon__f_head;
-    var h = new $c_sci_$colon$colon(f(x0), $m_sci_Nil$());
-    var t = h;
-    var rest = this$3.sci_$colon$colon__f_next;
-    while ((rest !== $m_sci_Nil$())) {
-      var x0$1 = $n(rest).head__O();
-      var nx = new $c_sci_$colon$colon(f(x0$1), $m_sci_Nil$());
-      $n(t).sci_$colon$colon__f_next = nx;
-      t = nx;
-      rest = $as_sci_List($n(rest).tail__O());
-    }
-    var this$5 = h;
-  }
-  if ((this$5.knownSize__I() >= 0)) {
-    var len = this$5.knownSize__I();
-    var destination = new ($d_T.getArrayOf().constr)(len);
-    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$5, destination, 0, 2147483647);
-    return destination;
-  } else {
-    var capacity = 0;
-    var size = 0;
-    var jsElems = null;
-    capacity = 0;
-    size = 0;
-    jsElems = [];
-    var it = this$5.iterator__sc_Iterator();
-    while ($n(it).hasNext__Z()) {
-      var elem = $n(it).next__O();
-      var unboxedElem = ((elem === null) ? null : elem);
-      jsElems.push(unboxedElem);
-    }
-    return new ($d_T.getArrayOf().constr)(jsElems);
-  }
-});
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
-  $n(x).storeValueIfNotFound__I__O__V(0, $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$1__scm_ListBuffer());
-  $n(x).storeValueIfNotFound__I__O__V(1, $m_Lcom_diagraphx_web_models_MGraph$().$lessinit$greater$default$2__scm_ListBuffer());
-});
-$c_Lcom_diagraphx_web_models_MGraph$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MGraph(p);
-});
-var $d_Lcom_diagraphx_web_models_MGraph$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MGraph$$anon$1, "com.diagraphx.web.models.MGraph$$anon$1", ({
-  Lcom_diagraphx_web_models_MGraph$$anon$1: 1,
-  Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader: 1,
-  Lupickle_implicits_CaseClassReadWriters$CaseClassReader: 1,
-  Lupickle_core_Visitor: 1,
-  Lupickle_core_Types$Reader: 1,
-  Lupickle_core_SimpleVisitor: 1,
-  Lupickle_core_Types$SimpleReader: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPath$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount = 0;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$missingKeyCount = $L0;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitors$lzy1 = null;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitorsbitmap$1 = false;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_$outer = null;
-  this.Lcom_diagraphx_web_models_MPath$$anon$1__f_m$2 = null;
-  this.Lcom_diagraphx_web_models_MPath$$anon$1__f_m$2 = m$1;
-  if ((outer === null)) {
-    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
-  }
-  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 9, new $c_RTLong(511, 0));
-}
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.constructor = $c_Lcom_diagraphx_web_models_MPath$$anon$1;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPath$$anon$1() {
-}
-$h_Lcom_diagraphx_web_models_MPath$$anon$1.prototype = $c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype;
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.visitors0__s_Product = (function() {
-  var _1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _2 = $m_Lcom_diagraphx_web_models_MPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-  var _3 = $m_Lcom_diagraphx_web_models_MPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-  var _4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  return new $c_T9(_1, _2, _3, _4, _5, _6, _7, _8, _9);
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MPath = (function(p) {
-  return $as_Lcom_diagraphx_web_models_MPath($n(this.Lcom_diagraphx_web_models_MPath$$anon$1__f_m$2).fromProduct__s_Product__O(p));
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.keyToIndex__T__I = (function(x) {
-  switch (x) {
-    case "id": {
-      return 0;
-      break;
-    }
-    case "start": {
-      return 1;
-      break;
-    }
-    case "end": {
-      return 2;
-      break;
-    }
-    case "sElement": {
-      return 3;
-      break;
-    }
-    case "eElement": {
-      return 4;
-      break;
-    }
-    case "d": {
-      return 5;
-      break;
-    }
-    case "edge": {
-      return 6;
-      break;
-    }
-    case "text": {
-      return 7;
-      break;
-    }
-    case "parent": {
-      return 8;
-      break;
-    }
-    default: {
-      return (-1);
-    }
-  }
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.allKeysArray__AT = (function() {
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "id"), new $c_T2("start", "start"), new $c_T2("end", "end"), new $c_T2("sElement", "sElement"), new $c_T2("eElement", "eElement"), new $c_T2("d", "d"), new $c_T2("edge", "edge"), new $c_T2("text", "text"), new $c_T2("parent", "parent")]));
-  var this$11 = $n($m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems));
-  var f = ((_$1) => {
-    var _$1$1 = $as_T2(_$1);
-    return $as_T($n(_$1$1).T2__f__2);
-  });
-  if ((this$11 === $m_sci_Nil$())) {
-    var this$13 = $m_sci_Nil$();
-  } else {
-    var x0 = this$11.head__O();
-    var h = new $c_sci_$colon$colon(f(x0), $m_sci_Nil$());
-    var t = h;
-    var rest = $as_sci_List(this$11.tail__O());
-    while ((rest !== $m_sci_Nil$())) {
-      var x0$1 = $n(rest).head__O();
-      var nx = new $c_sci_$colon$colon(f(x0$1), $m_sci_Nil$());
-      $n(t).sci_$colon$colon__f_next = nx;
-      t = nx;
-      rest = $as_sci_List($n(rest).tail__O());
-    }
-    var this$13 = h;
-  }
-  if ((this$13.knownSize__I() >= 0)) {
-    var len = this$13.knownSize__I();
-    var destination = new ($d_T.getArrayOf().constr)(len);
-    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$13, destination, 0, 2147483647);
-    return destination;
-  } else {
-    var capacity = 0;
-    var size = 0;
-    var jsElems = null;
-    capacity = 0;
-    size = 0;
-    jsElems = [];
-    var it = this$13.iterator__sc_Iterator();
-    while ($n(it).hasNext__Z()) {
-      var elem = $n(it).next__O();
-      var unboxedElem = ((elem === null) ? null : elem);
-      jsElems.push(unboxedElem);
-    }
-    return new ($d_T.getArrayOf().constr)(jsElems);
-  }
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
-  $n(x).storeValueIfNotFound__I__O__V(0, "");
-  $n(x).storeValueIfNotFound__I__O__V(1, new $c_Lcom_diagraphx_web_models_MPoint(0.0, 0.0));
-  $n(x).storeValueIfNotFound__I__O__V(2, new $c_Lcom_diagraphx_web_models_MPoint(0.0, 0.0));
-  $n(x).storeValueIfNotFound__I__O__V(3, "");
-  $n(x).storeValueIfNotFound__I__O__V(4, "");
-  $n(x).storeValueIfNotFound__I__O__V(5, "");
-  $n(x).storeValueIfNotFound__I__O__V(6, "");
-  $n(x).storeValueIfNotFound__I__O__V(7, "");
-  $n(x).storeValueIfNotFound__I__O__V(8, "");
-});
-$c_Lcom_diagraphx_web_models_MPath$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MPath(p);
-});
-var $d_Lcom_diagraphx_web_models_MPath$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPath$$anon$1, "com.diagraphx.web.models.MPath$$anon$1", ({
-  Lcom_diagraphx_web_models_MPath$$anon$1: 1,
-  Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader: 1,
-  Lupickle_implicits_CaseClassReadWriters$CaseClassReader: 1,
-  Lupickle_core_Visitor: 1,
-  Lupickle_core_Types$Reader: 1,
-  Lupickle_core_SimpleVisitor: 1,
-  Lupickle_core_Types$SimpleReader: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphx_web_models_MPoint$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount = 0;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$missingKeyCount = $L0;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitors$lzy1 = null;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitorsbitmap$1 = false;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_$outer = null;
-  this.Lcom_diagraphx_web_models_MPoint$$anon$1__f_m$2 = null;
-  this.Lcom_diagraphx_web_models_MPoint$$anon$1__f_m$2 = m$1;
-  if ((outer === null)) {
-    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
-  }
-  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 2, new $c_RTLong(3, 0));
-}
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.constructor = $c_Lcom_diagraphx_web_models_MPoint$$anon$1;
-/** @constructor */
-function $h_Lcom_diagraphx_web_models_MPoint$$anon$1() {
-}
-$h_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype = $c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype;
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.visitors0__s_Product = (function() {
+$h_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype;
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.visitors0__s_Product = (function() {
   var _1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   return new $c_T2(_1, _2);
 });
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphx_web_models_MPoint = (function(p) {
-  return $as_Lcom_diagraphx_web_models_MPoint($n(this.Lcom_diagraphx_web_models_MPoint$$anon$1__f_m$2).fromProduct__s_Product__O(p));
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint = (function(p) {
+  return $as_Lcom_diagraphy_web_models_GraphPoint($n(this.Lcom_diagraphy_web_models_GraphPoint$$anon$1__f_m$2).fromProduct__s_Product__O(p));
 });
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.keyToIndex__T__I = (function(x) {
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.keyToIndex__T__I = (function(x) {
   return ((x === "x") ? 0 : ((x === "y") ? 1 : (-1)));
 });
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.allKeysArray__AT = (function() {
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.allKeysArray__AT = (function() {
   var this$3 = new $c_sci_$colon$colon(new $c_T2("x", "x"), new $c_sci_$colon$colon(new $c_T2("y", "y"), $m_sci_Nil$()));
   var f = ((_$1) => {
     var _$1$1 = $as_T2(_$1);
@@ -32065,13 +32572,13 @@ $c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.allKeysArray__AT = (functi
     return new ($d_T.getArrayOf().constr)(jsElems);
   }
 });
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
 });
-$c_Lcom_diagraphx_web_models_MPoint$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphx_web_models_MPoint(p);
+$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint(p);
 });
-var $d_Lcom_diagraphx_web_models_MPoint$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphx_web_models_MPoint$$anon$1, "com.diagraphx.web.models.MPoint$$anon$1", ({
-  Lcom_diagraphx_web_models_MPoint$$anon$1: 1,
+var $d_Lcom_diagraphy_web_models_GraphPoint$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint$$anon$1, "com.diagraphy.web.models.GraphPoint$$anon$1", ({
+  Lcom_diagraphy_web_models_GraphPoint$$anon$1: 1,
   Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader: 1,
   Lupickle_implicits_CaseClassReadWriters$CaseClassReader: 1,
   Lupickle_core_Visitor: 1,
@@ -32514,6 +33021,9 @@ $c_ju_LinkedHashMap.prototype.nodeWasAccessed__ju_HashMap$Node__V = (function(no
 });
 $c_ju_LinkedHashMap.prototype.nodeWasAdded__ju_HashMap$Node__V = (function(node) {
   $p_ju_LinkedHashMap__appendToOrderedList__ju_LinkedHashMap$Node__V(this, $as_ju_LinkedHashMap$Node(node));
+});
+$c_ju_LinkedHashMap.prototype.nodeWasRemoved__ju_HashMap$Node__V = (function(node) {
+  $p_ju_LinkedHashMap__removeFromOrderedList__ju_LinkedHashMap$Node__V(this, $as_ju_LinkedHashMap$Node(node));
 });
 var $d_ju_LinkedHashMap = new $TypeData().initClass($c_ju_LinkedHashMap, "java.util.LinkedHashMap", ({
   ju_LinkedHashMap: 1,
@@ -32995,6 +33505,33 @@ var $d_scm_ArrayBuilder$generic = new $TypeData().initClass($c_scm_ArrayBuilder$
   scm_Clearable: 1,
   Ljava_io_Serializable: 1
 }));
+function $f_scm_ArrayDequeOps__copySliceToArray__I__O__I__I__O($thiz, srcStart, dest, destStart, maxItems) {
+  var until = ((1 + $m_jl_reflect_Array$().getLength__O__I(dest)) | 0);
+  if (((destStart < 0) || (destStart >= until))) {
+    throw $n($m_scg_CommonErrors$().indexOutOfBounds__I__I__jl_IndexOutOfBoundsException(destStart, (((-1) + until) | 0)));
+  }
+  var idx = $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var a = ((((($thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n($thiz.scm_ArrayDeque__f_array).u.length) | 0)) - srcStart) | 0);
+  var b = (($m_jl_reflect_Array$().getLength__O__I(dest) - destStart) | 0);
+  var b$1 = ((a < b) ? a : b);
+  var toCopy = ((maxItems < b$1) ? maxItems : b$1);
+  if ((toCopy > 0)) {
+    var idx$1 = $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+    var until$1 = ((($thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx$1) | 0) & (((-1) + $n($thiz.scm_ArrayDeque__f_array).u.length) | 0));
+    if (((srcStart < 0) || (srcStart >= until$1))) {
+      throw $n($m_scg_CommonErrors$().indexOutOfBounds__I__I__jl_IndexOutOfBoundsException(srcStart, (((-1) + until$1) | 0)));
+    }
+    var startIdx = ((($thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start + srcStart) | 0) & (((-1) + $n($thiz.scm_ArrayDeque__f_array).u.length) | 0));
+    var b$2 = (($n($thiz.scm_ArrayDeque__f_array).u.length - startIdx) | 0);
+    var block1 = ((toCopy < b$2) ? toCopy : b$2);
+    $m_s_Array$().copy__O__I__O__I__I__V($thiz.scm_ArrayDeque__f_array, startIdx, dest, destStart, block1);
+    var block2 = ((toCopy - block1) | 0);
+    if ((block2 > 0)) {
+      $m_s_Array$().copy__O__I__O__I__I__V($thiz.scm_ArrayDeque__f_array, 0, dest, ((destStart + block1) | 0), block2);
+    }
+  }
+  return dest;
+}
 /** @constructor */
 function $c_scm_CheckedIndexedSeqView$CheckedIterator(self, mutationCount) {
   this.sc_IndexedSeqView$IndexedSeqViewIterator__f_self = null;
@@ -36039,6 +36576,9 @@ $c_sc_AbstractMap.prototype.toString__T = (function() {
 $c_sc_AbstractMap.prototype.fromSpecific__sc_IterableOnce__sc_IterableOps = (function(coll) {
   return $as_sc_IterableOps($n(this.mapFactory__sc_MapFactory()).from__sc_IterableOnce__O(coll));
 });
+$c_sc_AbstractMap.prototype.newSpecificBuilder__scm_Builder = (function() {
+  return $n(this.mapFactory__sc_MapFactory()).newBuilder__scm_Builder();
+});
 $c_sc_AbstractMap.prototype.foreachEntry__F2__V = (function(f) {
   $f_sc_MapOps__foreachEntry__F2__V(this, f);
 });
@@ -36169,6 +36709,14 @@ function $f_scm_MapOps__update__O__O__V($thiz, key, value) {
   var this$1 = $n($as_scm_Growable($thiz));
   var elem = new $c_T2(key, value);
   this$1.addOne__O__scm_Growable(elem);
+}
+function $f_scm_MapOps__remove__O__s_Option($thiz, key) {
+  var r = $thiz.get__O__s_Option(key);
+  var this$1 = $n(r);
+  if ((!this$1.isEmpty__Z())) {
+    $thiz.subtractOne__O__scm_Shrinkable(key);
+  }
+  return r;
 }
 function $f_Lupickle_MsgReadWriters__$init$__V($thiz) {
   new $c_Lupickle_core_Types$Reader$Delegate($thiz.Reader__Lupickle_core_Types$Reader$(), $m_Lupack_Msg$());
@@ -36894,6 +37442,12 @@ $c_sci_Map$Map1.prototype.constructor = $c_sci_Map$Map1;
 function $h_sci_Map$Map1() {
 }
 $h_sci_Map$Map1.prototype = $c_sci_Map$Map1.prototype;
+$c_sci_Map$Map1.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_Map$Map1.prototype.filter__F1__O = (function(pred) {
+  return this.filterImpl__F1__Z__sci_Map(pred, false);
+});
 $c_sci_Map$Map1.prototype.size__I = (function() {
   return 1;
 });
@@ -36928,6 +37482,9 @@ $c_sci_Map$Map1.prototype.updated__O__O__sci_Map = (function(key, value) {
 });
 $c_sci_Map$Map1.prototype.forall__F1__Z = (function(p) {
   return $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map1__f_key1, this.sci_Map$Map1__f_value1)));
+});
+$c_sci_Map$Map1.prototype.filterImpl__F1__Z__sci_Map = (function(pred, isFlipped) {
+  return (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map1__f_key1, this.sci_Map$Map1__f_value1))) !== isFlipped) ? this : $m_sci_Map$EmptyMap$());
 });
 $c_sci_Map$Map1.prototype.hashCode__I = (function() {
   var a = 0;
@@ -36994,6 +37551,12 @@ $c_sci_Map$Map2.prototype.constructor = $c_sci_Map$Map2;
 function $h_sci_Map$Map2() {
 }
 $h_sci_Map$Map2.prototype = $c_sci_Map$Map2.prototype;
+$c_sci_Map$Map2.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_Map$Map2.prototype.filter__F1__O = (function(pred) {
+  return this.filterImpl__F1__Z__sci_Map(pred, false);
+});
 $c_sci_Map$Map2.prototype.size__I = (function() {
   return 2;
 });
@@ -37029,6 +37592,41 @@ $c_sci_Map$Map2.prototype.updated__O__O__sci_Map = (function(key, value) {
 });
 $c_sci_Map$Map2.prototype.forall__F1__Z = (function(p) {
   return ($uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$key1, this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$value1))) && $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$key2, this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$value2))));
+});
+$c_sci_Map$Map2.prototype.filterImpl__F1__Z__sci_Map = (function(pred, isFlipped) {
+  var k1 = null;
+  var v1 = null;
+  var n = 0;
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$key1, this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$value1))) !== isFlipped)) {
+    k1 = this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$key1;
+    v1 = this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$value1;
+    n = ((1 + n) | 0);
+  }
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$key2, this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$value2))) !== isFlipped)) {
+    if ((n === 0)) {
+      k1 = this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$key2;
+      v1 = this.sci_Map$Map2__f_scala$collection$immutable$Map$Map2$$value2;
+    }
+    n = ((1 + n) | 0);
+  }
+  var x1 = n;
+  switch (x1) {
+    case 0: {
+      return $m_sci_Map$EmptyMap$();
+      break;
+    }
+    case 1: {
+      return new $c_sci_Map$Map1(k1, v1);
+      break;
+    }
+    case 2: {
+      return this;
+      break;
+    }
+    default: {
+      throw new $c_s_MatchError(x1);
+    }
+  }
 });
 $c_sci_Map$Map2.prototype.hashCode__I = (function() {
   var a = 0;
@@ -37103,6 +37701,12 @@ $c_sci_Map$Map3.prototype.constructor = $c_sci_Map$Map3;
 function $h_sci_Map$Map3() {
 }
 $h_sci_Map$Map3.prototype = $c_sci_Map$Map3.prototype;
+$c_sci_Map$Map3.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_Map$Map3.prototype.filter__F1__O = (function(pred) {
+  return this.filterImpl__F1__Z__sci_Map(pred, false);
+});
 $c_sci_Map$Map3.prototype.size__I = (function() {
   return 3;
 });
@@ -37140,6 +37744,60 @@ $c_sci_Map$Map3.prototype.updated__O__O__sci_Map = (function(key, value) {
 });
 $c_sci_Map$Map3.prototype.forall__F1__Z = (function(p) {
   return (($uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key1, this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value1))) && $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key2, this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value2)))) && $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key3, this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value3))));
+});
+$c_sci_Map$Map3.prototype.filterImpl__F1__Z__sci_Map = (function(pred, isFlipped) {
+  var k1 = null;
+  var k2 = null;
+  var v1 = null;
+  var v2 = null;
+  var n = 0;
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key1, this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value1))) !== isFlipped)) {
+    k1 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key1;
+    v1 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value1;
+    n = ((1 + n) | 0);
+  }
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key2, this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value2))) !== isFlipped)) {
+    if ((n === 0)) {
+      k1 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key2;
+      v1 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value2;
+    } else {
+      k2 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key2;
+      v2 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value2;
+    }
+    n = ((1 + n) | 0);
+  }
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key3, this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value3))) !== isFlipped)) {
+    if ((n === 0)) {
+      k1 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key3;
+      v1 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value3;
+    } else if ((n === 1)) {
+      k2 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$key3;
+      v2 = this.sci_Map$Map3__f_scala$collection$immutable$Map$Map3$$value3;
+    }
+    n = ((1 + n) | 0);
+  }
+  var x1 = n;
+  switch (x1) {
+    case 0: {
+      return $m_sci_Map$EmptyMap$();
+      break;
+    }
+    case 1: {
+      return new $c_sci_Map$Map1(k1, v1);
+      break;
+    }
+    case 2: {
+      return new $c_sci_Map$Map2(k1, v1, k2, v2);
+      break;
+    }
+    case 3: {
+      return this;
+      break;
+    }
+    default: {
+      throw new $c_s_MatchError(x1);
+    }
+  }
 });
 $c_sci_Map$Map3.prototype.hashCode__I = (function() {
   var a = 0;
@@ -37222,6 +37880,12 @@ $c_sci_Map$Map4.prototype.constructor = $c_sci_Map$Map4;
 function $h_sci_Map$Map4() {
 }
 $h_sci_Map$Map4.prototype = $c_sci_Map$Map4.prototype;
+$c_sci_Map$Map4.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_Map$Map4.prototype.filter__F1__O = (function(pred) {
+  return this.filterImpl__F1__Z__sci_Map(pred, false);
+});
 $c_sci_Map$Map4.prototype.size__I = (function() {
   return 4;
 });
@@ -37272,6 +37936,82 @@ $c_sci_Map$Map4.prototype.updated__O__O__sci_Map = (function(key, value) {
 });
 $c_sci_Map$Map4.prototype.forall__F1__Z = (function(p) {
   return ((($uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key1, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value1))) && $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key2, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value2)))) && $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key3, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value3)))) && $uZ($n(p).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key4, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value4))));
+});
+$c_sci_Map$Map4.prototype.filterImpl__F1__Z__sci_Map = (function(pred, isFlipped) {
+  var k1 = null;
+  var k2 = null;
+  var k3 = null;
+  var v1 = null;
+  var v2 = null;
+  var v3 = null;
+  var n = 0;
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key1, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value1))) !== isFlipped)) {
+    k1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key1;
+    v1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value1;
+    n = ((1 + n) | 0);
+  }
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key2, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value2))) !== isFlipped)) {
+    if ((n === 0)) {
+      k1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key2;
+      v1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value2;
+    } else {
+      k2 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key2;
+      v2 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value2;
+    }
+    n = ((1 + n) | 0);
+  }
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key3, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value3))) !== isFlipped)) {
+    if ((n === 0)) {
+      k1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key3;
+      v1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value3;
+    } else if ((n === 1)) {
+      k2 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key3;
+      v2 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value3;
+    } else {
+      k3 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key3;
+      v3 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value3;
+    }
+    n = ((1 + n) | 0);
+  }
+  if (($uZ($n(pred).apply__O__O(new $c_T2(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key4, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value4))) !== isFlipped)) {
+    if ((n === 0)) {
+      k1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key4;
+      v1 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value4;
+    } else if ((n === 1)) {
+      k2 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key4;
+      v2 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value4;
+    } else if ((n === 2)) {
+      k3 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key4;
+      v3 = this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value4;
+    }
+    n = ((1 + n) | 0);
+  }
+  var x1 = n;
+  switch (x1) {
+    case 0: {
+      return $m_sci_Map$EmptyMap$();
+      break;
+    }
+    case 1: {
+      return new $c_sci_Map$Map1(k1, v1);
+      break;
+    }
+    case 2: {
+      return new $c_sci_Map$Map2(k1, v1, k2, v2);
+      break;
+    }
+    case 3: {
+      return new $c_sci_Map$Map3(k1, v1, k2, v2, k3, v3);
+      break;
+    }
+    case 4: {
+      return this;
+      break;
+    }
+    default: {
+      throw new $c_s_MatchError(x1);
+    }
+  }
 });
 $c_sci_Map$Map4.prototype.buildTo__sci_HashMapBuilder__sci_HashMapBuilder = (function(builder) {
   return $n($n($n($n(builder).addOne__O__O__sci_HashMapBuilder(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key1, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value1)).addOne__O__O__sci_HashMapBuilder(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key2, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value2)).addOne__O__O__sci_HashMapBuilder(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key3, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value3)).addOne__O__O__sci_HashMapBuilder(this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$key4, this.sci_Map$Map4__f_scala$collection$immutable$Map$Map4$$value4);
@@ -37674,6 +38414,12 @@ $h_sjsr_WrappedVarArgs.prototype = $c_sjsr_WrappedVarArgs.prototype;
 $c_sjsr_WrappedVarArgs.prototype.map__F1__O = (function(f) {
   return $f_sc_StrictOptimizedIterableOps__map__F1__O(this, f);
 });
+$c_sjsr_WrappedVarArgs.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sjsr_WrappedVarArgs.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_sjsr_WrappedVarArgs.prototype.canEqual__O__Z = (function(that) {
   return $f_sci_IndexedSeq__canEqual__O__Z(this, that);
 });
@@ -37714,6 +38460,9 @@ $c_sjsr_WrappedVarArgs.prototype.size__I = (function() {
 });
 $c_sjsr_WrappedVarArgs.prototype.isEmpty__Z = (function() {
   return $f_sc_SeqOps__isEmpty__Z(this);
+});
+$c_sjsr_WrappedVarArgs.prototype.newSpecificBuilder__scm_Builder = (function() {
+  return $m_sjsr_WrappedVarArgs$().newBuilder__scm_Builder();
 });
 $c_sjsr_WrappedVarArgs.prototype.tail__O = (function() {
   return $f_sc_IterableOps__tail__O(this);
@@ -37849,6 +38598,9 @@ $c_Lupickle_core_LinkedHashMap.prototype.addAll__sc_IterableOnce__scm_Growable =
 });
 $c_Lupickle_core_LinkedHashMap.prototype.sizeHint__I__V = (function(size) {
 });
+$c_Lupickle_core_LinkedHashMap.prototype.remove__O__s_Option = (function(key) {
+  return $f_scm_MapOps__remove__O__s_Option(this, key);
+});
 $c_Lupickle_core_LinkedHashMap.prototype.knownSize__I = (function() {
   return (-1);
 });
@@ -37879,8 +38631,15 @@ $c_Lupickle_core_LinkedHashMap.prototype.get__O__s_Option = (function(key) {
   var this$1 = $n(this.Lupickle_core_LinkedHashMap__f_upickle$core$LinkedHashMap$$underlying);
   return $x_1.apply__O__s_Option($p_ju_HashMap__getOrDefaultImpl__O__O__O(this$1, key, null));
 });
+$c_Lupickle_core_LinkedHashMap.prototype.subtractOne__O__Lupickle_core_LinkedHashMap = (function(elem) {
+  $n(this.Lupickle_core_LinkedHashMap__f_upickle$core$LinkedHashMap$$underlying).remove__O__O(elem);
+  return this;
+});
 $c_Lupickle_core_LinkedHashMap.prototype.addOne__O__scm_Growable = (function(elem) {
   return this.addOne__T2__Lupickle_core_LinkedHashMap($as_T2(elem));
+});
+$c_Lupickle_core_LinkedHashMap.prototype.subtractOne__O__scm_Shrinkable = (function(elem) {
+  return this.subtractOne__O__Lupickle_core_LinkedHashMap(elem);
 });
 $c_Lupickle_core_LinkedHashMap.prototype.result__O = (function() {
   return this;
@@ -37923,6 +38682,12 @@ $c_sci_HashMap.prototype.constructor = $c_sci_HashMap;
 function $h_sci_HashMap() {
 }
 $h_sci_HashMap.prototype = $c_sci_HashMap.prototype;
+$c_sci_HashMap.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_HashMap.prototype.filter__F1__O = (function(pred) {
+  return this.filterImpl__F1__Z__sci_HashMap(pred, false);
+});
 $c_sci_HashMap.prototype.mapFactory__sc_MapFactory = (function() {
   return $m_sci_HashMap$();
 });
@@ -38000,6 +38765,17 @@ $c_sci_HashMap.prototype.hashCode__I = (function() {
 });
 $c_sci_HashMap.prototype.className__T = (function() {
   return "HashMap";
+});
+$c_sci_HashMap.prototype.filterImpl__F1__Z__sci_HashMap = (function(pred, isFlipped) {
+  var newRootNode = $n(this.sci_HashMap__f_rootNode).filterImpl__F1__Z__sci_BitmapIndexedMapNode(pred, isFlipped);
+  if ((newRootNode === this.sci_HashMap__f_rootNode)) {
+    return this;
+  } else if (($n(newRootNode).sci_BitmapIndexedMapNode__f_size === 0)) {
+    var this$1 = $m_sci_HashMap$();
+    return this$1.sci_HashMap$__f_EmptyMap;
+  } else {
+    return new $c_sci_HashMap(newRootNode);
+  }
 });
 $c_sci_HashMap.prototype.drop__I__O = (function(n) {
   return $as_sci_HashMap($f_sc_IterableOps__drop__I__O(this, n));
@@ -38190,6 +38966,12 @@ $c_sci_Range.prototype.constructor = $c_sci_Range;
 function $h_sci_Range() {
 }
 $h_sci_Range.prototype = $c_sci_Range.prototype;
+$c_sci_Range.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_Range.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_sci_Range.prototype.canEqual__O__Z = (function(that) {
   return $f_sci_IndexedSeq__canEqual__O__Z(this, that);
 });
@@ -38389,6 +39171,17 @@ $c_sci_ArraySeq.prototype.fromSpecific__sc_IterableOnce__sc_IterableOps = (funct
   var evidence$5 = this.elemTag__s_reflect_ClassTag();
   return this$1.from__sc_IterableOnce__s_reflect_ClassTag__sci_ArraySeq(coll, evidence$5);
 });
+$c_sci_ArraySeq.prototype.newSpecificBuilder__scm_Builder = (function() {
+  var this$1 = $m_sci_ArraySeq$();
+  var evidence$12 = this.elemTag__s_reflect_ClassTag();
+  return this$1.newBuilder__s_reflect_ClassTag__scm_Builder(evidence$12);
+});
+$c_sci_ArraySeq.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_ArraySeq.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_sci_ArraySeq.prototype.canEqual__O__Z = (function(that) {
   return $f_sci_IndexedSeq__canEqual__O__Z(this, that);
 });
@@ -38575,6 +39368,12 @@ $c_sci_Vector.prototype.constructor = $c_sci_Vector;
 function $h_sci_Vector() {
 }
 $h_sci_Vector.prototype = $c_sci_Vector.prototype;
+$c_sci_Vector.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sci_Vector.prototype.filter__F1__O = (function(pred) {
+  return this.filterImpl__F1__Z__sci_Vector(pred, false);
+});
 $c_sci_Vector.prototype.canEqual__O__Z = (function(that) {
   return $f_sci_IndexedSeq__canEqual__O__Z(this, that);
 });
@@ -38716,6 +39515,12 @@ $c_scm_ArraySeq.prototype.constructor = $c_scm_ArraySeq;
 function $h_scm_ArraySeq() {
 }
 $h_scm_ArraySeq.prototype = $c_scm_ArraySeq.prototype;
+$c_scm_ArraySeq.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_scm_ArraySeq.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_scm_ArraySeq.prototype.stringPrefix__T = (function() {
   return "IndexedSeq";
 });
@@ -38752,6 +39557,9 @@ $c_scm_ArraySeq.prototype.fromSpecific__sc_IterableOnce__scm_ArraySeq = (functio
   var $x_1 = $m_scm_ArraySeq$();
   var elemRuntimeClass = ((elementClass === $d_V.getClassOf()) ? $d_jl_Void.getClassOf() : (((elementClass === $d_sr_Null$.getClassOf()) || (elementClass === $d_sr_Nothing$.getClassOf())) ? $d_O.getClassOf() : elementClass));
   return $x_1.make__O__scm_ArraySeq($n(elemRuntimeClass).data.getArrayOf().wrapArray(jsElems));
+});
+$c_scm_ArraySeq.prototype.newSpecificBuilder__scm_Builder = (function() {
+  return $m_scm_ArraySeq$().newBuilder__s_reflect_ClassTag__scm_Builder(this.elemTag__s_reflect_ClassTag());
 });
 $c_scm_ArraySeq.prototype.className__T = (function() {
   return "ArraySeq";
@@ -39653,6 +40461,10 @@ var $d_sci_ArraySeq$ofUnit = new $TypeData().initClass($c_sci_ArraySeq$ofUnit, "
   sc_EvidenceIterableFactoryDefaults: 1,
   Ljava_io_Serializable: 1
 }));
+function $p_sci_List__filterCommon__F1__Z__sci_List($thiz, p, isFlipped) {
+  var result = $p_sci_List__noneIn$1__sci_List__F1__Z__sci_List($thiz, $thiz, p, isFlipped);
+  return result;
+}
 function $p_sci_List__loop$2__I__sci_List__I__I($thiz, i, xs, len$1) {
   while (true) {
     if ((i === len$1)) {
@@ -39666,6 +40478,67 @@ function $p_sci_List__loop$2__I__sci_List__I__I($thiz, i, xs, len$1) {
       xs = temp$xs;
     }
   }
+}
+function $p_sci_List__noneIn$1__sci_List__F1__Z__sci_List($thiz, l, p$1, isFlipped$1) {
+  while (true) {
+    if ($n(l).isEmpty__Z()) {
+      return $m_sci_Nil$();
+    } else {
+      var h = $n(l).head__O();
+      var t = $as_sci_List($n(l).tail__O());
+      if (($uZ($n(p$1).apply__O__O(h)) !== isFlipped$1)) {
+        return $p_sci_List__allIn$1__sci_List__sci_List__F1__Z__sci_List($thiz, l, t, p$1, isFlipped$1);
+      } else {
+        l = t;
+      }
+    }
+  }
+}
+function $p_sci_List__allIn$1__sci_List__sci_List__F1__Z__sci_List($thiz, start, remaining, p$1, isFlipped$1) {
+  while (true) {
+    if ($n(remaining).isEmpty__Z()) {
+      return start;
+    } else {
+      var x = $n(remaining).head__O();
+      if (($uZ($n(p$1).apply__O__O(x)) !== isFlipped$1)) {
+        remaining = $as_sci_List($n(remaining).tail__O());
+      } else {
+        return $ps_sci_List__partialFill$1__sci_List__sci_List__F1__Z__sci_List(start, remaining, p$1, isFlipped$1);
+      }
+    }
+  }
+}
+function $ps_sci_List__partialFill$1__sci_List__sci_List__F1__Z__sci_List(origStart, firstMiss, p$1, isFlipped$1) {
+  var newHead = new $c_sci_$colon$colon($n(origStart).head__O(), $m_sci_Nil$());
+  var toProcess = $as_sci_List($n(origStart).tail__O());
+  var currentLast = newHead;
+  while ((toProcess !== firstMiss)) {
+    var newElem = new $c_sci_$colon$colon($n(toProcess).head__O(), $m_sci_Nil$());
+    $n(currentLast).sci_$colon$colon__f_next = newElem;
+    currentLast = newElem;
+    toProcess = $as_sci_List($n(toProcess).tail__O());
+  }
+  var next = $as_sci_List($n(firstMiss).tail__O());
+  var nextToCopy = next;
+  while ((!$n(next).isEmpty__Z())) {
+    var head = $n(next).head__O();
+    if (($uZ($n(p$1).apply__O__O(head)) !== isFlipped$1)) {
+      next = $as_sci_List($n(next).tail__O());
+    } else {
+      while ((nextToCopy !== next)) {
+        var newElem$2 = new $c_sci_$colon$colon($n(nextToCopy).head__O(), $m_sci_Nil$());
+        $n(currentLast).sci_$colon$colon__f_next = newElem$2;
+        currentLast = newElem$2;
+        nextToCopy = $as_sci_List($n(nextToCopy).tail__O());
+      }
+      nextToCopy = $as_sci_List($n(next).tail__O());
+      next = $as_sci_List($n(next).tail__O());
+    }
+  }
+  if ((!$n(nextToCopy).isEmpty__Z())) {
+    $n(currentLast).sci_$colon$colon__f_next = nextToCopy;
+  }
+  return newHead;
 }
 function $p_sci_List__listEq$1__sci_List__sci_List__Z($thiz, a, b) {
   while (true) {
@@ -39771,6 +40644,25 @@ $c_sci_List.prototype.map__F1__sci_List = (function(f) {
     return h;
   }
 });
+$c_sci_List.prototype.flatMap__F1__sci_List = (function(f) {
+  var rest = this;
+  var h = null;
+  var t = null;
+  while ((rest !== $m_sci_Nil$())) {
+    var it = $n($as_sc_IterableOnce($n(f).apply__O__O($n(rest).head__O()))).iterator__sc_Iterator();
+    while ($n(it).hasNext__Z()) {
+      var nx = new $c_sci_$colon$colon($n(it).next__O(), $m_sci_Nil$());
+      if ((t === null)) {
+        h = nx;
+      } else {
+        $n(t).sci_$colon$colon__f_next = nx;
+      }
+      t = nx;
+    }
+    rest = $as_sci_List($n(rest).tail__O());
+  }
+  return ((h === null) ? $m_sci_Nil$() : h);
+});
 $c_sci_List.prototype.foreach__F1__V = (function(f) {
   var these = this;
   while ((!$n(these).isEmpty__Z())) {
@@ -39820,6 +40712,12 @@ $c_sci_List.prototype.apply__O__O = (function(v1) {
 });
 $c_sci_List.prototype.drop__I__O = (function(n) {
   return $p_sc_StrictOptimizedLinearSeqOps__loop$2__I__sc_LinearSeq__sc_LinearSeq(this, n, this);
+});
+$c_sci_List.prototype.filter__F1__O = (function(pred) {
+  return $p_sci_List__filterCommon__F1__Z__sci_List(this, pred, false);
+});
+$c_sci_List.prototype.flatMap__F1__O = (function(f) {
+  return this.flatMap__F1__sci_List(f);
 });
 $c_sci_List.prototype.map__F1__O = (function(f) {
   return this.map__F1__sci_List(f);
@@ -40785,6 +41683,34 @@ function $p_scm_HashMap__put0__O__O__Z__I__I__s_Some($thiz, key, value, getOld, 
   $thiz.scm_HashMap__f_contentSize = ((1 + $thiz.scm_HashMap__f_contentSize) | 0);
   return null;
 }
+function $p_scm_HashMap__remove0__O__scm_HashMap$Node($thiz, elem) {
+  var originalHash = $m_sr_Statics$().anyHash__O__I(elem);
+  return $p_scm_HashMap__remove0__O__I__scm_HashMap$Node($thiz, elem, (originalHash ^ ((originalHash >>> 16) | 0)));
+}
+function $p_scm_HashMap__remove0__O__I__scm_HashMap$Node($thiz, elem, hash) {
+  var idx = (hash & (((-1) + $n($thiz.scm_HashMap__f_scala$collection$mutable$HashMap$$table).u.length) | 0));
+  var x1 = $n($thiz.scm_HashMap__f_scala$collection$mutable$HashMap$$table).get(idx);
+  if ((x1 === null)) {
+    return null;
+  } else if ((($n(x1).scm_HashMap$Node__f__hash === hash) && $m_sr_BoxesRunTime$().equals__O__O__Z($n(x1).scm_HashMap$Node__f__key, elem))) {
+    $n($thiz.scm_HashMap__f_scala$collection$mutable$HashMap$$table).set(idx, $n(x1).scm_HashMap$Node__f__next);
+    $thiz.scm_HashMap__f_contentSize = (((-1) + $thiz.scm_HashMap__f_contentSize) | 0);
+    return x1;
+  } else {
+    var prev = x1;
+    var next = $n(x1).scm_HashMap$Node__f__next;
+    while (((next !== null) && ($n(next).scm_HashMap$Node__f__hash <= hash))) {
+      if ((($n(next).scm_HashMap$Node__f__hash === hash) && $m_sr_BoxesRunTime$().equals__O__O__Z($n(next).scm_HashMap$Node__f__key, elem))) {
+        $n(prev).scm_HashMap$Node__f__next = $n(next).scm_HashMap$Node__f__next;
+        $thiz.scm_HashMap__f_contentSize = (((-1) + $thiz.scm_HashMap__f_contentSize) | 0);
+        return next;
+      }
+      prev = next;
+      next = $n(next).scm_HashMap$Node__f__next;
+    }
+    return null;
+  }
+}
 function $p_scm_HashMap__growTable__I__V($thiz, newlen) {
   if ((newlen < 0)) {
     throw $ct_jl_RuntimeException__T__(new $c_jl_RuntimeException(), (("new HashMap table size " + newlen) + " exceeds maximum"));
@@ -40860,6 +41786,12 @@ $c_scm_HashMap.prototype.constructor = $c_scm_HashMap;
 function $h_scm_HashMap() {
 }
 $h_scm_HashMap.prototype = $c_scm_HashMap.prototype;
+$c_scm_HashMap.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_scm_HashMap.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_scm_HashMap.prototype.size__I = (function() {
   return this.scm_HashMap__f_contentSize;
 });
@@ -40939,8 +41871,16 @@ $c_scm_HashMap.prototype.getOrElse__O__F0__O = (function(key, default$1) {
     return ((nd === null) ? $n(default$1).apply__O() : $n(nd).scm_HashMap$Node__f__value);
   }
 });
+$c_scm_HashMap.prototype.remove__O__s_Option = (function(key) {
+  var x1 = $p_scm_HashMap__remove0__O__scm_HashMap$Node(this, key);
+  return ((x1 === null) ? $m_s_None$() : new $c_s_Some($n(x1).scm_HashMap$Node__f__value));
+});
 $c_scm_HashMap.prototype.addOne__T2__scm_HashMap = (function(elem) {
   $p_scm_HashMap__put0__O__O__Z__s_Some(this, $n(elem).T2__f__1, $n(elem).T2__f__2, false);
+  return this;
+});
+$c_scm_HashMap.prototype.subtractOne__O__scm_HashMap = (function(elem) {
+  $p_scm_HashMap__remove0__O__scm_HashMap$Node(this, elem);
   return this;
 });
 $c_scm_HashMap.prototype.knownSize__I = (function() {
@@ -40973,6 +41913,9 @@ $c_scm_HashMap.prototype.hashCode__I = (function() {
     var tupleHashIterator = new $c_scm_HashMap$$anon$5(this);
     return $m_s_util_hashing_MurmurHash3$().unorderedHash__sc_IterableOnce__I__I(tupleHashIterator, $m_s_util_hashing_MurmurHash3$().s_util_hashing_MurmurHash3$__f_mapSeed);
   }
+});
+$c_scm_HashMap.prototype.subtractOne__O__scm_Shrinkable = (function(elem) {
+  return this.subtractOne__O__scm_HashMap(elem);
 });
 $c_scm_HashMap.prototype.addOne__O__scm_Growable = (function(elem) {
   return this.addOne__T2__scm_HashMap($as_T2(elem));
@@ -44001,6 +44944,12 @@ function $h_scm_ListBuffer() {
 $h_scm_ListBuffer.prototype = $c_scm_ListBuffer.prototype;
 $c_scm_ListBuffer.prototype.sizeHint__I__V = (function(size) {
 });
+$c_scm_ListBuffer.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_scm_ListBuffer.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_scm_ListBuffer.prototype.iterator__sc_Iterator = (function() {
   return new $c_scm_MutationTracker$CheckedIterator($n(this.scm_ListBuffer__f_first).iterator__sc_Iterator(), new $c_sr_AbstractFunction0_$$Lambda$a02b774b97db8234e08c6a02dd06557c99779855((() => this.scm_ListBuffer__f_mutationCount)));
 });
@@ -44173,6 +45122,12 @@ $c_scm_ArrayBuffer.prototype.constructor = $c_scm_ArrayBuffer;
 function $h_scm_ArrayBuffer() {
 }
 $h_scm_ArrayBuffer.prototype = $c_scm_ArrayBuffer.prototype;
+$c_scm_ArrayBuffer.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_scm_ArrayBuffer.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_scm_ArrayBuffer.prototype.iterator__sc_Iterator = (function() {
   return $n(this.view__scm_ArrayBufferView()).iterator__sc_Iterator();
 });
@@ -44355,6 +45310,12 @@ $c_sjs_js_WrappedArray.prototype.lengthCompare__I__I = (function(len) {
   var x = $uI(this.sjs_js_WrappedArray__f_scala$scalajs$js$WrappedArray$$array.length);
   return ((x === len) ? 0 : ((x < len) ? (-1) : 1));
 });
+$c_sjs_js_WrappedArray.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_sjs_js_WrappedArray.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
 $c_sjs_js_WrappedArray.prototype.apply__I__O = (function(index) {
   return this.sjs_js_WrappedArray__f_scala$scalajs$js$WrappedArray$$array[index];
 });
@@ -44425,8 +45386,299 @@ var $d_sjs_js_WrappedArray = new $TypeData().initClass($c_sjs_js_WrappedArray, "
   scm_Builder: 1,
   Ljava_io_Serializable: 1
 }));
+function $p_scm_ArrayDeque__reset__AO__I__I__V($thiz, array, start, end) {
+  var assertion = (($n(array).u.length & (((-1) + $n(array).u.length) | 0)) === 0);
+  if ((!assertion)) {
+    throw new $c_jl_AssertionError("assertion failed: Array.length must be power of 2");
+  }
+  var until = $n(array).u.length;
+  if (((start < 0) || (start >= until))) {
+    throw $n($m_scg_CommonErrors$().indexOutOfBounds__I__I__jl_IndexOutOfBoundsException(start, (((-1) + until) | 0)));
+  }
+  var until$1 = $n(array).u.length;
+  if (((end < 0) || (end >= until$1))) {
+    throw $n($m_scg_CommonErrors$().indexOutOfBounds__I__I__jl_IndexOutOfBoundsException(end, (((-1) + until$1) | 0)));
+  }
+  $thiz.scm_ArrayDeque__f_array = array;
+  $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start = start;
+  $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end = end;
+}
+function $ct_scm_ArrayDeque__AO__I__I__($thiz, array, start, end) {
+  $thiz.scm_ArrayDeque__f_array = array;
+  $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start = start;
+  $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end = end;
+  $p_scm_ArrayDeque__reset__AO__I__I__V($thiz, $thiz.scm_ArrayDeque__f_array, $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start, $thiz.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end);
+  return $thiz;
+}
+function $ct_scm_ArrayDeque__I__($thiz, initialSize) {
+  $ct_scm_ArrayDeque__AO__I__I__($thiz, $m_scm_ArrayDeque$().alloc__I__AO(initialSize), 0, 0);
+  return $thiz;
+}
+/** @constructor */
+function $c_scm_ArrayDeque() {
+  this.scm_ArrayDeque__f_array = null;
+  this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start = 0;
+  this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end = 0;
+}
+$c_scm_ArrayDeque.prototype = new $h_scm_AbstractBuffer();
+$c_scm_ArrayDeque.prototype.constructor = $c_scm_ArrayDeque;
+/** @constructor */
+function $h_scm_ArrayDeque() {
+}
+$h_scm_ArrayDeque.prototype = $c_scm_ArrayDeque.prototype;
+$c_scm_ArrayDeque.prototype.flatMap__F1__O = (function(f) {
+  return $f_sc_StrictOptimizedIterableOps__flatMap__F1__O(this, f);
+});
+$c_scm_ArrayDeque.prototype.filter__F1__O = (function(pred) {
+  return $f_sc_StrictOptimizedIterableOps__filterImpl__F1__Z__O(this, pred, false);
+});
+$c_scm_ArrayDeque.prototype.iterator__sc_Iterator = (function() {
+  var this$1 = new $c_sc_IndexedSeqView$Id(this);
+  return $ct_sc_IndexedSeqView$IndexedSeqViewIterator__sc_IndexedSeqView__(new $c_sc_IndexedSeqView$IndexedSeqViewIterator(), this$1);
+});
+$c_scm_ArrayDeque.prototype.drop__I__O = (function(n) {
+  return $f_sc_IndexedSeqOps__drop__I__O(this, n);
+});
+$c_scm_ArrayDeque.prototype.head__O = (function() {
+  return $f_sc_IndexedSeqOps__head__O(this);
+});
+$c_scm_ArrayDeque.prototype.lengthCompare__I__I = (function(len) {
+  var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var x = (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+  return ((x === len) ? 0 : ((x < len) ? (-1) : 1));
+});
+$c_scm_ArrayDeque.prototype.knownSize__I = (function() {
+  var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  return (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+});
+$c_scm_ArrayDeque.prototype.apply__I__O = (function(idx) {
+  var idx$1 = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var until = (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx$1) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+  if (((idx < 0) || (idx >= until))) {
+    throw $n($m_scg_CommonErrors$().indexOutOfBounds__I__I__jl_IndexOutOfBoundsException(idx, (((-1) + until) | 0)));
+  }
+  return $n(this.scm_ArrayDeque__f_array).get((((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start + idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0)));
+});
+$c_scm_ArrayDeque.prototype.addOne__O__scm_ArrayDeque = (function(elem) {
+  var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var hint = ((1 + (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0))) | 0);
+  var idx$1 = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  if (((hint > (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx$1) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0))) && (hint >= $n(this.scm_ArrayDeque__f_array).u.length))) {
+    this.scala$collection$mutable$ArrayDeque$$resize__I__V(hint);
+  }
+  $n(this.scm_ArrayDeque__f_array).set(this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end, elem);
+  this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end = (((1 + this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+  return this;
+});
+$c_scm_ArrayDeque.prototype.addAll__sc_IterableOnce__scm_ArrayDeque = (function(elems) {
+  var x1 = $n(elems).knownSize__I();
+  if ((x1 > 0)) {
+    var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+    var hint = ((x1 + (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0))) | 0);
+    var idx$1 = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+    if (((hint > (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx$1) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0))) && (hint >= $n(this.scm_ArrayDeque__f_array).u.length))) {
+      this.scala$collection$mutable$ArrayDeque$$resize__I__V(hint);
+    }
+    var this$1 = $n($n(elems).iterator__sc_Iterator());
+    while (this$1.hasNext__Z()) {
+      var x0 = this$1.next__O();
+      $n(this.scm_ArrayDeque__f_array).set(this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end, x0);
+      this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end = (((1 + this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+    }
+  } else {
+    var this$2 = $n($n(elems).iterator__sc_Iterator());
+    while (this$2.hasNext__Z()) {
+      var x0$1 = this$2.next__O();
+      this.addOne__O__scm_ArrayDeque(x0$1);
+    }
+  }
+  return this;
+});
+$c_scm_ArrayDeque.prototype.removeHead__Z__O = (function(resizeInternalRepr) {
+  if (this.isEmpty__Z()) {
+    throw new $c_ju_NoSuchElementException("empty collection");
+  } else {
+    var elem = $n(this.scm_ArrayDeque__f_array).get(this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start);
+    $n(this.scm_ArrayDeque__f_array).set(this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start, null);
+    this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start = (((1 + this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+    if (resizeInternalRepr) {
+      var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+      this.scala$collection$mutable$ArrayDeque$$resize__I__V((((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0)));
+    }
+    return elem;
+  }
+});
+$c_scm_ArrayDeque.prototype.length__I = (function() {
+  var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  return (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+});
+$c_scm_ArrayDeque.prototype.isEmpty__Z = (function() {
+  return (this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start === this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end);
+});
+$c_scm_ArrayDeque.prototype.iterableFactory__sc_SeqFactory = (function() {
+  return $m_scm_ArrayDeque$();
+});
+$c_scm_ArrayDeque.prototype.copyToArray__O__I__I__I = (function(dest, destStart, len) {
+  var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var srcLen = (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+  var destLen = $m_jl_reflect_Array$().getLength__O__I(dest);
+  var x = ((len < srcLen) ? len : srcLen);
+  var y = ((destLen - destStart) | 0);
+  var x$1 = ((x < y) ? x : y);
+  var copied = ((x$1 > 0) ? x$1 : 0);
+  if ((copied > 0)) {
+    $f_scm_ArrayDequeOps__copySliceToArray__I__O__I__I__O(this, 0, dest, destStart, len);
+  }
+  return copied;
+});
+$c_scm_ArrayDeque.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  var $x_1 = $n(evidence$1);
+  var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var dest = $x_1.newArray__I__O((((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0)));
+  var idx$1 = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+  var maxItems = (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx$1) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+  return $f_scm_ArrayDequeOps__copySliceToArray__I__O__I__I__O(this, 0, dest, 0, maxItems);
+});
+$c_scm_ArrayDeque.prototype.scala$collection$mutable$ArrayDeque$$resize__I__V = (function(len) {
+  if (((len >= $n(this.scm_ArrayDeque__f_array).u.length) || (($n(this.scm_ArrayDeque__f_array).u.length > 16) && ((($n(this.scm_ArrayDeque__f_array).u.length - len) | 0) > len)))) {
+    var idx = this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start;
+    var n = (((this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end - idx) | 0) & (((-1) + $n(this.scm_ArrayDeque__f_array).u.length) | 0));
+    var dest = $m_scm_ArrayDeque$().alloc__I__AO(len);
+    var array2 = $asArrayOf_O($f_scm_ArrayDequeOps__copySliceToArray__I__O__I__I__O(this, 0, dest, 0, n), 1);
+    $p_scm_ArrayDeque__reset__AO__I__I__V(this, array2, 0, n);
+  }
+});
+$c_scm_ArrayDeque.prototype.stringPrefix__T = (function() {
+  return "ArrayDeque";
+});
+$c_scm_ArrayDeque.prototype.iterableFactory__sc_IterableFactory = (function() {
+  return this.iterableFactory__sc_SeqFactory();
+});
+$c_scm_ArrayDeque.prototype.addAll__sc_IterableOnce__scm_Growable = (function(elems) {
+  return this.addAll__sc_IterableOnce__scm_ArrayDeque(elems);
+});
+$c_scm_ArrayDeque.prototype.addOne__O__scm_Growable = (function(elem) {
+  return this.addOne__O__scm_ArrayDeque(elem);
+});
+$c_scm_ArrayDeque.prototype.apply__O__O = (function(v1) {
+  return this.apply__I__O($uI(v1));
+});
+function $as_scm_ArrayDeque(obj) {
+  return (((obj instanceof $c_scm_ArrayDeque) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.mutable.ArrayDeque"));
+}
+function $isArrayOf_scm_ArrayDeque(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.scm_ArrayDeque)));
+}
+function $asArrayOf_scm_ArrayDeque(obj, depth) {
+  return (($isArrayOf_scm_ArrayDeque(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.mutable.ArrayDeque;", depth));
+}
+var $d_scm_ArrayDeque = new $TypeData().initClass($c_scm_ArrayDeque, "scala.collection.mutable.ArrayDeque", ({
+  scm_ArrayDeque: 1,
+  scm_AbstractBuffer: 1,
+  scm_AbstractSeq: 1,
+  sc_AbstractSeq: 1,
+  sc_AbstractIterable: 1,
+  sc_Iterable: 1,
+  sc_IterableOnce: 1,
+  sc_IterableOps: 1,
+  sc_IterableOnceOps: 1,
+  sc_IterableFactoryDefaults: 1,
+  sc_Seq: 1,
+  s_PartialFunction: 1,
+  F1: 1,
+  sc_SeqOps: 1,
+  s_Equals: 1,
+  scm_Seq: 1,
+  scm_Iterable: 1,
+  scm_SeqOps: 1,
+  scm_Cloneable: 1,
+  jl_Cloneable: 1,
+  scm_Buffer: 1,
+  scm_Growable: 1,
+  scm_Clearable: 1,
+  scm_Shrinkable: 1,
+  scm_IndexedBuffer: 1,
+  scm_IndexedSeq: 1,
+  sc_IndexedSeq: 1,
+  sc_IndexedSeqOps: 1,
+  scm_IndexedSeqOps: 1,
+  sc_StrictOptimizedSeqOps: 1,
+  sc_StrictOptimizedIterableOps: 1,
+  scm_ArrayDequeOps: 1,
+  scg_DefaultSerializable: 1,
+  Ljava_io_Serializable: 1
+}));
+/** @constructor */
+function $c_scm_Queue(initialSize) {
+  this.scm_ArrayDeque__f_array = null;
+  this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$start = 0;
+  this.scm_ArrayDeque__f_scala$collection$mutable$ArrayDeque$$end = 0;
+  var array = $m_scm_ArrayDeque$().alloc__I__AO(initialSize);
+  $ct_scm_ArrayDeque__AO__I__I__(this, array, 0, 0);
+}
+$c_scm_Queue.prototype = new $h_scm_ArrayDeque();
+$c_scm_Queue.prototype.constructor = $c_scm_Queue;
+/** @constructor */
+function $h_scm_Queue() {
+}
+$h_scm_Queue.prototype = $c_scm_Queue.prototype;
+$c_scm_Queue.prototype.iterableFactory__sc_SeqFactory = (function() {
+  return $m_scm_Queue$();
+});
+$c_scm_Queue.prototype.stringPrefix__T = (function() {
+  return "Queue";
+});
+$c_scm_Queue.prototype.iterableFactory__sc_IterableFactory = (function() {
+  return $m_scm_Queue$();
+});
+function $as_scm_Queue(obj) {
+  return (((obj instanceof $c_scm_Queue) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.mutable.Queue"));
+}
+function $isArrayOf_scm_Queue(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.scm_Queue)));
+}
+function $asArrayOf_scm_Queue(obj, depth) {
+  return (($isArrayOf_scm_Queue(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.mutable.Queue;", depth));
+}
+var $d_scm_Queue = new $TypeData().initClass($c_scm_Queue, "scala.collection.mutable.Queue", ({
+  scm_Queue: 1,
+  scm_ArrayDeque: 1,
+  scm_AbstractBuffer: 1,
+  scm_AbstractSeq: 1,
+  sc_AbstractSeq: 1,
+  sc_AbstractIterable: 1,
+  sc_Iterable: 1,
+  sc_IterableOnce: 1,
+  sc_IterableOps: 1,
+  sc_IterableOnceOps: 1,
+  sc_IterableFactoryDefaults: 1,
+  sc_Seq: 1,
+  s_PartialFunction: 1,
+  F1: 1,
+  sc_SeqOps: 1,
+  s_Equals: 1,
+  scm_Seq: 1,
+  scm_Iterable: 1,
+  scm_SeqOps: 1,
+  scm_Cloneable: 1,
+  jl_Cloneable: 1,
+  scm_Buffer: 1,
+  scm_Growable: 1,
+  scm_Clearable: 1,
+  scm_Shrinkable: 1,
+  scm_IndexedBuffer: 1,
+  scm_IndexedSeq: 1,
+  sc_IndexedSeq: 1,
+  sc_IndexedSeqOps: 1,
+  scm_IndexedSeqOps: 1,
+  sc_StrictOptimizedSeqOps: 1,
+  sc_StrictOptimizedIterableOps: 1,
+  scm_ArrayDequeOps: 1,
+  scg_DefaultSerializable: 1,
+  Ljava_io_Serializable: 1
+}));
 $L0 = new $c_RTLong(0, 0);
 $d_J.zero = $L0;
-$s_Lcom_diagraphx_web_Main__main__AT__V(new ($d_T.getArrayOf().constr)([]));
+$s_Lcom_diagraphy_web_Main__main__AT__V(new ($d_T.getArrayOf().constr)([]));
 }).call(this);
 //# sourceMappingURL=main.js.map
