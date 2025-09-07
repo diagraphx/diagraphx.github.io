@@ -1086,19 +1086,9 @@ $c_Lcom_diagraphy_web_Main$.prototype.main__AT__V = (function(args) {
       $m_Lcom_diagraphy_web_State$().clearClicked__V();
     })));
     $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mzoom__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_Lcom_diagraphy_web_events_ElementZoom$package$().Lcom_diagraphy_web_events_ElementZoom$package$__f_zoomHandler);
-    $m_Lcom_diagraphy_web_extensions_DocumentExtension$().kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
-      if ((($as_T(e.key) === "Delete") || ($as_T(e.key) === "Backspace"))) {
-        var this$1 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement);
-        if ((!this$1.isEmpty__Z())) {
-          var x0 = this$1.get__O();
-          var elem = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
-          $n(elem).remove__V();
-        }
-      }
-    })));
-    window.addEventListener("beforeunload", ((e$2) => {
-      e$2.preventDefault();
-      e$2.returnValue = "";
+    window.addEventListener("beforeunload", ((e) => {
+      e.preventDefault();
+      e.returnValue = "";
     }));
   })));
 });
@@ -2017,10 +2007,6 @@ $c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.mmove__Lorg_scalaj
 });
 $c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.mup__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
   e.addEventListener("mouseup", ((e$2) => $n(handler).apply__O__O(e$2)));
-  return e;
-});
-$c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
-  e.addEventListener("keydown", ((e$2) => $n(handler).apply__O__O(e$2)));
   return e;
 });
 $c_Lcom_diagraphy_web_extensions_DocumentExtension$.prototype.mdblclick__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document = (function(e, handler) {
