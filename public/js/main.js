@@ -1120,45 +1120,33 @@ function $p_Lcom_diagraphy_web_State$__renderElements__scm_ListBuffer__Lorg_scal
     var element = $as_Lcom_diagraphy_web_models_GraphElement(x0);
     var $x_2 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
     var $x_1 = $m_sr_ScalaRunTime$();
-    matchResult1: {
-      var abstractElement;
-      var x1 = $n(element).Lcom_diagraphy_web_models_GraphElement__f_format;
-      if ((x1 === "Instruction")) {
-        var abstractElement = new $c_Lcom_diagraphy_web_components_Instruction(element);
-        break matchResult1;
-      }
-      if ((x1 === "Note")) {
-        var abstractElement = new $c_Lcom_diagraphy_web_components_Note(element);
-        break matchResult1;
-      }
-      if ((x1 === "StartEnd")) {
-        var abstractElement = new $c_Lcom_diagraphy_web_components_StartEnd(element);
-        break matchResult1;
-      }
-      if ((x1 === "path")) {
-        var abstractElement = new $c_Lcom_diagraphy_web_components_Path(element);
-        break matchResult1;
-      }
-      if ((x1 === "Decision")) {
-        var abstractElement = new $c_Lcom_diagraphy_web_components_Decision(element);
-        break matchResult1;
-      }
-      if ((x1 === "Image")) {
-        var abstractElement = new $c_Lcom_diagraphy_web_components_ImageX(element);
-        break matchResult1;
-      }
-      if ((x1 === "Container")) {
-        var container = new $c_Lcom_diagraphy_web_components_Container(element);
-        $p_Lcom_diagraphy_web_State$__renderElements__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V($m_Lcom_diagraphy_web_State$(), $n(element).Lcom_diagraphy_web_models_GraphElement__f_elements, container.Lcom_diagraphy_web_components_Container__f_contentDiv, new $c_s_Some(container));
-        var abstractElement = container;
-        break matchResult1;
-      }
+    var this$2 = $n($n(element).Lcom_diagraphy_web_models_GraphElement__f_id);
+    var xs = $f_T__split__T__I__AT(this$2, "-", 0);
+    var this$4 = $n($m_sc_ArrayOps$().headOption$extension__O__s_Option(xs));
+    var prefix = $as_T((this$4.isEmpty__Z() ? "" : this$4.get__O()));
+    if ((prefix === "Instruction")) {
+      var abstractElement = new $c_Lcom_diagraphy_web_components_Instruction(element);
+    } else if ((prefix === "Note")) {
+      var abstractElement = new $c_Lcom_diagraphy_web_components_Note(element);
+    } else if ((prefix === "StartEnd")) {
+      var abstractElement = new $c_Lcom_diagraphy_web_components_StartEnd(element);
+    } else if ((prefix === "Path")) {
+      var abstractElement = new $c_Lcom_diagraphy_web_components_Path(element);
+    } else if ((prefix === "Decision")) {
+      var abstractElement = new $c_Lcom_diagraphy_web_components_Decision(element);
+    } else if ((prefix === "Image")) {
+      var abstractElement = new $c_Lcom_diagraphy_web_components_ImageX(element);
+    } else if ((prefix === "Container")) {
+      var container = new $c_Lcom_diagraphy_web_components_Container(element);
+      $p_Lcom_diagraphy_web_State$__renderElements__scm_ListBuffer__Lorg_scalajs_dom_HTMLElement__s_Option__V($m_Lcom_diagraphy_web_State$(), $n(element).Lcom_diagraphy_web_models_GraphElement__f_elements, container.Lcom_diagraphy_web_components_Container__f_contentDiv, new $c_s_Some(container));
+      var abstractElement = container;
+    } else {
       var abstractElement = null;
     }
-    var this$5 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap);
+    var this$8 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_stateMap);
     var self = $n(element).Lcom_diagraphy_web_models_GraphElement__f_id;
     var elem = new $c_T2(self, abstractElement);
-    this$5.addOne__O__scm_Growable(elem);
+    this$8.addOne__O__scm_Growable(elem);
     $n(abstractElement).Lcom_diagraphy_web_components_AbstractElement__f_parent = parent;
     $x_2.$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(svg, $x_1.wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n(abstractElement).view__Lorg_scalajs_dom_HTMLElement()])));
   }
@@ -1344,10 +1332,8 @@ $c_Lcom_diagraphy_web_components_Container$.prototype.apply__Lcom_diagraphy_web_
   var id$1 = ("Container-" + new $c_RTLong(lo, hi));
   var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
   var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
-  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Container", "Container", elements$1, x$1, y$1, 450.0, 300.0, 495.00000000000006, 330.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Container", elements$1, x$1, y$1, 450.0, 300.0, 495.00000000000006, 330.0, "#F0F0F0", "", "", "", "", "");
   var container = new $c_Lcom_diagraphy_web_components_Container(model);
   $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(container);
   return container;
@@ -1379,10 +1365,8 @@ $c_Lcom_diagraphy_web_components_Decision$.prototype.apply__Lcom_diagraphy_web_c
   var id$1 = ("Decision-" + new $c_RTLong(lo, hi));
   var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
   var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
-  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Decision", "Decision", elements$1, x$1, y$1, 125.0, 75.0, 0.0, 0.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Decision", elements$1, x$1, y$1, 125.0, 75.0, 0.0, 0.0, "#F0F0F0", "", "", "", "", "");
   var decision = new $c_Lcom_diagraphy_web_components_Decision(model);
   $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(decision);
   return decision;
@@ -1414,10 +1398,8 @@ $c_Lcom_diagraphy_web_components_ImageX$.prototype.apply__Lcom_diagraphy_web_com
   var id$1 = ("Image-" + new $c_RTLong(lo, hi));
   var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
   var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
-  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Image", "", elements$1, x$1, y$1, 125.0, 75.0, 0.0, 0.0, "#F0F0F0", "public/images/image-holder.svg", start$1, end$1, "", "", "", "");
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "", elements$1, x$1, y$1, 125.0, 75.0, 0.0, 0.0, "#F0F0F0", "public/images/image-holder.svg", "", "", "", "");
   var image = new $c_Lcom_diagraphy_web_components_ImageX(model);
   $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(image);
   return image;
@@ -1449,10 +1431,8 @@ $c_Lcom_diagraphy_web_components_Instruction$.prototype.apply__Lcom_diagraphy_we
   var id$1 = ("Instruction-" + new $c_RTLong(lo, hi));
   var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
   var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
-  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Instruction", "Instruction", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Instruction", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "#F0F0F0", "", "", "", "", "");
   var instruction = new $c_Lcom_diagraphy_web_components_Instruction(model);
   $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(instruction);
   return instruction;
@@ -1484,10 +1464,8 @@ $c_Lcom_diagraphy_web_components_Note$.prototype.apply__Lcom_diagraphy_web_compo
   var id$1 = ("Note-" + new $c_RTLong(lo, hi));
   var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
   var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
-  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Note", "Note", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "wheat", "", start$1, end$1, "", "", "", "");
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "Note", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "wheat", "", "", "", "", "");
   var note = new $c_Lcom_diagraphy_web_components_Note(model);
   $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(note);
   return note;
@@ -1607,10 +1585,8 @@ $c_Lcom_diagraphy_web_components_StartEnd$.prototype.apply__Lcom_diagraphy_web_c
   var id$1 = ("StartEnd-" + new $c_RTLong(lo, hi));
   var x$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollLeft) + 300.0);
   var y$1 = ($uD($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_pageBodyDiv.scrollTop) + 200.0);
-  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-  var start$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var end$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "StartEnd", "StartEnd", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "#F0F0F0", "", start$1, end$1, "", "", "", "");
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var model = new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "StartEnd", elements$1, x$1, y$1, 100.0, 75.0, 0.0, 0.0, "#F0F0F0", "", "", "", "", "");
   var startEnd = new $c_Lcom_diagraphy_web_components_StartEnd(model);
   $m_Lcom_diagraphy_web_State$().addToState__Lcom_diagraphy_web_components_AbstractElement__V(startEnd);
   return startEnd;
@@ -1740,13 +1716,13 @@ function $c_Lcom_diagraphy_web_events_DocumentMouseMove$package$() {
       }
       var dx$1 = ($uD(e.clientX) - $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX);
       var dy$1 = ($uD(e.clientY) - $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY);
-      var \u03b41$ = $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end;
+      var \u03b41$ = $n(path).Lcom_diagraphy_web_components_Path__f_endPoint;
       $n(\u03b41$).Lcom_diagraphy_web_models_GraphPoint__f_x = ($n(\u03b41$).Lcom_diagraphy_web_models_GraphPoint__f_x + dx$1);
-      var \u03b42$ = $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end;
+      var \u03b42$ = $n(path).Lcom_diagraphy_web_components_Path__f_endPoint;
       $n(\u03b42$).Lcom_diagraphy_web_models_GraphPoint__f_y = ($n(\u03b42$).Lcom_diagraphy_web_models_GraphPoint__f_y + dy$1);
       $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialX = $uD(e.clientX);
       $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e.clientY);
-      $n(path).update__V();
+      $n(path).updateOnMove__V();
     }
   }));
 }
@@ -1780,27 +1756,31 @@ function $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$() {
       if ((!this$3.isEmpty__Z())) {
         var x0$1 = this$3.get__O();
         var hoverElement = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
-        if (((!((hoverElement === null) ? (element === null) : $n(hoverElement).equals__O__Z(element))) && ($n($n(hoverElement).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_format === "Container"))) {
+        var this$4 = $n($n($n(hoverElement).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id);
+        var xs = $f_T__split__T__I__AT(this$4, "-", 0);
+        var this$6 = $n($m_sc_ArrayOps$().headOption$extension__O__s_Option(xs));
+        var elementType = $as_T((this$6.isEmpty__Z() ? "" : this$6.get__O()));
+        if (((!((hoverElement === null) ? (element === null) : $n(hoverElement).equals__O__Z(element))) && (elementType === "Container"))) {
           var currentSvg = $n(element).Lcom_diagraphy_web_components_AbstractElement__f_fo.parentElement;
           var targetSvg = $n(hoverElement).contentDiv__Lorg_scalajs_dom_HTMLElement();
           if ((((currentSvg !== null) && (targetSvg !== null)) && (!$m_sr_BoxesRunTime$().equals__O__O__Z(currentSvg, targetSvg)))) {
             currentSvg.removeChild($n(element).Lcom_diagraphy_web_components_AbstractElement__f_fo);
             $n(element).setOrigin__D__D__V(50.0, 50.0);
             targetSvg.appendChild($n(element).Lcom_diagraphy_web_components_AbstractElement__f_fo);
-            var this$4 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
+            var this$7 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
             var elem = $n(element).model__Lcom_diagraphy_web_models_GraphElement();
-            this$4.subtractOne__O__scm_ListBuffer(elem);
-            var this$5 = $n($n($n(hoverElement).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+            this$7.subtractOne__O__scm_ListBuffer(elem);
+            var this$8 = $n($n($n(hoverElement).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
             var elem$1 = $n(element).model__Lcom_diagraphy_web_models_GraphElement();
-            this$5.addOne__O__scm_ListBuffer(elem$1);
+            this$8.addOne__O__scm_ListBuffer(elem$1);
             $n(element).Lcom_diagraphy_web_components_AbstractElement__f_parent = new $c_s_Some(hoverElement);
           }
         }
       }
     }
-    var this$7 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
-    if ((!this$7.isEmpty__Z())) {
-      var x0$2 = this$7.get__O();
+    var this$10 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath);
+    if ((!this$10.isEmpty__Z())) {
+      var x0$2 = this$10.get__O();
       var path = $as_Lcom_diagraphy_web_components_Path(x0$2);
       if ($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement).isEmpty__Z()) {
         $m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg.removeChild($n(path).Lcom_diagraphy_web_components_Path__f_ipath);
@@ -1810,35 +1790,34 @@ function $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$() {
         if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
           $n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_parent).get__O())).contentDiv__Lorg_scalajs_dom_HTMLElement().removeChild($n(path).Lcom_diagraphy_web_components_Path__f_ipath);
         } else {
-          var this$8 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
-          if ((!this$8.isEmpty__Z())) {
-            var x0$3 = this$8.get__O();
+          var this$11 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement);
+          if ((!this$11.isEmpty__Z())) {
+            var x0$3 = this$11.get__O();
             var hoverElement$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
-            var point = $m_Lcom_diagraphy_web_components_Path$().pathEnd__Lcom_diagraphy_web_components_Path__Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphPoint(path, hoverElement$1);
-            $n($n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_x = $n(point).Lcom_diagraphy_web_models_GraphPoint__f_x;
-            $n($n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_y = $n(point).Lcom_diagraphy_web_models_GraphPoint__f_y;
+            $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_eElement = $n($n(hoverElement$1).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
+            $n(path).Lcom_diagraphy_web_components_AbstractElement__f_endElement = new $c_s_Some(hoverElement$1);
             $n(path).update__V();
             $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_sElement = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
             $n($n(path).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_eElement = $n($n(hoverElement$1).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
-            var this$9 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
-            this$9.addOne__O__scm_ListBuffer(path);
+            var this$13 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n($n(path).Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+            this$13.addOne__O__scm_ListBuffer(path);
             $n(path).Lcom_diagraphy_web_components_AbstractElement__f_endElement = new $c_s_Some(hoverElement$1);
-            var this$11 = $n($n(hoverElement$1).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
-            this$11.addOne__O__scm_ListBuffer(path);
+            var this$15 = $n($n(hoverElement$1).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+            this$15.addOne__O__scm_ListBuffer(path);
             matchResult1: {
               var x1 = $n(path).Lcom_diagraphy_web_components_AbstractElement__f_parent;
               if ((x1 instanceof $c_s_Some)) {
                 var p = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x1)).s_Some__f_value);
-                var this$12 = $n($n($n(p).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+                var this$16 = $n($n($n(p).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
                 var elem$2 = $n(path).Lcom_diagraphy_web_components_Path__f_model;
-                this$12.addOne__O__scm_ListBuffer(elem$2);
+                this$16.addOne__O__scm_ListBuffer(elem$2);
                 break matchResult1;
               }
               var x$1 = $m_s_None$();
               if ((x$1 === x1)) {
-                var this$13 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
+                var this$17 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
                 var elem$3 = $n(path).Lcom_diagraphy_web_components_Path__f_model;
-                this$13.addOne__O__scm_ListBuffer(elem$3);
+                this$17.addOne__O__scm_ListBuffer(elem$3);
                 break matchResult1;
               }
               throw new $c_s_MatchError(x1);
@@ -1851,9 +1830,9 @@ function $c_Lcom_diagraphy_web_events_DocumentMouseUp$package$() {
     $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownElement = $m_s_None$();
     $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseHoverElement = $m_s_None$();
     $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath = $m_s_None$();
-    var this$14 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownConnectElement);
-    if ((!this$14.isEmpty__Z())) {
-      var x0$4 = this$14.get__O();
+    var this$18 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseDownConnectElement);
+    if ((!this$18.isEmpty__Z())) {
+      var x0$4 = this$18.get__O();
       var element$1 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$4);
       var \u03b41$ = $n(element$1).Lcom_diagraphy_web_components_AbstractElement__f_fo.style;
       \u03b41$.setProperty("cursor", "grab");
@@ -1885,15 +1864,9 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
     $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement = new $c_s_Some($thiz);
     $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).highlight__V();
     var eastCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createEast__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
-      var x = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x - 5.0);
-      var y = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).east__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
-      var endPoint = new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
-      var $x_2 = $m_Lcom_diagraphy_web_State$();
-      var $x_1 = $m_Lcom_diagraphy_web_components_Path$();
-      var start$1 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).east__Lcom_diagraphy_web_models_GraphPoint();
-      var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-      var value = $x_1.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$1, endPoint, "", "", "", "East"));
-      $x_2.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value);
+      var $x_1 = $m_Lcom_diagraphy_web_State$();
+      var value = $m_Lcom_diagraphy_web_components_Path$().apply__Lcom_diagraphy_web_components_AbstractElement__T__Lcom_diagraphy_web_components_Path($as_Lcom_diagraphy_web_components_AbstractElement($thiz), "East");
+      $x_1.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
       matchResult1: {
@@ -1903,8 +1876,8 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult1;
         }
-        var x$1 = $m_s_None$();
-        if ((x$1 === x1)) {
+        var x = $m_s_None$();
+        if ((x === x1)) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult1;
         }
@@ -1914,15 +1887,9 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
       $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$2.clientY);
     })));
     var southCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createSouth__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
-      var x$2 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
-      var y$1 = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).south__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y - 5.0);
-      var endPoint$1 = new $c_Lcom_diagraphy_web_models_GraphPoint(x$2, y$1);
-      var $x_4 = $m_Lcom_diagraphy_web_State$();
-      var $x_3 = $m_Lcom_diagraphy_web_components_Path$();
-      var start$2 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).south__Lcom_diagraphy_web_models_GraphPoint();
-      var elements$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-      var value$1 = $x_3.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$2, endPoint$1, "", "", "", "South"));
-      $x_4.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$1);
+      var $x_2 = $m_Lcom_diagraphy_web_State$();
+      var value$1 = $m_Lcom_diagraphy_web_components_Path$().apply__Lcom_diagraphy_web_components_AbstractElement__T__Lcom_diagraphy_web_components_Path($as_Lcom_diagraphy_web_components_AbstractElement($thiz), "South");
+      $x_2.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$1);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
       matchResult2: {
@@ -1932,8 +1899,8 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p$1).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult2;
         }
-        var x$3 = $m_s_None$();
-        if ((x$3 === x4)) {
+        var x$1 = $m_s_None$();
+        if ((x$1 === x4)) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult2;
         }
@@ -1943,15 +1910,9 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
       $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$3.clientY);
     })));
     var westCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createWest__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
-      var x$4 = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x + 5.0);
-      var y$2 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).west__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
-      var endPoint$2 = new $c_Lcom_diagraphy_web_models_GraphPoint(x$4, y$2);
-      var $x_6 = $m_Lcom_diagraphy_web_State$();
-      var $x_5 = $m_Lcom_diagraphy_web_components_Path$();
-      var start$3 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).west__Lcom_diagraphy_web_models_GraphPoint();
-      var elements$3 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-      var value$2 = $x_5.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$3, endPoint$2, "", "", "", "West"));
-      $x_6.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$2);
+      var $x_3 = $m_Lcom_diagraphy_web_State$();
+      var value$2 = $m_Lcom_diagraphy_web_components_Path$().apply__Lcom_diagraphy_web_components_AbstractElement__T__Lcom_diagraphy_web_components_Path($as_Lcom_diagraphy_web_components_AbstractElement($thiz), "West");
+      $x_3.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$2);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
       matchResult3: {
@@ -1961,8 +1922,8 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p$2).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult3;
         }
-        var x$5 = $m_s_None$();
-        if ((x$5 === x7)) {
+        var x$2 = $m_s_None$();
+        if ((x$2 === x7)) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult3;
         }
@@ -1972,15 +1933,9 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
       $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_initialY = $uD(e$4.clientY);
     })));
     var northCP = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mdown__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_AbstractElement$().createNorth__Lorg_scalajs_dom_HTMLElement(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
-      var x$6 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
-      var y$3 = ($n($n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).north__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y + 5.0);
-      var endPoint$3 = new $c_Lcom_diagraphy_web_models_GraphPoint(x$6, y$3);
-      var $x_8 = $m_Lcom_diagraphy_web_State$();
-      var $x_7 = $m_Lcom_diagraphy_web_components_Path$();
-      var start$4 = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).north__Lcom_diagraphy_web_models_GraphPoint();
-      var elements$4 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-      var value$3 = $x_7.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement("", "", "", elements$4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", start$4, endPoint$3, "", "", "", "North"));
-      $x_8.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$3);
+      var $x_4 = $m_Lcom_diagraphy_web_State$();
+      var value$3 = $m_Lcom_diagraphy_web_components_Path$().apply__Lcom_diagraphy_web_components_AbstractElement__T__Lcom_diagraphy_web_components_Path($as_Lcom_diagraphy_web_components_AbstractElement($thiz), "North");
+      $x_4.Lcom_diagraphy_web_State$__f_cPath = new $c_s_Some(value$3);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_startElement = new $c_s_Some($thiz);
       $n($as_Lcom_diagraphy_web_components_AbstractElement($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_parent = $n($as_Lcom_diagraphy_web_components_AbstractElement($thiz)).Lcom_diagraphy_web_components_AbstractElement__f_parent;
       matchResult4: {
@@ -1990,8 +1945,8 @@ function $f_Lcom_diagraphy_web_events_ElementMouseClick__$init$__V($thiz) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n(p$3).contentDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult4;
         }
-        var x$7 = $m_s_None$();
-        if ((x$7 === x10)) {
+        var x$3 = $m_s_None$();
+        if ((x$3 === x10)) {
           $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lcom_diagraphy_web_components_PageBody$().Lcom_diagraphy_web_components_PageBody$__f_mainSvg, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$n($as_Lcom_diagraphy_web_components_Path($n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_cPath).get__O())).Lcom_diagraphy_web_components_Path__f_ipath])));
           break matchResult4;
         }
@@ -7031,6 +6986,16 @@ $c_sc_ArrayOps$.prototype.constructor = $c_sc_ArrayOps$;
 function $h_sc_ArrayOps$() {
 }
 $h_sc_ArrayOps$.prototype = $c_sc_ArrayOps$.prototype;
+$c_sc_ArrayOps$.prototype.head$extension__O__O = (function(this$) {
+  if (($m_jl_reflect_Array$().getLength__O__I(this$) !== 0)) {
+    return $m_sr_ScalaRunTime$().array_apply__O__I__O(this$, 0);
+  } else {
+    throw new $c_ju_NoSuchElementException("head of empty array");
+  }
+});
+$c_sc_ArrayOps$.prototype.headOption$extension__O__s_Option = (function(this$) {
+  return (($m_jl_reflect_Array$().getLength__O__I(this$) === 0) ? $m_s_None$() : new $c_s_Some($m_sc_ArrayOps$().head$extension__O__O(this$)));
+});
 $c_sc_ArrayOps$.prototype.slice$extension__O__I__I__O = (function(this$, from, until) {
   var lo = ((from > 0) ? from : 0);
   var b = $m_jl_reflect_Array$().getLength__O__I(this$);
@@ -15127,25 +15092,6 @@ function $p_Lcom_diagraphy_web_components_AbstractElement__updatePaths__V($thiz)
   while ($n(it).hasNext__Z()) {
     var x0 = $n(it).next__O();
     var oPath = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
-    matchResult1: {
-      var x1 = $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_edge;
-      if ((x1 === "East")) {
-        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.east__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult1;
-      }
-      if ((x1 === "South")) {
-        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.south__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult1;
-      }
-      if ((x1 === "West")) {
-        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.west__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult1;
-      }
-      if ((x1 === "North")) {
-        $n($n(oPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_start = $thiz.north__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult1;
-      }
-    }
     $n(oPath).update__V();
   }
   var this$2 = $n($thiz.Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
@@ -15153,25 +15099,6 @@ function $p_Lcom_diagraphy_web_components_AbstractElement__updatePaths__V($thiz)
   while ($n(it$1).hasNext__Z()) {
     var x0$1 = $n(it$1).next__O();
     var iPath = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
-    matchResult2: {
-      var x2 = $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_edge;
-      if ((x2 === "East")) {
-        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.west__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult2;
-      }
-      if ((x2 === "South")) {
-        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.north__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult2;
-      }
-      if ((x2 === "West")) {
-        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.east__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult2;
-      }
-      if ((x2 === "North")) {
-        $n($n(iPath).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_end = $thiz.south__Lcom_diagraphy_web_models_GraphPoint();
-        break matchResult2;
-      }
-    }
     $n(iPath).update__V();
   }
 }
@@ -15240,7 +15167,15 @@ $c_Lcom_diagraphy_web_components_AbstractElement.prototype.view__Lorg_scalajs_do
   return $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_AbstractElement__f_fo, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().$greater__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([this.contentDiv__Lorg_scalajs_dom_HTMLElement()])))])));
 });
 $c_Lcom_diagraphy_web_components_AbstractElement.prototype.padding__I = (function() {
-  return (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_format === "Decision") ? 0 : 20);
+  var this$1 = $n($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id);
+  var xs = $f_T__split__T__I__AT(this$1, "-", 0);
+  var this$3 = $n($m_sc_ArrayOps$().headOption$extension__O__s_Option(xs));
+  var x = (this$3.isEmpty__Z() ? "" : this$3.get__O());
+  if (((x !== null) && $dp_equals__O__Z($n(x), "Decision"))) {
+    return 0;
+  } else {
+    return 20;
+  }
 });
 $c_Lcom_diagraphy_web_components_AbstractElement.prototype.east__Lcom_diagraphy_web_models_GraphPoint = (function() {
   var x = (($n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_x + $n(this.model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_width) + this.padding__I());
@@ -15466,6 +15401,9 @@ $c_Lcom_diagraphy_web_components_AbstractElement.prototype.highlight__V = (funct
 });
 $c_Lcom_diagraphy_web_components_AbstractElement.prototype.clearHighlight__V = (function() {
   $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.resizeDiv__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("resize", "none"), new $c_T2("border", "none")])));
+  if ((this.ipath__Lorg_scalajs_dom_HTMLElement() !== null)) {
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.ipath__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("stroke-width", "1")])));
+  }
 });
 $c_Lcom_diagraphy_web_components_AbstractElement.prototype.clearConnections__V = (function() {
   var domList = this.resizeDiv__Lorg_scalajs_dom_HTMLElement().querySelectorAll(".connection-point");
@@ -15539,31 +15477,16 @@ $c_Lcom_diagraphy_web_components_Path$.prototype.constructor = $c_Lcom_diagraphy
 function $h_Lcom_diagraphy_web_components_Path$() {
 }
 $h_Lcom_diagraphy_web_components_Path$.prototype = $c_Lcom_diagraphy_web_components_Path$.prototype;
-$c_Lcom_diagraphy_web_components_Path$.prototype.apply__Lcom_diagraphy_web_models_GraphElement__Lcom_diagraphy_web_components_Path = (function(model) {
-  var $x_1 = $n(model);
+$c_Lcom_diagraphy_web_components_Path$.prototype.apply__Lcom_diagraphy_web_components_AbstractElement__T__Lcom_diagraphy_web_components_Path = (function(element, edge) {
   var this$2 = $m_RTLong$();
   var value = $uD(new Date().getTime());
   var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  $x_1.Lcom_diagraphy_web_models_GraphElement__f_id = ("path-" + new $c_RTLong(lo, hi));
-  $n(model).Lcom_diagraphy_web_models_GraphElement__f_format = "path";
-  return new $c_Lcom_diagraphy_web_components_Path(model);
-});
-$c_Lcom_diagraphy_web_components_Path$.prototype.pathEnd__Lcom_diagraphy_web_components_Path__Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphPoint = (function(vPath, avElement) {
-  var x5 = $n($n(vPath).Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge;
-  if ((x5 === "East")) {
-    return $n(avElement).west__Lcom_diagraphy_web_models_GraphPoint();
-  }
-  if ((x5 === "South")) {
-    return $n(avElement).north__Lcom_diagraphy_web_models_GraphPoint();
-  }
-  if ((x5 === "West")) {
-    return $n(avElement).east__Lcom_diagraphy_web_models_GraphPoint();
-  }
-  if ((x5 === "North")) {
-    return $n(avElement).south__Lcom_diagraphy_web_models_GraphPoint();
-  }
-  return $n(avElement).west__Lcom_diagraphy_web_models_GraphPoint();
+  var id$1 = ("Path-" + new $c_RTLong(lo, hi));
+  var sElement$1 = $n($n(element).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id;
+  var elements$1 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+  var path = new $c_Lcom_diagraphy_web_components_Path(new $c_Lcom_diagraphy_web_models_GraphElement(id$1, "", elements$1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, "", "", sElement$1, "", "", edge));
+  return path;
 });
 $c_Lcom_diagraphy_web_components_Path$.prototype.fromProduct__s_Product__Lcom_diagraphy_web_components_Path = (function(x$0) {
   return new $c_Lcom_diagraphy_web_components_Path($as_Lcom_diagraphy_web_models_GraphElement($n(x$0).productElement__I__O(0)));
@@ -15597,7 +15520,7 @@ $h_Lcom_diagraphy_web_models_GraphElement$.prototype = $c_Lcom_diagraphy_web_mod
 $c_Lcom_diagraphy_web_models_GraphElement$.prototype.toString__T = (function() {
   return "GraphElement";
 });
-$c_Lcom_diagraphy_web_models_GraphElement$.prototype.$lessinit$greater$default$4__scm_ListBuffer = (function() {
+$c_Lcom_diagraphy_web_models_GraphElement$.prototype.$lessinit$greater$default$3__scm_ListBuffer = (function() {
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_diagraphy_web_models_GraphElement.getArrayOf().constr)([]));
   return new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
 });
@@ -15616,7 +15539,7 @@ $c_Lcom_diagraphy_web_models_GraphElement$.prototype.derived$ReadWriter__Lupickl
   return this.Lcom_diagraphy_web_models_GraphElement$__f_derived$ReadWriter$lzy1;
 });
 $c_Lcom_diagraphy_web_models_GraphElement$.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement = (function(x$0) {
-  return new $c_Lcom_diagraphy_web_models_GraphElement($as_T($n(x$0).productElement__I__O(0)), $as_T($n(x$0).productElement__I__O(1)), $as_T($n(x$0).productElement__I__O(2)), $as_scm_ListBuffer($n(x$0).productElement__I__O(3)), $uD($n(x$0).productElement__I__O(4)), $uD($n(x$0).productElement__I__O(5)), $uD($n(x$0).productElement__I__O(6)), $uD($n(x$0).productElement__I__O(7)), $uD($n(x$0).productElement__I__O(8)), $uD($n(x$0).productElement__I__O(9)), $as_T($n(x$0).productElement__I__O(10)), $as_T($n(x$0).productElement__I__O(11)), $as_Lcom_diagraphy_web_models_GraphPoint($n(x$0).productElement__I__O(12)), $as_Lcom_diagraphy_web_models_GraphPoint($n(x$0).productElement__I__O(13)), $as_T($n(x$0).productElement__I__O(14)), $as_T($n(x$0).productElement__I__O(15)), $as_T($n(x$0).productElement__I__O(16)), $as_T($n(x$0).productElement__I__O(17)));
+  return new $c_Lcom_diagraphy_web_models_GraphElement($as_T($n(x$0).productElement__I__O(0)), $as_T($n(x$0).productElement__I__O(1)), $as_scm_ListBuffer($n(x$0).productElement__I__O(2)), $uD($n(x$0).productElement__I__O(3)), $uD($n(x$0).productElement__I__O(4)), $uD($n(x$0).productElement__I__O(5)), $uD($n(x$0).productElement__I__O(6)), $uD($n(x$0).productElement__I__O(7)), $uD($n(x$0).productElement__I__O(8)), $as_T($n(x$0).productElement__I__O(9)), $as_T($n(x$0).productElement__I__O(10)), $as_T($n(x$0).productElement__I__O(11)), $as_T($n(x$0).productElement__I__O(12)), $as_T($n(x$0).productElement__I__O(13)), $as_T($n(x$0).productElement__I__O(14)));
 });
 $c_Lcom_diagraphy_web_models_GraphElement$.prototype.fromProduct__s_Product__O = (function(p) {
   return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement(p);
@@ -15632,52 +15555,6 @@ function $m_Lcom_diagraphy_web_models_GraphElement$() {
     $n_Lcom_diagraphy_web_models_GraphElement$ = new $c_Lcom_diagraphy_web_models_GraphElement$();
   }
   return $n_Lcom_diagraphy_web_models_GraphElement$;
-}
-/** @constructor */
-function $c_Lcom_diagraphy_web_models_GraphPoint$() {
-  this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriter$lzy1 = null;
-  this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriterbitmap$1 = false;
-}
-$c_Lcom_diagraphy_web_models_GraphPoint$.prototype = new $h_O();
-$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint$;
-/** @constructor */
-function $h_Lcom_diagraphy_web_models_GraphPoint$() {
-}
-$h_Lcom_diagraphy_web_models_GraphPoint$.prototype = $c_Lcom_diagraphy_web_models_GraphPoint$.prototype;
-$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.toString__T = (function() {
-  return "GraphPoint";
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.derived$ReadWriter__Lupickle_core_Types$ReadWriter = (function() {
-  if ((!this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriterbitmap$1)) {
-    var this$1 = $m_Lupickle_legacy$();
-    var r = $m_Lupickle_legacy$().ReadWriter__Lupickle_core_Types$ReadWriter$();
-    new $c_Lupickle_implicits_MacroImplicits$ReadWriterExtension(this$1, r);
-    var MacroImplicits_this = $m_Lupickle_legacy$();
-    var x$1$proxy1 = $m_Lcom_diagraphy_web_models_GraphPoint$();
-    var $x_1 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
-    var reader = new $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1(MacroImplicits_this, x$1$proxy1, this);
-    this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriter$lzy1 = $n($x_1).join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, new $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2(MacroImplicits_this, this));
-    this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriterbitmap$1 = true;
-  }
-  return this.Lcom_diagraphy_web_models_GraphPoint$__f_derived$ReadWriter$lzy1;
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint = (function(x$0) {
-  return new $c_Lcom_diagraphy_web_models_GraphPoint($uD($n(x$0).productElement__I__O(0)), $uD($n(x$0).productElement__I__O(1)));
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint(p);
-});
-var $d_Lcom_diagraphy_web_models_GraphPoint$ = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint$, "com.diagraphy.web.models.GraphPoint$", ({
-  Lcom_diagraphy_web_models_GraphPoint$: 1,
-  s_deriving_Mirror: 1,
-  s_deriving_Mirror$Product: 1
-}));
-var $n_Lcom_diagraphy_web_models_GraphPoint$;
-function $m_Lcom_diagraphy_web_models_GraphPoint$() {
-  if ((!$n_Lcom_diagraphy_web_models_GraphPoint$)) {
-    $n_Lcom_diagraphy_web_models_GraphPoint$ = new $c_Lcom_diagraphy_web_models_GraphPoint$();
-  }
-  return $n_Lcom_diagraphy_web_models_GraphPoint$;
 }
 /** @constructor */
 function $c_jl_Class($data) {
@@ -15961,82 +15838,70 @@ function $m_s_Predef$() {
   }
   return $n_s_Predef$;
 }
-function $f_s_Product18__productElement__I__O($thiz, n) {
+function $f_s_Product15__productElement__I__O($thiz, n) {
   switch (n) {
     case 0: {
-      return $thiz.T18__f__1;
+      return $thiz.T15__f__1;
       break;
     }
     case 1: {
-      return $thiz.T18__f__2;
+      return $thiz.T15__f__2;
       break;
     }
     case 2: {
-      return $thiz.T18__f__3;
+      return $thiz.T15__f__3;
       break;
     }
     case 3: {
-      return $thiz.T18__f__4;
+      return $thiz.T15__f__4;
       break;
     }
     case 4: {
-      return $thiz.T18__f__5;
+      return $thiz.T15__f__5;
       break;
     }
     case 5: {
-      return $thiz.T18__f__6;
+      return $thiz.T15__f__6;
       break;
     }
     case 6: {
-      return $thiz.T18__f__7;
+      return $thiz.T15__f__7;
       break;
     }
     case 7: {
-      return $thiz.T18__f__8;
+      return $thiz.T15__f__8;
       break;
     }
     case 8: {
-      return $thiz.T18__f__9;
+      return $thiz.T15__f__9;
       break;
     }
     case 9: {
-      return $thiz.T18__f__10;
+      return $thiz.T15__f__10;
       break;
     }
     case 10: {
-      return $thiz.T18__f__11;
+      return $thiz.T15__f__11;
       break;
     }
     case 11: {
-      return $thiz.T18__f__12;
+      return $thiz.T15__f__12;
       break;
     }
     case 12: {
-      return $thiz.T18__f__13;
+      return $thiz.T15__f__13;
       break;
     }
     case 13: {
-      return $thiz.T18__f__14;
+      return $thiz.T15__f__14;
       break;
     }
     case 14: {
-      return $thiz.T18__f__15;
-      break;
-    }
-    case 15: {
-      return $thiz.T18__f__16;
-      break;
-    }
-    case 16: {
-      return $thiz.T18__f__17;
-      break;
-    }
-    case 17: {
-      return $thiz.T18__f__18;
+      return $thiz.T15__f__15;
       break;
     }
     default: {
-      throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), (n + " is out of bounds (min 0, max 17)"));
+      throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), (n + " is out of bounds (min 0, max 14)"));
     }
   }
 }
@@ -19167,9 +19032,8 @@ var $d_Lcom_diagraphy_web_components_StartEnd = new $TypeData().initClass($c_Lco
   Lcom_diagraphy_web_events_ElementMouseDown: 1
 }));
 /** @constructor */
-function $c_Lcom_diagraphy_web_models_GraphElement(id, format, text, elements, x, y, width, height, vbWidth, vbHeight, bgColor, imagePath, start, end, sElement, eElement, d, edge) {
+function $c_Lcom_diagraphy_web_models_GraphElement(id, text, elements, x, y, width, height, vbWidth, vbHeight, bgColor, imagePath, sElement, eElement, d, edge) {
   this.Lcom_diagraphy_web_models_GraphElement__f_id = null;
-  this.Lcom_diagraphy_web_models_GraphElement__f_format = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_text = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_elements = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_x = 0.0;
@@ -19180,14 +19044,11 @@ function $c_Lcom_diagraphy_web_models_GraphElement(id, format, text, elements, x
   this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight = 0.0;
   this.Lcom_diagraphy_web_models_GraphElement__f_bgColor = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_imagePath = null;
-  this.Lcom_diagraphy_web_models_GraphElement__f_start = null;
-  this.Lcom_diagraphy_web_models_GraphElement__f_end = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_sElement = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_eElement = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_d = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_edge = null;
   this.Lcom_diagraphy_web_models_GraphElement__f_id = id;
-  this.Lcom_diagraphy_web_models_GraphElement__f_format = format;
   this.Lcom_diagraphy_web_models_GraphElement__f_text = text;
   this.Lcom_diagraphy_web_models_GraphElement__f_elements = elements;
   this.Lcom_diagraphy_web_models_GraphElement__f_x = x;
@@ -19198,8 +19059,6 @@ function $c_Lcom_diagraphy_web_models_GraphElement(id, format, text, elements, x
   this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight = vbHeight;
   this.Lcom_diagraphy_web_models_GraphElement__f_bgColor = bgColor;
   this.Lcom_diagraphy_web_models_GraphElement__f_imagePath = imagePath;
-  this.Lcom_diagraphy_web_models_GraphElement__f_start = start;
-  this.Lcom_diagraphy_web_models_GraphElement__f_end = end;
   this.Lcom_diagraphy_web_models_GraphElement__f_sElement = sElement;
   this.Lcom_diagraphy_web_models_GraphElement__f_eElement = eElement;
   this.Lcom_diagraphy_web_models_GraphElement__f_d = d;
@@ -19224,108 +19083,82 @@ $c_Lcom_diagraphy_web_models_GraphElement.prototype.hashCode__I = (function() {
   var data$1 = $m_sr_Statics$().anyHash__O__I(x);
   acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
   var hash$2 = acc;
-  var x$1 = this.Lcom_diagraphy_web_models_GraphElement__f_format;
+  var x$1 = this.Lcom_diagraphy_web_models_GraphElement__f_text;
   var data$2 = $m_sr_Statics$().anyHash__O__I(x$1);
   acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
   var hash$3 = acc;
-  var x$2 = this.Lcom_diagraphy_web_models_GraphElement__f_text;
+  var x$2 = this.Lcom_diagraphy_web_models_GraphElement__f_elements;
   var data$3 = $m_sr_Statics$().anyHash__O__I(x$2);
   acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
   var hash$4 = acc;
-  var x$3 = this.Lcom_diagraphy_web_models_GraphElement__f_elements;
-  var data$4 = $m_sr_Statics$().anyHash__O__I(x$3);
+  var dv = this.Lcom_diagraphy_web_models_GraphElement__f_x;
+  var data$4 = $m_sr_Statics$().doubleHash__D__I(dv);
   acc = $m_sr_Statics$().mix__I__I__I(hash$4, data$4);
   var hash$5 = acc;
-  var dv = this.Lcom_diagraphy_web_models_GraphElement__f_x;
-  var data$5 = $m_sr_Statics$().doubleHash__D__I(dv);
+  var dv$1 = this.Lcom_diagraphy_web_models_GraphElement__f_y;
+  var data$5 = $m_sr_Statics$().doubleHash__D__I(dv$1);
   acc = $m_sr_Statics$().mix__I__I__I(hash$5, data$5);
   var hash$6 = acc;
-  var dv$1 = this.Lcom_diagraphy_web_models_GraphElement__f_y;
-  var data$6 = $m_sr_Statics$().doubleHash__D__I(dv$1);
+  var dv$2 = this.Lcom_diagraphy_web_models_GraphElement__f_width;
+  var data$6 = $m_sr_Statics$().doubleHash__D__I(dv$2);
   acc = $m_sr_Statics$().mix__I__I__I(hash$6, data$6);
   var hash$7 = acc;
-  var dv$2 = this.Lcom_diagraphy_web_models_GraphElement__f_width;
-  var data$7 = $m_sr_Statics$().doubleHash__D__I(dv$2);
+  var dv$3 = this.Lcom_diagraphy_web_models_GraphElement__f_height;
+  var data$7 = $m_sr_Statics$().doubleHash__D__I(dv$3);
   acc = $m_sr_Statics$().mix__I__I__I(hash$7, data$7);
   var hash$8 = acc;
-  var dv$3 = this.Lcom_diagraphy_web_models_GraphElement__f_height;
-  var data$8 = $m_sr_Statics$().doubleHash__D__I(dv$3);
+  var dv$4 = this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+  var data$8 = $m_sr_Statics$().doubleHash__D__I(dv$4);
   acc = $m_sr_Statics$().mix__I__I__I(hash$8, data$8);
   var hash$9 = acc;
-  var dv$4 = this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
-  var data$9 = $m_sr_Statics$().doubleHash__D__I(dv$4);
+  var dv$5 = this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
+  var data$9 = $m_sr_Statics$().doubleHash__D__I(dv$5);
   acc = $m_sr_Statics$().mix__I__I__I(hash$9, data$9);
   var hash$10 = acc;
-  var dv$5 = this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
-  var data$10 = $m_sr_Statics$().doubleHash__D__I(dv$5);
+  var x$3 = this.Lcom_diagraphy_web_models_GraphElement__f_bgColor;
+  var data$10 = $m_sr_Statics$().anyHash__O__I(x$3);
   acc = $m_sr_Statics$().mix__I__I__I(hash$10, data$10);
   var hash$11 = acc;
-  var x$4 = this.Lcom_diagraphy_web_models_GraphElement__f_bgColor;
+  var x$4 = this.Lcom_diagraphy_web_models_GraphElement__f_imagePath;
   var data$11 = $m_sr_Statics$().anyHash__O__I(x$4);
   acc = $m_sr_Statics$().mix__I__I__I(hash$11, data$11);
   var hash$12 = acc;
-  var x$5 = this.Lcom_diagraphy_web_models_GraphElement__f_imagePath;
+  var x$5 = this.Lcom_diagraphy_web_models_GraphElement__f_sElement;
   var data$12 = $m_sr_Statics$().anyHash__O__I(x$5);
   acc = $m_sr_Statics$().mix__I__I__I(hash$12, data$12);
   var hash$13 = acc;
-  var x$6 = this.Lcom_diagraphy_web_models_GraphElement__f_start;
+  var x$6 = this.Lcom_diagraphy_web_models_GraphElement__f_eElement;
   var data$13 = $m_sr_Statics$().anyHash__O__I(x$6);
   acc = $m_sr_Statics$().mix__I__I__I(hash$13, data$13);
   var hash$14 = acc;
-  var x$7 = this.Lcom_diagraphy_web_models_GraphElement__f_end;
+  var x$7 = this.Lcom_diagraphy_web_models_GraphElement__f_d;
   var data$14 = $m_sr_Statics$().anyHash__O__I(x$7);
   acc = $m_sr_Statics$().mix__I__I__I(hash$14, data$14);
   var hash$15 = acc;
-  var x$8 = this.Lcom_diagraphy_web_models_GraphElement__f_sElement;
+  var x$8 = this.Lcom_diagraphy_web_models_GraphElement__f_edge;
   var data$15 = $m_sr_Statics$().anyHash__O__I(x$8);
   acc = $m_sr_Statics$().mix__I__I__I(hash$15, data$15);
   var hash$16 = acc;
-  var x$9 = this.Lcom_diagraphy_web_models_GraphElement__f_eElement;
-  var data$16 = $m_sr_Statics$().anyHash__O__I(x$9);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$16, data$16);
-  var hash$17 = acc;
-  var x$10 = this.Lcom_diagraphy_web_models_GraphElement__f_d;
-  var data$17 = $m_sr_Statics$().anyHash__O__I(x$10);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$17, data$17);
-  var hash$18 = acc;
-  var x$11 = this.Lcom_diagraphy_web_models_GraphElement__f_edge;
-  var data$18 = $m_sr_Statics$().anyHash__O__I(x$11);
-  acc = $m_sr_Statics$().mix__I__I__I(hash$18, data$18);
-  var hash$19 = acc;
-  return $m_sr_Statics$().finalizeHash__I__I__I(hash$19, 18);
+  return $m_sr_Statics$().finalizeHash__I__I__I(hash$16, 15);
 });
 $c_Lcom_diagraphy_web_models_GraphElement.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true;
   } else if ((x$0 instanceof $c_Lcom_diagraphy_web_models_GraphElement)) {
     var x$0$2 = $as_Lcom_diagraphy_web_models_GraphElement(x$0);
-    if ((((((((((this.Lcom_diagraphy_web_models_GraphElement__f_x === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_x) && (this.Lcom_diagraphy_web_models_GraphElement__f_y === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_y)) && (this.Lcom_diagraphy_web_models_GraphElement__f_width === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_width)) && (this.Lcom_diagraphy_web_models_GraphElement__f_height === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_height)) && (this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_vbWidth)) && (this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_vbHeight)) && (this.Lcom_diagraphy_web_models_GraphElement__f_id === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_id)) && (this.Lcom_diagraphy_web_models_GraphElement__f_format === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_format)) && (this.Lcom_diagraphy_web_models_GraphElement__f_text === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_text))) {
+    if (((((((((this.Lcom_diagraphy_web_models_GraphElement__f_x === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_x) && (this.Lcom_diagraphy_web_models_GraphElement__f_y === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_y)) && (this.Lcom_diagraphy_web_models_GraphElement__f_width === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_width)) && (this.Lcom_diagraphy_web_models_GraphElement__f_height === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_height)) && (this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_vbWidth)) && (this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_vbHeight)) && (this.Lcom_diagraphy_web_models_GraphElement__f_id === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_id)) && (this.Lcom_diagraphy_web_models_GraphElement__f_text === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_text))) {
       var x = this.Lcom_diagraphy_web_models_GraphElement__f_elements;
       var x$2 = $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_elements;
       if ((x === null)) {
-        var $x_3 = (x$2 === null);
+        var $x_1 = (x$2 === null);
       } else {
         var this$1 = $n(x);
-        var $x_3 = $f_sc_Seq__equals__O__Z(this$1, x$2);
+        var $x_1 = $f_sc_Seq__equals__O__Z(this$1, x$2);
       }
-    } else {
-      var $x_3 = false;
-    }
-    if ((($x_3 && (this.Lcom_diagraphy_web_models_GraphElement__f_bgColor === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_bgColor)) && (this.Lcom_diagraphy_web_models_GraphElement__f_imagePath === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_imagePath))) {
-      var x$3 = this.Lcom_diagraphy_web_models_GraphElement__f_start;
-      var x$4 = $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_start;
-      var $x_2 = ((x$3 === null) ? (x$4 === null) : $n(x$3).equals__O__Z(x$4));
-    } else {
-      var $x_2 = false;
-    }
-    if ($x_2) {
-      var x$5 = this.Lcom_diagraphy_web_models_GraphElement__f_end;
-      var x$6 = $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_end;
-      var $x_1 = ((x$5 === null) ? (x$6 === null) : $n(x$5).equals__O__Z(x$6));
     } else {
       var $x_1 = false;
     }
-    if ((((($x_1 && (this.Lcom_diagraphy_web_models_GraphElement__f_sElement === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_sElement)) && (this.Lcom_diagraphy_web_models_GraphElement__f_eElement === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_eElement)) && (this.Lcom_diagraphy_web_models_GraphElement__f_d === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_d)) && (this.Lcom_diagraphy_web_models_GraphElement__f_edge === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_edge))) {
+    if ((((((($x_1 && (this.Lcom_diagraphy_web_models_GraphElement__f_bgColor === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_bgColor)) && (this.Lcom_diagraphy_web_models_GraphElement__f_imagePath === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_imagePath)) && (this.Lcom_diagraphy_web_models_GraphElement__f_sElement === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_sElement)) && (this.Lcom_diagraphy_web_models_GraphElement__f_eElement === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_eElement)) && (this.Lcom_diagraphy_web_models_GraphElement__f_d === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_d)) && (this.Lcom_diagraphy_web_models_GraphElement__f_edge === $n(x$0$2).Lcom_diagraphy_web_models_GraphElement__f_edge))) {
       $n(x$0$2);
       return true;
     } else {
@@ -19339,7 +19172,7 @@ $c_Lcom_diagraphy_web_models_GraphElement.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
 });
 $c_Lcom_diagraphy_web_models_GraphElement.prototype.productArity__I = (function() {
-  return 18;
+  return 15;
 });
 $c_Lcom_diagraphy_web_models_GraphElement.prototype.productPrefix__T = (function() {
   return "GraphElement";
@@ -19351,70 +19184,58 @@ $c_Lcom_diagraphy_web_models_GraphElement.prototype.productElement__I__O = (func
       break;
     }
     case 1: {
-      return this.Lcom_diagraphy_web_models_GraphElement__f_format;
-      break;
-    }
-    case 2: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_text;
       break;
     }
-    case 3: {
+    case 2: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_elements;
       break;
     }
-    case 4: {
+    case 3: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_x;
       break;
     }
-    case 5: {
+    case 4: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_y;
       break;
     }
-    case 6: {
+    case 5: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_width;
       break;
     }
-    case 7: {
+    case 6: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_height;
       break;
     }
-    case 8: {
+    case 7: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
       break;
     }
-    case 9: {
+    case 8: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
       break;
     }
-    case 10: {
+    case 9: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_bgColor;
       break;
     }
-    case 11: {
+    case 10: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_imagePath;
       break;
     }
-    case 12: {
-      return this.Lcom_diagraphy_web_models_GraphElement__f_start;
-      break;
-    }
-    case 13: {
-      return this.Lcom_diagraphy_web_models_GraphElement__f_end;
-      break;
-    }
-    case 14: {
+    case 11: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_sElement;
       break;
     }
-    case 15: {
+    case 12: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_eElement;
       break;
     }
-    case 16: {
+    case 13: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_d;
       break;
     }
-    case 17: {
+    case 14: {
       return this.Lcom_diagraphy_web_models_GraphElement__f_edge;
       break;
     }
@@ -19456,54 +19277,20 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.narrow__Lupickle_cor
   return this;
 });
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.length__Lcom_diagraphy_web_models_GraphElement__I = (function(v) {
-  var $x_23 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_id !== "")) ? 1 : 0);
-  var $x_22 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_format !== "")) ? 1 : 0);
-  var $x_21 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_text !== "")) ? 1 : 0);
-  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_19 = true;
-  } else {
-    var x = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
-    var x$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
-    if ((x === null)) {
-      var $x_20 = (x$2 === null);
-    } else {
-      var this$5 = $n(x);
-      var $x_20 = $f_sc_Seq__equals__O__Z(this$5, x$2);
-    }
-    var $x_19 = (!$x_20);
-  }
-  if ($x_19) {
-    var $x_18 = 1;
-  } else {
-    var $x_18 = 0;
-  }
-  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_17 = true;
-  } else {
-    var xn = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
-    var $x_17 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn, 0.0));
-  }
-  if ($x_17) {
-    var $x_16 = 1;
-  } else {
-    var $x_16 = 0;
-  }
-  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-    var $x_15 = true;
-  } else {
-    var xn$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
-    var $x_15 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$1, 0.0));
-  }
-  if ($x_15) {
-    var $x_14 = 1;
-  } else {
-    var $x_14 = 0;
-  }
+  var $x_16 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_id !== "")) ? 1 : 0);
+  var $x_15 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_text !== "")) ? 1 : 0);
   if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_13 = true;
   } else {
-    var xn$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
-    var $x_13 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$2, 0.0));
+    var x = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
+    var x$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
+    if ((x === null)) {
+      var $x_14 = (x$2 === null);
+    } else {
+      var this$4 = $n(x);
+      var $x_14 = $f_sc_Seq__equals__O__Z(this$4, x$2);
+    }
+    var $x_13 = (!$x_14);
   }
   if ($x_13) {
     var $x_12 = 1;
@@ -19513,8 +19300,8 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.length__Lcom_diagrap
   if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_11 = true;
   } else {
-    var xn$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
-    var $x_11 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$3, 0.0));
+    var xn = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
+    var $x_11 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn, 0.0));
   }
   if ($x_11) {
     var $x_10 = 1;
@@ -19524,8 +19311,8 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.length__Lcom_diagrap
   if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_9 = true;
   } else {
-    var xn$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
-    var $x_9 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$4, 0.0));
+    var xn$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
+    var $x_9 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$1, 0.0));
   }
   if ($x_9) {
     var $x_8 = 1;
@@ -19535,22 +19322,30 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.length__Lcom_diagrap
   if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_7 = true;
   } else {
-    var xn$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
-    var $x_7 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$5, 0.0));
+    var xn$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
+    var $x_7 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$2, 0.0));
   }
   if ($x_7) {
     var $x_6 = 1;
   } else {
     var $x_6 = 0;
   }
-  var $x_5 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor !== "")) ? 1 : 0);
-  var $x_4 = ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath !== "")) ? 1 : 0);
+  if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
+    var $x_5 = true;
+  } else {
+    var xn$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
+    var $x_5 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$3, 0.0));
+  }
+  if ($x_5) {
+    var $x_4 = 1;
+  } else {
+    var $x_4 = 0;
+  }
   if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_3 = true;
   } else {
-    var x$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_start;
-    var x$4 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-    var $x_3 = (!((x$3 !== null) && $n(x$3).equals__O__Z(x$4)));
+    var xn$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+    var $x_3 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$4, 0.0));
   }
   if ($x_3) {
     var $x_2 = 1;
@@ -19560,11 +19355,10 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.length__Lcom_diagrap
   if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
     var $x_1 = true;
   } else {
-    var x$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_end;
-    var x$6 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-    var $x_1 = (!((x$5 !== null) && $n(x$5).equals__O__Z(x$6)));
+    var xn$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
+    var $x_1 = (!$m_sr_BoxesRunTime$().equalsNumObject__jl_Number__O__Z(xn$5, 0.0));
   }
-  return (((((((((((((((((((((((((((((((((($x_23 + $x_22) | 0) + $x_21) | 0) + $x_18) | 0) + $x_16) | 0) + $x_14) | 0) + $x_12) | 0) + $x_10) | 0) + $x_8) | 0) + $x_6) | 0) + $x_5) | 0) + $x_4) | 0) + $x_2) | 0) + ($x_1 ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_d !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_edge !== "")) ? 1 : 0)) | 0);
+  return (((((((((((((((((((((((((((($x_16 + $x_15) | 0) + $x_12) | 0) + $x_10) | 0) + $x_8) | 0) + $x_6) | 0) + $x_4) | 0) + $x_2) | 0) + ($x_1 ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_d !== "")) ? 1 : 0)) | 0) + ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_edge !== "")) ? 1 : 0)) | 0);
 });
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphElement__O = (function(out, v) {
   if ((v === null)) {
@@ -19578,41 +19372,34 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
       var value = $n(v).Lcom_diagraphy_web_models_GraphElement__f_id;
       $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
     }
-    if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_format !== ""))) {
-      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$1 = "format";
-      var w$1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_format;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
-    }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_text !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$2 = "text";
-      var w$2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_text;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$2, w$2, value$2);
+      var mappedArgsI$1 = "text";
+      var w$1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$1 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_text;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_1 = true;
     } else {
       var x = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
-      var x$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+      var x$2 = $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer();
       if ((x === null)) {
         var $x_2 = (x$2 === null);
       } else {
-        var this$8 = $n(x);
-        var $x_2 = $f_sc_Seq__equals__O__Z(this$8, x$2);
+        var this$6 = $n(x);
+        var $x_2 = $f_sc_Seq__equals__O__Z(this$6, x$2);
       }
       var $x_1 = (!$x_2);
     }
     if ($x_1) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$3 = "elements";
-      var this$10 = $m_Lupickle_legacy$();
+      var mappedArgsI$2 = "elements";
+      var this$8 = $m_Lupickle_legacy$();
       var r = $m_Lcom_diagraphy_web_models_GraphElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var w$3 = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r, this$10);
-      var value$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$3, w$3, value$3);
+      var w$2 = new $c_Lupickle_implicits_LowPriWriters$$anon$21(r, this$8);
+      var value$2 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_elements;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$2, w$2, value$2);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_3 = true;
@@ -19622,10 +19409,10 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
     }
     if ($x_3) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$4 = "x";
-      var w$4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$4, w$4, value$4);
+      var mappedArgsI$3 = "x";
+      var w$3 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_x;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$3, w$3, value$3);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_4 = true;
@@ -19635,10 +19422,10 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
     }
     if ($x_4) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$5 = "y";
-      var w$5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$5, w$5, value$5);
+      var mappedArgsI$4 = "y";
+      var w$4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$4 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_y;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$4, w$4, value$4);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_5 = true;
@@ -19648,10 +19435,10 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
     }
     if ($x_5) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$6 = "width";
-      var w$6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$6 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$6, w$6, value$6);
+      var mappedArgsI$5 = "width";
+      var w$5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_width;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$5, w$5, value$5);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_6 = true;
@@ -19661,10 +19448,10 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
     }
     if ($x_6) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$7 = "height";
-      var w$7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$7 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$7, w$7, value$7);
+      var mappedArgsI$6 = "height";
+      var w$6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$6 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_height;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$6, w$6, value$6);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_7 = true;
@@ -19674,10 +19461,10 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
     }
     if ($x_7) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$8 = "vbWidth";
-      var w$8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$8 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$8, w$8, value$8);
+      var mappedArgsI$7 = "vbWidth";
+      var w$7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$7 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbWidth;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$7, w$7, value$7);
     }
     if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
       var $x_8 = true;
@@ -19687,80 +19474,52 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$2.prototype.write0__Lupickle_cor
     }
     if ($x_8) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$9 = "vbHeight";
-      var w$9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-      var value$9 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$9, w$9, value$9);
+      var mappedArgsI$8 = "vbHeight";
+      var w$8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
+      var value$8 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_vbHeight;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$8, w$8, value$8);
     }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$10 = "bgColor";
-      var w$10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$10 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$10, w$10, value$10);
+      var mappedArgsI$9 = "bgColor";
+      var w$9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$9 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_bgColor;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$9, w$9, value$9);
     }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$11 = "imagePath";
-      var w$11 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$11 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$11, w$11, value$11);
-    }
-    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_9 = true;
-    } else {
-      var x$3 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_start;
-      var x$4 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-      var $x_9 = (!((x$3 !== null) && $n(x$3).equals__O__Z(x$4)));
-    }
-    if ($x_9) {
-      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$12 = "start";
-      var w$12 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var value$12 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_start;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$12, w$12, value$12);
-    }
-    if (($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false)) {
-      var $x_10 = true;
-    } else {
-      var x$5 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_end;
-      var x$6 = new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0);
-      var $x_10 = (!((x$5 !== null) && $n(x$5).equals__O__Z(x$6)));
-    }
-    if ($x_10) {
-      $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$13 = "end";
-      var w$13 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-      var value$13 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_end;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$13, w$13, value$13);
+      var mappedArgsI$10 = "imagePath";
+      var w$10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$10 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_imagePath;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$10, w$10, value$10);
     }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$14 = "sElement";
-      var w$14 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$14 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$14, w$14, value$14);
+      var mappedArgsI$11 = "sElement";
+      var w$11 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$11 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_sElement;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$11, w$11, value$11);
     }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$15 = "eElement";
-      var w$15 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$15 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$15, w$15, value$15);
+      var mappedArgsI$12 = "eElement";
+      var w$12 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$12 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_eElement;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$12, w$12, value$12);
     }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_d !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$16 = "d";
-      var w$16 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$16 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_d;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$16, w$16, value$16);
+      var mappedArgsI$13 = "d";
+      var w$13 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$13 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_d;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$13, w$13, value$13);
     }
     if ((($n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis), false) || ($n(v).Lcom_diagraphy_web_models_GraphElement__f_edge !== ""))) {
       $n($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-      var mappedArgsI$17 = "edge";
-      var w$17 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
-      var value$17 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_edge;
-      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$17, w$17, value$17);
+      var mappedArgsI$14 = "edge";
+      var w$14 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringWriter;
+      var value$14 = $n(v).Lcom_diagraphy_web_models_GraphElement__f_edge;
+      $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$14, w$14, value$14);
     }
     return $n(ctx).visitEnd__I__O((-1));
   }
@@ -19848,50 +19607,6 @@ var $d_Lcom_diagraphy_web_models_GraphPoint = new $TypeData().initClass($c_Lcom_
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2(WritersVersionSpecific_this$3, outer) {
-  this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2 = null;
-  this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2 = WritersVersionSpecific_this$3;
-  if ((outer === null)) {
-    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
-  }
-}
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype = new $h_O();
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2;
-/** @constructor */
-function $h_Lcom_diagraphy_web_models_GraphPoint$$anon$2() {
-}
-$h_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype;
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.narrow__Lupickle_core_Types$Writer = (function() {
-  return this;
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphPoint__O = (function(out, v) {
-  if ((v === null)) {
-    return $n(out).visitNull__I__O((-1));
-  } else {
-    var ctx = $n(out).visitObject__I__Z__I__Lupickle_core_ObjVisitor(2, true, (-1));
-    $n($n(this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-    var mappedArgsI = "x";
-    var w = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-    var value = $n(v).Lcom_diagraphy_web_models_GraphPoint__f_x;
-    $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI, w, value);
-    $n($n(this.Lcom_diagraphy_web_models_GraphPoint$$anon$2__f_WritersVersionSpecific_this$2).Lupickle_legacy$__f_outerThis);
-    var mappedArgsI$1 = "y";
-    var w$1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleWriter;
-    var value$1 = $n(v).Lcom_diagraphy_web_models_GraphPoint__f_y;
-    $f_Lupickle_implicits_CaseClassReadWriters$CaseClassWriter__writeSnippetMappedName__Lupickle_core_ObjVisitor__jl_CharSequence__O__O__V(this, ctx, mappedArgsI$1, w$1, value$1);
-    return $n(ctx).visitEnd__I__O((-1));
-  }
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$2.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
-  return this.write0__Lupickle_core_Visitor__Lcom_diagraphy_web_models_GraphPoint__O(out, $as_Lcom_diagraphy_web_models_GraphPoint(v));
-});
-var $d_Lcom_diagraphy_web_models_GraphPoint$$anon$2 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint$$anon$2, "com.diagraphy.web.models.GraphPoint$$anon$2", ({
-  Lcom_diagraphy_web_models_GraphPoint$$anon$2: 1,
-  Lupickle_core_Types$Writer: 1,
-  Lupickle_core_Types$ObjectWriter: 1,
-  Lupickle_implicits_CaseClassReadWriters$CaseClassWriter: 1
 }));
 /** @constructor */
 function $c_Lcom_diagraphy_web_models_ViewBox(x, y, w, h) {
@@ -23532,7 +23247,9 @@ function $f_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader$Objec
   if ($thiz.checkErrorMissingKeys__J__Z($n($thiz.upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$ObjectContext$$$outer__Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader()).Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$missingKeyCount)) {
     $thiz.errorMissingKeys__I__AT__V($n($thiz.upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$ObjectContext$$$outer__Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader()).Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount, $n($thiz.upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$ObjectContext$$$outer__Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader()).allKeysArray__AT());
   }
-  return $n($thiz.upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$ObjectContext$$$outer__Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader()).fromProduct__s_Product__O(new $c_Lupickle_implicits_ReadersVersionSpecific$$anon$1($thiz));
+  var this$1 = $n($thiz.upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$ObjectContext$$$outer__Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader());
+  var p = new $c_Lupickle_implicits_ReadersVersionSpecific$$anon$1($thiz);
+  return this$1.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement(p);
 }
 /** @constructor */
 function $c_Lupickle_implicits_Writers$JavaWriter(outer, evidence$23) {
@@ -24611,91 +24328,85 @@ var $d_s_Product$$anon$1 = new $TypeData().initClass($c_s_Product$$anon$1, "scal
   sc_IterableOnceOps: 1
 }));
 /** @constructor */
-function $c_T18(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18) {
-  this.T18__f__1 = null;
-  this.T18__f__2 = null;
-  this.T18__f__3 = null;
-  this.T18__f__4 = null;
-  this.T18__f__5 = null;
-  this.T18__f__6 = null;
-  this.T18__f__7 = null;
-  this.T18__f__8 = null;
-  this.T18__f__9 = null;
-  this.T18__f__10 = null;
-  this.T18__f__11 = null;
-  this.T18__f__12 = null;
-  this.T18__f__13 = null;
-  this.T18__f__14 = null;
-  this.T18__f__15 = null;
-  this.T18__f__16 = null;
-  this.T18__f__17 = null;
-  this.T18__f__18 = null;
-  this.T18__f__1 = _1;
-  this.T18__f__2 = _2;
-  this.T18__f__3 = _3;
-  this.T18__f__4 = _4;
-  this.T18__f__5 = _5;
-  this.T18__f__6 = _6;
-  this.T18__f__7 = _7;
-  this.T18__f__8 = _8;
-  this.T18__f__9 = _9;
-  this.T18__f__10 = _10;
-  this.T18__f__11 = _11;
-  this.T18__f__12 = _12;
-  this.T18__f__13 = _13;
-  this.T18__f__14 = _14;
-  this.T18__f__15 = _15;
-  this.T18__f__16 = _16;
-  this.T18__f__17 = _17;
-  this.T18__f__18 = _18;
+function $c_T15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) {
+  this.T15__f__1 = null;
+  this.T15__f__2 = null;
+  this.T15__f__3 = null;
+  this.T15__f__4 = null;
+  this.T15__f__5 = null;
+  this.T15__f__6 = null;
+  this.T15__f__7 = null;
+  this.T15__f__8 = null;
+  this.T15__f__9 = null;
+  this.T15__f__10 = null;
+  this.T15__f__11 = null;
+  this.T15__f__12 = null;
+  this.T15__f__13 = null;
+  this.T15__f__14 = null;
+  this.T15__f__15 = null;
+  this.T15__f__1 = _1;
+  this.T15__f__2 = _2;
+  this.T15__f__3 = _3;
+  this.T15__f__4 = _4;
+  this.T15__f__5 = _5;
+  this.T15__f__6 = _6;
+  this.T15__f__7 = _7;
+  this.T15__f__8 = _8;
+  this.T15__f__9 = _9;
+  this.T15__f__10 = _10;
+  this.T15__f__11 = _11;
+  this.T15__f__12 = _12;
+  this.T15__f__13 = _13;
+  this.T15__f__14 = _14;
+  this.T15__f__15 = _15;
 }
-$c_T18.prototype = new $h_O();
-$c_T18.prototype.constructor = $c_T18;
+$c_T15.prototype = new $h_O();
+$c_T15.prototype.constructor = $c_T15;
 /** @constructor */
-function $h_T18() {
+function $h_T15() {
 }
-$h_T18.prototype = $c_T18.prototype;
-$c_T18.prototype.productArity__I = (function() {
-  return 18;
+$h_T15.prototype = $c_T15.prototype;
+$c_T15.prototype.productArity__I = (function() {
+  return 15;
 });
-$c_T18.prototype.productElement__I__O = (function(n) {
-  return $f_s_Product18__productElement__I__O(this, n);
+$c_T15.prototype.productElement__I__O = (function(n) {
+  return $f_s_Product15__productElement__I__O(this, n);
 });
-$c_T18.prototype.toString__T = (function() {
-  return (((((((((((((((((((((((((((((((((((("(" + this.T18__f__1) + ",") + this.T18__f__2) + ",") + this.T18__f__3) + ",") + this.T18__f__4) + ",") + this.T18__f__5) + ",") + this.T18__f__6) + ",") + this.T18__f__7) + ",") + this.T18__f__8) + ",") + this.T18__f__9) + ",") + this.T18__f__10) + ",") + this.T18__f__11) + ",") + this.T18__f__12) + ",") + this.T18__f__13) + ",") + this.T18__f__14) + ",") + this.T18__f__15) + ",") + this.T18__f__16) + ",") + this.T18__f__17) + ",") + this.T18__f__18) + ")");
+$c_T15.prototype.toString__T = (function() {
+  return (((((((((((((((((((((((((((((("(" + this.T15__f__1) + ",") + this.T15__f__2) + ",") + this.T15__f__3) + ",") + this.T15__f__4) + ",") + this.T15__f__5) + ",") + this.T15__f__6) + ",") + this.T15__f__7) + ",") + this.T15__f__8) + ",") + this.T15__f__9) + ",") + this.T15__f__10) + ",") + this.T15__f__11) + ",") + this.T15__f__12) + ",") + this.T15__f__13) + ",") + this.T15__f__14) + ",") + this.T15__f__15) + ")");
 });
-$c_T18.prototype.productPrefix__T = (function() {
-  return "Tuple18";
+$c_T15.prototype.productPrefix__T = (function() {
+  return "Tuple15";
 });
-$c_T18.prototype.productIterator__sc_Iterator = (function() {
+$c_T15.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1(this);
 });
-$c_T18.prototype.hashCode__I = (function() {
+$c_T15.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
 });
-$c_T18.prototype.equals__O__Z = (function(x$1) {
+$c_T15.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true;
-  } else if ((x$1 instanceof $c_T18)) {
-    var Tuple18$1 = $as_T18(x$1);
-    return (((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__1, $n(Tuple18$1).T18__f__1) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__2, $n(Tuple18$1).T18__f__2)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__3, $n(Tuple18$1).T18__f__3) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__4, $n(Tuple18$1).T18__f__4))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__5, $n(Tuple18$1).T18__f__5) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__6, $n(Tuple18$1).T18__f__6)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__7, $n(Tuple18$1).T18__f__7) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__8, $n(Tuple18$1).T18__f__8) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__9, $n(Tuple18$1).T18__f__9))))) && ((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__10, $n(Tuple18$1).T18__f__10) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__11, $n(Tuple18$1).T18__f__11)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__12, $n(Tuple18$1).T18__f__12) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__13, $n(Tuple18$1).T18__f__13))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__14, $n(Tuple18$1).T18__f__14) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__15, $n(Tuple18$1).T18__f__15)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__16, $n(Tuple18$1).T18__f__16) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__17, $n(Tuple18$1).T18__f__17) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T18__f__18, $n(Tuple18$1).T18__f__18))))));
+  } else if ((x$1 instanceof $c_T15)) {
+    var Tuple15$1 = $as_T15(x$1);
+    return ((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__1, $n(Tuple15$1).T15__f__1) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__2, $n(Tuple15$1).T15__f__2) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__3, $n(Tuple15$1).T15__f__3))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__4, $n(Tuple15$1).T15__f__4) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__5, $n(Tuple15$1).T15__f__5)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__6, $n(Tuple15$1).T15__f__6) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__7, $n(Tuple15$1).T15__f__7)))) && ((($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__8, $n(Tuple15$1).T15__f__8) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__9, $n(Tuple15$1).T15__f__9)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__10, $n(Tuple15$1).T15__f__10) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__11, $n(Tuple15$1).T15__f__11))) && (($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__12, $n(Tuple15$1).T15__f__12) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__13, $n(Tuple15$1).T15__f__13)) && ($m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__14, $n(Tuple15$1).T15__f__14) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.T15__f__15, $n(Tuple15$1).T15__f__15)))));
   } else {
     return false;
   }
 });
-function $as_T18(obj) {
-  return (((obj instanceof $c_T18) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple18"));
+function $as_T15(obj) {
+  return (((obj instanceof $c_T15) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple15"));
 }
-function $isArrayOf_T18(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T18)));
+function $isArrayOf_T15(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T15)));
 }
-function $asArrayOf_T18(obj, depth) {
-  return (($isArrayOf_T18(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple18;", depth));
+function $asArrayOf_T15(obj, depth) {
+  return (($isArrayOf_T15(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple15;", depth));
 }
-var $d_T18 = new $TypeData().initClass($c_T18, "scala.Tuple18", ({
-  T18: 1,
-  s_Product18: 1,
+var $d_T15 = new $TypeData().initClass($c_T15, "scala.Tuple15", ({
+  T15: 1,
+  s_Product15: 1,
   s_Product: 1,
   s_Equals: 1,
   Ljava_io_Serializable: 1
@@ -32157,6 +31868,7 @@ function $c_Lcom_diagraphy_web_components_Path(model) {
   this.Lcom_diagraphy_web_components_AbstractElement__f_observer = null;
   this.Lcom_diagraphy_web_components_AbstractElement__f_contentDiv = null;
   this.Lcom_diagraphy_web_components_Path__f_model = null;
+  this.Lcom_diagraphy_web_components_Path__f_endPoint = null;
   this.Lcom_diagraphy_web_components_Path__f_ipath = null;
   this.Lcom_diagraphy_web_components_Path__f_model = model;
   $ct_Lcom_diagraphy_web_components_AbstractElement__Lcom_diagraphy_web_models_GraphElement__(this, model);
@@ -32174,30 +31886,37 @@ function $c_Lcom_diagraphy_web_components_Path(model) {
     var this$4 = $n($n(_$2).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
     this$4.addOne__O__scm_ListBuffer(this);
   }
+  var \u03b41$ = this.start__Lcom_diagraphy_web_models_GraphPoint();
+  $n(\u03b41$);
+  var this$5 = $n(\u03b41$);
+  var x = this$5.Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var this$6 = $n(\u03b41$);
+  var y = this$6.Lcom_diagraphy_web_models_GraphPoint__f_y;
+  this.Lcom_diagraphy_web_components_Path__f_endPoint = new $c_Lcom_diagraphy_web_models_GraphPoint(x, y);
   var $x_13 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
   var $x_12 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
   var $x_11 = $m_Lcom_diagraphy_web_utils_HtmlElementUtil$().path__Lorg_scalajs_dom_HTMLElement();
   var $x_10 = $m_sr_ScalaRunTime$();
-  var y = $n(model).Lcom_diagraphy_web_models_GraphElement__f_id;
-  var $x_9 = new $c_T2("id", y);
+  var y$1 = $n(model).Lcom_diagraphy_web_models_GraphElement__f_id;
+  var $x_9 = new $c_T2("id", y$1);
   var $x_8 = new $c_T2("stroke", "#008476");
   var $x_7 = new $c_T2("stroke-width", "1");
   var $x_6 = new $c_T2("fill", "none");
   var $x_5 = new $c_T2("marker-end", "url(#arrowhead)");
-  var this$16 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_x;
-  var y$1 = ("" + this$16);
-  var $x_4 = new $c_T2("x1", y$1);
-  var this$20 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_y;
-  var y$2 = ("" + this$20);
-  var $x_3 = new $c_T2("y1", y$2);
-  var this$24 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_x;
-  var y$3 = ("" + this$24);
-  var $x_2 = new $c_T2("x2", y$3);
-  var this$28 = $n($n(model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_y;
-  var y$4 = ("" + this$28);
-  var $x_1 = new $c_T2("y2", y$4);
-  var y$5 = $n(model).Lcom_diagraphy_web_models_GraphElement__f_d;
-  this.Lcom_diagraphy_web_components_Path__f_ipath = $x_13.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_12.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_11, $x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_9, $x_8, $x_7, $x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$5)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("cursor", "pointer"), new $c_T2("animation", "animate-in 1s ease-out forwards"), new $c_T2("pointer-events", "auto")])));
+  var this$19 = $n(this.start__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y$2 = ("" + this$19);
+  var $x_4 = new $c_T2("x1", y$2);
+  var this$23 = $n(this.start__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$3 = ("" + this$23);
+  var $x_3 = new $c_T2("y1", y$3);
+  var this$27 = $n(this.end__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y$4 = ("" + this$27);
+  var $x_2 = new $c_T2("x2", y$4);
+  var this$31 = $n(this.end__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$5 = ("" + this$31);
+  var $x_1 = new $c_T2("y2", y$5);
+  var y$6 = $n($m_Lcom_diagraphy_web_components_Path$().Lcom_diagraphy_web_components_Path$__f_pathD).apply__O__O__O__O(this.start__Lcom_diagraphy_web_models_GraphPoint(), this.end__Lcom_diagraphy_web_models_GraphPoint(), $n(model).Lcom_diagraphy_web_models_GraphElement__f_edge);
+  this.Lcom_diagraphy_web_components_Path__f_ipath = $x_13.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_12.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_11, $x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_9, $x_8, $x_7, $x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$6)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("cursor", "pointer"), new $c_T2("animation", "animate-in 1s ease-out forwards"), new $c_T2("pointer-events", "auto")])));
 }
 $c_Lcom_diagraphy_web_components_Path.prototype = new $h_Lcom_diagraphy_web_components_AbstractElement();
 $c_Lcom_diagraphy_web_components_Path.prototype.constructor = $c_Lcom_diagraphy_web_components_Path;
@@ -32247,34 +31966,239 @@ $c_Lcom_diagraphy_web_components_Path.prototype.productElement__I__O = (function
 $c_Lcom_diagraphy_web_components_Path.prototype.model__Lcom_diagraphy_web_models_GraphElement = (function() {
   return this.Lcom_diagraphy_web_components_Path__f_model;
 });
+$c_Lcom_diagraphy_web_components_Path.prototype.start__Lcom_diagraphy_web_models_GraphPoint = (function() {
+  var x5 = $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge;
+  if ((x5 === "East")) {
+    var this$1 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+    if (this$1.isEmpty__Z()) {
+      var this$2 = $m_s_None$();
+    } else {
+      var x0 = this$1.get__O();
+      var _$3 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      var this$2 = new $c_s_Some($n(_$3).east__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$2.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$2.get__O()));
+  }
+  if ((x5 === "South")) {
+    var this$4 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+    if (this$4.isEmpty__Z()) {
+      var this$5 = $m_s_None$();
+    } else {
+      var x0$1 = this$4.get__O();
+      var _$4 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+      var this$5 = new $c_s_Some($n(_$4).south__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$5.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$5.get__O()));
+  }
+  if ((x5 === "West")) {
+    var this$7 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+    if (this$7.isEmpty__Z()) {
+      var this$8 = $m_s_None$();
+    } else {
+      var x0$2 = this$7.get__O();
+      var _$5 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$2);
+      var this$8 = new $c_s_Some($n(_$5).west__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$8.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$8.get__O()));
+  }
+  if ((x5 === "North")) {
+    var this$10 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+    if (this$10.isEmpty__Z()) {
+      var this$11 = $m_s_None$();
+    } else {
+      var x0$3 = this$10.get__O();
+      var _$6 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
+      var this$11 = new $c_s_Some($n(_$6).north__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$11.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$11.get__O()));
+  }
+  var this$13 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+  if (this$13.isEmpty__Z()) {
+    var this$14 = $m_s_None$();
+  } else {
+    var x0$4 = this$13.get__O();
+    var _$7 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$4);
+    var this$14 = new $c_s_Some($n(_$7).east__Lcom_diagraphy_web_models_GraphPoint());
+  }
+  return $as_Lcom_diagraphy_web_models_GraphPoint((this$14.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$14.get__O()));
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.end__Lcom_diagraphy_web_models_GraphPoint = (function() {
+  var x6 = $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge;
+  if ((x6 === "East")) {
+    var this$1 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+    if (this$1.isEmpty__Z()) {
+      var this$2 = $m_s_None$();
+    } else {
+      var x0 = this$1.get__O();
+      var _$8 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+      var this$2 = new $c_s_Some($n(_$8).west__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$2.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$2.get__O()));
+  }
+  if ((x6 === "South")) {
+    var this$4 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+    if (this$4.isEmpty__Z()) {
+      var this$5 = $m_s_None$();
+    } else {
+      var x0$1 = this$4.get__O();
+      var _$9 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+      var this$5 = new $c_s_Some($n(_$9).north__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$5.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$5.get__O()));
+  }
+  if ((x6 === "West")) {
+    var this$7 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+    if (this$7.isEmpty__Z()) {
+      var this$8 = $m_s_None$();
+    } else {
+      var x0$2 = this$7.get__O();
+      var _$10 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$2);
+      var this$8 = new $c_s_Some($n(_$10).east__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$8.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$8.get__O()));
+  }
+  if ((x6 === "North")) {
+    var this$10 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+    if (this$10.isEmpty__Z()) {
+      var this$11 = $m_s_None$();
+    } else {
+      var x0$3 = this$10.get__O();
+      var _$11 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$3);
+      var this$11 = new $c_s_Some($n(_$11).south__Lcom_diagraphy_web_models_GraphPoint());
+    }
+    return $as_Lcom_diagraphy_web_models_GraphPoint((this$11.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$11.get__O()));
+  }
+  var this$13 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+  if (this$13.isEmpty__Z()) {
+    var this$14 = $m_s_None$();
+  } else {
+    var x0$4 = this$13.get__O();
+    var _$12 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$4);
+    var this$14 = new $c_s_Some($n(_$12).west__Lcom_diagraphy_web_models_GraphPoint());
+  }
+  return $as_Lcom_diagraphy_web_models_GraphPoint((this$14.isEmpty__Z() ? new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0) : this$14.get__O()));
+});
 $c_Lcom_diagraphy_web_components_Path.prototype.ipath__Lorg_scalajs_dom_HTMLElement = (function() {
   return this.Lcom_diagraphy_web_components_Path__f_ipath;
 });
 $c_Lcom_diagraphy_web_components_Path.prototype.view__Lorg_scalajs_dom_HTMLElement = (function() {
-  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Path__f_ipath, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
+  $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Path__f_ipath, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$13) => {
     $m_Lcom_diagraphy_web_State$().clearClicked__V();
+    $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement(this.Lcom_diagraphy_web_components_Path__f_ipath, $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("stroke-width", "3")])));
     $m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_mouseClickElement = new $c_s_Some(this);
   })));
   return this.Lcom_diagraphy_web_components_Path__f_ipath;
 });
+$c_Lcom_diagraphy_web_components_Path.prototype.remove__V = (function() {
+  var this$1 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement);
+  if ((!this$1.isEmpty__Z())) {
+    var x0 = this$1.get__O();
+    var _$14 = $as_Lcom_diagraphy_web_components_AbstractElement(x0);
+    var $x_1 = $n(_$14);
+    var this$2 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n(this.Lcom_diagraphy_web_components_AbstractElement__f_startElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_oPaths);
+    var b = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+    var it = this$2.iterator__sc_Iterator();
+    while ($n(it).hasNext__Z()) {
+      var elem = $n(it).next__O();
+      var _$15 = $as_Lcom_diagraphy_web_components_AbstractElement(elem);
+      if ((($n($n(_$15).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id === $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+        b.addOne__O__scm_GrowableBuilder(elem);
+      }
+    }
+    $x_1.Lcom_diagraphy_web_components_AbstractElement__f_oPaths = $as_scm_ListBuffer(b.scm_GrowableBuilder__f_elems);
+  }
+  var this$4 = $n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement);
+  if ((!this$4.isEmpty__Z())) {
+    var x0$1 = this$4.get__O();
+    var _$16 = $as_Lcom_diagraphy_web_components_AbstractElement(x0$1);
+    var $x_2 = $n(_$16);
+    var this$5 = $n($n($as_Lcom_diagraphy_web_components_AbstractElement($n(this.Lcom_diagraphy_web_components_AbstractElement__f_endElement).get__O())).Lcom_diagraphy_web_components_AbstractElement__f_iPaths);
+    var b$1 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+    var it$1 = this$5.iterator__sc_Iterator();
+    while ($n(it$1).hasNext__Z()) {
+      var elem$1 = $n(it$1).next__O();
+      var _$17 = $as_Lcom_diagraphy_web_components_AbstractElement(elem$1);
+      if ((($n($n(_$17).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_id === $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+        b$1.addOne__O__scm_GrowableBuilder(elem$1);
+      }
+    }
+    $x_2.Lcom_diagraphy_web_components_AbstractElement__f_iPaths = $as_scm_ListBuffer(b$1.scm_GrowableBuilder__f_elems);
+  }
+  matchResult6: {
+    var x7 = this.Lcom_diagraphy_web_components_AbstractElement__f_parent;
+    if ((x7 instanceof $c_s_Some)) {
+      var p = $as_Lcom_diagraphy_web_components_AbstractElement($n($as_s_Some(x7)).s_Some__f_value);
+      var $x_3 = $n($n(p).model__Lcom_diagraphy_web_models_GraphElement());
+      var this$7 = $n($n($n(p).model__Lcom_diagraphy_web_models_GraphElement()).Lcom_diagraphy_web_models_GraphElement__f_elements);
+      var b$2 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+      var it$2 = this$7.iterator__sc_Iterator();
+      while ($n(it$2).hasNext__Z()) {
+        var elem$2 = $n(it$2).next__O();
+        var _$18 = $as_Lcom_diagraphy_web_models_GraphElement(elem$2);
+        if ((($n(_$18).Lcom_diagraphy_web_models_GraphElement__f_id === $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+          b$2.addOne__O__scm_GrowableBuilder(elem$2);
+        }
+      }
+      $x_3.Lcom_diagraphy_web_models_GraphElement__f_elements = $as_scm_ListBuffer(b$2.scm_GrowableBuilder__f_elems);
+      break matchResult6;
+    }
+    var x = $m_s_None$();
+    if ((x === x7)) {
+      var $x_4 = $m_Lcom_diagraphy_web_State$();
+      var this$9 = $n($m_Lcom_diagraphy_web_State$().Lcom_diagraphy_web_State$__f_state);
+      var b$3 = $ct_scm_GrowableBuilder__scm_Growable__(new $c_scm_GrowableBuilder(), new $c_scm_ListBuffer());
+      var it$3 = this$9.iterator__sc_Iterator();
+      while ($n(it$3).hasNext__Z()) {
+        var elem$3 = $n(it$3).next__O();
+        var _$19 = $as_Lcom_diagraphy_web_models_GraphElement(elem$3);
+        if ((($n(_$19).Lcom_diagraphy_web_models_GraphElement__f_id === $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_id) !== true)) {
+          b$3.addOne__O__scm_GrowableBuilder(elem$3);
+        }
+      }
+      $x_4.Lcom_diagraphy_web_State$__f_state = $as_scm_ListBuffer(b$3.scm_GrowableBuilder__f_elems);
+      break matchResult6;
+    }
+    throw new $c_s_MatchError(x7);
+  }
+  this.Lcom_diagraphy_web_components_Path__f_ipath.remove();
+  $m_Lcom_diagraphy_web_State$().clearClicked__V();
+});
 $c_Lcom_diagraphy_web_components_Path.prototype.update__V = (function() {
-  $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_d = $as_T($n($m_Lcom_diagraphy_web_components_Path$().Lcom_diagraphy_web_components_Path$__f_pathD).apply__O__O__O__O($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_start, $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end, $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge));
   var $x_7 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
   var $x_6 = this.Lcom_diagraphy_web_components_Path__f_ipath;
   var $x_5 = $m_sr_ScalaRunTime$();
-  var this$2 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var this$2 = $n(this.start__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
   var y = ("" + this$2);
   var $x_4 = new $c_T2("x1", y);
-  var this$6 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_start).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var this$6 = $n(this.start__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
   var y$1 = ("" + this$6);
   var $x_3 = new $c_T2("y1", y$1);
-  var this$10 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var this$10 = $n(this.end__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
   var y$2 = ("" + this$10);
   var $x_2 = new $c_T2("x2", y$2);
-  var this$14 = $n($n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_end).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var this$14 = $n(this.end__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
   var y$3 = ("" + this$14);
   var $x_1 = new $c_T2("y2", y$3);
-  var y$4 = $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_d;
+  var y$4 = $n($m_Lcom_diagraphy_web_components_Path$().Lcom_diagraphy_web_components_Path$__f_pathD).apply__O__O__O__O(this.start__Lcom_diagraphy_web_models_GraphPoint(), this.end__Lcom_diagraphy_web_models_GraphPoint(), $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge);
+  $x_7.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_6, $x_5.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$4)])));
+});
+$c_Lcom_diagraphy_web_components_Path.prototype.updateOnMove__V = (function() {
+  var $x_7 = $m_Lcom_diagraphy_web_extensions_HtmlElementExtension$();
+  var $x_6 = this.Lcom_diagraphy_web_components_Path__f_ipath;
+  var $x_5 = $m_sr_ScalaRunTime$();
+  var this$2 = $n(this.start__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y = ("" + this$2);
+  var $x_4 = new $c_T2("x1", y);
+  var this$6 = $n(this.start__Lcom_diagraphy_web_models_GraphPoint()).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$1 = ("" + this$6);
+  var $x_3 = new $c_T2("y1", y$1);
+  var this$10 = $n(this.Lcom_diagraphy_web_components_Path__f_endPoint).Lcom_diagraphy_web_models_GraphPoint__f_x;
+  var y$2 = ("" + this$10);
+  var $x_2 = new $c_T2("x2", y$2);
+  var this$14 = $n(this.Lcom_diagraphy_web_components_Path__f_endPoint).Lcom_diagraphy_web_models_GraphPoint__f_y;
+  var y$3 = ("" + this$14);
+  var $x_1 = new $c_T2("y2", y$3);
+  var y$4 = $n($m_Lcom_diagraphy_web_components_Path$().Lcom_diagraphy_web_components_Path$__f_pathD).apply__O__O__O__O(this.start__Lcom_diagraphy_web_models_GraphPoint(), this.Lcom_diagraphy_web_components_Path__f_endPoint, $n(this.Lcom_diagraphy_web_components_Path__f_model).Lcom_diagraphy_web_models_GraphElement__f_edge);
   $x_7.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_6, $x_5.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_4, $x_3, $x_2, $x_1, new $c_T2("d", y$4)])));
 });
 function $as_Lcom_diagraphy_web_components_Path(obj) {
@@ -32307,7 +32231,7 @@ function $c_Lcom_diagraphy_web_models_GraphElement$$anon$1(ReadersVersionSpecifi
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
   }
-  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 18, new $c_RTLong(262143, 0));
+  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 15, new $c_RTLong(32767, 0));
 }
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphElement$$anon$1;
@@ -32318,27 +32242,24 @@ $h_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype = $c_Lcom_diagraphy_
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.visitors0__s_Product = (function() {
   var _1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
   var _2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _3 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
   var this$3 = $m_Lupickle_legacy$();
   var r = $m_Lcom_diagraphy_web_models_GraphElement$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
   var this$1 = $m_scm_ListBuffer$();
   var factory = new $c_sc_IterableFactory$ToFactory(this$1);
-  var _4 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$3, r, factory);
+  var _3 = new $c_Lupickle_implicits_Readers$SeqLikeReader(this$3, r, factory);
+  var _4 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _5 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _6 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _7 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _8 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
   var _9 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
-  var _10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
+  var _10 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
   var _11 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
   var _12 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _13 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
-  var _14 = $m_Lcom_diagraphy_web_models_GraphPoint$().derived$ReadWriter__Lupickle_core_Types$ReadWriter();
+  var _13 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
+  var _14 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
   var _15 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _16 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _17 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  var _18 = $m_Lupickle_legacy$().Lupickle_legacy$__f_StringReader;
-  return new $c_T18(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18);
+  return new $c_T15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15);
 });
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement = (function(p) {
   return $as_Lcom_diagraphy_web_models_GraphElement($n(this.Lcom_diagraphy_web_models_GraphElement$$anon$1__f_m$2).fromProduct__s_Product__O(p));
@@ -32349,72 +32270,60 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.keyToIndex__T__I = (
       return 0;
       break;
     }
-    case "format": {
+    case "text": {
       return 1;
       break;
     }
-    case "text": {
+    case "elements": {
       return 2;
       break;
     }
-    case "elements": {
+    case "x": {
       return 3;
       break;
     }
-    case "x": {
+    case "y": {
       return 4;
       break;
     }
-    case "y": {
+    case "width": {
       return 5;
       break;
     }
-    case "width": {
+    case "height": {
       return 6;
       break;
     }
-    case "height": {
+    case "vbWidth": {
       return 7;
       break;
     }
-    case "vbWidth": {
+    case "vbHeight": {
       return 8;
       break;
     }
-    case "vbHeight": {
+    case "bgColor": {
       return 9;
       break;
     }
-    case "bgColor": {
+    case "imagePath": {
       return 10;
       break;
     }
-    case "imagePath": {
+    case "sElement": {
       return 11;
       break;
     }
-    case "start": {
+    case "eElement": {
       return 12;
       break;
     }
-    case "end": {
+    case "d": {
       return 13;
       break;
     }
-    case "sElement": {
-      return 14;
-      break;
-    }
-    case "eElement": {
-      return 15;
-      break;
-    }
-    case "d": {
-      return 16;
-      break;
-    }
     case "edge": {
-      return 17;
+      return 14;
       break;
     }
     default: {
@@ -32423,19 +32332,19 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.keyToIndex__T__I = (
   }
 });
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.allKeysArray__AT = (function() {
-  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "id"), new $c_T2("format", "format"), new $c_T2("text", "text"), new $c_T2("elements", "elements"), new $c_T2("x", "x"), new $c_T2("y", "y"), new $c_T2("width", "width"), new $c_T2("height", "height"), new $c_T2("vbWidth", "vbWidth"), new $c_T2("vbHeight", "vbHeight"), new $c_T2("bgColor", "bgColor"), new $c_T2("imagePath", "imagePath"), new $c_T2("start", "start"), new $c_T2("end", "end"), new $c_T2("sElement", "sElement"), new $c_T2("eElement", "eElement"), new $c_T2("d", "d"), new $c_T2("edge", "edge")]));
-  var this$20 = $n($m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems));
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("id", "id"), new $c_T2("text", "text"), new $c_T2("elements", "elements"), new $c_T2("x", "x"), new $c_T2("y", "y"), new $c_T2("width", "width"), new $c_T2("height", "height"), new $c_T2("vbWidth", "vbWidth"), new $c_T2("vbHeight", "vbHeight"), new $c_T2("bgColor", "bgColor"), new $c_T2("imagePath", "imagePath"), new $c_T2("sElement", "sElement"), new $c_T2("eElement", "eElement"), new $c_T2("d", "d"), new $c_T2("edge", "edge")]));
+  var this$17 = $n($m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems));
   var f = ((_$1) => {
     var _$1$1 = $as_T2(_$1);
     return $as_T($n(_$1$1).T2__f__2);
   });
-  if ((this$20 === $m_sci_Nil$())) {
-    var this$22 = $m_sci_Nil$();
+  if ((this$17 === $m_sci_Nil$())) {
+    var this$19 = $m_sci_Nil$();
   } else {
-    var x0 = this$20.head__O();
+    var x0 = this$17.head__O();
     var h = new $c_sci_$colon$colon(f(x0), $m_sci_Nil$());
     var t = h;
-    var rest = $as_sci_List(this$20.tail__O());
+    var rest = $as_sci_List(this$17.tail__O());
     while ((rest !== $m_sci_Nil$())) {
       var x0$1 = $n(rest).head__O();
       var nx = new $c_sci_$colon$colon(f(x0$1), $m_sci_Nil$());
@@ -32443,12 +32352,12 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.allKeysArray__AT = (
       t = nx;
       rest = $as_sci_List($n(rest).tail__O());
     }
-    var this$22 = h;
+    var this$19 = h;
   }
-  if ((this$22.knownSize__I() >= 0)) {
-    var len = this$22.knownSize__I();
+  if ((this$19.knownSize__I() >= 0)) {
+    var len = this$19.knownSize__I();
     var destination = new ($d_T.getArrayOf().constr)(len);
-    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$22, destination, 0, 2147483647);
+    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$19, destination, 0, 2147483647);
     return destination;
   } else {
     var capacity = 0;
@@ -32457,7 +32366,7 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.allKeysArray__AT = (
     capacity = 0;
     size = 0;
     jsElems = [];
-    var it = this$22.iterator__sc_Iterator();
+    var it = this$19.iterator__sc_Iterator();
     while ($n(it).hasNext__Z()) {
       var elem = $n(it).next__O();
       var unboxedElem = ((elem === null) ? null : elem);
@@ -32469,116 +32378,22 @@ $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.allKeysArray__AT = (
 $c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
   $n(x).storeValueIfNotFound__I__O__V(0, "");
   $n(x).storeValueIfNotFound__I__O__V(1, "");
-  $n(x).storeValueIfNotFound__I__O__V(2, "");
-  $n(x).storeValueIfNotFound__I__O__V(3, $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer());
+  $n(x).storeValueIfNotFound__I__O__V(2, $m_Lcom_diagraphy_web_models_GraphElement$().$lessinit$greater$default$3__scm_ListBuffer());
+  $n(x).storeValueIfNotFound__I__O__V(3, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(4, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(5, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(6, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(7, 0.0);
   $n(x).storeValueIfNotFound__I__O__V(8, 0.0);
-  $n(x).storeValueIfNotFound__I__O__V(9, 0.0);
+  $n(x).storeValueIfNotFound__I__O__V(9, "");
   $n(x).storeValueIfNotFound__I__O__V(10, "");
   $n(x).storeValueIfNotFound__I__O__V(11, "");
-  $n(x).storeValueIfNotFound__I__O__V(12, new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0));
-  $n(x).storeValueIfNotFound__I__O__V(13, new $c_Lcom_diagraphy_web_models_GraphPoint(0.0, 0.0));
+  $n(x).storeValueIfNotFound__I__O__V(12, "");
+  $n(x).storeValueIfNotFound__I__O__V(13, "");
   $n(x).storeValueIfNotFound__I__O__V(14, "");
-  $n(x).storeValueIfNotFound__I__O__V(15, "");
-  $n(x).storeValueIfNotFound__I__O__V(16, "");
-  $n(x).storeValueIfNotFound__I__O__V(17, "");
-});
-$c_Lcom_diagraphy_web_models_GraphElement$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphElement(p);
 });
 var $d_Lcom_diagraphy_web_models_GraphElement$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphElement$$anon$1, "com.diagraphy.web.models.GraphElement$$anon$1", ({
   Lcom_diagraphy_web_models_GraphElement$$anon$1: 1,
-  Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader: 1,
-  Lupickle_implicits_CaseClassReadWriters$CaseClassReader: 1,
-  Lupickle_core_Visitor: 1,
-  Lupickle_core_Types$Reader: 1,
-  Lupickle_core_SimpleVisitor: 1,
-  Lupickle_core_Types$SimpleReader: 1
-}));
-/** @constructor */
-function $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1(ReadersVersionSpecific_this$1, m$1, outer) {
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$paramCount = 0;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_upickle$implicits$ReadersVersionSpecific$CaseClassReadereader$$missingKeyCount = $L0;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitors$lzy1 = null;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_visitorsbitmap$1 = false;
-  this.Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__f_$outer = null;
-  this.Lcom_diagraphy_web_models_GraphPoint$$anon$1__f_m$2 = null;
-  this.Lcom_diagraphy_web_models_GraphPoint$$anon$1__f_m$2 = m$1;
-  if ((outer === null)) {
-    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException());
-  }
-  $ct_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader__Lupickle_implicits_ReadersVersionSpecific__I__J__(this, ReadersVersionSpecific_this$1, 2, new $c_RTLong(3, 0));
-}
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype = new $h_Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader();
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.constructor = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1;
-/** @constructor */
-function $h_Lcom_diagraphy_web_models_GraphPoint$$anon$1() {
-}
-$h_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype = $c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype;
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.visitors0__s_Product = (function() {
-  var _1 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
-  var _2 = $m_Lupickle_legacy$().Lupickle_legacy$__f_DoubleReader;
-  return new $c_T2(_1, _2);
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint = (function(p) {
-  return $as_Lcom_diagraphy_web_models_GraphPoint($n(this.Lcom_diagraphy_web_models_GraphPoint$$anon$1__f_m$2).fromProduct__s_Product__O(p));
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.keyToIndex__T__I = (function(x) {
-  return ((x === "x") ? 0 : ((x === "y") ? 1 : (-1)));
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.allKeysArray__AT = (function() {
-  var this$3 = new $c_sci_$colon$colon(new $c_T2("x", "x"), new $c_sci_$colon$colon(new $c_T2("y", "y"), $m_sci_Nil$()));
-  var f = ((_$1) => {
-    var _$1$1 = $as_T2(_$1);
-    return $as_T($n(_$1$1).T2__f__2);
-  });
-  if ((this$3 === $m_sci_Nil$())) {
-    var this$5 = $m_sci_Nil$();
-  } else {
-    var x0 = this$3.sci_$colon$colon__f_head;
-    var h = new $c_sci_$colon$colon(f(x0), $m_sci_Nil$());
-    var t = h;
-    var rest = this$3.sci_$colon$colon__f_next;
-    while ((rest !== $m_sci_Nil$())) {
-      var x0$1 = $n(rest).head__O();
-      var nx = new $c_sci_$colon$colon(f(x0$1), $m_sci_Nil$());
-      $n(t).sci_$colon$colon__f_next = nx;
-      t = nx;
-      rest = $as_sci_List($n(rest).tail__O());
-    }
-    var this$5 = h;
-  }
-  if ((this$5.knownSize__I() >= 0)) {
-    var len = this$5.knownSize__I();
-    var destination = new ($d_T.getArrayOf().constr)(len);
-    $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this$5, destination, 0, 2147483647);
-    return destination;
-  } else {
-    var capacity = 0;
-    var size = 0;
-    var jsElems = null;
-    capacity = 0;
-    size = 0;
-    jsElems = [];
-    var it = this$5.iterator__sc_Iterator();
-    while ($n(it).hasNext__Z()) {
-      var elem = $n(it).next__O();
-      var unboxedElem = ((elem === null) ? null : elem);
-      jsElems.push(unboxedElem);
-    }
-    return new ($d_T.getArrayOf().constr)(jsElems);
-  }
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.storeDefaults__Lupickle_implicits_BaseCaseObjectContext__V = (function(x) {
-});
-$c_Lcom_diagraphy_web_models_GraphPoint$$anon$1.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_diagraphy_web_models_GraphPoint(p);
-});
-var $d_Lcom_diagraphy_web_models_GraphPoint$$anon$1 = new $TypeData().initClass($c_Lcom_diagraphy_web_models_GraphPoint$$anon$1, "com.diagraphy.web.models.GraphPoint$$anon$1", ({
-  Lcom_diagraphy_web_models_GraphPoint$$anon$1: 1,
   Lupickle_implicits_ReadersVersionSpecific$CaseClassReadereader: 1,
   Lupickle_implicits_CaseClassReadWriters$CaseClassReader: 1,
   Lupickle_core_Visitor: 1,
@@ -37242,7 +37057,10 @@ var $d_scm_CheckedIndexedSeqView$Drop = new $TypeData().initClass($c_scm_Checked
 function $f_Lupickle_LegacyApi__taggedWrite__Lupickle_core_Types$ObjectWriter__T__Lupickle_core_Visitor__O__O($thiz, w, tag, out, v) {
   var ctx = $n(out).visitArray__I__I__Lupickle_core_ArrVisitor(2, (-1));
   $n(ctx).visitValue__O__I__V($n($n(ctx).subVisitor__Lupickle_core_Visitor()).visitString__jl_CharSequence__I__O(tag, (-1)), (-1));
-  $n(ctx).visitValue__O__I__V($f_Lupickle_core_Types$Writer__write__Lupickle_core_Visitor__O__O($n(w), $n(ctx).subVisitor__Lupickle_core_Visitor(), v), (-1));
+  var $x_1 = $n(ctx);
+  var this$1 = $n(w);
+  var out$1 = $n(ctx).subVisitor__Lupickle_core_Visitor();
+  $x_1.visitValue__O__I__V($f_Lupickle_core_Types$Writer__write__Lupickle_core_Visitor__O__O(this$1, out$1, v), (-1));
   return $n(ctx).visitEnd__I__O((-1));
 }
 /** @constructor */
