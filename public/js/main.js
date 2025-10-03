@@ -1158,6 +1158,9 @@ function $p_Lconfig_Cache$__renderElements__scm_ListBuffer__s_Option__V($thiz, e
           if ((x1 === "Note")) {
             break matchAlts2;
           }
+          if ((x1 === "Code")) {
+            break matchAlts2;
+          }
           if ((x1 === "Node")) {
             break matchAlts2;
           }
@@ -1274,6 +1277,7 @@ $c_Lconfig_Cache$.prototype.loadState__V = (function() {
       var elements = $as_scm_ListBuffer($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$8, s, trace, evidence$2));
       $p_Lconfig_Cache$__renderElements__scm_ListBuffer__s_Option__V($m_Lconfig_Cache$(), elements, $m_s_None$());
       $p_Lconfig_Cache$__renderPaths__scm_ListBuffer__V($m_Lconfig_Cache$(), elements);
+      hljs.highlightAll();
     });
     reader.readAsText(file);
   });
@@ -1802,6 +1806,10 @@ $c_Lelements_AbstractElement$.prototype.addElement__Lmodels_GraphElement__s_Opti
       var $x_1 = new $c_Lelements_NodeX(model);
       break matchResult9;
     }
+    if ((x15 === "Code")) {
+      var $x_1 = new $c_Lelements_Code(model);
+      break matchResult9;
+    }
     if ((x15 === "Image")) {
       var $x_1 = new $c_Lelements_ImageX(model);
       break matchResult9;
@@ -1813,38 +1821,38 @@ $c_Lelements_AbstractElement$.prototype.addElement__Lmodels_GraphElement__s_Opti
     var $x_1 = new $c_Lelements_TextBox(model);
   }
   var abElement = $as_Lelements_AbstractElement($x_1);
-  var this$7 = $n(parent);
-  if ((!this$7.isEmpty__Z())) {
-    var this$8 = $n($n($as_Lelements_AbstractElement($n(parent).get__O())).content__s_Option());
-    if ((!this$8.isEmpty__Z())) {
-      var x0 = this$8.get__O();
-      var this$10 = $n($n(abElement).element__s_Option());
-      var this$9 = $m_s_$less$colon$less$();
-      var ev = this$9.s_$less$colon$less$__f_singleton;
-      x0.appendChild((this$10.isEmpty__Z() ? ($n(ev), null) : this$10.get__O()));
+  var this$8 = $n(parent);
+  if ((!this$8.isEmpty__Z())) {
+    var this$9 = $n($n($as_Lelements_AbstractElement($n(parent).get__O())).content__s_Option());
+    if ((!this$9.isEmpty__Z())) {
+      var x0 = this$9.get__O();
+      var this$11 = $n($n(abElement).element__s_Option());
+      var this$10 = $m_s_$less$colon$less$();
+      var ev = this$10.s_$less$colon$less$__f_singleton;
+      x0.appendChild((this$11.isEmpty__Z() ? ($n(ev), null) : this$11.get__O()));
     }
     $n(abElement).Lelements_AbstractElement__f_parent = parent;
-    var this$12 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
+    var this$13 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
     var elem = $n(abElement).model__Lmodels_GraphElement();
-    if ((!$f_sc_SeqOps__contains__O__Z(this$12, elem))) {
-      var this$13 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
+    if ((!$f_sc_SeqOps__contains__O__Z(this$13, elem))) {
+      var this$14 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
       var elem$1 = $n(abElement).model__Lmodels_GraphElement();
-      this$13.addOne__O__scm_ListBuffer(elem$1);
+      this$14.addOne__O__scm_ListBuffer(elem$1);
     }
   } else {
     var $x_2 = document.body;
-    var this$15 = $n($n(abElement).element__s_Option());
-    var this$14 = $m_s_$less$colon$less$();
-    var ev$1 = this$14.s_$less$colon$less$__f_singleton;
-    $x_2.appendChild((this$15.isEmpty__Z() ? ($n(ev$1), null) : this$15.get__O()));
-    var this$17 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_state);
+    var this$16 = $n($n(abElement).element__s_Option());
+    var this$15 = $m_s_$less$colon$less$();
+    var ev$1 = this$15.s_$less$colon$less$__f_singleton;
+    $x_2.appendChild((this$16.isEmpty__Z() ? ($n(ev$1), null) : this$16.get__O()));
+    var this$18 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_state);
     var elem$2 = $n(abElement).model__Lmodels_GraphElement();
-    this$17.addOne__O__scm_ListBuffer(elem$2);
+    this$18.addOne__O__scm_ListBuffer(elem$2);
   }
-  var this$20 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap);
+  var this$21 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap);
   var self = $n($n(abElement).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id;
   var elem$3 = new $c_T2(self, abElement);
-  this$20.addOne__O__scm_Growable(elem$3);
+  this$21.addOne__O__scm_Growable(elem$3);
 });
 $c_Lelements_AbstractElement$.prototype.addPath__Lmodels_GraphElement__V = (function(model) {
   var path = new $c_Lelements_Path(model);
@@ -1935,21 +1943,24 @@ $c_Lelements_ContextMenu$.prototype.render__Lorg_scalajs_dom_MouseEvent__s_Optio
   $x_8.appendChild((this$7.isEmpty__Z() ? ($n(ev), null) : this$7.get__O()));
 });
 $c_Lelements_ContextMenu$.prototype.documentContextMenu__Lorg_scalajs_dom_MouseEvent__sci_List = (function(me) {
-  return new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25a3 Container"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lorg_scalajs_dom_HTMLElement.getArrayOf().constr)([$m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25a3 Container"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e) => {
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Container$().ContainerModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
-  }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83c\udd63 Text"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83c\udd63 Text"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$2) => {
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_TextBox$().TextBoxModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
-  }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25ad Component"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25ad Component"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_NodeX$().NodeModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
-  }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc4 Note"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "{ } Code"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
+    $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Code$().CodeModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc4 Note"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Note$().NoteModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
-  }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Image"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Image"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_ImageX$().ImageModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
-  }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2 Load Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2 Load Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
     $m_Lconfig_Cache$().loadState__V();
-  }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Save Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Save Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$8) => {
     $m_Lconfig_Cache$().saveState__V();
-  }))), $m_sci_Nil$())))))));
+  })))]));
+  return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
 });
 $c_Lelements_ContextMenu$.prototype.elementContextMenu__Lorg_scalajs_dom_MouseEvent__Lelements_AbstractElement__sci_List = (function(me, element) {
   var x4 = $n(element).format__T();
@@ -1960,13 +1971,15 @@ $c_Lelements_ContextMenu$.prototype.elementContextMenu__Lorg_scalajs_dom_MouseEv
       $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_TextBox$().TextBoxModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, new $c_s_Some(element)), new $c_s_Some(element));
     }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u25ad Component"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$3) => {
       $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_NodeX$().NodeModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, new $c_s_Some(element)), new $c_s_Some(element));
-    }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc4 Note"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
+    }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "{ } Code"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$4) => {
+      $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Code$().CodeModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, new $c_s_Some(element)), new $c_s_Some(element));
+    }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc4 Note"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
       $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Note$().NoteModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, new $c_s_Some(element)), new $c_s_Some(element));
-    }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Image"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
+    }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Image"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
       $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_ImageX$().ImageModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, new $c_s_Some(element)), new $c_s_Some(element));
     }))), new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\uddd1 Remove Element"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
       $n(element).remove__V();
-    }))), $m_sci_Nil$()))))));
+    }))), $m_sci_Nil$())))))));
   }
   return new $c_sci_$colon$colon($m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\uddd1 Remove Element"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
     $n(element).remove__V();
@@ -2051,6 +2064,12 @@ $c_Lextensions_HtmlElementExtension$.prototype.onContextMenu__Lorg_scalajs_dom_H
   }));
   return e;
 });
+$c_Lextensions_HtmlElementExtension$.prototype.append1__Lorg_scalajs_dom_HTMLElement__Lorg_scalajs_dom_HTMLElement__Lorg_scalajs_dom_HTMLElement = (function(e, o) {
+  if ((o !== null)) {
+    e.appendChild(o);
+  }
+  return e;
+});
 $c_Lextensions_HtmlElementExtension$.prototype.appends__Lorg_scalajs_dom_HTMLElement__sci_List__Lorg_scalajs_dom_HTMLElement = (function(e, o) {
   var this$1 = $n(o);
   var these = this$1;
@@ -2112,6 +2131,10 @@ $c_Lextensions_HtmlElementExtension$.prototype.styles__Lorg_scalajs_dom_HTMLElem
       throw new $c_s_MatchError(x$1$1);
     }
   })));
+  return e;
+});
+$c_Lextensions_HtmlElementExtension$.prototype.addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement = (function(e, value) {
+  e.classList.add(value);
   return e;
 });
 $c_Lextensions_HtmlElementExtension$.prototype.itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement = (function(e, content) {
@@ -10340,6 +10363,12 @@ $h_Lutils_HtmlElementUtil$.prototype = $c_Lutils_HtmlElementUtil$.prototype;
 $c_Lutils_HtmlElementUtil$.prototype.div__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("div");
 });
+$c_Lutils_HtmlElementUtil$.prototype.pre__Lorg_scalajs_dom_HTMLElement = (function() {
+  return document.createElement("pre");
+});
+$c_Lutils_HtmlElementUtil$.prototype.code__Lorg_scalajs_dom_HTMLElement = (function() {
+  return document.createElement("Code");
+});
 $c_Lutils_HtmlElementUtil$.prototype.img__Lorg_scalajs_dom_HTMLElement = (function() {
   return document.createElement("img");
 });
@@ -14715,6 +14744,50 @@ var $d_Lupickle_implicits_Writers$$anon$9 = new $TypeData().initClass($c_Lupickl
 }));
 function $f_Lupickle_implicits_Writers$SimpleMapKeyWriter__write0__Lupickle_core_Visitor__O__O($thiz, out, v) {
   return $n(out).visitString__jl_CharSequence__I__O($thiz.writeString__O__T(v), (-1));
+}
+/** @constructor */
+function $c_Lelements_Code$() {
+}
+$c_Lelements_Code$.prototype = new $h_O();
+$c_Lelements_Code$.prototype.constructor = $c_Lelements_Code$;
+/** @constructor */
+function $h_Lelements_Code$() {
+}
+$h_Lelements_Code$.prototype = $c_Lelements_Code$.prototype;
+$c_Lelements_Code$.prototype.CodeModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement = (function(e, parent) {
+  var this$2 = $m_RTLong$();
+  var value = $uD(new Date().getTime());
+  var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
+  var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
+  var id$1 = ("Code-" + new $c_RTLong(lo, hi));
+  var $x_2 = $m_Lconfig_Cache$().scrollLeft__D();
+  var $x_1 = $uD(e.clientX);
+  var this$3 = $n(parent);
+  var x$1 = ((($x_2 + $x_1) - ((!this$3.isEmpty__Z()) ? $n($as_Lelements_AbstractElement($n(parent).get__O())).offsetX__D() : 0.0)) - 50.0);
+  var $x_4 = $m_Lconfig_Cache$().scrollTop__D();
+  var $x_3 = $uD(e.clientY);
+  var this$4 = $n(parent);
+  var y$1 = ((($x_4 + $x_3) - ((!this$4.isEmpty__Z()) ? $n($as_Lelements_AbstractElement($n(parent).get__O())).offsetY__D() : 0.0)) - 25.0);
+  var elements$1 = $m_Lmodels_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  return new $c_Lmodels_GraphElement(id$1, "Code", "", elements$1, x$1, y$1, 150.0, 50.0, "#555", "", "", "");
+});
+$c_Lelements_Code$.prototype.fromProduct__s_Product__Lelements_Code = (function(x$0) {
+  return new $c_Lelements_Code($as_Lmodels_GraphElement($n(x$0).productElement__I__O(0)));
+});
+$c_Lelements_Code$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lelements_Code(p);
+});
+var $d_Lelements_Code$ = new $TypeData().initClass($c_Lelements_Code$, "elements.Code$", ({
+  Lelements_Code$: 1,
+  s_deriving_Mirror: 1,
+  s_deriving_Mirror$Product: 1
+}));
+var $n_Lelements_Code$;
+function $m_Lelements_Code$() {
+  if ((!$n_Lelements_Code$)) {
+    $n_Lelements_Code$ = new $c_Lelements_Code$();
+  }
+  return $n_Lelements_Code$;
 }
 /** @constructor */
 function $c_Lelements_Container$() {
@@ -21816,6 +21889,99 @@ var $d_Lupickle_implicits_Writers$JavaWriter = new $TypeData().initClass($c_Lupi
   Ljava_io_Serializable: 1
 }));
 /** @constructor */
+function $c_Lelements_Code(model) {
+  this.Lelements_AbstractElement__f_parent = null;
+  this.Lelements_AbstractElement__f_content$lzy1 = null;
+  this.Lelements_AbstractElement__f_contentbitmap$1 = false;
+  this.Lelements_AbstractElement__f_element$lzy1 = null;
+  this.Lelements_AbstractElement__f_elementbitmap$1 = false;
+  this.Lelements_AbstractElement__f_path = null;
+  this.Lelements_AbstractElement__f_observer = null;
+  this.Lelements_Code__f_model = null;
+  this.Lelements_Code__f_content$lzy1 = null;
+  this.Lelements_Code__f_contentbitmap$1 = false;
+  this.Lelements_Code__f_model = model;
+  $ct_Lelements_AbstractElement__Lmodels_GraphElement__(this, model);
+  this.clickable__V();
+  this.resizable__V();
+  this.editable__V();
+  this.draggable__V();
+  this.contextMenu__V();
+  this.connectable__V();
+}
+$c_Lelements_Code.prototype = new $h_Lelements_AbstractElement();
+$c_Lelements_Code.prototype.constructor = $c_Lelements_Code;
+/** @constructor */
+function $h_Lelements_Code() {
+}
+$h_Lelements_Code.prototype = $c_Lelements_Code.prototype;
+$c_Lelements_Code.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_s_Product$$anon$1(this);
+});
+$c_Lelements_Code.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
+});
+$c_Lelements_Code.prototype.equals__O__Z = (function(x$0) {
+  if ((this === x$0)) {
+    return true;
+  } else if ((x$0 instanceof $c_Lelements_Code)) {
+    var x$0$2 = $as_Lelements_Code(x$0);
+    var x = this.Lelements_Code__f_model;
+    var x$2 = $n(x$0$2).Lelements_Code__f_model;
+    if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
+      $n(x$0$2);
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+});
+$c_Lelements_Code.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
+});
+$c_Lelements_Code.prototype.productArity__I = (function() {
+  return 1;
+});
+$c_Lelements_Code.prototype.productPrefix__T = (function() {
+  return "Code";
+});
+$c_Lelements_Code.prototype.productElement__I__O = (function(n) {
+  if ((n === 0)) {
+    return this.Lelements_Code__f_model;
+  }
+  throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n));
+});
+$c_Lelements_Code.prototype.model__Lmodels_GraphElement = (function() {
+  return this.Lelements_Code__f_model;
+});
+$c_Lelements_Code.prototype.content__s_Option = (function() {
+  if ((!this.Lelements_Code__f_contentbitmap$1)) {
+    var value = $m_Lextensions_HtmlElementExtension$().append1__Lorg_scalajs_dom_HTMLElement__Lorg_scalajs_dom_HTMLElement__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("padding", "10px"), new $c_T2("font-size", "18px"), new $c_T2("color", "#eee"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "left"), new $c_T2("justify-content", "left"), new $c_T2("text-align", "left"), new $c_T2("display", "grid"), new $c_T2("position", "relative")]))), $m_Lextensions_HtmlElementExtension$().append1__Lorg_scalajs_dom_HTMLElement__Lorg_scalajs_dom_HTMLElement__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().pre__Lorg_scalajs_dom_HTMLElement(), $m_Lextensions_HtmlElementExtension$().ihtml__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().addClass__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().code__Lorg_scalajs_dom_HTMLElement(), "language-scala"), $n(this.Lelements_Code__f_model).Lmodels_GraphElement__f_text)));
+    this.Lelements_Code__f_content$lzy1 = new $c_s_Some(value);
+    this.Lelements_Code__f_contentbitmap$1 = true;
+  }
+  return this.Lelements_Code__f_content$lzy1;
+});
+function $as_Lelements_Code(obj) {
+  return (((obj instanceof $c_Lelements_Code) || (obj === null)) ? obj : $throwClassCastException(obj, "elements.Code"));
+}
+function $isArrayOf_Lelements_Code(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lelements_Code)));
+}
+function $asArrayOf_Lelements_Code(obj, depth) {
+  return (($isArrayOf_Lelements_Code(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lelements.Code;", depth));
+}
+var $d_Lelements_Code = new $TypeData().initClass($c_Lelements_Code, "elements.Code", ({
+  Lelements_Code: 1,
+  Lelements_AbstractElement: 1,
+  s_Equals: 1,
+  s_Product: 1,
+  Ljava_io_Serializable: 1
+}));
+/** @constructor */
 function $c_Lelements_Container(model) {
   this.Lelements_AbstractElement__f_parent = null;
   this.Lelements_AbstractElement__f_content$lzy1 = null;
@@ -22183,7 +22349,7 @@ $c_Lelements_Note.prototype.model__Lmodels_GraphElement = (function() {
 });
 $c_Lelements_Note.prototype.content__s_Option = (function() {
   if ((!this.Lelements_Note__f_contentbitmap$1)) {
-    var value = $m_Lextensions_HtmlElementExtension$().ihtml__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("font-size", "16px"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("overflow", "auto"), new $c_T2("box-sizing", "border-box"), new $c_T2("outline", "none"), new $c_T2("align-items", "left"), new $c_T2("justify-content", "left"), new $c_T2("text-align", "left"), new $c_T2("display", "grid"), new $c_T2("position", "relative")]))), $n(this.Lelements_Note__f_model).Lmodels_GraphElement__f_text);
+    var value = $m_Lextensions_HtmlElementExtension$().ihtml__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("padding", "10px"), new $c_T2("font-size", "16px"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("overflow", "auto"), new $c_T2("box-sizing", "border-box"), new $c_T2("outline", "none"), new $c_T2("align-items", "left"), new $c_T2("justify-content", "left"), new $c_T2("text-align", "left"), new $c_T2("display", "grid"), new $c_T2("position", "relative")]))), $n(this.Lelements_Note__f_model).Lmodels_GraphElement__f_text);
     this.Lelements_Note__f_content$lzy1 = new $c_s_Some(value);
     this.Lelements_Note__f_contentbitmap$1 = true;
   }
@@ -33851,6 +34017,17 @@ function $f_Lupickle_implicits_Readers__$init$__V($thiz) {
   $n($n($thiz.upickle$implicits$Readers$$JavaReader__Lupickle_implicits_Readers$JavaReader$()).apply__Lupickle_core_Types$Reader__Lupickle_implicits_Readers$JavaReader($thiz.Lupickle_legacy$__f_FloatReader)).create__Lupickle_core_Types$Reader();
   $n($n($thiz.upickle$implicits$Readers$$JavaReader__Lupickle_implicits_Readers$JavaReader$()).apply__Lupickle_core_Types$Reader__Lupickle_implicits_Readers$JavaReader($thiz.Lupickle_legacy$__f_DoubleReader)).create__Lupickle_core_Types$Reader();
 }
+var $d_Lorg_scalajs_dom_HTMLElement = new $TypeData().initClass(2, "org.scalajs.dom.HTMLElement", ({
+  Lorg_scalajs_dom_HTMLElement: 1,
+  Lorg_scalajs_dom_Element: 1,
+  Lorg_scalajs_dom_Node: 1,
+  Lorg_scalajs_dom_EventTarget: 1,
+  sjs_js_Object: 1,
+  sjs_js_Any: 1,
+  Lorg_scalajs_dom_NodeSelector: 1,
+  Lorg_scalajs_dom_ParentNode: 1,
+  Lorg_scalajs_dom_NonDocumentTypeChildNode: 1
+}), ((x) => (x instanceof HTMLElement)));
 /** @constructor */
 function $c_sc_AbstractView() {
 }
