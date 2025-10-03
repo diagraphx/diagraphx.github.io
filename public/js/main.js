@@ -1332,9 +1332,9 @@ function $ct_Lelements_AbstractElement__Lmodels_GraphElement__($thiz, model) {
   return $thiz;
 }
 function $p_Lelements_AbstractElement__updatePaths__V($thiz) {
-  matchResult4: {
-    var x7 = $n($thiz.model__Lmodels_GraphElement()).format__T();
-    if ((x7 === "Container")) {
+  matchResult5: {
+    var x8 = $n($thiz.model__Lmodels_GraphElement()).format__T();
+    if ((x8 === "Container")) {
       var this$1 = $n($n($thiz.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
       var it = this$1.iterator__sc_Iterator();
       while ($n(it).hasNext__Z()) {
@@ -1347,17 +1347,17 @@ function $p_Lelements_AbstractElement__updatePaths__V($thiz) {
           $p_Lelements_AbstractElement__showPaths__Lelements_AbstractElement__Lelements_AbstractElement__V($thiz, element, $thiz);
         }
       }
-      break matchResult4;
+      break matchResult5;
     }
   }
   $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((element$1) => {
     var element$2 = $as_T2(element$1);
-    matchResult5: {
-      var x8 = $as_Lelements_AbstractElement($n(element$2).T2__f__2);
-      if ((x8 instanceof $c_Lelements_Path)) {
-        var p = $as_Lelements_Path(x8);
+    matchResult6: {
+      var x9 = $as_Lelements_AbstractElement($n(element$2).T2__f__2);
+      if ((x9 instanceof $c_Lelements_Path)) {
+        var p = $as_Lelements_Path(x9);
         $n($n(p).Lelements_AbstractElement__f_path).get__O().position();
-        break matchResult5;
+        break matchResult6;
       }
     }
   })));
@@ -1365,18 +1365,18 @@ function $p_Lelements_AbstractElement__updatePaths__V($thiz) {
 function $p_Lelements_AbstractElement__showPaths__Lelements_AbstractElement__Lelements_AbstractElement__V($thiz, element, container) {
   $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((path) => {
     var path$1 = $as_T2(path);
-    matchResult6: {
-      var x10 = $as_Lelements_AbstractElement($n(path$1).T2__f__2);
-      if ((x10 instanceof $c_Lelements_Path)) {
-        var p = $as_Lelements_Path(x10);
+    matchResult7: {
+      var x11 = $as_Lelements_AbstractElement($n(path$1).T2__f__2);
+      if ((x11 instanceof $c_Lelements_Path)) {
+        var p = $as_Lelements_Path(x11);
         if (((($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_sElement === $n($n(element).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id) && $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).contains__O__Z($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_eElement)) && (!$m_Lelements_AbstractElement$().elements$AbstractElement$$$isElementHidden__Lelements_AbstractElement__Lelements_AbstractElement__Z($as_Lelements_AbstractElement($n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).apply__O__O($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_eElement)), container)))) {
           $n($n(p).Lelements_AbstractElement__f_path).get__O().show();
         }
         if (((($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_eElement === $n($n(element).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id) && $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).contains__O__Z($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_sElement)) && (!$m_Lelements_AbstractElement$().elements$AbstractElement$$$isElementHidden__Lelements_AbstractElement__Lelements_AbstractElement__Z($as_Lelements_AbstractElement($n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).apply__O__O($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_sElement)), container)))) {
           $n($n(p).Lelements_AbstractElement__f_path).get__O().show();
-          break matchResult6;
+          break matchResult7;
         } else {
-          break matchResult6;
+          break matchResult7;
         }
       }
     }
@@ -1385,15 +1385,15 @@ function $p_Lelements_AbstractElement__showPaths__Lelements_AbstractElement__Lel
 function $p_Lelements_AbstractElement__hidePaths__V($thiz) {
   $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((path) => {
     var path$1 = $as_T2(path);
-    matchResult7: {
-      var x12 = $as_Lelements_AbstractElement($n(path$1).T2__f__2);
-      if ((x12 instanceof $c_Lelements_Path)) {
-        var p = $as_Lelements_Path(x12);
+    matchResult8: {
+      var x13 = $as_Lelements_AbstractElement($n(path$1).T2__f__2);
+      if ((x13 instanceof $c_Lelements_Path)) {
+        var p = $as_Lelements_Path(x13);
         if ((($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_sElement === $n($thiz.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id) || ($n($n(p).Lelements_Path__f_model).Lmodels_GraphElement__f_eElement === $n($thiz.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id))) {
           $n($n(p).Lelements_AbstractElement__f_path).get__O().hide();
-          break matchResult7;
+          break matchResult8;
         } else {
-          break matchResult7;
+          break matchResult8;
         }
       }
     }
@@ -1680,51 +1680,53 @@ $c_Lelements_AbstractElement.prototype.unHighLight__V = (function() {
   }
 });
 $c_Lelements_AbstractElement.prototype.remove__V = (function() {
-  try {
-    var this$1 = $n(this.Lelements_AbstractElement__f_observer);
-    if ((!this$1.isEmpty__Z())) {
-      var x0 = this$1.get__O();
-      x0.disconnect();
-    }
-    matchResult1: {
-      var x1 = $n(this.model__Lmodels_GraphElement()).format__T();
-      if ((x1 === "Container")) {
-        var this$2 = $n($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
-        var it = this$2.iterator__sc_Iterator();
-        while ($n(it).hasNext__Z()) {
-          var x0$1 = $n(it).next__O();
-          var melement = $as_Lmodels_GraphElement(x0$1);
-          $n($as_Lelements_AbstractElement($n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).apply__O__O($n(melement).Lmodels_GraphElement__f_id))).remove__V();
-        }
-        break matchResult1;
-      }
-    }
-    matchResult2: {
-      var x2 = this.Lelements_AbstractElement__f_parent;
-      if ((x2 instanceof $c_s_Some)) {
-        var p = $as_Lelements_AbstractElement($n($as_s_Some(x2)).s_Some__f_value);
-        var this$3 = $n($n(p).content__s_Option());
-        if ((!this$3.isEmpty__Z())) {
-          var x0$2 = this$3.get__O();
-          var this$5 = $n(this.element__s_Option());
-          var this$4 = $m_s_$less$colon$less$();
-          var ev = this$4.s_$less$colon$less$__f_singleton;
-          x0$2.removeChild((this$5.isEmpty__Z() ? ($n(ev), null) : this$5.get__O()));
-          break matchResult2;
-        } else {
-          break matchResult2;
-        }
-      }
-      var $x_1 = document.body;
-      var this$8 = $n(this.element__s_Option());
-      var this$7 = $m_s_$less$colon$less$();
-      var ev$1 = this$7.s_$less$colon$less$__f_singleton;
-      $x_1.removeChild((this$8.isEmpty__Z() ? ($n(ev$1), null) : this$8.get__O()));
-    }
-    this.removePaths__V();
-    $m_Lconfig_Cache$().removeFromState__Lelements_AbstractElement__V(this);
-  } catch (e) {
+  var this$1 = $n(this.Lelements_AbstractElement__f_observer);
+  if ((!this$1.isEmpty__Z())) {
+    var x0 = this$1.get__O();
+    x0.disconnect();
   }
+  matchResult1: {
+    var x1 = $n(this.model__Lmodels_GraphElement()).format__T();
+    if ((x1 === "Container")) {
+      var this$2 = $n($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
+      var it = this$2.iterator__sc_Iterator();
+      while ($n(it).hasNext__Z()) {
+        var x0$1 = $n(it).next__O();
+        var melement = $as_Lmodels_GraphElement(x0$1);
+        $n($as_Lelements_AbstractElement($n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap).apply__O__O($n(melement).Lmodels_GraphElement__f_id))).remove__V();
+      }
+      break matchResult1;
+    }
+  }
+  matchResult3: {
+    var x3 = this.Lelements_AbstractElement__f_parent;
+    if ((x3 instanceof $c_s_Some)) {
+      var p = $as_Lelements_AbstractElement($n($as_s_Some(x3)).s_Some__f_value);
+      var this$3 = $n($n(p).content__s_Option());
+      if ((!this$3.isEmpty__Z())) {
+        var x0$2 = this$3.get__O();
+        var this$5 = $n(this.element__s_Option());
+        var this$4 = $m_s_$less$colon$less$();
+        var ev = this$4.s_$less$colon$less$__f_singleton;
+        x0$2.removeChild((this$5.isEmpty__Z() ? ($n(ev), null) : this$5.get__O()));
+        break matchResult3;
+      } else {
+        break matchResult3;
+      }
+    }
+    var x2 = $n(this.model__Lmodels_GraphElement()).format__T();
+    if ((x2 === "Path")) {
+      $n(this.Lelements_AbstractElement__f_path).get__O().remove();
+      break matchResult3;
+    }
+    var $x_1 = document.body;
+    var this$8 = $n(this.element__s_Option());
+    var this$7 = $m_s_$less$colon$less$();
+    var ev$1 = this$7.s_$less$colon$less$__f_singleton;
+    $x_1.removeChild((this$8.isEmpty__Z() ? ($n(ev$1), null) : this$8.get__O()));
+  }
+  this.removePaths__V();
+  $m_Lconfig_Cache$().removeFromState__Lelements_AbstractElement__V(this);
 });
 $c_Lelements_AbstractElement.prototype.removePaths__V = (function() {
   var this$1 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap);
@@ -1785,28 +1787,28 @@ function $h_Lelements_AbstractElement$() {
 }
 $h_Lelements_AbstractElement$.prototype = $c_Lelements_AbstractElement$.prototype;
 $c_Lelements_AbstractElement$.prototype.addElement__Lmodels_GraphElement__s_Option__V = (function(model, parent) {
-  matchResult8: {
+  matchResult9: {
     var $x_1;
-    var x14 = $n(model).format__T();
-    if ((x14 === "Container")) {
+    var x15 = $n(model).format__T();
+    if ((x15 === "Container")) {
       var $x_1 = new $c_Lelements_Container(model);
-      break matchResult8;
+      break matchResult9;
     }
-    if ((x14 === "Text")) {
+    if ((x15 === "Text")) {
       var $x_1 = new $c_Lelements_TextBox(model);
-      break matchResult8;
+      break matchResult9;
     }
-    if ((x14 === "Node")) {
+    if ((x15 === "Node")) {
       var $x_1 = new $c_Lelements_NodeX(model);
-      break matchResult8;
+      break matchResult9;
     }
-    if ((x14 === "Image")) {
+    if ((x15 === "Image")) {
       var $x_1 = new $c_Lelements_ImageX(model);
-      break matchResult8;
+      break matchResult9;
     }
-    if ((x14 === "Note")) {
+    if ((x15 === "Note")) {
       var $x_1 = new $c_Lelements_Note(model);
-      break matchResult8;
+      break matchResult9;
     }
     var $x_1 = new $c_Lelements_TextBox(model);
   }
@@ -22330,6 +22332,11 @@ $c_Lelements_Path.prototype.createPath__V = (function() {
             $n(this.Lelements_Path__f_model).Lmodels_GraphElement__f_text = pathLabel;
           }
         }))(line)));
+        svgText.oncontextmenu = ((e$2) => {
+          e$2.preventDefault();
+          $m_Lelements_ContextMenu$().render__Lorg_scalajs_dom_MouseEvent__s_Option__V(e$2, new $c_s_Some(this));
+          e$2.stopPropagation();
+        });
       }
       if ((i === scala$collection$immutable$Range$$lastElement)) {
         break;
