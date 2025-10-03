@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+    user-select: none;
 }
 @font-face {
     font-family: 'Roboto';
@@ -92,10 +94,10 @@ body {
 [data-tooltip]::after {
     content: attr(data-tooltip);
     position: absolute;
-    left: 100%;
+    right: 100%;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 8px;
+    margin-right: 8px;
     margin-bottom: 0;
 
     /* Styling */
@@ -127,4 +129,8 @@ body {
         opacity: 1;
         /*transform: translateY(0);*/
     }
+}
+
+svg.leader-line {
+    pointer-events: all !important;
 }
