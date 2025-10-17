@@ -1099,7 +1099,25 @@ $c_LMain$.prototype.main__AT__V = (function(args) {
     var draggableElement = $as_Lelements_AbstractElement((this$3.isEmpty__Z() ? ($n(ev), null) : this$3.get__O()));
     if ((draggableElement !== null)) {
       $m_Lextensions_HtmlElementExtension$().attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($n($n(draggableElement).element__s_Option()).get__O(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("draggable", "false")])));
-      $n(draggableElement).setOrigin__D__D__V((($n($n(draggableElement).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_x + $uD(e$4.clientX)) - $m_Lconfig_Cache$().Lconfig_Cache$__f_initialX), (($n($n(draggableElement).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_y + $uD(e$4.clientY)) - $m_Lconfig_Cache$().Lconfig_Cache$__f_initialY));
+      var dx = ($uD(e$4.clientX) - $m_Lconfig_Cache$().Lconfig_Cache$__f_initialX);
+      var dy = ($uD(e$4.clientY) - $m_Lconfig_Cache$().Lconfig_Cache$__f_initialY);
+      $n(draggableElement).setOrigin__D__D__V(($n($n(draggableElement).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_x + dx), ($n($n(draggableElement).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_y + dy));
+      if ((dy > 0.0)) {
+        var this$7 = $n($n(draggableElement).format__T());
+        var $x_1 = (this$7 === "Divider");
+      } else {
+        var $x_1 = false;
+      }
+      if ($x_1) {
+        var this$8 = $n($n(draggableElement).southElements__sci_List());
+        var these = this$8;
+        while ((!$n(these).isEmpty__Z())) {
+          var x0$1 = $n(these).head__O();
+          var element = $as_Lelements_AbstractElement(x0$1);
+          $n(element).setOrigin__D__D__V($n($n(element).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_x, ($n($n(element).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_y + dy));
+          these = $as_sci_List($n(these).tail__O());
+        }
+      }
     }
   })));
   $m_Lextensions_DocumentExtension$().kdown__Lorg_scalajs_dom_Document__F1__Lorg_scalajs_dom_Document(document, new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$5) => {
@@ -1158,6 +1176,9 @@ function $p_Lconfig_Cache$__renderElements__scm_ListBuffer__s_Option__V($thiz, e
           if ((x1 === "Note")) {
             break matchAlts2;
           }
+          if ((x1 === "Divider")) {
+            break matchAlts2;
+          }
           if ((x1 === "Code")) {
             break matchAlts2;
           }
@@ -1206,7 +1227,7 @@ function $c_Lconfig_Cache$() {
   this.Lconfig_Cache$__f_pathFlag = false;
   this.Lconfig_Cache$__f_pathStartElement = null;
   $n_Lconfig_Cache$ = this;
-  this.Lconfig_Cache$__f_pageBody = $m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().uid__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "pageBody"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("width", "4000px"), new $c_T2("height", "4000px"), new $c_T2("background-color", "#E0E0E0"), new $c_T2("overflow", "hidden")])));
+  this.Lconfig_Cache$__f_pageBody = $m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().uid__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "pageBody"), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("position", "absolute"), new $c_T2("width", "6000px"), new $c_T2("height", "6000px"), new $c_T2("background-color", "#E0E0E0"), new $c_T2("overflow", "hidden")])));
   this.Lconfig_Cache$__f_fileName = $m_s_None$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lmodels_GraphElement.getArrayOf().constr)([]));
   this.Lconfig_Cache$__f_state = new $c_scm_ListBuffer().scala$collection$mutable$ListBuffer$$freshFrom__sc_IterableOnce__scm_ListBuffer(elems);
@@ -1428,31 +1449,30 @@ $c_Lelements_AbstractElement.prototype.content__s_Option = (function() {
 });
 $c_Lelements_AbstractElement.prototype.element__s_Option = (function() {
   if ((!this.Lelements_AbstractElement__f_elementbitmap$1)) {
-    var $x_19 = $m_Lextensions_HtmlElementExtension$();
     var $x_18 = $m_Lextensions_HtmlElementExtension$();
-    var $x_17 = $m_Lextensions_HtmlElementExtension$().uid__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id);
-    var $x_16 = $m_sr_ScalaRunTime$();
-    var $x_15 = new $c_T2("position", "absolute");
+    var $x_17 = $m_Lextensions_HtmlElementExtension$();
+    var $x_16 = $m_Lextensions_HtmlElementExtension$().uid__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id);
+    var $x_15 = $m_sr_ScalaRunTime$();
+    var $x_14 = new $c_T2("position", "absolute");
     var y = ($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_width + "px");
-    var $x_14 = new $c_T2("width", y);
+    var $x_13 = new $c_T2("width", y);
     var y$1 = ($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_height + "px");
-    var $x_13 = new $c_T2("height", y$1);
-    var $x_12 = new $c_T2("cursor", "pointer");
+    var $x_12 = new $c_T2("height", y$1);
+    var $x_11 = new $c_T2("cursor", "pointer");
     var y$2 = ($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_x + "px");
-    var $x_11 = new $c_T2("left", y$2);
+    var $x_10 = new $c_T2("left", y$2);
     var y$3 = ($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_y + "px");
-    var $x_10 = new $c_T2("top", y$3);
-    var $x_9 = new $c_T2("box-shadow", "0px 0px 1px rgba(0,0,0,0.2)");
-    var $x_8 = new $c_T2("border-radius", "8px");
-    var $x_7 = new $c_T2("outline", "none");
-    var $x_6 = new $c_T2("padding", "5px");
+    var $x_9 = new $c_T2("top", y$3);
+    var $x_8 = new $c_T2("box-shadow", "0px 0px 2px rgba(0,0,0,0.2)");
+    var $x_7 = new $c_T2("border-radius", "8px");
+    var $x_6 = new $c_T2("outline", "none");
     var $x_5 = new $c_T2("resize", "none");
     var $x_4 = new $c_T2("overflow", "auto");
     var $x_3 = new $c_T2("display", "flex");
     var $x_2 = new $c_T2("align-items", "center");
     var $x_1 = new $c_T2("justify-content", "center");
     var y$4 = ("" + $n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_bgColor);
-    var value = $x_19.appends__Lorg_scalajs_dom_HTMLElement__sci_List__Lorg_scalajs_dom_HTMLElement($x_18.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_17, $x_16.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_15, $x_14, $x_13, $x_12, $x_11, $x_10, $x_9, $x_8, $x_7, $x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y$4)]))), new $c_sci_$colon$colon($n(this.content__s_Option()).get__O(), $m_sci_Nil$()));
+    var value = $x_18.appends__Lorg_scalajs_dom_HTMLElement__sci_List__Lorg_scalajs_dom_HTMLElement($x_17.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_16, $x_15.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_14, $x_13, $x_12, $x_11, $x_10, $x_9, $x_8, $x_7, $x_6, $x_5, $x_4, $x_3, $x_2, $x_1, new $c_T2("background-color", y$4)]))), new $c_sci_$colon$colon($n(this.content__s_Option()).get__O(), $m_sci_Nil$()));
     this.Lelements_AbstractElement__f_element$lzy1 = new $c_s_Some(value);
     this.Lelements_AbstractElement__f_elementbitmap$1 = true;
   }
@@ -1469,6 +1489,19 @@ $c_Lelements_AbstractElement.prototype.offsetX__D = (function() {
 });
 $c_Lelements_AbstractElement.prototype.offsetY__D = (function() {
   return $uD($n(this.element__s_Option()).get__O().offsetTop);
+});
+$c_Lelements_AbstractElement.prototype.south__D = (function() {
+  return ($n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_y + $n(this.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_height);
+});
+$c_Lelements_AbstractElement.prototype.southElements__sci_List = (function() {
+  var this$1 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap);
+  var this$4 = new $c_sc_MapOps$$anon$1(this$1);
+  var pred = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((element) => {
+    var element$1 = $as_Lelements_AbstractElement(element);
+    var this$3 = $n(element$1);
+    return ($n(this$3.model__Lmodels_GraphElement()).Lmodels_GraphElement__f_y >= this.south__D());
+  }));
+  return $n($as_sc_IterableOnceOps($f_sc_IterableOps__filter__F1__O(this$4, pred))).toList__sci_List();
 });
 $c_Lelements_AbstractElement.prototype.connectable__V = (function() {
   $m_Lextensions_HtmlElementExtension$().mhover__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($n(this.element__s_Option()).get__O(), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
@@ -1713,10 +1746,11 @@ $c_Lelements_AbstractElement.prototype.remove__V = (function() {
         var this$4 = $m_s_$less$colon$less$();
         var ev = this$4.s_$less$colon$less$__f_singleton;
         x0$2.removeChild((this$5.isEmpty__Z() ? ($n(ev), null) : this$5.get__O()));
-        break matchResult3;
-      } else {
-        break matchResult3;
       }
+      var this$7 = $n($n($n(p).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
+      var elem = this.model__Lmodels_GraphElement();
+      this$7.subtractOne__O__scm_ListBuffer(elem);
+      break matchResult3;
     }
     var x2 = $n(this.model__Lmodels_GraphElement()).format__T();
     if ((x2 === "Path")) {
@@ -1724,10 +1758,10 @@ $c_Lelements_AbstractElement.prototype.remove__V = (function() {
       break matchResult3;
     }
     var $x_1 = document.body;
-    var this$8 = $n(this.element__s_Option());
-    var this$7 = $m_s_$less$colon$less$();
-    var ev$1 = this$7.s_$less$colon$less$__f_singleton;
-    $x_1.removeChild((this$8.isEmpty__Z() ? ($n(ev$1), null) : this$8.get__O()));
+    var this$9 = $n(this.element__s_Option());
+    var this$8 = $m_s_$less$colon$less$();
+    var ev$1 = this$8.s_$less$colon$less$__f_singleton;
+    $x_1.removeChild((this$9.isEmpty__Z() ? ($n(ev$1), null) : this$9.get__O()));
   }
   this.removePaths__V();
   $m_Lconfig_Cache$().removeFromState__Lelements_AbstractElement__V(this);
@@ -1806,6 +1840,10 @@ $c_Lelements_AbstractElement$.prototype.addElement__Lmodels_GraphElement__s_Opti
       var $x_1 = new $c_Lelements_NodeX(model);
       break matchResult9;
     }
+    if ((x15 === "Divider")) {
+      var $x_1 = new $c_Lelements_Divider(model);
+      break matchResult9;
+    }
     if ((x15 === "Code")) {
       var $x_1 = new $c_Lelements_Code(model);
       break matchResult9;
@@ -1821,38 +1859,38 @@ $c_Lelements_AbstractElement$.prototype.addElement__Lmodels_GraphElement__s_Opti
     var $x_1 = new $c_Lelements_TextBox(model);
   }
   var abElement = $as_Lelements_AbstractElement($x_1);
-  var this$8 = $n(parent);
-  if ((!this$8.isEmpty__Z())) {
-    var this$9 = $n($n($as_Lelements_AbstractElement($n(parent).get__O())).content__s_Option());
-    if ((!this$9.isEmpty__Z())) {
-      var x0 = this$9.get__O();
-      var this$11 = $n($n(abElement).element__s_Option());
-      var this$10 = $m_s_$less$colon$less$();
-      var ev = this$10.s_$less$colon$less$__f_singleton;
-      x0.appendChild((this$11.isEmpty__Z() ? ($n(ev), null) : this$11.get__O()));
+  var this$9 = $n(parent);
+  if ((!this$9.isEmpty__Z())) {
+    var this$10 = $n($n($as_Lelements_AbstractElement($n(parent).get__O())).content__s_Option());
+    if ((!this$10.isEmpty__Z())) {
+      var x0 = this$10.get__O();
+      var this$12 = $n($n(abElement).element__s_Option());
+      var this$11 = $m_s_$less$colon$less$();
+      var ev = this$11.s_$less$colon$less$__f_singleton;
+      x0.appendChild((this$12.isEmpty__Z() ? ($n(ev), null) : this$12.get__O()));
     }
     $n(abElement).Lelements_AbstractElement__f_parent = parent;
-    var this$13 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
+    var this$14 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
     var elem = $n(abElement).model__Lmodels_GraphElement();
-    if ((!$f_sc_SeqOps__contains__O__Z(this$13, elem))) {
-      var this$14 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
+    if ((!$f_sc_SeqOps__contains__O__Z(this$14, elem))) {
+      var this$15 = $n($n($n($as_Lelements_AbstractElement($n(parent).get__O())).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_elements);
       var elem$1 = $n(abElement).model__Lmodels_GraphElement();
-      this$14.addOne__O__scm_ListBuffer(elem$1);
+      this$15.addOne__O__scm_ListBuffer(elem$1);
     }
   } else {
     var $x_2 = document.body;
-    var this$16 = $n($n(abElement).element__s_Option());
-    var this$15 = $m_s_$less$colon$less$();
-    var ev$1 = this$15.s_$less$colon$less$__f_singleton;
-    $x_2.appendChild((this$16.isEmpty__Z() ? ($n(ev$1), null) : this$16.get__O()));
-    var this$18 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_state);
+    var this$17 = $n($n(abElement).element__s_Option());
+    var this$16 = $m_s_$less$colon$less$();
+    var ev$1 = this$16.s_$less$colon$less$__f_singleton;
+    $x_2.appendChild((this$17.isEmpty__Z() ? ($n(ev$1), null) : this$17.get__O()));
+    var this$19 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_state);
     var elem$2 = $n(abElement).model__Lmodels_GraphElement();
-    this$18.addOne__O__scm_ListBuffer(elem$2);
+    this$19.addOne__O__scm_ListBuffer(elem$2);
   }
-  var this$21 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap);
+  var this$22 = $n($m_Lconfig_Cache$().Lconfig_Cache$__f_stateMap);
   var self = $n($n(abElement).model__Lmodels_GraphElement()).Lmodels_GraphElement__f_id;
   var elem$3 = new $c_T2(self, abElement);
-  this$21.addOne__O__scm_Growable(elem$3);
+  this$22.addOne__O__scm_Growable(elem$3);
 });
 $c_Lelements_AbstractElement$.prototype.addPath__Lmodels_GraphElement__V = (function(model) {
   var path = new $c_Lelements_Path(model);
@@ -1955,9 +1993,11 @@ $c_Lelements_ContextMenu$.prototype.documentContextMenu__Lorg_scalajs_dom_MouseE
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Note$().NoteModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
   }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Image"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$6) => {
     $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_ImageX$().ImageModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
-  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2 Load Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\u2501 Divider"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$7) => {
+    $m_Lelements_AbstractElement$().addElement__Lmodels_GraphElement__s_Option__V($m_Lelements_Divider$().DividerModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement(me, $m_s_None$()), $m_s_None$());
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcc2 Load Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$8) => {
     $m_Lconfig_Cache$().loadState__V();
-  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Save Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$8) => {
+  }))), $m_Lextensions_HtmlElementExtension$().mclick__Lorg_scalajs_dom_HTMLElement__F1__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Map__Lorg_scalajs_dom_HTMLElement($m_Lextensions_HtmlElementExtension$().itext__Lorg_scalajs_dom_HTMLElement__T__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), "\ud83d\udcbe Save Graph"), this.Lelements_ContextMenu$__f_menuItemCss), new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((e$9) => {
     $m_Lconfig_Cache$().saveState__V();
   })))]));
   return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
@@ -14834,6 +14874,50 @@ function $m_Lelements_Container$() {
   return $n_Lelements_Container$;
 }
 /** @constructor */
+function $c_Lelements_Divider$() {
+}
+$c_Lelements_Divider$.prototype = new $h_O();
+$c_Lelements_Divider$.prototype.constructor = $c_Lelements_Divider$;
+/** @constructor */
+function $h_Lelements_Divider$() {
+}
+$h_Lelements_Divider$.prototype = $c_Lelements_Divider$.prototype;
+$c_Lelements_Divider$.prototype.DividerModel__Lorg_scalajs_dom_MouseEvent__s_Option__Lmodels_GraphElement = (function(e, parent) {
+  var this$2 = $m_RTLong$();
+  var value = $uD(new Date().getTime());
+  var lo = this$2.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
+  var hi = this$2.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
+  var id$1 = ("Divider-" + new $c_RTLong(lo, hi));
+  var $x_2 = $m_Lconfig_Cache$().scrollLeft__D();
+  var $x_1 = $uD(e.clientX);
+  var this$3 = $n(parent);
+  var x$1 = ((($x_2 + $x_1) - ((!this$3.isEmpty__Z()) ? $n($as_Lelements_AbstractElement($n(parent).get__O())).offsetX__D() : 0.0)) - 50.0);
+  var $x_4 = $m_Lconfig_Cache$().scrollTop__D();
+  var $x_3 = $uD(e.clientY);
+  var this$4 = $n(parent);
+  var y$1 = ((($x_4 + $x_3) - ((!this$4.isEmpty__Z()) ? $n($as_Lelements_AbstractElement($n(parent).get__O())).offsetY__D() : 0.0)) - 25.0);
+  var elements$1 = $m_Lmodels_GraphElement$().$lessinit$greater$default$4__scm_ListBuffer();
+  return new $c_Lmodels_GraphElement(id$1, "Divider", "", elements$1, x$1, y$1, 1000.0, 10.0, "#F0F0F0", "", "", "");
+});
+$c_Lelements_Divider$.prototype.fromProduct__s_Product__Lelements_Divider = (function(x$0) {
+  return new $c_Lelements_Divider($as_Lmodels_GraphElement($n(x$0).productElement__I__O(0)));
+});
+$c_Lelements_Divider$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lelements_Divider(p);
+});
+var $d_Lelements_Divider$ = new $TypeData().initClass($c_Lelements_Divider$, "elements.Divider$", ({
+  Lelements_Divider$: 1,
+  s_deriving_Mirror: 1,
+  s_deriving_Mirror$Product: 1
+}));
+var $n_Lelements_Divider$;
+function $m_Lelements_Divider$() {
+  if ((!$n_Lelements_Divider$)) {
+    $n_Lelements_Divider$ = new $c_Lelements_Divider$();
+  }
+  return $n_Lelements_Divider$;
+}
+/** @constructor */
 function $c_Lelements_ImageX$() {
 }
 $c_Lelements_ImageX$.prototype = new $h_O();
@@ -15576,6 +15660,9 @@ function $f_sc_IterableOps__sizeCompare__I__I($thiz, otherSize) {
       return ((i - otherSize) | 0);
     }
   }
+}
+function $f_sc_IterableOps__filter__F1__O($thiz, pred) {
+  return $thiz.fromSpecific__sc_IterableOnce__O(new $c_sc_View$Filter($thiz, pred, false));
 }
 function $f_sc_IterableOps__drop__I__O($thiz, n) {
   return $thiz.fromSpecific__sc_IterableOnce__O($ct_sc_View$Drop__sc_IterableOps__I__(new $c_sc_View$Drop(), $thiz, n));
@@ -20780,6 +20867,9 @@ $c_sc_AbstractIterator.prototype.copyToArray__O__I__I__I = (function(xs, start, 
 $c_sc_AbstractIterator.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end);
 });
+$c_sc_AbstractIterator.prototype.toList__sci_List = (function() {
+  return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this);
+});
 $c_sc_AbstractIterator.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
   return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2);
 });
@@ -21236,6 +21326,9 @@ $c_Lupickle_core_LinkedHashMap$$anon$1.prototype.copyToArray__O__I__I__I = (func
 });
 $c_Lupickle_core_LinkedHashMap$$anon$1.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end);
+});
+$c_Lupickle_core_LinkedHashMap$$anon$1.prototype.toList__sci_List = (function() {
+  return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this);
 });
 $c_Lupickle_core_LinkedHashMap$$anon$1.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
   return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2);
@@ -22075,6 +22168,98 @@ var $d_Lelements_Container = new $TypeData().initClass($c_Lelements_Container, "
   Ljava_io_Serializable: 1
 }));
 /** @constructor */
+function $c_Lelements_Divider(model) {
+  this.Lelements_AbstractElement__f_parent = null;
+  this.Lelements_AbstractElement__f_content$lzy1 = null;
+  this.Lelements_AbstractElement__f_contentbitmap$1 = false;
+  this.Lelements_AbstractElement__f_element$lzy1 = null;
+  this.Lelements_AbstractElement__f_elementbitmap$1 = false;
+  this.Lelements_AbstractElement__f_path = null;
+  this.Lelements_AbstractElement__f_observer = null;
+  this.Lelements_Divider__f_model = null;
+  this.Lelements_Divider__f_content$lzy1 = null;
+  this.Lelements_Divider__f_contentbitmap$1 = false;
+  this.Lelements_Divider__f_model = model;
+  $ct_Lelements_AbstractElement__Lmodels_GraphElement__(this, model);
+  this.clickable__V();
+  this.resizable__V();
+  this.draggable__V();
+  this.contextMenu__V();
+  this.connectable__V();
+}
+$c_Lelements_Divider.prototype = new $h_Lelements_AbstractElement();
+$c_Lelements_Divider.prototype.constructor = $c_Lelements_Divider;
+/** @constructor */
+function $h_Lelements_Divider() {
+}
+$h_Lelements_Divider.prototype = $c_Lelements_Divider.prototype;
+$c_Lelements_Divider.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_s_Product$$anon$1(this);
+});
+$c_Lelements_Divider.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false);
+});
+$c_Lelements_Divider.prototype.equals__O__Z = (function(x$0) {
+  if ((this === x$0)) {
+    return true;
+  } else if ((x$0 instanceof $c_Lelements_Divider)) {
+    var x$0$2 = $as_Lelements_Divider(x$0);
+    var x = this.Lelements_Divider__f_model;
+    var x$2 = $n(x$0$2).Lelements_Divider__f_model;
+    if (((x === null) ? (x$2 === null) : $n(x).equals__O__Z(x$2))) {
+      $n(x$0$2);
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+});
+$c_Lelements_Divider.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$()._toString__s_Product__T(this);
+});
+$c_Lelements_Divider.prototype.productArity__I = (function() {
+  return 1;
+});
+$c_Lelements_Divider.prototype.productPrefix__T = (function() {
+  return "Divider";
+});
+$c_Lelements_Divider.prototype.productElement__I__O = (function(n) {
+  if ((n === 0)) {
+    return this.Lelements_Divider__f_model;
+  }
+  throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n));
+});
+$c_Lelements_Divider.prototype.model__Lmodels_GraphElement = (function() {
+  return this.Lelements_Divider__f_model;
+});
+$c_Lelements_Divider.prototype.content__s_Option = (function() {
+  if ((!this.Lelements_Divider__f_contentbitmap$1)) {
+    var value = $m_Lextensions_HtmlElementExtension$().styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($m_Lutils_HtmlElementUtil$().div__Lorg_scalajs_dom_HTMLElement(), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("font-size", "16px"), new $c_T2("white-space", "pre-wrap"), new $c_T2("word-break", "break-word"), new $c_T2("overflow-wrap", "break-word"), new $c_T2("box-sizing", "border-box"), new $c_T2("overflow", "auto"), new $c_T2("outline", "none"), new $c_T2("align-items", "center"), new $c_T2("justify-content", "center"), new $c_T2("text-align", "center"), new $c_T2("display", "grid"), new $c_T2("position", "relative")])));
+    this.Lelements_Divider__f_content$lzy1 = new $c_s_Some(value);
+    this.Lelements_Divider__f_contentbitmap$1 = true;
+  }
+  return this.Lelements_Divider__f_content$lzy1;
+});
+function $as_Lelements_Divider(obj) {
+  return (((obj instanceof $c_Lelements_Divider) || (obj === null)) ? obj : $throwClassCastException(obj, "elements.Divider"));
+}
+function $isArrayOf_Lelements_Divider(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lelements_Divider)));
+}
+function $asArrayOf_Lelements_Divider(obj, depth) {
+  return (($isArrayOf_Lelements_Divider(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lelements.Divider;", depth));
+}
+var $d_Lelements_Divider = new $TypeData().initClass($c_Lelements_Divider, "elements.Divider", ({
+  Lelements_Divider: 1,
+  Lelements_AbstractElement: 1,
+  s_Equals: 1,
+  s_Product: 1,
+  Ljava_io_Serializable: 1
+}));
+/** @constructor */
 function $c_Lelements_ImageX(model) {
   this.Lelements_AbstractElement__f_parent = null;
   this.Lelements_AbstractElement__f_content$lzy1 = null;
@@ -22158,12 +22343,15 @@ $c_Lelements_ImageX.prototype.model__Lmodels_GraphElement = (function() {
 });
 $c_Lelements_ImageX.prototype.content__s_Option = (function() {
   if ((!this.Lelements_ImageX__f_contentbitmap$1)) {
-    var $x_4 = $m_Lextensions_HtmlElementExtension$();
-    var $x_3 = $m_Lextensions_HtmlElementExtension$();
-    var $x_2 = $m_Lutils_HtmlElementUtil$().img__Lorg_scalajs_dom_HTMLElement();
-    var $x_1 = $m_sr_ScalaRunTime$();
+    var $x_6 = $m_Lextensions_HtmlElementExtension$();
+    var $x_5 = $m_Lextensions_HtmlElementExtension$();
+    var $x_4 = $m_Lutils_HtmlElementUtil$().img__Lorg_scalajs_dom_HTMLElement();
+    var $x_3 = $m_sr_ScalaRunTime$();
     var y = $n(this.Lelements_ImageX__f_model).Lmodels_GraphElement__f_imagePath;
-    var value = $x_4.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_3.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_2, $x_1.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("src", y), new $c_T2("draggable", "false")]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("position", "relative")])));
+    var $x_2 = new $c_T2("src", y);
+    var $x_1 = new $c_T2("draggable", "false");
+    var y$1 = $n(this.Lelements_ImageX__f_model).Lmodels_GraphElement__f_text;
+    var value = $x_6.styles__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_5.attrs__Lorg_scalajs_dom_HTMLElement__sci_Seq__Lorg_scalajs_dom_HTMLElement($x_4, $x_3.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$x_2, $x_1, new $c_T2("title", y$1)]))), $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("width", "100%"), new $c_T2("height", "100%"), new $c_T2("position", "relative")])));
     this.Lelements_ImageX__f_content$lzy1 = new $c_s_Some(value);
     this.Lelements_ImageX__f_contentbitmap$1 = true;
   }
@@ -28505,6 +28693,9 @@ $c_sc_AbstractIterable.prototype.copyToArray__O__I__I__I = (function(xs, start, 
 });
 $c_sc_AbstractIterable.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end);
+});
+$c_sc_AbstractIterable.prototype.toList__sci_List = (function() {
+  return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this);
 });
 $c_sc_AbstractIterable.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
   return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2);
@@ -36803,6 +36994,9 @@ $c_sjsr_WrappedVarArgs.prototype.copyToArray__O__I__I__I = (function(xs, start, 
 $c_sjsr_WrappedVarArgs.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end);
 });
+$c_sjsr_WrappedVarArgs.prototype.toList__sci_List = (function() {
+  return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this);
+});
 $c_sjsr_WrappedVarArgs.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
   return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2);
 });
@@ -36883,6 +37077,9 @@ $c_Lupickle_core_LinkedHashMap.prototype.size__I = (function() {
 });
 $c_Lupickle_core_LinkedHashMap.prototype.copyToArray__O__I__I__I = (function(xs, start, len) {
   return $f_sc_IterableOnceOps__copyToArray__O__I__I__I(this, xs, start, len);
+});
+$c_Lupickle_core_LinkedHashMap.prototype.toList__sci_List = (function() {
+  return $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this);
 });
 $c_Lupickle_core_LinkedHashMap.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
   return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2);
@@ -38913,6 +39110,9 @@ $c_sci_List.prototype.last__O = (function() {
 });
 $c_sci_List.prototype.className__T = (function() {
   return "List";
+});
+$c_sci_List.prototype.toList__sci_List = (function() {
+  return this;
 });
 $c_sci_List.prototype.equals__O__Z = (function(o) {
   if ((o instanceof $c_sci_List)) {
